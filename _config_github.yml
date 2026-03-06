@@ -5,8 +5,8 @@ title_pt: 'Modelo de Site Base'
 description: 'A neutral multilingual Jekyll template for GitHub Pages.'
 
 baseurl: ''
-url: 'https://example.com'
-absolute_url: 'https://example.com'
+url: ''
+absolute_url: ''
 
 email: hello@example.com
 github_username: ''
