@@ -22,6 +22,11 @@ bundle _2.3.26_ exec jekyll serve --livereload --config _config.yml,_config_gith
 
 Abrir en: `http://127.0.0.1:4000`
 
+Para simular GitHub Pages en `https://lmatas.github.io/lareferencia-site/`, usa el build con `_config_github.yml`. Ese archivo fija:
+
+- `url: https://lmatas.github.io`
+- `baseurl: /lareferencia-site`
+
 ## Ejecutar con Docker (recomendado)
 
 Sin instalar Ruby local:
@@ -42,6 +47,7 @@ bundle _2.3.26_ exec jekyll build --config _config.yml,_config_github.yml
 ## Personalización rápida
 
 1. Edita identidad del sitio en `_config.yml` y `_config_github.yml`.
+   `_config.yml` queda neutral para desarrollo local y `_config_github.yml` contiene la configuración de despliegue en GitHub Pages.
 2. Reemplaza contenido en `_pages`, `_posts`, `_news`, `_events` y `_home_cards`.
 3. Ajusta la paleta en `_data/theme.yml` (archivo centralizado de colores).
 4. Ajusta estilos en `assets/main.scss`.

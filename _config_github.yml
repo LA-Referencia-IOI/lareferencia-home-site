@@ -4,9 +4,9 @@ title_pt: 'Modelo de Site Base'
 
 description: 'A neutral multilingual Jekyll template for GitHub Pages.'
 
-baseurl: ''
-url: ''
-absolute_url: ''
+baseurl: '/lareferencia-site'
+url: 'https://lmatas.github.io'
+absolute_url: 'https://lmatas.github.io/lareferencia-site'
 
 email: hello@example.com
 github_username: ''
