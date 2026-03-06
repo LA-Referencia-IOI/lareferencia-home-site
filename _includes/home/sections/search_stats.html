@@ -1,0 +1,31 @@
+<section class="lr-search-stats">
+  <div class="wrapper">
+    <form class="lr-search-form" action="{{ include.section.action_url }}" method="{{ include.section.method | default: 'get' }}">
+      <input type="text" name="{{ include.section.query_param | default: 'q' }}" placeholder="{{ include.section.placeholder }}">
+      <select name="{{ include.section.scope_param | default: 'scope' }}">
+        {% for option in include.section.scope_options %}
+          <option value="{{ option.value }}">{{ option.label }}</option>
+        {% endfor %}
+      </select>
+      <button type="submit" class="lr-btn lr-btn-solid">{{ include.section.search_label }}</button>
+      <a class="lr-btn lr-btn-outline" href="{{ include.section.advanced_url }}">{{ include.section.advanced_label }}</a>
+    </form>
+
+    <div class="lr-stats-panel">
+      <div class="lr-stats-main">
+        <p class="lr-stats-kicker">{{ include.section.metrics.nodes_value }}</p>
+        <p class="lr-stats-label">{{ include.section.metrics.nodes_label }}</p>
+        <p class="lr-stats-kicker">{{ include.section.metrics.documents_value }}</p>
+        <p class="lr-stats-label">{{ include.section.metrics.documents_label }}</p>
+      </div>
+      <div class="lr-stats-breakdown">
+        {% for row in include.section.metrics.breakdown %}
+          <div class="lr-stat-row">
+            <span>{{ row.value }}</span>
+            <span>{{ row.label }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

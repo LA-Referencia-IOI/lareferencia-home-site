@@ -1,0 +1,10 @@
+<section class="lr-faq-cta wrapper">
+  <div class="lr-faq-content">
+    <h2>{{ include.section.title }}</h2>
+    <p>{{ include.section.body }}</p>
+    <a class="lr-btn lr-btn-solid" href="{{ include.section.button_url | relative_url }}">{{ include.section.button_label }}</a>
+  </div>
+  <div class="lr-faq-image-wrap">
+    <img src="{{ include.section.image | relative_url }}" alt="Support image">
+  </div>
+</section>

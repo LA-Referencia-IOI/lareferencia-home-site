@@ -15,7 +15,9 @@
 </title>
 
 <meta name="description" content="
-  {% if page.excerpt %}
+  {% if page.description %}
+    {{ page.description | strip_html | strip_newlines | truncate: 160 }}
+  {% elsif page.excerpt %}
     {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
   {% else %}
     {{ site.description }}
@@ -24,7 +26,7 @@
 
 <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-<link rel="icon" type="image/svg+xml" href="{{ "/assets/img/logo-dummy.svg" | relative_url }}">
+<link rel="icon" type="image/png" href="{{ "/assets/img/la-referencia-logo.png" | relative_url }}">
 
 {% if jekyll.environment == 'production' %}
 <!-- Add Google Analytics or other production-only scripts here -->

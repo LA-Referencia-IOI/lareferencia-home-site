@@ -1,0 +1,150 @@
+sections:
+  - type: hero_map
+    title: "LA Referencia is the Latin American and Spain Open Science network"
+    subtitle: "LA Referencia supports national open science strategies through interoperable repository services."
+    map_image: "/assets/img/mapa2.png"
+    hotspots:
+      - label: Panama
+        x: 37
+        y: 33
+      - label: Costa Rica
+        x: 23
+        y: 39
+      - label: Colombia
+        x: 41
+        y: 41
+      - label: Ecuador
+        x: 30
+        y: 47
+      - label: Peru
+        x: 42
+        y: 57
+      - label: Chile
+        x: 41
+        y: 74
+      - label: Argentina
+        x: 46
+        y: 87
+      - label: Brazil
+        x: 66
+        y: 51
+      - label: Uruguay
+        x: 71
+        y: 78
+      - label: Spain
+        x: 73
+        y: 17
+
+  - type: band_message
+    text: "Explore open access scientific publications from Latin America and Spain"
+
+  - type: search_stats
+    action_url: "https://www.lareferencia.info/vufind/Search/Results"
+    method: "get"
+    query_param: "lookfor"
+    scope_param: "type"
+    placeholder: "Start searching"
+    scope_options:
+      - label: "All fields"
+        value: "AllFields"
+      - label: "Title"
+        value: "Title"
+      - label: "Author"
+        value: "Author"
+    search_label: "Search"
+    advanced_label: "Advanced search"
+    advanced_url: "https://www.lareferencia.info/vufind/Search/Advanced"
+    metrics:
+      nodes_label: "National Nodes"
+      nodes_value: "12"
+      documents_label: "Documents"
+      documents_value: "5,820,482"
+      breakdown:
+        - label: "Article"
+          value: "3,578,992"
+        - label: "Thesis"
+          value: "1,288,071"
+        - label: "Doctoral thesis"
+          value: "621,180"
+        - label: "Book chapter"
+          value: "112,471"
+
+  - type: faq_cta
+    title: "What should I do if my repository is not in LA Referencia?"
+    body: "Contact us and we will guide your repository onboarding and metadata alignment process."
+    button_label: "Contact team"
+    button_url: "/en/contact"
+    image: "/assets/img/business-people-shaking-hands-together.jpg"
+
+  - type: resources_cards
+    title: "Explore our latest training resources"
+    cards:
+      - title: "DSpace 7.5 basic setup"
+        summary: "Implementation guide for repository teams that need a fast deployment baseline."
+        image: "/assets/img/cloud-storage-banner-background-remixed-from-public-domain-by-nasa.jpg"
+        button_label: "Read resource"
+        button_url: "/en/news"
+      - title: "Public funded research data access"
+        summary: "Practical recommendations to improve policy and repository interoperability."
+        image: "/assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg"
+        button_label: "Open guide"
+        button_url: "/en/news"
+      - title: "Institutional repository migration"
+        summary: "Experiences and lessons learned from migration projects in the region."
+        image: "/assets/img/globe-internet-icon-line-connection-circuit-board.jpg"
+        button_label: "View lessons"
+        button_url: "/en/news"
+
+  - type: logos_grid
+    title: "Our Nodes"
+    items:
+      - name: "Argentina"
+        logo: "/assets/img/arg.png"
+      - name: "Brazil"
+        logo: "/assets/img/br.png"
+      - name: "Chile"
+        logo: "/assets/img/cl.png"
+      - name: "Colombia"
+        logo: "/assets/img/co.png"
+      - name: "Peru"
+        logo: "/assets/img/pe.png"
+      - name: "Uruguay"
+        logo: "/assets/img/uy.png"
+
+  - type: logos_grid
+    title: "Our Partners"
+    items:
+      - name: "Redalyc"
+        logo: "/assets/img/logo_redalyc-1.png"
+      - name: "OpenAIRE"
+        logo: "/assets/img/OpenAire_Logo_1200x600px.jpg"
+      - name: "COAR"
+        logo: "/assets/img/COAR-logo_L-1.jpg"
+      - name: "RDA"
+        logo: "/assets/img/RDA-Logo_5.png"
+      - name: "Latindex"
+        logo: "/assets/img/logo_latindex-1.png"
+      - name: "SCOSS"
+        logo: "/assets/img/SCOSS_logo-1b.png"
+
+  - type: logos_grid
+    title: "Our Alliances"
+    items:
+      - name: "Alicia"
+        logo: "/assets/img/logoalicia.png"
+      - name: "Recolecta"
+        logo: "/assets/img/recolecta-1.png"
+      - name: "Kimuk"
+        logo: "/assets/img/logo-kimuk-500x200-transparente@2x.png"
+      - name: "Conare"
+        logo: "/assets/img/logotipo_conare_color.png"
+      - name: "Rede Claro"
+        logo: "/assets/img/Logo_Rede_Claro_Horizontal_C_Ass_Azul.jpg"
+      - name: "RRAAE"
+        logo: "/assets/img/logoRRAAE.png"
+
+  - type: newsletter_cta
+    title: "Sign up for our Newsletter"
+    body: "Keep informed about our Open Science initiatives"
+    button_url: "/en/contact"
+    button_label: "Subscribe"

@@ -1,56 +1,126 @@
-<header class="site-header">
-  <div class="wrapper">
-    <a class="site-title nav-item"
-      href="{% if page.language == "es" %}
-        {{ "/es/home" | relative_url }}
-      {% elsif page.language == "pt" %}
-        {{ "/pt/home" | relative_url }}
-      {% else %}
-        {{ "/en/home" | relative_url }}
-      {% endif %}">
-      <img src="{{ "/assets/img/logo-dummy.svg" | relative_url }}" alt="Template Logo">
+{% assign nav = site.data.navigation[page.language] %}
+{% assign localized_docs = nil %}
+{% if page.language_reference and page.collection and site[page.collection] %}
+  {% assign localized_docs = site[page.collection] | where: 'language_reference', page.language_reference %}
+{% endif %}
 
-      <span class="site-title-text">
-        {% if page.language == "es" %}
-          {{ site.title | escape }}
-        {% elsif page.language == "pt" %}
-          {{ site.title_pt | escape }}
-        {% else %}
-          {{ site.title_en | escape }}
-        {% endif %}
-      </span>
+<header class="site-header lr-site-header">
+  <div class="lr-top-strip">
+    <div class="wrapper lr-top-strip-inner">
+      <div class="lr-top-strip-spacer"></div>
+      <ul class="lr-top-languages">
+        {% for item in nav.top_lang_strip %}
+          {% assign lang_url = nil %}
+          {% if localized_docs %}
+            {% assign lang_doc = localized_docs | where: 'language', item.code | first %}
+            {% if lang_doc %}
+              {% assign lang_url = lang_doc.url | relative_url %}
+            {% endif %}
+          {% endif %}
+          {% if lang_url == nil %}
+            {% assign lang_url = item.href | relative_url %}
+          {% endif %}
+          <li>
+            <a class="lr-top-language-link {% if page.language == item.code %}active{% endif %}" href="{{ lang_url }}">{{ item.label }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrapper lr-header-main">
+    <a class="lr-brand" href="/{% if page.language == 'es' %}es{% elsif page.language == 'pt' %}pt{% else %}en{% endif %}/home">
+      <img src="{{ '/assets/img/la-referencia-logo.png' | relative_url }}" alt="LA Referencia">
     </a>
-    
-    <button class="menu-toggle" aria-label="Toggle menu">
+
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="lr-main-navigation">
       <span class="hamburger"></span>
       <span class="hamburger"></span>
       <span class="hamburger"></span>
     </button>
-    
-    <nav class="site-nav">
+
+    <nav id="lr-main-navigation" class="site-nav lr-site-nav">
       {% include navigation.html %}
     </nav>
   </div>
 </header>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu-toggle');
-    const siteNav = document.querySelector('.site-nav');
-    
+    const siteNav = document.querySelector('.lr-site-nav');
+    const megaItems = siteNav ? siteNav.querySelectorAll('.lr-main-item.has-mega') : [];
+
+    const closeAllMega = function (exceptItem) {
+      megaItems.forEach(item => {
+        if (exceptItem && item === exceptItem) {
+          return;
+        }
+        item.classList.remove('open');
+        const trigger = item.querySelector('.lr-main-link-mega');
+        if (trigger) {
+          trigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    };
+
     if (menuToggle && siteNav) {
-      menuToggle.addEventListener('click', function() {
-        siteNav.classList.toggle('nav-open');
-        menuToggle.classList.toggle('active');
+      menuToggle.addEventListener('click', function () {
+        const isOpen = siteNav.classList.toggle('nav-open');
+        menuToggle.classList.toggle('active', isOpen);
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
     }
-    
-    const navLinks = document.querySelectorAll('.page-link');
+
+    megaItems.forEach(item => {
+      const trigger = item.querySelector('.lr-main-link-mega');
+      if (!trigger) {
+        return;
+      }
+
+      trigger.addEventListener('click', function (event) {
+        if (window.innerWidth <= 992) {
+          return;
+        }
+        event.preventDefault();
+        const isOpen = item.classList.contains('open');
+        closeAllMega(item);
+        item.classList.toggle('open', !isOpen);
+        trigger.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+      });
+
+      item.addEventListener('mouseenter', function () {
+        if (window.innerWidth <= 992) {
+          return;
+        }
+        closeAllMega(item);
+        item.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      if (window.innerWidth <= 992 || !siteNav) {
+        return;
+      }
+      if (!siteNav.contains(event.target)) {
+        closeAllMega();
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        closeAllMega();
+      }
+    });
+
+    const navLinks = document.querySelectorAll('.lr-main-link, .lr-mega-link-title, .lr-mega-read-more, .lr-mega-cta');
     navLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        if (window.innerWidth <= 768) {
+      link.addEventListener('click', function () {
+        if (window.innerWidth <= 992 && siteNav && menuToggle) {
           siteNav.classList.remove('nav-open');
           menuToggle.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
         }
       });
     });

@@ -31,6 +31,12 @@ collections:
   pages:
     output: true
     permalink: /:path
+  news:
+    output: true
+  events:
+    output: true
+  home_cards:
+    output: false
 
 plugins:
   - jekyll-feed
@@ -55,3 +61,72 @@ defaults:
   values:
     permalink: 'pt/:title'
     language: pt
+- scope:
+    path: '_news/en'
+    type: 'news'
+  values:
+    permalink: 'en/news/:title'
+    language: en
+    layout: news
+    published: true
+- scope:
+    path: '_news/es'
+    type: 'news'
+  values:
+    permalink: 'es/news/:title'
+    language: es
+    layout: news
+    published: true
+- scope:
+    path: '_news/pt'
+    type: 'news'
+  values:
+    permalink: 'pt/news/:title'
+    language: pt
+    layout: news
+    published: true
+- scope:
+    path: '_events/en'
+    type: 'events'
+  values:
+    permalink: 'en/events/:title'
+    language: en
+    layout: event
+    published: true
+- scope:
+    path: '_events/es'
+    type: 'events'
+  values:
+    permalink: 'es/events/:title'
+    language: es
+    layout: event
+    published: true
+- scope:
+    path: '_events/pt'
+    type: 'events'
+  values:
+    permalink: 'pt/events/:title'
+    language: pt
+    layout: event
+    published: true
+- scope:
+    path: '_home_cards/en'
+    type: 'home_cards'
+  values:
+    language: en
+    published: true
+    order: 999
+- scope:
+    path: '_home_cards/es'
+    type: 'home_cards'
+  values:
+    language: es
+    published: true
+    order: 999
+- scope:
+    path: '_home_cards/pt'
+    type: 'home_cards'
+  values:
+    language: pt
+    published: true
+    order: 999

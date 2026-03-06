@@ -1,16 +1,33 @@
 <div class="language-switch">
   {% assign current_path = page.url | remove_first: "/en/" | remove_first: "/es/" | remove_first: "/pt/" %}
+  {% assign en_url = nil %}
+  {% assign es_url = nil %}
+  {% assign pt_url = nil %}
+
+  {% if page.language_reference and page.collection and site[page.collection] %}
+    {% assign localized_docs = site[page.collection] | where: 'language_reference', page.language_reference %}
+    {% assign en_doc = localized_docs | where: 'language', 'en' | first %}
+    {% assign es_doc = localized_docs | where: 'language', 'es' | first %}
+    {% assign pt_doc = localized_docs | where: 'language', 'pt' | first %}
+    {% if en_doc %}{% assign en_url = en_doc.url | relative_url %}{% endif %}
+    {% if es_doc %}{% assign es_url = es_doc.url | relative_url %}{% endif %}
+    {% if pt_doc %}{% assign pt_url = pt_doc.url | relative_url %}{% endif %}
+  {% endif %}
 
   {% if current_path == "" or current_path == "/" %}
   {% assign current_path = "home" %}
   {% endif %}
+
+  {% if en_url == nil %}{% assign en_url = '/en/' | append: current_path | relative_url %}{% endif %}
+  {% if es_url == nil %}{% assign es_url = '/es/' | append: current_path | relative_url %}{% endif %}
+  {% if pt_url == nil %}{% assign pt_url = '/pt/' | append: current_path | relative_url %}{% endif %}
   
   <a class="lang-link {% if page.language == 'en' %}active{% endif %}" 
-     href="{{ '/en/' | append: current_path | relative_url }}">EN</a>
+     href="{{ en_url }}">EN</a>
      
   <a class="lang-link {% if page.language == 'es' %}active{% endif %}" 
-     href="{{ '/es/' | append: current_path | relative_url }}">ES</a>
+     href="{{ es_url }}">ES</a>
      
   <a class="lang-link {% if page.language == 'pt' %}active{% endif %}" 
-     href="{{ '/pt/' | append: current_path | relative_url }}">PT</a>
+     href="{{ pt_url }}">PT</a>
 </div>

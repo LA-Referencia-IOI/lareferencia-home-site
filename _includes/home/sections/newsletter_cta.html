@@ -1,0 +1,17 @@
+<section class="lr-newsletter">
+  <div class="wrapper lr-newsletter-inner">
+    <div class="lr-newsletter-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+        <path d="M7 4.5h10a2 2 0 0 1 2 2V8h1a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6.5a2 2 0 0 1 2-2Zm10 3V6.5H7V8h10Zm3 3H4v6h16v-6Zm-11 1.5h6a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2Z"/>
+      </svg>
+    </div>
+    <div class="lr-newsletter-copy">
+      <h2>{{ include.section.title }}</h2>
+      <p>{{ include.section.body }}</p>
+    </div>
+    {% assign newsletter_url = include.section.button_url | default: include.section.form_action | default: '#' %}
+    <a class="lr-btn lr-btn-solid lr-newsletter-cta" href="{% if newsletter_url contains '://' %}{{ newsletter_url }}{% else %}{{ newsletter_url | relative_url }}{% endif %}">
+      {{ include.section.button_label }}
+    </a>
+  </div>
+</section>

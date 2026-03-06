@@ -1,0 +1,10 @@
+<section class="lr-logo-group wrapper">
+  <h2>{{ include.section.title }}</h2>
+  <div class="lr-logo-grid">
+    {% for item in include.section.items %}
+      <a class="lr-logo-item" href="{{ item.url | default: '#' }}" aria-label="{{ item.name }}">
+        <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}">
+      </a>
+    {% endfor %}
+  </div>
+</section>

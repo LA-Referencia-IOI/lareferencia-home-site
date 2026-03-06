@@ -1,0 +1,15 @@
+<section class="lr-resources wrapper">
+  <h2>{{ include.section.title }}</h2>
+  <div class="lr-resource-grid">
+    {% for card in include.section.cards %}
+      <article class="lr-resource-card">
+        <img src="{{ card.image | relative_url }}" alt="{{ card.title }}">
+        <div class="lr-resource-content">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.summary }}</p>
+          <a class="lr-btn lr-btn-outline" href="{{ card.button_url | relative_url }}">{{ card.button_label }}</a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,14 @@
+{% assign schema = site.data.home[page.language] %}
+{% if schema and schema.sections %}
+{% for section in schema.sections %}
+{% case section.type %}
+{% when 'hero_map' %}{% include home/sections/hero_map.html section=section %}
+{% when 'band_message' %}{% include home/sections/band_message.html section=section %}
+{% when 'search_stats' %}{% include home/sections/search_stats.html section=section %}
+{% when 'faq_cta' %}{% include home/sections/faq_cta.html section=section %}
+{% when 'resources_cards' %}{% include home/sections/resources_cards.html section=section %}
+{% when 'logos_grid' %}{% include home/sections/logos_grid.html section=section %}
+{% when 'newsletter_cta' %}{% include home/sections/newsletter_cta.html section=section %}
+{% endcase %}
+{% endfor %}
+{% endif %}

@@ -1,0 +1,107 @@
+top_lang_strip:
+  - code: es
+    label: Espanol
+    href: /es/home
+  - code: en
+    label: English
+    href: /en/home
+  - code: pt
+    label: Portugues
+    href: /pt/home
+
+read_more_label: Read more...
+
+main_nav:
+  - label: Services
+    href: /en/services/platform-la-referencia
+    match: /services/
+    page_menu: services
+    mega_title: Technology
+    mega_subtitle: Discover LA Referencia core technology services.
+    cta:
+      label: Explore
+      href: /en/funders
+    cta_title: Alliances and Projects
+    cta_text: Explore the initiatives we are building with partner organizations.
+    cta_image: /assets/img/business-people-shaking-hands-together.jpg
+
+  - label: Resources
+    href: /en/resources/guidelines
+    match: /resources/
+    page_menu: resources
+    mega_title: Guides
+    mega_subtitle: Key implementation resources and policy references.
+    cta:
+      label: Training Portal
+      href: /en/events
+    cta_title: Open Science Training Resources
+    cta_text: Learn from open and practical resources from the network.
+    cta_image: /assets/img/cloud-storage-banner-background-remixed-from-public-domain-by-nasa.jpg
+
+  - label: About
+    href: /en/about/who-we-are
+    matches:
+      - /about/who-we-are
+      - /about/mission-vision
+      - /about/history
+    page_menu: about
+    mega_title: Organization
+    mega_subtitle: Institutional information and how to participate.
+    cta:
+      label: View trajectory
+      href: /en/about/mission-vision
+    cta_title: Institutional Trajectory
+    cta_text: Review our history, mission and regional governance model.
+    cta_image: /assets/img/globe-internet-icon-line-connection-circuit-board.jpg
+
+  - label: Members
+    href: /en/about/national-nodes
+    matches:
+      - /about/national-nodes
+      - /about/how-to-join
+    page_menu: members
+    mega_title: Members
+    mega_subtitle: National nodes and how to join the network.
+    cta:
+      label: Read more...
+      href: /en/team
+    cta_title: Benefits
+    cta_text: Understand the value proposition of joining LA Referencia.
+    cta_image: /assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg
+
+  - label: Contact
+    href: /en/contact
+    match: /contact
+
+  - label: News
+    href: /en/news
+    match: /news
+
+  - label: Events
+    href: /en/events
+    match: /events
+
+footer:
+  brand_subtitle: Latin American and Spain Open Science Network
+  legal_text: Unless stated otherwise, all materials produced by LA Referencia are covered by a Creative Commons 4.0 International license
+  social:
+    - label: Facebook
+      href: https://www.facebook.com/LAReferenciaAA
+      icon: facebook
+      glyph: f
+    - label: X
+      href: https://twitter.com/LAReferenciaAA
+      icon: x
+      glyph: X
+    - label: LinkedIn
+      href: https://www.linkedin.com/in/la-referencia/
+      icon: linkedin
+      glyph: in
+    - label: YouTube
+      href: https://www.youtube.com/user/RepositoriosLA
+      icon: youtube
+      glyph: ▶
+    - label: WhatsApp
+      href: https://www.whatsapp.com/channel/0029VaEugWeCsU9VgZXXzP26
+      icon: whatsapp
+      glyph: wa

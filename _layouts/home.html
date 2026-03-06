@@ -1,24 +1,6 @@
 ---
 layout: default
 ---
-<div class="home">
-  <section class="hero my-8 text-center">
-    <img src="{{ "/assets/img/logo-dummy.svg" | relative_url }}" alt="Template Logo" class="hero-logo">
-    <h1>
-      {% if page.language == "es" %}
-        {{ site.title | escape }}
-      {% elsif page.language == "pt" %}
-        {{ site.title_pt | escape }}
-      {% else %}
-        {{ site.title_en | escape }}
-      {% endif %}
-    </h1>
-    <p class="lead">
-      {{ site.description }}
-    </p>
-  </section>
-
-  <section class="content my-8">
-    {{ content }}
-  </section>
+<div class="home lr-home">
+  {{ content }}
 </div>
