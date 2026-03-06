@@ -1,24 +1,22 @@
-{%- if page.layout == 'page' %}
-  {%- assign localized_pages = site.pages
+{%- if page.layout == 'post' and page.language_reference %}
+  {%- assign localized_posts = site.posts
     | where: 'language_reference', page.language_reference
     | sort: 'language' %}
-  {%- for localized_page in localized_pages %}
-    <link rel="alternate" hreflang="{{ localized_page.language }}" href="{{ site.baseurl }}{{ localized_page.url }}" />
-  {%- endfor %}
-
-{%- elsif page.layout == 'post' %}
-  {%- assign localized_posts = site.posts
-  | where: 'language_reference', page.language_reference
-  | sort: 'language' %}
   {%- for localized_post in localized_posts %}
-    <link rel="alternate" hreflang="{{ localized_post.language }}" href="{{ site.baseurl }}{{ localized_post.url }}" />
+    <link rel="alternate" hreflang="{{ localized_post.language }}" href="{{ localized_post.url | absolute_url }}" />
   {%- endfor %}
-
-{%- elsif page.layout == 'index' %}
+{%- elsif page.layout == 'home' %}
   {%- assign localized_pages = site.pages
     | where: 'language_reference', site.fallback_page
     | sort: 'language' %}
   {%- for localized_page in localized_pages %}
-    <link rel="alternate" hreflang="{{ localized_page.language }}" href="{{ site.baseurl }}{{ localized_page.url }}" />
+    <link rel="alternate" hreflang="{{ localized_page.language }}" href="{{ localized_page.url | absolute_url }}" />
+  {%- endfor %}
+{%- elsif page.layout == 'page' and page.language_reference %}
+  {%- assign localized_pages = site.pages
+    | where: 'language_reference', page.language_reference
+    | sort: 'language' %}
+  {%- for localized_page in localized_pages %}
+    <link rel="alternate" hreflang="{{ localized_page.language }}" href="{{ localized_page.url | absolute_url }}" />
   {%- endfor %}
 {%- endif %}

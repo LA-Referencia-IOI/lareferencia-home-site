@@ -10,11 +10,11 @@ sitemap:
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  {%- assign pages = site._pages.pages | where: 'language_reference', 'sitemap' %}
+  {%- assign pages = site.pages | where: 'language_reference', 'sitemap' | sort: 'language' %}
 
   {%- for page in pages %}
     <sitemap>
-      <loc>{{ site.absoluteurl }}{{ page.url | remove: 'index.html' }}</loc>
+      <loc>{{ page.url | remove: 'index.html' | absolute_url }}</loc>
 
       {%- if page.sitemap.lastmod %}
         {%- assign lastmod = page.sitemap.lastmod | date: '%Y-%m-%d' %}

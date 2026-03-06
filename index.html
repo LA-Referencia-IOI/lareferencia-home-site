@@ -1,0 +1,19 @@
+---
+layout: none
+permalink: /
+sitemap:
+  excluded: true
+---
+{% assign target = '/' | append: site.default_language | append: '/' | append: site.fallback_page %}
+<!doctype html>
+<html lang="{{ site.default_language }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0;url={{ target | absolute_url }}">
+  <link rel="canonical" href="{{ target | absolute_url }}">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p><a href="{{ target | relative_url }}">Continue to home</a></p>
+</body>
+</html>

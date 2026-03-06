@@ -8,13 +8,13 @@ languages:
   pt:
     value: pt
     slug: pt
-  
-  back:
-    en: Back to the top
-    es: Volver al principio
-    pt: Voltar ao topo
 
-  top:
-    en: Top
-    es: Arriba
-    pt: Topo
+back:
+  en: Back to the top
+  es: Volver al principio
+  pt: Voltar ao topo
+
+top:
+  en: Top
+  es: Arriba
+  pt: Topo
