@@ -1,10 +1,10 @@
 ---
 layout: page
 title: "Proyecto DSpace"
-description: "Pagina de servicios"
+description: "Página de servicios"
 language: es
 language_reference: services-dspace-collaboration
-published: true
+published: false
 menu_parent: services
 menu_order: 40
 menu_label: "Proyecto DSpace"
@@ -13,4 +13,4 @@ menu_icon: "db"
 
 <h1>Proyecto DSpace</h1>
 
-<p>Esta pagina describe la colaboracion alrededor de DSpace.</p>
+<p>Esta página describe la colaboración alrededor de DSpace.</p>

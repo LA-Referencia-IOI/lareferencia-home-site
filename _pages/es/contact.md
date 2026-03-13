@@ -8,55 +8,55 @@ published: true
 order: 3
 ---
 
-<div class="contact-header">
-  <h1>Contacto</h1>
-  <p class="lead-text">Usa esta página como sección de contacto reutilizable para tu sitio.</p>
-</div>
+{% assign nav = site.data.navigation[page.language] %}
 
-<h2 class="custom-heading">Ponte en Contacto</h2>
+<div class="contact-page">
+  <header class="contact-page-header">
+    <p class="contact-page-eyebrow">Contacto</p>
+    <h1 class="contact-page-title">Para dudas, consultas o nuevas ideas, escríbanos</h1>
+    <p class="contact-page-lead">Centralizamos aquí consultas institucionales, colaboraciones y seguimiento de iniciativas de ciencia abierta en la red.</p>
+  </header>
 
-<div class="contact-card">
-  <div class="contact-card-background"></div>
-  <div class="contact-card-content">
-    <div class="contact-icon-container">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="envelope-icon">
-        <rect x="2" y="4" width="20" height="16" rx="2" />
-        <path d="M22,5L12,13L2,5" />
-        <line x1="2" y1="19" x2="7" y2="14" />
-        <line x1="17" y1="14" x2="22" y2="19" />
-      </svg>
-    </div>
-    <h3>Email</h3>
-    <p class="contact-description">Reemplaza esta dirección con tu email real de soporte o equipo.</p>
-    <a href="mailto:hello@example.com" class="contact-email-link">
-      <span>hello@example.com</span>
-    </a>
-  </div>
-</div>
+  <section class="contact-page-grid">
+    <article class="contact-panel" id="contacto-con-la-red">
+      <p class="contact-panel-label">Información institucional</p>
+      <h2>Cómo contactarnos</h2>
+      <p>Para contactarnos, escríbanos por correo y comparta el contexto de su consulta, alianza o iniciativa.</p>
+      <p>También puede escribirnos a la sede central de RedCLARA en Uruguay, ubicada en Rambla República de México 6125, Montevideo.</p>
+      <address class="contact-address">
+        Rambla República de México 6125<br>
+        Montevideo, Uruguay
+      </address>
+    </article>
 
-<h2 class="custom-heading" id="colaborar-con-el-template">Trabajar con este Template</h2>
+    <article class="contact-panel">
+      <p class="contact-panel-label">Canal principal</p>
+      <h2>Correo de contacto</h2>
+      <a class="contact-mail-link" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <p>Este canal concentra consultas generales, acuerdos de colaboración, soporte institucional y nuevas ideas para LA Referencia.</p>
+      <div class="contact-actions">
+        <a class="lr-btn lr-btn-solid" href="mailto:{{ site.email }}">Enviar correo</a>
+      </div>
+      <p class="contact-page-note">Si escribe en nombre de una institución, incluya el nombre del nodo, repositorio o proyecto en el asunto del mensaje.</p>
+    </article>
 
-<div class="funding-info">
-  <p>Este starter incluye páginas multilenguaje, posts, navegación y estilos responsivos. Puedes adaptarlo rápido reemplazando texto y metadatos.</p>
-
-  <h3 class="custom-heading-secondary">Primeros pasos recomendados</h3>
-  <ul>
-    <li>Actualizar identidad del sitio en <code>_config.yml</code> y <code>_config_github.yml</code></li>
-    <li>Reemplazar páginas y posts con la información de tu proyecto</li>
-    <li>Agregar tus imágenes, enlaces y canales de contacto</li>
-  </ul>
-
-  <div class="note-container">
-    <div class="note-header">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="10"></circle>
-        <line x1="12" y1="8" x2="12" y2="12"></line>
-        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-      </svg>
-      <h4>Sugerencia</h4>
-    </div>
-    <div class="note-content">
-      <p>Mantén las versiones por idioma alineadas usando el mismo <code>language_reference</code> en páginas y posts equivalentes.</p>
-    </div>
-  </div>
+    <article class="contact-panel contact-panel-social">
+      <p class="contact-panel-label">Redes oficiales</p>
+      <h2>Síganos y escríbanos</h2>
+      <p>También puede encontrarnos en nuestras redes sociales oficiales.</p>
+      <ul class="contact-social-grid">
+        {% for item in nav.footer.social %}
+          <li>
+            <a class="contact-social-link" href="{{ item.href }}" target="_blank" rel="noopener">
+              <span class="contact-social-mark" aria-hidden="true">{{ item.glyph | default: item.label | slice: 0, 2 }}</span>
+              <span class="contact-social-copy">
+                <strong>{{ item.label }}</strong>
+                <span>Abrir canal oficial</span>
+              </span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </article>
+  </section>
 </div>

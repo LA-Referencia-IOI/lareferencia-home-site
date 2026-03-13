@@ -1,17 +1,17 @@
-title: 'Starter Site Template'
-title_en: 'Starter Site Template'
-title_pt: 'Modelo de Site Base'
+title: 'LA Referencia'
+title_en: 'LA Referencia'
+title_pt: 'LA Referencia'
 
-description: 'A neutral multilingual Jekyll template for GitHub Pages.'
+description: 'Red Latinoamericana y de España de Ciencia Abierta.'
 
-baseurl: '/lareferencia-site'
+baseurl: ''
 url: 'https://lmatas.github.io'
-absolute_url: 'https://lmatas.github.io/lareferencia-site'
+absolute_url: 'https://lmatas.github.io'
 
-email: hello@example.com
+email: lareferencia@lareferencia.redclara.net
 github_username: ''
 
-default_language: 'en'
+default_language: 'es'
 fallback_page: 'home'
 
 theme: minima
@@ -26,14 +26,13 @@ sass:
     - color-functions
     - slash-div
 
-include: ['_pages']
 collections:
   pages:
     output: true
     permalink: /:path
   news:
     output: true
-  events:
+  members:
     output: true
   home_cards:
     output: false
@@ -86,28 +85,28 @@ defaults:
     layout: news
     published: true
 - scope:
-    path: '_events/en'
-    type: 'events'
+    path: '_members/en'
+    type: 'members'
   values:
-    permalink: 'en/events/:title'
+    permalink: 'en/members/:title'
     language: en
-    layout: event
+    layout: member
     published: true
 - scope:
-    path: '_events/es'
-    type: 'events'
+    path: '_members/es'
+    type: 'members'
   values:
-    permalink: 'es/events/:title'
+    permalink: 'es/miembros/:title'
     language: es
-    layout: event
+    layout: member
     published: true
 - scope:
-    path: '_events/pt'
-    type: 'events'
+    path: '_members/pt'
+    type: 'members'
   values:
-    permalink: 'pt/events/:title'
+    permalink: 'pt/membros/:title'
     language: pt
-    layout: event
+    layout: member
     published: true
 - scope:
     path: '_home_cards/en'

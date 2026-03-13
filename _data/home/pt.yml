@@ -1,62 +1,62 @@
 sections:
   - type: hero_map
-    title: "LA Referencia e a rede latino-americana e da Espanha de Ciencia Aberta"
-    subtitle: "LA Referencia apoia estrategias nacionais de ciencia aberta com servicos interoperaveis de repositorios."
+    title: "LA Referencia é a rede latino-americana e espanhola de Ciência Aberta"
+    subtitle: "A LA Referencia dá suporte às estratégias nacionais de Ciência Aberta na América Latina e na Espanha por meio de sua gama de serviços."
     map_image: "/assets/img/mapa2.png"
     hotspots:
-      - label: Panama
+      - label: "Panamá"
         x: 37
         y: 33
-      - label: Costa Rica
+      - label: "Costa Rica"
         x: 23
         y: 39
-      - label: Colombia
+      - label: "Colômbia"
         x: 41
         y: 41
-      - label: Ecuador
+      - label: "Equador"
         x: 30
         y: 47
-      - label: Peru
+      - label: "Peru"
         x: 42
         y: 57
-      - label: Chile
+      - label: "Chile"
         x: 41
         y: 74
-      - label: Argentina
+      - label: "Argentina"
         x: 46
         y: 87
-      - label: Brasil
+      - label: "Brasil"
         x: 66
         y: 51
-      - label: Uruguai
+      - label: "Uruguai"
         x: 71
         y: 78
-      - label: Espanha
-        x: 73
-        y: 17
+      - label: "Espanha"
+        x: 84
+        y: 11
 
   - type: band_message
-    text: "Explore publicacoes cientificas de America Latina e Espanha em acesso aberto"
+    text: "Navegue por publicações científicas em Acesso Aberto da América Latina e da Espanha"
 
   - type: search_stats
     action_url: "https://www.lareferencia.info/vufind/Search/Results"
     method: "get"
     query_param: "lookfor"
     scope_param: "type"
-    placeholder: "Comecar busca"
+    placeholder: "Começar busca"
     scope_options:
       - label: "Todos os campos"
         value: "AllFields"
-      - label: "Titulo"
+      - label: "Título"
         value: "Title"
       - label: "Autor"
         value: "Author"
     search_label: "Buscar"
-    advanced_label: "Busca avancada"
+    advanced_label: "Busca avançada"
     advanced_url: "https://www.lareferencia.info/vufind/Search/Advanced"
     metrics:
-      nodes_label: "Nodos Nacionais"
-      nodes_value: "12"
+      nodes_label: "Nós Nacionais"
+      nodes_value: "10"
       documents_label: "Documentos"
       documents_value: "5.820.482"
       breakdown:
@@ -66,85 +66,103 @@ sections:
           value: "1.288.071"
         - label: "Tese doutoral"
           value: "621.180"
-        - label: "Capitulo"
+        - label: "Capítulo"
           value: "112.471"
 
   - type: faq_cta
-    title: "O que devo fazer se meu repositorio nao aparece na LA Referencia?"
-    body: "Fale com a equipe e orientaremos o processo de incorporacao e alinhamento de metadados."
-    button_label: "Entrar em contato"
-    button_url: "/pt/contact"
+    title: "Quais medidas devo tomar se minha pesquisa ou repositório institucional não estiver disponível na LA Referencia?"
+    body: "A LA Referencia é um agregador que coleta metadados dos repositórios dos nossos nós nacionais. Por esse motivo, não é possível depositar diretamente os seus resultados de pesquisa. No entanto, você pode encontrar as informações necessárias clicando no link a seguir."
+    button_label: "Saiba mais"
+    button_url: "/pt/about/como-participar"
     image: "/assets/img/business-people-shaking-hands-together.jpg"
 
   - type: resources_cards
-    title: "Explore nossos recursos de capacitacao"
+    title: "Navegue pelos nossos materiais de capacitação mais recentes"
     cards:
-      - title: "Instalacao basica do DSpace 7.5"
-        summary: "Guia de implementacao para equipes de repositorios com necessidade de deploy rapido."
+      - title: "Instalación y configuración básica de DSpace 7.5"
+        summary: "Guillermo Esteban Murillo Goussen, técnico de LA Referencia explica el detalle sobre la instalación y configuración básica de DSpace 7.5."
         image: "/assets/img/cloud-storage-banner-background-remixed-from-public-domain-by-nasa.jpg"
-        button_label: "Ler recurso"
-        button_url: "/pt/news"
-      - title: "Acesso a dados financiados publicamente"
-        summary: "Recomendacoes praticas para melhorar politica e interoperabilidade dos repositorios."
+        button_label: "Abrir recurso"
+        button_url: "https://recursos.lareferencia.info/download/instalacion-y-configuracion-basica-de-dspace-7-5/"
+      - title: "Acceso a los datos de producción científica financiados con fondos públicos: DATACIENCIA"
+        summary: "Panelista: Carolina González."
         image: "/assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg"
-        button_label: "Abrir guia"
-        button_url: "/pt/news"
-      - title: "Migracao de repositorios institucionais"
-        summary: "Experiencias e licoes aprendidas em projetos de migracao da regiao."
+        button_label: "Abrir recurso"
+        button_url: "https://recursos.lareferencia.info/download/acceso-a-los-datos-de-produccion-cientifica-financiados-con-fondos-publicos-dataciencia/"
+      - title: "Experiencias en la migración de repositorios institucionales DSpace"
+        summary: "Ponente: Ariel Lira, PREBI-SEDICI, Universidad Nacional de La Plata, Argentina."
         image: "/assets/img/globe-internet-icon-line-connection-circuit-board.jpg"
-        button_label: "Ver licoes"
-        button_url: "/pt/news"
+        button_label: "Abrir recurso"
+        button_url: "https://recursos.lareferencia.info/download/experiencias-en-la-migracion-de-repositorios-institucionales-dspace/"
 
   - type: logos_grid
-    title: "Nossos Nodos"
+    title: "Nossos Nós"
     items:
       - name: "Argentina"
         logo: "/assets/img/arg.png"
+        url: "/pt/membros/argentina"
       - name: "Brasil"
         logo: "/assets/img/br.png"
+        url: "/pt/membros/brasil"
       - name: "Chile"
         logo: "/assets/img/cl.png"
-      - name: "Colombia"
+        url: "/pt/membros/chile"
+      - name: "Colômbia"
         logo: "/assets/img/co.png"
+        url: "/pt/membros/colombia"
       - name: "Peru"
         logo: "/assets/img/pe.png"
+        url: "/pt/membros/peru"
       - name: "Uruguai"
         logo: "/assets/img/uy.png"
+        url: "/pt/membros/uruguay"
 
   - type: logos_grid
     title: "Nossos Parceiros"
     items:
       - name: "Redalyc"
         logo: "/assets/img/logo_redalyc-1.png"
+        url: "https://www.redalyc.org/"
       - name: "OpenAIRE"
         logo: "/assets/img/OpenAire_Logo_1200x600px.jpg"
+        url: "https://www.openaire.eu/"
       - name: "COAR"
         logo: "/assets/img/COAR-logo_L-1.jpg"
+        url: "https://www.coar-repositories.org/"
       - name: "RDA"
         logo: "/assets/img/RDA-Logo_5.png"
+        url: "https://www.rd-alliance.org/"
       - name: "Latindex"
         logo: "/assets/img/logo_latindex-1.png"
+        url: "https://www.latindex.org/"
       - name: "SCOSS"
         logo: "/assets/img/SCOSS_logo-1b.png"
+        url: "https://scoss.org/how-it-works/current-funding-calls/"
 
   - type: logos_grid
-    title: "Nossas Aliancas"
+    title: "Nossas Alianças"
     items:
       - name: "Alicia"
         logo: "/assets/img/logoalicia.png"
+        url: "https://alicia.concytec.gob.pe/"
       - name: "Recolecta"
         logo: "/assets/img/recolecta-1.png"
-      - name: "Kimuk"
+        url: "https://www.recolecta.fecyt.es/"
+      - name: "Kímuk"
         logo: "/assets/img/logo-kimuk-500x200-transparente@2x.png"
-      - name: "Conare"
+        url: "https://kimuk.conare.ac.cr/"
+      - name: "CONARE"
         logo: "/assets/img/logotipo_conare_color.png"
-      - name: "Rede Claro"
+        url: "https://www.conare.ac.cr/"
+      - name: "RedCLARA"
         logo: "/assets/img/Logo_Rede_Claro_Horizontal_C_Ass_Azul.jpg"
+        url: "https://www.redclara.net/"
       - name: "RRAAE"
         logo: "/assets/img/logoRRAAE.png"
+        url: "https://rraae.cedia.edu.ec/"
 
   - type: newsletter_cta
-    title: "Assine nossa Newsletter"
-    body: "Fique por dentro dos nossos esforcos pela Ciencia Aberta"
-    button_url: "/pt/contact"
+    title: "Assine nosso Newsletter"
+    body: "Mantenha-se atualizado sobre nossos esforços pela Ciência Aberta"
+    button_url: "/pt/resources/assinatura"
     button_label: "Assinar"

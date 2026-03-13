@@ -1,10 +1,10 @@
 ---
 layout: page
 title: "Iniciativa dARK"
-description: "Pagina de servicos"
+description: "Página de serviços"
 language: pt
 language_reference: services-dark-initiative
-published: true
+published: false
 menu_parent: services
 menu_order: 30
 menu_label: "Iniciativa dARK"
@@ -13,4 +13,4 @@ menu_icon: "dark"
 
 <h1>Iniciativa dARK</h1>
 
-<p>Esta pagina introduz a iniciativa dARK e seu escopo.</p>
+<p>Esta página apresenta a iniciativa dARK e seu escopo.</p>

@@ -22,10 +22,10 @@ bundle _2.3.26_ exec jekyll serve --livereload --config _config.yml,_config_gith
 
 Abrir en: `http://127.0.0.1:4000`
 
-Para simular GitHub Pages en `https://lmatas.github.io/lareferencia-site/`, usa el build con `_config_github.yml`. Ese archivo fija:
+Para simular GitHub Pages en `https://lmatas.github.io/`, usa el build con `_config_github.yml`. Ese archivo fija:
 
 - `url: https://lmatas.github.io`
-- `baseurl: /lareferencia-site`
+- `baseurl:`
 
 ## Ejecutar con Docker (recomendado)
 
@@ -48,18 +48,18 @@ bundle _2.3.26_ exec jekyll build --config _config.yml,_config_github.yml
 
 1. Edita identidad del sitio en `_config.yml` y `_config_github.yml`.
    `_config.yml` queda neutral para desarrollo local y `_config_github.yml` contiene la configuración de despliegue en GitHub Pages.
-2. Reemplaza contenido en `_pages`, `_posts`, `_news`, `_events` y `_home_cards`.
+2. Reemplaza contenido en `_pages`, `_posts`, `_news` y `_home_cards`.
 3. Ajusta la paleta en `_data/theme.yml` (archivo centralizado de colores).
 4. Ajusta estilos en `assets/main.scss`.
 5. (Opcional) agrega tu `CNAME` si usarás dominio personalizado.
 
 ## Modelo de contenido
 
-El template ahora soporta cuatro fuentes editoriales:
+El template ahora soporta tres fuentes editoriales:
 
 - `_posts/<lang>`: blog legacy por idioma.
 - `_news/<lang>`: noticias (`output: true`).
-- `_events/<lang>`: eventos (`output: true`).
+- `_members/<lang>`: miembros o nodos nacionales (`output: true`).
 - `_home_cards/<lang>`: tarjetas para home (`output: false`).
 
 La home es componible por idioma con schema:
@@ -101,7 +101,6 @@ Tipos soportados:
 
 - `post`
 - `news`
-- `event`
 - `home_card`
 
 ## Paleta de colores

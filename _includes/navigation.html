@@ -3,13 +3,17 @@
 <ul class="lr-main-nav">
   {% for item in nav.main_nav %}
     {% assign page_children = '' | split: '' %}
+    {% assign collection_children = '' | split: '' %}
     {% if item.page_menu %}
       {% assign page_children = site.pages | where: 'language', page.language | where: 'menu_parent', item.page_menu | sort: 'menu_order' %}
     {% endif %}
+    {% if item.collection_menu and site[item.collection_menu] %}
+      {% assign collection_children = site[item.collection_menu] | where: 'language', page.language | where: 'menu_parent', item.page_menu | sort: 'menu_order' %}
+    {% endif %}
 
     {% assign children = item.children %}
-    {% if page_children and page_children.size > 0 %}
-      {% assign children = page_children %}
+    {% if page_children and page_children.size > 0 or collection_children and collection_children.size > 0 %}
+      {% assign children = page_children | concat: collection_children | sort: 'menu_order' %}
     {% endif %}
 
     {% assign item_href = item.href %}
@@ -56,6 +60,10 @@
                   {% assign child_href = child.href %}
                   {% if child.url %}
                     {% assign child_href = child.url %}
+                  {% endif %}
+                  {% assign child_is_external = false %}
+                  {% if child.external or child_href contains '://' or child_href contains 'mailto:' %}
+                    {% assign child_is_external = true %}
                   {% endif %}
                   {% assign child_label = child.label | default: child.menu_label | default: child.title %}
                   {% assign child_summary_source = child.menu_summary | default: child.summary | default: child.excerpt | default: child.content | default: child.description %}
@@ -138,7 +146,12 @@
                         </span>
                       {% endunless %}
                       <div class="lr-mega-item-body">
-                        <a class="lr-mega-link-title" href="{{ child_href | relative_url }}">{{ child_label }}</a>
+                        <a
+                          class="lr-mega-link-title"
+                          href="{% if child_is_external %}{{ child_href }}{% else %}{{ child_href | relative_url }}{% endif %}"
+                          {% if child_is_external %}target="_blank" rel="noopener"{% endif %}>
+                          {{ child_label }}
+                        </a>
                         {% if child_summary != blank %}
                           <p class="lr-mega-summary">{{ child_summary | truncate: 170 }}</p>
                         {% endif %}

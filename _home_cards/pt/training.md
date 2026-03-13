@@ -2,9 +2,9 @@
 title: "Capacitacao"
 language: pt
 language_reference: card-training
-summary: "Webinars e guias operacionais para equipes de repositorios."
-url: "/pt/events"
-cta_label: "Ver eventos"
+summary: "Novidades e guias operacionais para equipes de repositorios."
+url: "/pt/news"
+cta_label: "Ver noticias"
 featured: true
 order: 2
 published: true

@@ -1,16 +1,16 @@
 ---
 layout: page
-title: "Estadisticas de Uso"
-description: "Pagina de servicios"
+title: "Estadísticas de uso"
+description: "Página de servicios"
 language: es
 language_reference: services-usage-statistics
-published: true
+published: false
 menu_parent: services
 menu_order: 20
-menu_label: "Estadisticas de Uso"
+menu_label: "Estadísticas de uso"
 menu_icon: "stats"
 ---
 
-<h1>Estadisticas de Uso</h1>
+<h1>Estadísticas de uso</h1>
 
-<p>Esta pagina presenta estadisticas de uso e indicadores relacionados.</p>
+<p>Esta página presenta estadísticas de uso e indicadores relacionados.</p>

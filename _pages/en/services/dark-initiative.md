@@ -4,7 +4,7 @@ title: "dARK Initiative"
 description: "Service overview"
 language: en
 language_reference: services-dark-initiative
-published: true
+published: false
 menu_parent: services
 menu_order: 30
 menu_label: "dARK Initiative"

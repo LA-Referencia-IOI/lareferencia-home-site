@@ -1,12 +1,12 @@
 top_lang_strip:
   - code: es
-    label: Espanol
+    label: Español
     href: /es/home
   - code: en
     label: English
     href: /en/home
   - code: pt
-    label: Portugues
+    label: Português
     href: /pt/home
 
 read_more_label: Read more...
@@ -15,28 +15,62 @@ main_nav:
   - label: Services
     href: /en/services/platform-la-referencia
     match: /services/
-    page_menu: services
+    children:
+      - label: LA Referencia Platform
+        href: /en/services/platform-la-referencia
+        summary: Learn more about the software used to harvest data from the national nodes
+        menu_icon: search
+      - label: Usage Statistics
+        href: https://ustats.lareferencia.info/en/home
+        summary: Discover how our platform provides access to usage data from the repositories across the network
+        menu_icon: stats
+        external: true
+      - label: dARK
+        href: https://www.dark-pid.net/en/home
+        summary: Explore how this tool was developed to assign Persistent Identifiers
+        menu_icon: dark
+        external: true
+      - label: Project LA Referencia/Lyrasis DSpace
+        href: https://dspace.lareferencia.info/
+        summary: Learn about the initiative designed to strengthen the adoption, use, and updating of DSpace in Latin America and Spain.
+        menu_icon: db
+        external: true
     mega_title: Technology
-    mega_subtitle: Discover LA Referencia core technology services.
     cta:
-      label: Explore
-      href: /en/funders
+      label: Read more...
+      href: /en/alliances-and-projects/
     cta_title: Alliances and Projects
-    cta_text: Explore the initiatives we are building with partner organizations.
     cta_image: /assets/img/business-people-shaking-hands-together.jpg
 
   - label: Resources
-    href: /en/resources/guidelines
+    href: /en/news
     match: /resources/
+    matches:
+      - /news
     page_menu: resources
-    mega_title: Guides
-    mega_subtitle: Key implementation resources and policy references.
+    mega_title: Resources
+    mega_subtitle: News, surveys and newsletter subscription.
     cta:
-      label: Training Portal
-      href: /en/events
-    cta_title: Open Science Training Resources
-    cta_text: Learn from open and practical resources from the network.
+      label: Latest news
+      href: /en/news
+    cta_title: Open Science News
+    cta_text: Follow updates, launches and network announcements.
     cta_image: /assets/img/cloud-storage-banner-background-remixed-from-public-domain-by-nasa.jpg
+
+  - label: Members
+    href: /en/members/
+    matches:
+      - /members/
+      - /about/how-to-join
+    page_menu: members
+    mega_title: Members
+    mega_subtitle: National nodes and how to join the network.
+    cta:
+      label: Read more...
+      href: /en/members/benefits/
+    cta_title: Benefits
+    cta_text: Understand the value proposition of joining LA Referencia.
+    cta_image: /assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg
 
   - label: About
     href: /en/about/who-we-are
@@ -44,6 +78,7 @@ main_nav:
       - /about/who-we-are
       - /about/mission-vision
       - /about/history
+      - /about/strategic-plan
     page_menu: about
     mega_title: Organization
     mega_subtitle: Institutional information and how to participate.
@@ -54,32 +89,9 @@ main_nav:
     cta_text: Review our history, mission and regional governance model.
     cta_image: /assets/img/globe-internet-icon-line-connection-circuit-board.jpg
 
-  - label: Members
-    href: /en/about/national-nodes
-    matches:
-      - /about/national-nodes
-      - /about/how-to-join
-    page_menu: members
-    mega_title: Members
-    mega_subtitle: National nodes and how to join the network.
-    cta:
-      label: Read more...
-      href: /en/team
-    cta_title: Benefits
-    cta_text: Understand the value proposition of joining LA Referencia.
-    cta_image: /assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg
-
   - label: Contact
     href: /en/contact
     match: /contact
-
-  - label: News
-    href: /en/news
-    match: /news
-
-  - label: Events
-    href: /en/events
-    match: /events
 
 footer:
   brand_subtitle: Latin American and Spain Open Science Network

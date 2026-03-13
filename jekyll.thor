@@ -13,7 +13,7 @@ class Jekyll < Thor
     type = options[:type].to_s.downcase
 
     valid_languages = %w[en es pt]
-    valid_types = %w[post news event home_card]
+    valid_types = %w[post news home_card]
 
     abort("Please provide a title.") if title.empty?
     abort("Invalid language '#{language}'. Use: #{valid_languages.join(', ')}") unless valid_languages.include?(language)
@@ -38,7 +38,6 @@ class Jekyll < Thor
     case type
     when "post" then "_posts/#{language}/#{date}-#{slug}.md"
     when "news" then "_news/#{language}/#{slug}.md"
-    when "event" then "_events/#{language}/#{slug}.md"
     when "home_card" then "_home_cards/#{language}/#{slug}.md"
     end
   end
@@ -60,16 +59,6 @@ class Jekyll < Thor
       when "news"
         f.puts "title: \"#{escape(title)}\""
         f.puts "date: #{now.strftime('%Y-%m-%d %H:%M:%S %z')}"
-        f.puts "summary: \"\""
-        f.puts "language: #{language}"
-        f.puts "language_reference: #{slug}"
-        f.puts "published: true"
-      when "event"
-        f.puts "title: \"#{escape(title)}\""
-        f.puts "date: #{now.strftime('%Y-%m-%d %H:%M:%S %z')}"
-        f.puts "event_start: #{now.strftime('%Y-%m-%d')}"
-        f.puts "event_end: #{now.strftime('%Y-%m-%d')}"
-        f.puts "location: \"\""
         f.puts "summary: \"\""
         f.puts "language: #{language}"
         f.puts "language_reference: #{slug}"

@@ -4,7 +4,7 @@ title: "Guidelines"
 description: "Resource page"
 language: en
 language_reference: resources-guidelines
-published: true
+published: false
 menu_parent: resources
 menu_order: 10
 menu_label: "Guidelines"

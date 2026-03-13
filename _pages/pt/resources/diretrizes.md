@@ -1,10 +1,10 @@
 ---
 layout: page
 title: "Diretrizes"
-description: "Pagina de recursos"
+description: "Página de recursos"
 language: pt
 language_reference: resources-guidelines
-published: true
+published: false
 menu_parent: resources
 menu_order: 10
 menu_label: "Diretrizes"
@@ -13,4 +13,4 @@ menu_icon: "file-alt"
 
 <h1>Diretrizes</h1>
 
-<p>Esta pagina centraliza diretrizes e recomendacoes de implementacao.</p>
+<p>Esta página centraliza diretrizes e recomendações de implementação.</p>

@@ -1,42 +1,75 @@
 top_lang_strip:
   - code: es
-    label: Espanol
+    label: Español
     href: /es/home
   - code: en
     label: English
     href: /en/home
   - code: pt
-    label: Portugues
+    label: Português
     href: /pt/home
 
-read_more_label: Leer mas...
+read_more_label: Leer más...
 
 main_nav:
   - label: Servicios
     href: /es/services/plataforma-la-referencia
     match: /services/
-    page_menu: services
-    mega_title: Tecnologia
-    mega_subtitle: Conozca los servicios tecnologicos de LA Referencia.
+    children:
+      - label: Plataforma LA Referencia
+        href: /es/services/plataforma-la-referencia
+        summary: Conozca más sobre el software utilizado para recopilar datos de los nodos nacionales.
+        menu_icon: search
+      - label: Estadísticas de Uso
+        href: https://ustats.lareferencia.info/es/home
+        summary: Descubra cómo nuestra plataforma brinda acceso a los datos de uso de los repositorios en toda la red.
+        menu_icon: stats
+        external: true
+      - label: dARK
+        href: https://www.dark-pid.net/es/home
+        summary: Explore cómo se desarrolló esta herramienta para asignar identificadores persistentes.
+        menu_icon: dark
+        external: true
+      - label: Proyecto LA Referencia/Lyrasis DSpace
+        href: https://dspace.lareferencia.info/pt/
+        menu_icon: db
+        external: true
+    mega_title: Tecnología
     cta:
-      label: Explorar
-      href: /es/funders
+      label: Leer más...
+      href: /es/alianzas-y-proyectos/
     cta_title: Alianzas y Proyectos
-    cta_text: Explore las iniciativas en las que estamos trabajando con diversas organizaciones.
     cta_image: /assets/img/business-people-shaking-hands-together.jpg
 
   - label: Recursos
-    href: /es/resources/directrices
+    href: /es/news
     match: /resources/
+    matches:
+      - /news
     page_menu: resources
-    mega_title: Guias
-    mega_subtitle: Recursos para implementacion, normativas y referencia.
+    mega_title: Recursos
+    mega_subtitle: Noticias, relevamientos y suscripción institucional.
     cta:
-      label: Ir a capacitarse
-      href: /es/events
-    cta_title: Recursos de Capacitacion en Ciencia Abierta
-    cta_text: Capacitate con recursos abiertos y gratuitos de la red.
+      label: Últimas noticias
+      href: /es/news
+    cta_title: Noticias de Ciencia Abierta
+    cta_text: Sigue novedades, lanzamientos y anuncios de la red.
     cta_image: /assets/img/cloud-storage-banner-background-remixed-from-public-domain-by-nasa.jpg
+
+  - label: Miembros
+    href: /es/miembros/
+    matches:
+      - /miembros/
+      - /about/como-ser-parte
+    page_menu: members
+    mega_title: Miembros
+    mega_subtitle: Integración en la red y nodos nacionales.
+    cta:
+      label: Leer más...
+      href: /es/miembros/beneficios/
+    cta_title: Beneficios
+    cta_text: Conozca la propuesta de valor de ser parte de LA Referencia.
+    cta_image: /assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg
 
   - label: Acerca de
     href: /es/about/quienes-somos
@@ -44,45 +77,24 @@ main_nav:
       - /about/quienes-somos
       - /about/mision-vision
       - /about/historia
+      - /about/plan-estrategico
+      - /about/representantes
     page_menu: about
-    mega_title: Organizacion
-    mega_subtitle: Informacion institucional y como participar.
+    mega_title: Organización
+    mega_subtitle: Información institucional y cómo participar.
     cta:
       label: Ver trayectoria
       href: /es/about/mision-vision
     cta_title: Trayectoria Institucional
-    cta_text: Revise nuestra historia, mision y modelo de gobernanza regional.
+    cta_text: Revise nuestra historia, misión y modelo de gobernanza regional.
     cta_image: /assets/img/globe-internet-icon-line-connection-circuit-board.jpg
-
-  - label: Miembros
-    href: /es/about/nodos-nacionales
-    matches:
-      - /about/nodos-nacionales
-      - /about/como-ser-parte
-    page_menu: members
-    mega_title: Miembros
-    mega_subtitle: Integracion en la red y nodos nacionales.
-    cta:
-      label: Leer mas...
-      href: /es/team
-    cta_title: Beneficios
-    cta_text: Conozca la propuesta de valor de ser parte de LA Referencia.
-    cta_image: /assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg
 
   - label: Contacto
     href: /es/contact
     match: /contact
 
-  - label: Noticias
-    href: /es/news
-    match: /news
-
-  - label: Eventos
-    href: /es/events
-    match: /events
-
 footer:
-  brand_subtitle: Red Latinoamericana y de Espana de Ciencia Abierta
+  brand_subtitle: Red Latinoamericana y de España de Ciencia Abierta
   legal_text: A menos que se indique lo contrario, todos los materiales producidos por LA Referencia tienen una licencia CC 4.0 Internacional
   social:
     - label: Facebook

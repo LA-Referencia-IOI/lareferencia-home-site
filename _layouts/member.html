@@ -1,0 +1,198 @@
+---
+layout: default
+---
+{% assign home_label = "Home" %}
+{% assign nodes_label = "Nodes" %}
+{% case page.language %}
+  {% when "es" %}
+    {% assign home_label = "Inicio" %}
+    {% assign nodes_label = "Nodos" %}
+  {% when "pt" %}
+    {% assign home_label = "Início" %}
+    {% assign nodes_label = "Nós" %}
+{% endcase %}
+
+{% assign members_index = '/es/miembros/' %}
+{% case page.language %}
+  {% when 'en' %}
+    {% assign members_index = '/en/members/' %}
+  {% when 'pt' %}
+    {% assign members_index = '/pt/membros/' %}
+{% endcase %}
+
+{% assign has_structured_member = false %}
+{% if page.member_tabs or page.node_heading or page.stats_cards or page.contact_cards %}
+  {% assign has_structured_member = true %}
+{% endif %}
+<article class="post member-page{% if has_structured_member %} has-structured-member{% endif %}">
+  <nav class="member-page-breadcrumbs" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}">{{ home_label }}</a>
+    <span>»</span>
+    <a href="{{ members_index | relative_url }}">{{ nodes_label }}</a>
+    <span>»</span>
+    <span aria-current="page">{{ page.title | escape }}</span>
+  </nav>
+
+  <header class="post-header member-page-hero">
+    <div class="member-page-hero-copy">
+      <div class="member-page-eyebrow">
+        <div class="member-page-flag">
+          {% if page.flag_image %}
+            <img src="{{ page.flag_image | relative_url }}" alt="{{ page.title }}">
+          {% else %}
+            <span class="member-card-badge">{{ page.country_code }}</span>
+          {% endif %}
+        </div>
+        <span class="member-page-country">{{ page.title | escape }}</span>
+      </div>
+
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+
+      {% if page.node_name %}
+        <p class="member-card-node">{{ page.node_name }}</p>
+      {% endif %}
+
+      {% if page.summary %}
+        <p class="member-page-summary">{{ page.summary }}</p>
+      {% endif %}
+    </div>
+
+    <div class="member-page-hero-visual">
+      {% if page.hero_image %}
+        <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title }}">
+      {% elsif page.flag_image %}
+        <img src="{{ page.flag_image | relative_url }}" alt="{{ page.title }}">
+      {% endif %}
+    </div>
+  </header>
+
+  {% if page.member_tabs %}
+    <section class="member-tabs" aria-label="Información del nodo">
+      <div class="member-tabs-nav" role="tablist" aria-label="Secciones">
+        {% for tab in page.member_tabs %}
+          <button
+            id="member-tab-{{ forloop.index }}"
+            class="member-tab-button{% if forloop.first %} is-active{% endif %}"
+            type="button"
+            role="tab"
+            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+            aria-controls="member-panel-{{ forloop.index }}"
+            data-tab-target="member-panel-{{ forloop.index }}">
+            {{ tab.title }}
+          </button>
+        {% endfor %}
+      </div>
+
+      <div class="member-tabs-panels">
+        {% for tab in page.member_tabs %}
+          <section
+            id="member-panel-{{ forloop.index }}"
+            class="member-tab-panel{% unless forloop.first %} is-hidden{% endunless %}"
+            role="tabpanel"
+            aria-labelledby="member-tab-{{ forloop.index }}">
+            {{ tab.content_html }}
+          </section>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if page.node_heading or page.node_copy %}
+    <section class="member-node-block">
+      <div class="member-node-copy">
+        {% if page.node_heading %}
+          <p class="member-node-eyebrow">{{ page.node_heading }}</p>
+        {% endif %}
+        {% if page.node_subheading %}
+          <h2 class="member-node-title">{{ page.node_subheading }}</h2>
+        {% endif %}
+        {% if page.node_copy %}
+          <p class="member-node-text">{{ page.node_copy }}</p>
+        {% endif %}
+      </div>
+      {% if page.node_image %}
+        <div class="member-node-visual">
+          <img src="{{ page.node_image | relative_url }}" alt="{{ page.node_subheading | default: page.title }}">
+        </div>
+      {% endif %}
+    </section>
+  {% endif %}
+
+  {% if page.node_secondary_copy %}
+    <section class="member-node-supporting">
+      <p>{{ page.node_secondary_copy }}</p>
+    </section>
+  {% endif %}
+
+  {% if page.stats_cards %}
+    <section class="member-stats-block">
+      {% if page.stats_heading %}
+        <h2 class="member-section-title">{{ page.stats_heading }}</h2>
+      {% endif %}
+      <div class="member-stats-grid">
+        {% for card in page.stats_cards %}
+          <article class="member-stat-card">
+            <p class="member-stat-value">{{ card.value }}</p>
+            <h3 class="member-stat-title">{{ card.title }}</h3>
+            <p class="member-stat-link">{{ card.link_text }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if page.contact_cards %}
+    <section class="member-contact-band">
+      {% if page.contact_question %}
+        <h2 class="member-contact-question">{{ page.contact_question }}</h2>
+      {% endif %}
+      {% if page.contact_prompt %}
+        <p class="member-contact-prompt">{{ page.contact_prompt }}</p>
+      {% endif %}
+      <div class="member-contact-grid">
+        {% for card in page.contact_cards %}
+          <article class="member-contact-card">
+            <h3 class="member-contact-title">
+              {% if card.href %}
+                <a href="{{ card.href }}">{{ card.title }}</a>
+              {% else %}
+                {{ card.title }}
+              {% endif %}
+            </h3>
+            <p class="member-contact-description">{{ card.description }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if content != blank %}
+    <div class="post-content member-page-content">
+      {{ content }}
+    </div>
+  {% endif %}
+</article>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabGroups = document.querySelectorAll(".member-tabs");
+    tabGroups.forEach((group) => {
+      const buttons = Array.from(group.querySelectorAll(".member-tab-button"));
+      const panels = Array.from(group.querySelectorAll(".member-tab-panel"));
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const targetId = button.getAttribute("data-tab-target");
+          buttons.forEach((btn) => {
+            const isActive = btn === button;
+            btn.classList.toggle("is-active", isActive);
+            btn.setAttribute("aria-selected", isActive ? "true" : "false");
+          });
+          panels.forEach((panel) => {
+            panel.classList.toggle("is-hidden", panel.id !== targetId);
+          });
+        });
+      });
+    });
+  });
+</script>

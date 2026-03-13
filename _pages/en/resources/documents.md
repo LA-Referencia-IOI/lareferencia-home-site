@@ -4,7 +4,7 @@ title: "Documents"
 description: "Resource page"
 language: en
 language_reference: resources-documents
-published: true
+published: false
 menu_parent: resources
 menu_order: 30
 menu_label: "Documents"

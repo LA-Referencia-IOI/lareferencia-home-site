@@ -8,55 +8,55 @@ published: true
 order: 3
 ---
 
-<div class="contact-header">
-  <h1>Contato</h1>
-  <p class="lead-text">Use esta página como seção de contato reutilizável para o seu site.</p>
-</div>
+{% assign nav = site.data.navigation[page.language] %}
 
-<h2 class="custom-heading">Fale Conosco</h2>
+<div class="contact-page">
+  <header class="contact-page-header">
+    <p class="contact-page-eyebrow">Contato</p>
+    <h1 class="contact-page-title">Para dúvidas, novas ideias ou pedidos de colaboração, escreva para nós</h1>
+    <p class="contact-page-lead">Para entrar em contato, envie-nos uma mensagem por e-mail e compartilhe o contexto da sua consulta, iniciativa ou pedido de colaboração.</p>
+  </header>
 
-<div class="contact-card">
-  <div class="contact-card-background"></div>
-  <div class="contact-card-content">
-    <div class="contact-icon-container">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="envelope-icon">
-        <rect x="2" y="4" width="20" height="16" rx="2" />
-        <path d="M22,5L12,13L2,5" />
-        <line x1="2" y1="19" x2="7" y2="14" />
-        <line x1="17" y1="14" x2="22" y2="19" />
-      </svg>
-    </div>
-    <h3>Email</h3>
-    <p class="contact-description">Substitua este endereço pelo email real da sua equipe.</p>
-    <a href="mailto:hello@example.com" class="contact-email-link">
-      <span>hello@example.com</span>
-    </a>
-  </div>
-</div>
+  <section class="contact-page-grid">
+    <article class="contact-panel" id="contato-com-a-rede">
+      <p class="contact-panel-label">Informação institucional</p>
+      <h2>Como entrar em contato</h2>
+      <p>Para entrar em contato, envie-nos uma mensagem por e-mail.</p>
+      <p>Você também pode escrever para a sede central da RedCLARA no Uruguai, localizada na Rambla República de México 6125, em Montevidéu.</p>
+      <address class="contact-address">
+        Rambla República de México 6125<br>
+        Montevidéu, Uruguai
+      </address>
+    </article>
 
-<h2 class="custom-heading" id="colaborar-com-o-template">Trabalhar com Este Template</h2>
+    <article class="contact-panel">
+      <p class="contact-panel-label">Canal principal</p>
+      <h2>E-mail de contato</h2>
+      <a class="contact-mail-link" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <p>Este canal concentra consultas gerais, acordos de parceria, suporte institucional e novas ideias para a LA Referencia.</p>
+      <div class="contact-actions">
+        <a class="lr-btn lr-btn-solid" href="mailto:{{ site.email }}">Enviar email</a>
+      </div>
+      <p class="contact-page-note">Se você escreve em nome de uma instituição, inclua o nome do nó, repositório ou projeto no assunto da mensagem.</p>
+    </article>
 
-<div class="funding-info">
-  <p>Este starter inclui páginas multilíngues, posts, navegação e estilos responsivos. Você pode adaptá-lo rapidamente substituindo textos e metadados.</p>
-
-  <h3 class="custom-heading-secondary">Primeiros passos recomendados</h3>
-  <ul>
-    <li>Atualizar a identidade do site em <code>_config.yml</code> e <code>_config_github.yml</code></li>
-    <li>Substituir páginas e posts com o conteúdo do seu projeto</li>
-    <li>Adicionar suas imagens, links e canais de contato</li>
-  </ul>
-
-  <div class="note-container">
-    <div class="note-header">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="10"></circle>
-        <line x1="12" y1="8" x2="12" y2="12"></line>
-        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-      </svg>
-      <h4>Dica</h4>
-    </div>
-    <div class="note-content">
-      <p>Mantenha as versões por idioma alinhadas usando o mesmo <code>language_reference</code> em páginas e posts equivalentes.</p>
-    </div>
-  </div>
+    <article class="contact-panel contact-panel-social">
+      <p class="contact-panel-label">Canais oficiais</p>
+      <h2>Siga e escreva para nós</h2>
+      <p>Você também pode nos encontrar em nossos canais oficiais de redes sociais.</p>
+      <ul class="contact-social-grid">
+        {% for item in nav.footer.social %}
+          <li>
+            <a class="contact-social-link" href="{{ item.href }}" target="_blank" rel="noopener">
+              <span class="contact-social-mark" aria-hidden="true">{{ item.glyph | default: item.label | slice: 0, 2 }}</span>
+              <span class="contact-social-copy">
+                <strong>{{ item.label }}</strong>
+                <span>Abrir canal oficial</span>
+              </span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </article>
+  </section>
 </div>

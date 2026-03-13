@@ -2,9 +2,16 @@
   <h2>{{ include.section.title }}</h2>
   <div class="lr-logo-grid">
     {% for item in include.section.items %}
-      <a class="lr-logo-item" href="{{ item.url | default: '#' }}" aria-label="{{ item.name }}">
-        <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}">
-      </a>
+      {% assign item_url = item.url | default: '' %}
+      {% if item_url != blank %}
+        <a class="lr-logo-item" href="{% if item_url contains '://' %}{{ item_url }}{% else %}{{ item_url | relative_url }}{% endif %}" aria-label="{{ item.name }}">
+          <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}">
+        </a>
+      {% else %}
+        <div class="lr-logo-item" aria-label="{{ item.name }}">
+          <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}">
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
 </section>

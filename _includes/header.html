@@ -50,17 +50,44 @@
     const menuToggle = document.querySelector('.menu-toggle');
     const siteNav = document.querySelector('.lr-site-nav');
     const megaItems = siteNav ? siteNav.querySelectorAll('.lr-main-item.has-mega') : [];
+    const closeDelay = 1000;
+    const closeTimers = new WeakMap();
+
+    const cancelScheduledClose = function (item) {
+      const timerId = closeTimers.get(item);
+      if (timerId) {
+        window.clearTimeout(timerId);
+        closeTimers.delete(item);
+      }
+    };
+
+    const closeMegaItem = function (item) {
+      cancelScheduledClose(item);
+      item.classList.remove('open');
+      const trigger = item.querySelector('.lr-main-link-mega');
+      if (trigger) {
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+    };
+
+    const scheduleClose = function (item) {
+      if (window.innerWidth <= 992) {
+        return;
+      }
+      cancelScheduledClose(item);
+      const timerId = window.setTimeout(function () {
+        closeMegaItem(item);
+      }, closeDelay);
+      closeTimers.set(item, timerId);
+    };
 
     const closeAllMega = function (exceptItem) {
       megaItems.forEach(item => {
         if (exceptItem && item === exceptItem) {
+          cancelScheduledClose(item);
           return;
         }
-        item.classList.remove('open');
-        const trigger = item.querySelector('.lr-main-link-mega');
-        if (trigger) {
-          trigger.setAttribute('aria-expanded', 'false');
-        }
+        closeMegaItem(item);
       });
     };
 
@@ -83,6 +110,7 @@
           return;
         }
         event.preventDefault();
+        cancelScheduledClose(item);
         const isOpen = item.classList.contains('open');
         closeAllMega(item);
         item.classList.toggle('open', !isOpen);
@@ -93,9 +121,14 @@
         if (window.innerWidth <= 992) {
           return;
         }
+        cancelScheduledClose(item);
         closeAllMega(item);
         item.classList.add('open');
         trigger.setAttribute('aria-expanded', 'true');
+      });
+
+      item.addEventListener('mouseleave', function () {
+        scheduleClose(item);
       });
     });
 

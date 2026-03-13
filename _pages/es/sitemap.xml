@@ -67,27 +67,6 @@ sitemap:
     {%- endunless %}
   {%- endfor %}
 
-  {%- assign event_items = site.events | sort: 'event_start' | where: 'language', page.language | where: 'published', true %}
-
-  {%- for item in event_items %}
-    {%- unless item.sitemap.excluded == true %}
-    <url>
-      <loc>{{ item.url | relative_url }}</loc>
-
-      {%- if item.sitemap.lastmod %}
-        {%- assign lastmod = item.sitemap.lastmod | date: '%Y-%m-%d' %}
-      {%- elsif item.date %}
-        {%- assign lastmod = item.date | date_to_xmlschema %}
-      {%- else %}
-        {%- assign lastmod = site.time | date_to_xmlschema %}
-      {%- endif %}
-      <lastmod>{{ lastmod }}</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.6</priority>
-    </url>
-    {%- endunless %}
-  {%- endfor %}
-
   {%- assign pages = site.pages | where: 'language', page.language %}
 
   {%- for page in pages %}

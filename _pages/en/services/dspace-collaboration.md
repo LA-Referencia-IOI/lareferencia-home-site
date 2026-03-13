@@ -4,7 +4,7 @@ title: "DSpace Collaboration"
 description: "Service overview"
 language: en
 language_reference: services-dspace-collaboration
-published: true
+published: false
 menu_parent: services
 menu_order: 40
 menu_label: "DSpace Collaboration"
