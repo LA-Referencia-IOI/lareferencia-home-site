@@ -4,7 +4,7 @@ title: "Representantes"
 description: "Autoridades e instâncias de representação da LA Referencia"
 language: pt
 language_reference: representatives
-published: false
+published: true
 menu_parent: about
 menu_order: 50
 menu_label: "Representantes"

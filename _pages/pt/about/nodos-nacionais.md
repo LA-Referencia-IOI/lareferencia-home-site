@@ -14,7 +14,9 @@ menu_icon: "none"
 
 <h1>Nós Nacionais</h1>
 
-<p>A LA Referencia opera como uma rede federada baseada em nós nacionais. Cada nó coordena a interoperabilidade de repositórios e a infraestrutura de ciência aberta em seu país.</p>
+<p>A LA Referencia é atualmente formada por dez países latino-americanos (Argentina, Brasil, Chile, Colômbia, Costa Rica, Equador, Panamá, Peru e Uruguai) e um país europeu (Espanha). Esses países contam com nós nacionais que, por sua vez, reúnem diversos repositórios locais, principalmente universitários.</p>
+
+<p>Seguindo os padrões técnicos da LA Referencia, as redes de cada país funcionam como a ponte efetiva para integrar conteúdos ao Buscador de documentos científicos. Em vários países os nós são operados pelo organismo nacional de ciência e tecnologia, e em outros essa operação é delegada a um consórcio de universidades ou a uma rede acadêmica.</p>
 
 {% assign member_nodes = site.members | where: "language", page.language | where: "published", true | sort: "menu_order" %}
 
@@ -38,3 +40,7 @@ menu_icon: "none"
     </article>
   {% endfor %}
 </div>
+
+<h2>Seu país não faz parte da LA Referencia?</h2>
+
+<p>Os países que fazem parte da LA Referencia assinaram acordos técnicos e organizacionais por meio de seus organismos públicos de ciência e tecnologia, juntamente com a RedCLARA. Se o seu país ainda não faz parte da rede, convidamos você a realizar as articulações com essas instituições e incentivá-las a aderir, demonstrando a importância dessa participação. Entre em contato conosco para que possamos apoiá-lo nesse processo.</p>

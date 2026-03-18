@@ -14,7 +14,9 @@ menu_icon: "none"
 
 <h1>National Nodes</h1>
 
-<p>LA Referencia is built as a federated network of national nodes. Each node coordinates repository interoperability and open science infrastructure in its country.</p>
+<p>LA Referencia currently brings together ten Latin American countries (Argentina, Brazil, Chile, Colombia, Costa Rica, Ecuador, Panama, Peru and Uruguay) and one European country (Spain). These countries have national nodes that in turn group a range of local repositories, mainly from universities.</p>
+
+<p>Following LA Referencia technical standards, each country's network acts as the effective bridge to integrate contents into the scientific documents Search Engine. In several countries the nodes are operated by the national science and technology agency, while in others the operation is delegated to a university consortium or academic network.</p>
 
 {% assign member_nodes = site.members | where: "language", page.language | where: "published", true | sort: "menu_order" %}
 
@@ -38,3 +40,7 @@ menu_icon: "none"
     </article>
   {% endfor %}
 </div>
+
+<h2>Is your country not part of LA Referencia?</h2>
+
+<p>The countries that are part of LA Referencia have signed technical and organizational agreements through their public science and technology institutions, together with RedCLARA. If your country is not yet part of the network, we invite you to work with those institutions and encourage them to join by demonstrating the value of participation. Contact us and we can support you through that process.</p>

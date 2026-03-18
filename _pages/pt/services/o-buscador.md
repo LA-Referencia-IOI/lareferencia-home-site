@@ -4,7 +4,7 @@ title: "O Buscador"
 description: "Como funciona o buscador da LA Referencia"
 language: pt
 language_reference: services-search
-published: false
+published: true
 menu_parent: services
 menu_order: 20
 menu_label: "O Buscador"

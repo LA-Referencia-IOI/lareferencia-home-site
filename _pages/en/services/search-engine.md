@@ -4,7 +4,7 @@ title: "Search Engine"
 description: "How the LA Referencia search engine works"
 language: en
 language_reference: services-search
-published: false
+published: true
 menu_parent: services
 menu_order: 20
 menu_label: "Search Engine"

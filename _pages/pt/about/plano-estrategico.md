@@ -4,7 +4,7 @@ title: "Plano Estratégico"
 description: "Missão e objetivos específicos da LA Referencia"
 language: pt
 language_reference: strategic-plan
-published: false
+published: true
 menu_parent: about
 menu_order: 40
 menu_label: "Plano Estratégico"
