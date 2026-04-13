@@ -5,29 +5,6 @@
 {% endif %}
 
 <header class="site-header lr-site-header">
-  <div class="lr-top-strip">
-    <div class="wrapper lr-top-strip-inner">
-      <div class="lr-top-strip-spacer"></div>
-      <ul class="lr-top-languages">
-        {% for item in nav.top_lang_strip %}
-          {% assign lang_url = nil %}
-          {% if localized_docs %}
-            {% assign lang_doc = localized_docs | where: 'language', item.code | first %}
-            {% if lang_doc %}
-              {% assign lang_url = lang_doc.url | relative_url %}
-            {% endif %}
-          {% endif %}
-          {% if lang_url == nil %}
-            {% assign lang_url = item.href | relative_url %}
-          {% endif %}
-          <li>
-            <a class="lr-top-language-link {% if page.language == item.code %}active{% endif %}" href="{{ lang_url }}">{{ item.label }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-
   <div class="wrapper lr-header-main">
     <a class="lr-brand" href="/{% if page.language == 'es' %}es{% elsif page.language == 'pt' %}pt{% else %}en{% endif %}/home">
       <img src="{{ '/assets/img/la-referencia-logo.png' | relative_url }}" alt="LA Referencia">

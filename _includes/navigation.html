@@ -178,4 +178,43 @@
       {% endif %}
     </li>
   {% endfor %}
+
+  <!-- Language Dropdown -->
+  <li class="lr-main-item has-mega">
+    <a class="lr-main-link lr-main-link-mega" href="#" aria-haspopup="true" aria-expanded="false" aria-label="Cambiar idioma">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="position:relative; top:4px;">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="2" y1="12" x2="22" y2="12"></line>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+      </svg>
+    </a>
+    <div class="lr-mega-panel">
+      <div class="lr-mega-grid" style="padding: 1.5rem; min-width: 150px;">
+        <ul class="lr-mega-links" style="grid-template-columns: 1fr;">
+          {% assign locale_nav = site.data.navigation[page.language] %}
+          {% for item in locale_nav.top_lang_strip %}
+            {% assign lang_url = nil %}
+            {% if localized_docs %}
+              {% assign lang_doc = localized_docs | where: 'language', item.code | first %}
+              {% if lang_doc %}
+                {% assign lang_url = lang_doc.url | relative_url %}
+              {% endif %}
+            {% endif %}
+            {% if lang_url == nil %}
+              {% assign lang_url = item.href | relative_url %}
+            {% endif %}
+            <li>
+              <article class="lr-mega-item no-icon">
+                <div class="lr-mega-item-body">
+                  <a class="lr-mega-link-title {% if page.language == item.code %}active{% endif %}" href="{{ lang_url }}" {% if page.language == item.code %}style="color: var(--primary-color); font-weight: 700;"{% endif %}>
+                    {{ item.label }}
+                  </a>
+                </div>
+              </article>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </li>
 </ul>

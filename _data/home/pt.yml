@@ -74,24 +74,24 @@ sections:
     body: "A LA Referencia é um agregador que coleta metadados dos repositórios dos nossos nós nacionais. Por esse motivo, não é possível depositar diretamente os seus resultados de pesquisa. No entanto, você pode encontrar as informações necessárias clicando no link a seguir."
     button_label: "Saiba mais"
     button_url: "/pt/about/como-participar"
-    image: "/assets/img/business-people-shaking-hands-together.jpg"
+    image: "/assets/img/faq.svg"
 
   - type: resources_cards
     title: "Navegue pelos nossos materiais de capacitação mais recentes"
     cards:
       - title: "Instalación y configuración básica de DSpace 7.5"
         summary: "Guillermo Esteban Murillo Goussen, técnico de LA Referencia explica el detalle sobre la instalación y configuración básica de DSpace 7.5."
-        image: "/assets/img/cloud-storage-banner-background-remixed-from-public-domain-by-nasa.jpg"
+        image: "/assets/img/resource1.svg"
         button_label: "Abrir recurso"
         button_url: "https://recursos.lareferencia.info/download/instalacion-y-configuracion-basica-de-dspace-7-5/"
       - title: "Acceso a los datos de producción científica financiados con fondos públicos: DATACIENCIA"
         summary: "Panelista: Carolina González."
-        image: "/assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg"
+        image: "/assets/img/resource2.svg"
         button_label: "Abrir recurso"
         button_url: "https://recursos.lareferencia.info/download/acceso-a-los-datos-de-produccion-cientifica-financiados-con-fondos-publicos-dataciencia/"
       - title: "Experiencias en la migración de repositorios institucionales DSpace"
         summary: "Ponente: Ariel Lira, PREBI-SEDICI, Universidad Nacional de La Plata, Argentina."
-        image: "/assets/img/globe-internet-icon-line-connection-circuit-board.jpg"
+        image: "/assets/img/resource3.svg"
         button_label: "Abrir recurso"
         button_url: "https://recursos.lareferencia.info/download/experiencias-en-la-migracion-de-repositorios-institucionales-dspace/"
 

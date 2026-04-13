@@ -1,16 +1,145 @@
-<section class="lr-resources wrapper">
-  <h2>{{ include.section.title }}</h2>
-  <div class="lr-resource-grid">
-    {% for card in include.section.cards %}
-      {% assign card_url = card.button_url | default: '#' %}
-      <article class="lr-resource-card">
-        <img src="{{ card.image | relative_url }}" alt="{{ card.title }}">
-        <div class="lr-resource-content">
-          <h3>{{ card.title }}</h3>
-          <p>{{ card.summary }}</p>
-          <a class="lr-btn lr-btn-outline" href="{% if card_url contains '://' %}{{ card_url }}{% else %}{{ card_url | relative_url }}{% endif %}">{{ card.button_label }}</a>
-        </div>
-      </article>
-    {% endfor %}
+<section class="lr-resources">
+  <div class="wrapper">
+    <h2>{{ include.section.title }}</h2>
+
+    <div class="lr-resource-scroller" id="lrr-scroller">
+      <div class="lr-resource-track" id="lrr-track">
+        {% for card in include.section.cards %}
+        {% assign card_url = card.button_url | default: '#' %}
+        <article class="lr-resource-card">
+          <div class="lr-resource-image-wrap">
+            <img src="{{ card.image | relative_url }}" alt="{{ card.title }}">
+          </div>
+          <div class="lr-resource-content">
+            <h3>{{ card.title }}</h3>
+            <p>{{ card.summary }}</p>
+            <a class="lr-btn lr-btn-outline"
+              href="{% if card_url contains '://' %}{{ card_url }}{% else %}{{ card_url | relative_url }}{% endif %}">{{
+              card.button_label }}</a>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="lr-resource-bullets" id="lrr-bullets">
+      {% assign max_bullet = include.section.cards.size | minus: 1 %}
+      {% if max_bullet >= 0 %}
+      {% for i in (0..max_bullet) %}
+      <button class="lr-resource-bullet{% if forloop.index0 == 1 %} active{% endif %}" data-index="{{ forloop.index0 }}"
+        aria-label="Slide {{ forloop.index }}"></button>
+      {% endfor %}
+      {% endif %}
+    </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    var scroller = document.getElementById('lrr-scroller');
+    var track = document.getElementById('lrr-track');
+    var bullets = document.querySelectorAll('#lrr-bullets .lr-resource-bullet');
+    var originalCards = Array.from(document.querySelectorAll('#lrr-track .lr-resource-card'));
+    if (!track || originalCards.length === 0) return;
+
+    var cardCount = originalCards.length;
+    
+    // Clone cards for infinite effect (pre + post)
+    originalCards.forEach(function(card) {
+      var clonePre = card.cloneNode(true);
+      clonePre.classList.add('is-clone');
+      track.insertBefore(clonePre, track.firstChild);
+      
+      var clonePost = card.cloneNode(true);
+      clonePost.classList.add('is-clone');
+      track.appendChild(clonePost);
+    });
+
+    var allCards = Array.from(track.querySelectorAll('.lr-resource-card'));
+    var currentIndex = cardCount + (cardCount > 1 ? 1 : 0); // Start at the "real" second card
+    var isTransitioning = false;
+
+    function updateCarousel(idx, transition) {
+      if (isTransitioning && !transition) return;
+      
+      track.style.transition = transition ? 'transform 0.8s cubic-bezier(0.25, 1, 0.5, 1)' : 'none';
+      
+      // Update classes on ALL cards based on proximity to center
+      allCards.forEach(function (c, i) {
+        c.classList.remove('is-active', 'is-prev', 'is-next');
+        if (i === idx) c.classList.add('is-active');
+        if (i === idx - 1) c.classList.add('is-prev');
+        if (i === idx + 1) c.classList.add('is-next');
+      });
+
+      // Update bullets based on real index
+      var realIdx = (idx - cardCount) % cardCount;
+      if (realIdx < 0) realIdx += cardCount;
+      bullets.forEach(function (b, i) {
+        b.classList.remove('active');
+        if (i === realIdx) b.classList.add('active');
+      });
+
+      // Calculate centering
+      var scrollerWidth = scroller.offsetWidth;
+      var cardWidth = allCards[idx].offsetWidth;
+      var cardOffset = allCards[idx].offsetLeft;
+      var targetX = (scrollerWidth / 2) - (cardOffset + cardWidth / 2);
+      
+      track.style.transform = 'translateX(' + targetX + 'px)';
+      currentIndex = idx;
+    }
+
+    function handleJump() {
+      var needsJump = false;
+      var newIdx = currentIndex;
+      if (currentIndex < cardCount) {
+        newIdx = currentIndex + cardCount;
+        needsJump = true;
+      } else if (currentIndex >= cardCount * 2) {
+        newIdx = currentIndex - cardCount;
+        needsJump = true;
+      }
+      if (!needsJump) return;
+
+      // Freeze child card transitions during the silent jump to prevent flash
+      allCards.forEach(function(c) { c.style.transition = 'none'; });
+      updateCarousel(newIdx, false);
+      // Double rAF: ensures the browser paints the no-transition state before re-enabling
+      requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+          allCards.forEach(function(c) { c.style.transition = ''; });
+        });
+      });
+    }
+
+    // Guard: only act on transitionend from the track itself, not bubbling from children
+    track.addEventListener('transitionend', function(e) {
+      if (e.target !== track) return;
+      handleJump();
+    });
+
+    bullets.forEach(function (bullet, i) {
+      bullet.addEventListener('click', function () {
+        updateCarousel(i + cardCount, true);
+      });
+    });
+
+    // Click en tarjeta prev → avanzar hacia ella
+    // Click en tarjeta next → avanzar hacia ella
+    track.addEventListener('click', function (e) {
+      var card = e.target.closest('.lr-resource-card');
+      if (!card) return;
+      var idx = allCards.indexOf(card);
+      if (idx === -1 || idx === currentIndex) return;
+      updateCarousel(idx, true);
+    });
+
+    window.addEventListener('resize', function() {
+      updateCarousel(currentIndex, false);
+    });
+
+    setTimeout(function() {
+      updateCarousel(currentIndex, false);
+    }, 100);
+  })();
+</script>
