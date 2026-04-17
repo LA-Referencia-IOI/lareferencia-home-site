@@ -4,20 +4,12 @@
       <h1>{{ include.section.title }}</h1>
       <p>{{ include.section.subtitle }}</p>
     </div>
-    <div class="lr-hero-map-wrap">
-      <div class="lr-hero-map-frame">
-        <img class="lr-hero-map" src="{{ include.section.map_image | relative_url }}" alt="Regional map">
-        {% for hotspot in include.section.hotspots %}
-          <span class="lr-hotspot" style="left: {{ hotspot.x }}%; top: {{ hotspot.y }}%;">{{ hotspot.label }}</span>
-        {% endfor %}
-      </div>
+    <div class="lr-hero-searchbox-wrap">
+      <div id="lareferencia-searchbox"></div>
+      <script
+        defer
+        src="https://cdn.jsdelivr.net/gh/lareferencia/lareferencia-search-widget@v0.0.2-lrsite/dist/lrw-searchbox.js"
+      ></script>
     </div>
-  </div>
-  <div class="wrapper lr-hero-widget-wrap">
-    <div id="lareferencia-searchbox"></div>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/gh/lareferencia/lareferencia-search-widget@v0.0.3-vufind/dist/lrw-searchbox.js"
-    ></script>
   </div>
 </section>

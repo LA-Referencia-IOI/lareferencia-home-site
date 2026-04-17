@@ -2,38 +2,12 @@ sections:
   - type: hero_map
     title: "LA Referencia is the Latin American and Spanish network for Open Science"
     subtitle: "LA Referencia supports national Open Science strategies in Latin America and Spain through its range of services."
-    map_image: "/assets/img/mapa2.png"
-    hotspots:
-      - label: "Panama"
-        x: 37
-        y: 33
-      - label: "Costa Rica"
-        x: 23
-        y: 39
-      - label: "Colombia"
-        x: 41
-        y: 41
-      - label: "Ecuador"
-        x: 30
-        y: 47
-      - label: "Peru"
-        x: 42
-        y: 57
-      - label: "Chile"
-        x: 41
-        y: 74
-      - label: "Argentina"
-        x: 46
-        y: 87
-      - label: "Brazil"
-        x: 66
-        y: 51
-      - label: "Uruguay"
-        x: 71
-        y: 78
-      - label: "Spain"
-        x: 84
-        y: 11
+
+  - type: explore_band
+    title: "Browse Open Access scientific publications"
+    placeholder: "Search publications"
+    button_label: "Explore Network"
+    subtitle: "Do not miss out on variants, browse Open Access scientific publications."
 
   - type: band_message
     text: "Browse Open Access scientific publications from Latin America and Spain"

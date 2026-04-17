@@ -2,38 +2,12 @@ sections:
   - type: hero_map
     title: "LA Referencia es la red latinoamericana y de España de Ciencia Abierta"
     subtitle: "LA Referencia, a través de sus servicios, apoya las estrategias nacionales de Ciencia Abierta en América Latina y España."
-    map_image: "/assets/img/mapa2.png"
-    hotspots:
-      - label: "Panamá"
-        x: 37
-        y: 33
-      - label: "Costa Rica"
-        x: 23
-        y: 39
-      - label: "Colombia"
-        x: 41
-        y: 41
-      - label: "Ecuador"
-        x: 30
-        y: 47
-      - label: "Perú"
-        x: 42
-        y: 57
-      - label: "Chile"
-        x: 41
-        y: 74
-      - label: "Argentina"
-        x: 46
-        y: 87
-      - label: "Brasil"
-        x: 66
-        y: 51
-      - label: "Uruguay"
-        x: 71
-        y: 78
-      - label: "España"
-        x: 84
-        y: 11
+
+  - type: explore_band
+    title: "Explore las publicaciones científicas en Acceso Abierto"
+    placeholder: "Buscar en las publicaciones"
+    button_label: "Explorar la Red"
+    subtitle: "No pierdas más con variantes, explore las publicaciones científicas en Acceso Abierto."
 
   - type: band_message
     text: "Explore las publicaciones científicas de América Latina y España en Acceso Abierto"
