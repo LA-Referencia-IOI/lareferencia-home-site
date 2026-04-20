@@ -2,38 +2,12 @@ sections:
   - type: hero_map
     title: "LA Referencia é a rede latino-americana e espanhola de Ciência Aberta"
     subtitle: "A LA Referencia dá suporte às estratégias nacionais de Ciência Aberta na América Latina e na Espanha por meio de sua gama de serviços."
-    map_image: "/assets/img/mapa2.png"
-    hotspots:
-      - label: "Panamá"
-        x: 37
-        y: 33
-      - label: "Costa Rica"
-        x: 23
-        y: 39
-      - label: "Colômbia"
-        x: 41
-        y: 41
-      - label: "Equador"
-        x: 30
-        y: 47
-      - label: "Peru"
-        x: 42
-        y: 57
-      - label: "Chile"
-        x: 41
-        y: 74
-      - label: "Argentina"
-        x: 46
-        y: 87
-      - label: "Brasil"
-        x: 66
-        y: 51
-      - label: "Uruguai"
-        x: 71
-        y: 78
-      - label: "Espanha"
-        x: 84
-        y: 11
+
+  - type: explore_band
+    title: "Explore as publicações científicas em Acesso Aberto"
+    placeholder: "Pesquisar nas publicações"
+    button_label: "Explorar a Rede"
+    subtitle: "Não perca mais com variantes, explore as publicações científicas em Acesso Aberto."
 
   - type: band_message
     text: "Navegue por publicações científicas em Acesso Aberto da América Latina e da Espanha"
@@ -74,24 +48,24 @@ sections:
     body: "A LA Referencia é um agregador que coleta metadados dos repositórios dos nossos nós nacionais. Por esse motivo, não é possível depositar diretamente os seus resultados de pesquisa. No entanto, você pode encontrar as informações necessárias clicando no link a seguir."
     button_label: "Saiba mais"
     button_url: "/pt/about/como-participar"
-    image: "/assets/img/business-people-shaking-hands-together.jpg"
+    image: "/assets/img/faq.svg"
 
   - type: resources_cards
     title: "Navegue pelos nossos materiais de capacitação mais recentes"
     cards:
       - title: "Instalación y configuración básica de DSpace 7.5"
         summary: "Guillermo Esteban Murillo Goussen, técnico de LA Referencia explica el detalle sobre la instalación y configuración básica de DSpace 7.5."
-        image: "/assets/img/cloud-storage-banner-background-remixed-from-public-domain-by-nasa.jpg"
+        image: "/assets/img/resource1.svg"
         button_label: "Abrir recurso"
         button_url: "https://recursos.lareferencia.info/download/instalacion-y-configuracion-basica-de-dspace-7-5/"
       - title: "Acceso a los datos de producción científica financiados con fondos públicos: DATACIENCIA"
         summary: "Panelista: Carolina González."
-        image: "/assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg"
+        image: "/assets/img/resource2.svg"
         button_label: "Abrir recurso"
         button_url: "https://recursos.lareferencia.info/download/acceso-a-los-datos-de-produccion-cientifica-financiados-con-fondos-publicos-dataciencia/"
       - title: "Experiencias en la migración de repositorios institucionales DSpace"
         summary: "Ponente: Ariel Lira, PREBI-SEDICI, Universidad Nacional de La Plata, Argentina."
-        image: "/assets/img/globe-internet-icon-line-connection-circuit-board.jpg"
+        image: "/assets/img/resource3.svg"
         button_label: "Abrir recurso"
         button_url: "https://recursos.lareferencia.info/download/experiencias-en-la-migracion-de-repositorios-institucionales-dspace/"
 

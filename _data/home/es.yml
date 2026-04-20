@@ -2,38 +2,12 @@ sections:
   - type: hero_map
     title: "LA Referencia es la red latinoamericana y de España de Ciencia Abierta"
     subtitle: "LA Referencia, a través de sus servicios, apoya las estrategias nacionales de Ciencia Abierta en América Latina y España."
-    map_image: "/assets/img/mapa2.png"
-    hotspots:
-      - label: "Panamá"
-        x: 37
-        y: 33
-      - label: "Costa Rica"
-        x: 23
-        y: 39
-      - label: "Colombia"
-        x: 41
-        y: 41
-      - label: "Ecuador"
-        x: 30
-        y: 47
-      - label: "Perú"
-        x: 42
-        y: 57
-      - label: "Chile"
-        x: 41
-        y: 74
-      - label: "Argentina"
-        x: 46
-        y: 87
-      - label: "Brasil"
-        x: 66
-        y: 51
-      - label: "Uruguay"
-        x: 71
-        y: 78
-      - label: "España"
-        x: 84
-        y: 11
+
+  - type: explore_band
+    title: "Explore las publicaciones científicas en Acceso Abierto"
+    placeholder: "Buscar en las publicaciones"
+    button_label: "Explorar la Red"
+    subtitle: "No pierdas más con variantes, explore las publicaciones científicas en Acceso Abierto."
 
   - type: band_message
     text: "Explore las publicaciones científicas de América Latina y España en Acceso Abierto"
@@ -74,24 +48,24 @@ sections:
     body: "LA Referencia es un agregador que cosecha metadata de los repositorios de nuestros nodos nacionales, por ese motivo no es posible depositar directamente sus resultados de investigación. No obstante, usted puede encontrar la información necesaria haciendo clic en el siguiente enlace."
     button_label: "Obtener información"
     button_url: "/es/about/como-ser-parte"
-    image: "/assets/img/business-people-shaking-hands-together.jpg"
+    image: "/assets/img/faq.svg"
 
   - type: resources_cards
     title: "Explore nuestros últimos recursos de capacitación"
     cards:
       - title: "Instalación y configuración básica de DSpace 7.5"
         summary: "Guillermo Esteban Murillo Goussen, técnico de LA Referencia, explica el detalle sobre la instalación y configuración básica de DSpace 7.5."
-        image: "/assets/img/cloud-storage-banner-background-remixed-from-public-domain-by-nasa.jpg"
+        image: "/assets/img/resource1.svg"
         button_label: "Ir al Recurso"
         button_url: "https://recursos.lareferencia.info/download/instalacion-y-configuracion-basica-de-dspace-7-5/"
       - title: "Acceso a los datos de producción científica financiados con fondos públicos: DATACIENCIA"
         summary: "Panelista: Carolina González."
-        image: "/assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg"
+        image: "/assets/img/resource2.svg"
         button_label: "Ir al Recurso"
         button_url: "https://recursos.lareferencia.info/download/acceso-a-los-datos-de-produccion-cientifica-financiados-con-fondos-publicos-dataciencia/"
       - title: "Experiencias en la migración de repositorios institucionales DSpace"
         summary: "Ponente: Ariel Lira, PREBI-SEDICI, Universidad Nacional de La Plata, Argentina."
-        image: "/assets/img/globe-internet-icon-line-connection-circuit-board.jpg"
+        image: "/assets/img/resource3.svg"
         button_label: "Ir al Recurso"
         button_url: "https://recursos.lareferencia.info/download/experiencias-en-la-migracion-de-repositorios-institucionales-dspace/"
 
@@ -99,22 +73,22 @@ sections:
     title: "Nuestros Nodos"
     items:
       - name: "Argentina"
-        logo: "/assets/img/arg.png"
+        logo: "https://flagcdn.com/ar.svg"
         url: "/es/miembros/argentina"
       - name: "Brasil"
-        logo: "/assets/img/br.png"
+        logo: "https://flagcdn.com/br.svg"
         url: "/es/miembros/brasil"
       - name: "Chile"
-        logo: "/assets/img/cl.png"
+        logo: "https://flagcdn.com/cl.svg"
         url: "/es/miembros/chile"
       - name: "Colombia"
-        logo: "/assets/img/co.png"
+        logo: "https://flagcdn.com/co.svg"
         url: "/es/miembros/colombia"
       - name: "Perú"
-        logo: "/assets/img/pe.png"
+        logo: "https://flagcdn.com/pe.svg"
         url: "/es/miembros/peru"
       - name: "Uruguay"
-        logo: "/assets/img/uy.png"
+        logo: "https://flagcdn.com/uy.svg"
         url: "/es/miembros/uruguay"
 
   - type: logos_grid
