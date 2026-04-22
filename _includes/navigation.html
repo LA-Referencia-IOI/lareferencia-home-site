@@ -2,183 +2,127 @@
 
 <ul class="lr-main-nav">
   {% for item in nav.main_nav %}
-    {% assign page_children = '' | split: '' %}
-    {% assign collection_children = '' | split: '' %}
-    {% if item.page_menu %}
-      {% assign page_children = site.pages | where: 'language', page.language | where: 'menu_parent', item.page_menu | sort: 'menu_order' %}
-    {% endif %}
-    {% if item.collection_menu and site[item.collection_menu] %}
-      {% assign collection_children = site[item.collection_menu] | where: 'language', page.language | where: 'menu_parent', item.page_menu | sort: 'menu_order' %}
-    {% endif %}
+  {% assign page_children = '' | split: '' %}
+  {% assign collection_children = '' | split: '' %}
+  {% if item.page_menu %}
+  {% assign page_children = site.pages | where: 'language', page.language | where: 'menu_parent', item.page_menu | sort:
+  'menu_order' %}
+  {% endif %}
+  {% if item.collection_menu and site[item.collection_menu] %}
+  {% assign collection_children = site[item.collection_menu] | where: 'language', page.language | where: 'menu_parent',
+  item.page_menu | sort: 'menu_order' %}
+  {% endif %}
 
-    {% assign children = item.children %}
-    {% if page_children and page_children.size > 0 or collection_children and collection_children.size > 0 %}
-      {% assign children = page_children | concat: collection_children | sort: 'menu_order' %}
-    {% endif %}
+  {% assign children = item.children %}
+  {% if page_children and page_children.size > 0 or collection_children and collection_children.size > 0 %}
+  {% assign children = page_children | concat: collection_children | sort: 'menu_order' %}
+  {% endif %}
 
-    {% assign item_href = item.href %}
-    {% if item_href == blank and children and children.size > 0 %}
-      {% assign first_child = children | first %}
-      {% assign item_href = first_child.url %}
-    {% endif %}
+  {% assign item_href = item.href %}
+  {% if item_href == blank and children and children.size > 0 %}
+  {% assign first_child = children | first %}
+  {% assign item_href = first_child.url %}
+  {% endif %}
 
-    {% assign is_active = false %}
-    {% if item_href and page.url == item_href %}
-      {% assign is_active = true %}
-    {% endif %}
-    {% if item.match and page.url contains item.match %}
-      {% assign is_active = true %}
-    {% endif %}
-    {% if item.matches %}
-      {% for match_item in item.matches %}
-        {% if page.url contains match_item %}
-          {% assign is_active = true %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+  {% assign is_active = false %}
+  {% if item_href and page.url == item_href %}
+  {% assign is_active = true %}
+  {% endif %}
+  {% if item.match and page.url contains item.match %}
+  {% assign is_active = true %}
+  {% endif %}
+  {% if item.matches %}
+  {% for match_item in item.matches %}
+  {% if page.url contains match_item %}
+  {% assign is_active = true %}
+  {% endif %}
+  {% endfor %}
+  {% endif %}
 
-    <li class="lr-main-item {% if children and children.size > 0 %}has-mega{% endif %} {% if is_active %}active{% endif %}">
-      <a
-        class="lr-main-link {% if children and children.size > 0 %}lr-main-link-mega{% endif %}"
-        href="{{ item_href | relative_url | default: '#' }}"
-        {% if children and children.size > 0 %}aria-haspopup="true" aria-expanded="false"{% endif %}>
-        {{ item.label }}
-      </a>
+  <li
+    class="lr-main-item {% if children and children.size > 0 %}has-mega{% endif %} {% if is_active %}active{% endif %}">
+    <a class="lr-main-link {% if children and children.size > 0 %}lr-main-link-mega{% endif %}"
+      href="{{ item_href | relative_url | default: '#' }}" {% if children and children.size> 0 %}aria-haspopup="true"
+      aria-expanded="false"{% endif %}>
+      {{ item.label }}
+    </a>
 
-      {% if children and children.size > 0 %}
-        <div class="lr-mega-panel">
-          <div class="lr-mega-grid">
-            <div class="lr-mega-list-wrap">
-              {% if item.mega_title or item.mega_subtitle %}
-                <header class="lr-mega-header">
-                  {% if item.mega_title %}<h3>{{ item.mega_title }}</h3>{% endif %}
-                  {% if item.mega_subtitle %}<p>{{ item.mega_subtitle }}</p>{% endif %}
-                </header>
-              {% endif %}
-              <ul class="lr-mega-links">
-                {% for child in children %}
-                  {% assign child_href = child.href %}
-                  {% if child.url %}
-                    {% assign child_href = child.url %}
-                  {% endif %}
-                  {% assign child_is_external = false %}
-                  {% if child.external or child_href contains '://' or child_href contains 'mailto:' %}
-                    {% assign child_is_external = true %}
-                  {% endif %}
-                  {% assign child_label = child.label | default: child.menu_label | default: child.title %}
-                  {% assign child_summary_source = child.menu_summary | default: child.summary | default: child.excerpt | default: child.content | default: child.description %}
-                  {% assign child_summary = child_summary_source | strip_html | strip_newlines | replace: '  ', ' ' | strip %}
-                  {% assign child_summary = child_summary | remove_first: child_label | strip %}
-                  {% if child_summary == blank and child.description %}
-                    {% assign child_summary = child.description | strip_html | strip_newlines | strip %}
-                  {% endif %}
-                  {% assign icon_key = child.menu_icon | default: 'generic' %}
-                  <li>
-                    <article class="lr-mega-item {% if icon_key == 'none' %}no-icon{% endif %}">
-                      {% unless icon_key == 'none' %}
-                        <span class="lr-mega-icon lr-mega-icon-{{ icon_key }}" aria-hidden="true">
-                          {% case icon_key %}
-                            {% when 'search' %}
-                              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                                <circle cx="10" cy="10" r="5.2"></circle>
-                                <line x1="13.9" y1="13.9" x2="20" y2="20"></line>
-                              </svg>
-                            {% when 'stats' %}
-                              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                                <line x1="7.2" y1="20" x2="7.2" y2="9"></line>
-                                <line x1="12" y1="20" x2="12" y2="5.4"></line>
-                                <line x1="16.8" y1="20" x2="16.8" y2="12.8"></line>
-                                <text x="9.8" y="8.4" font-size="4.4" fill="currentColor" stroke="none">1</text>
-                                <text x="14.4" y="18.5" font-size="4.4" fill="currentColor" stroke="none">9</text>
-                              </svg>
-                            {% when 'dark' %}
-                              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                                <circle cx="5" cy="6" r="1.4"></circle>
-                                <circle cx="19" cy="6" r="1.4"></circle>
-                                <circle cx="12" cy="12" r="1.4"></circle>
-                                <circle cx="5" cy="18" r="1.4"></circle>
-                                <circle cx="19" cy="18" r="1.4"></circle>
-                                <line x1="6.2" y1="6.8" x2="10.8" y2="11"></line>
-                                <line x1="17.8" y1="6.8" x2="13.2" y2="11"></line>
-                                <line x1="10.8" y1="13" x2="6.2" y2="17.2"></line>
-                                <line x1="13.2" y1="13" x2="17.8" y2="17.2"></line>
-                              </svg>
-                            {% when 'db' %}
-                              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                                <ellipse cx="12" cy="6" rx="6.5" ry="2.8"></ellipse>
-                                <path d="M5.5 6v4.7c0 1.5 2.9 2.8 6.5 2.8s6.5-1.3 6.5-2.8V6"></path>
-                                <path d="M5.5 10.7v4.7c0 1.5 2.9 2.8 6.5 2.8s6.5-1.3 6.5-2.8v-4.7"></path>
-                              </svg>
-                            {% when 'file-alt' %}
-                              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                                <path d="M6 3h8l4 4v14H6z"></path>
-                                <line x1="9" y1="12" x2="15" y2="12"></line>
-                                <line x1="9" y1="16" x2="15" y2="16"></line>
-                              </svg>
-                            {% when 'file-signature' %}
-                              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                                <path d="M6 3h8l4 4v14H6z"></path>
-                                <line x1="9" y1="12" x2="15" y2="12"></line>
-                                <path d="M9 16c1.1-1.4 1.9-1.7 2.6-.5.5.9 1.1 1.1 1.8.4l1.6-1.5"></path>
-                              </svg>
-                            {% when 'tags' %}
-                              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                                <path d="M11 5H6l-2 5 7 7 5-5-5-7z"></path>
-                                <circle cx="8" cy="8.5" r="1.1"></circle>
-                                <path d="M18 8h2l2 3-5 5-1.8-1.8"></path>
-                              </svg>
-                            {% when 'docs' %}
-                              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                                <path d="M6 3h8l4 4v14H6z"></path>
-                                <line x1="9" y1="12" x2="15" y2="12"></line>
-                                <line x1="9" y1="16" x2="15" y2="16"></line>
-                              </svg>
-                            {% when 'org' %}
-                              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                                <circle cx="12" cy="7" r="3"></circle>
-                                <path d="M5.5 19.2c1.6-3.2 4.3-4.7 6.5-4.7s4.9 1.5 6.5 4.7"></path>
-                              </svg>
-                            {% else %}
-                              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                                <circle cx="12" cy="12" r="5.5"></circle>
-                              </svg>
-                          {% endcase %}
-                        </span>
-                      {% endunless %}
-                      <div class="lr-mega-item-body">
-                        <a
-                          class="lr-mega-link-title"
-                          href="{% if child_is_external %}{{ child_href }}{% else %}{{ child_href | relative_url }}{% endif %}"
-                          {% if child_is_external %}target="_blank" rel="noopener"{% endif %}>
-                          {{ child_label }}
-                        </a>
-                        {% if child_summary != blank %}
-                          <p class="lr-mega-summary">{{ child_summary | truncate: 120 }}</p>
-                        {% endif %}
-                      </div>
-                    </article>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-          {% if item.cta %}
-            <footer class="lr-mega-footer">
-              <div class="lr-mega-footer-inner">
-                <span class="lr-mega-footer-text">{{ item.cta_title | default: item.label }}{% if item.cta_text %} — {{ item.cta_text }}{% endif %}</span>
-                <a class="lr-mega-cta" href="{{ item.cta.href }}">{{ item.cta.label }}</a>
-              </div>
-            </footer>
+    {% if children and children.size > 0 %}
+    <div class="lr-mega-panel">
+      <div class="lr-mega-grid">
+        <div class="lr-mega-list-wrap">
+          {% if item.mega_title or item.mega_subtitle %}
+          <header class="lr-mega-header">
+            {% if item.mega_title %}<h3>{{ item.mega_title }}</h3>{% endif %}
+            <div class="lr-mega-header-divider"></div>
+            {% comment %}{% if item.mega_subtitle %}<p>{{ item.mega_subtitle }}</p>{% endif %}{% endcomment %}
+          </header>
           {% endif %}
+          <ul class="lr-mega-links lr-mega-links-3col">
+            {% for child in children %}
+            {% assign child_href = child.href %}
+            {% if child.url %}
+            {% assign child_href = child.url %}
+            {% endif %}
+            {% assign child_is_external = false %}
+            {% if child.external or child_href contains '://' or child_href contains 'mailto:' %}
+            {% assign child_is_external = true %}
+            {% endif %}
+            {% assign child_label = child.label | default: child.menu_label | default: child.title %}
+            {% assign child_summary_source = child.menu_summary | default: child.summary | default: child.excerpt |
+            default: child.content | default: child.description %}
+            {% assign child_summary = child_summary_source | strip_html | strip_newlines | replace: ' ', ' ' | strip %}
+            {% assign child_summary = child_summary | remove_first: child_label | strip %}
+            {% if child_summary == blank and child.description %}
+            {% assign child_summary = child.description | strip_html | strip_newlines | strip %}
+            {% endif %}
+            {% assign icon_key = child.menu_icon | default: 'generic' %}
+            <li>
+              <article class="lr-mega-item no-icon">
+                {% comment %}
+                ICONS TEMPORARILY DISABLED — uncomment below to re-enable
+                {% unless icon_key == 'none' %}
+                <span class="lr-mega-icon lr-mega-icon-{{ icon_key }}" aria-hidden="true">
+                  <!-- icon SVG here -->
+                </span>
+                {% endunless %}
+                {% endcomment %}
+                <div class="lr-mega-item-body">
+                  <a class="lr-mega-link-title"
+                    href="{% if child_is_external %}{{ child_href }}{% else %}{{ child_href | relative_url }}{% endif %}"
+                    {% if child_is_external %}target="_blank" rel="noopener" {% endif %}>
+                    {{ child_label }}
+                  </a>
+                  {% if child_summary != blank %}
+                  <p class="lr-mega-summary">{{ child_summary | truncate: 120 }}</p>
+                  {% endif %}
+                </div>
+              </article>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
+      </div>
+      {% if item.cta %}
+      <footer class="lr-mega-footer">
+        <div class="lr-mega-footer-inner">
+          <span class="lr-mega-footer-text">{{ item.cta_title | default: item.label }}{% if item.cta_text %} — {{
+            item.cta_text }}{% endif %}</span>
+          <a class="lr-mega-cta" href="{{ item.cta.href }}">{{ item.cta.label }}</a>
+        </div>
+      </footer>
       {% endif %}
-    </li>
+    </div>
+    {% endif %}
+  </li>
   {% endfor %}
 
   <!-- Language Dropdown -->
   <li class="lr-main-item has-mega">
-    <a class="lr-main-link lr-main-link-mega" href="#" aria-haspopup="true" aria-expanded="false" aria-label="Cambiar idioma">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="position:relative; top:4px;">
+    <a class="lr-main-link lr-main-link-mega" href="#" aria-haspopup="true" aria-expanded="false"
+      aria-label="Cambiar idioma">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        style="position:relative;">
         <circle cx="12" cy="12" r="10"></circle>
         <line x1="2" y1="12" x2="22" y2="12"></line>
         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
@@ -189,25 +133,26 @@
         <ul class="lr-mega-links" style="grid-template-columns: 1fr;">
           {% assign locale_nav = site.data.navigation[page.language] %}
           {% for item in locale_nav.top_lang_strip %}
-            {% assign lang_url = nil %}
-            {% if localized_docs %}
-              {% assign lang_doc = localized_docs | where: 'language', item.code | first %}
-              {% if lang_doc %}
-                {% assign lang_url = lang_doc.url | relative_url %}
-              {% endif %}
-            {% endif %}
-            {% if lang_url == nil %}
-              {% assign lang_url = item.href | relative_url %}
-            {% endif %}
-            <li>
-              <article class="lr-mega-item no-icon">
-                <div class="lr-mega-item-body">
-                  <a class="lr-mega-link-title {% if page.language == item.code %}active{% endif %}" href="{{ lang_url }}" {% if page.language == item.code %}style="color: var(--primary-color); font-weight: 700;"{% endif %}>
-                    {{ item.label }}
-                  </a>
-                </div>
-              </article>
-            </li>
+          {% assign lang_url = nil %}
+          {% if localized_docs %}
+          {% assign lang_doc = localized_docs | where: 'language', item.code | first %}
+          {% if lang_doc %}
+          {% assign lang_url = lang_doc.url | relative_url %}
+          {% endif %}
+          {% endif %}
+          {% if lang_url == nil %}
+          {% assign lang_url = item.href | relative_url %}
+          {% endif %}
+          <li>
+            <article class="lr-mega-item no-icon">
+              <div class="lr-mega-item-body">
+                <a class="lr-mega-link-title {% if page.language == item.code %}active{% endif %}" href="{{ lang_url }}"
+                  {% if page.language==item.code %}style="color: var(--primary-color); font-weight: 700;" {% endif %}>
+                  {{ item.label }}
+                </a>
+              </div>
+            </article>
+          </li>
           {% endfor %}
         </ul>
       </div>

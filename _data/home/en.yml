@@ -1,13 +1,13 @@
 sections:
   - type: hero_map
-    title: "LA Referencia is the Latin American and Spanish network for Open Science"
+    title: "LA Referencia is the Latin American and Spanish Network for Open Science"
     subtitle: "LA Referencia supports national Open Science strategies in Latin America and Spain through its range of services."
 
   - type: explore_band
     title: "Browse Open Access scientific publications"
     placeholder: "Search publications"
     button_label: "Explore Network"
-    subtitle: "Do not miss out on variants, browse Open Access scientific publications."
+    subtitle: "Thousands of resources available for free generated in Latin America and Spain"
 
   - type: band_message
     text: "Browse Open Access scientific publications from Latin America and Spain"
@@ -29,7 +29,7 @@ sections:
     advanced_label: "Advanced search"
     advanced_url: "https://www.lareferencia.info/vufind/Search/Advanced"
     metrics:
-      nodes_label: "National Nodes"
+      nodes_label: "Member Countries"
       nodes_value: "10"
       documents_label: "Documents"
       documents_value: "5,820,482"
@@ -45,7 +45,7 @@ sections:
 
   - type: faq_cta
     title: "What steps should I take if my research or institutional repository is not available in LA Referencia?"
-    body: "LA Referencia is an aggregator that harvests metadata from the repositories of our national nodes. For this reason, it is not possible to directly deposit your research outputs. However, you can find the necessary information by clicking the following link."
+    body: "LA Referencia is an aggregator that harvests metadata from the repositories of the participating countries. For this reason, it is not possible to directly deposit your research outputs. However, you can find the necessary information by clicking the following link."
     button_label: "Learn more"
     button_url: "/en/about/how-to-join"
     image: "/assets/img/faq.svg"
@@ -70,7 +70,7 @@ sections:
         button_url: "https://recursos.lareferencia.info/download/experiencias-en-la-migracion-de-repositorios-institucionales-dspace/"
 
   - type: logos_grid
-    title: "Our Nodes"
+    title: "Our Members"
     items:
       - name: "Argentina"
         logo: "/assets/img/arg.png"

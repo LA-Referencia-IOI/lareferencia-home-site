@@ -63,7 +63,7 @@ main_nav:
       - /about/como-ser-parte
     page_menu: members
     mega_title: Miembros
-    mega_subtitle: Integración en la red y nodos nacionales.
+    mega_subtitle: Integración en la red y países miembros.
     cta:
       label: Leer más...
       href: /es/miembros/beneficios/
@@ -71,13 +71,22 @@ main_nav:
     cta_text: Conozca la propuesta de valor de ser parte de LA Referencia.
     cta_image: /assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg
 
+  - label: Documentos institucionales
+    href: /es/resources/recomendacion-unesco
+    mega_title: Documentos institucionales
+    mega_subtitle: Documentación formal y auditorías de la red.
+    children:
+      - label: Auditorias
+        href: /es/resources/recomendacion-unesco
+        summary: Documentos de auditoría institucional de LA Referencia.
+        menu_icon: none
+
   - label: Acerca de
     href: /es/about/quienes-somos
     matches:
       - /about/quienes-somos
       - /about/mision-vision
       - /about/historia
-      - /about/plan-estrategico
       - /about/representantes
     page_menu: about
     mega_title: Organización
@@ -94,7 +103,7 @@ main_nav:
     match: /contact
 
 footer:
-  brand_subtitle: Red Latinoamericana y de España de Ciencia Abierta
+  brand_subtitle: RED LATINOAMERICANA y de España de Ciencia Abierta
   legal_text: A menos que se indique lo contrario, todos los materiales producidos por LA Referencia tienen una licencia CC 4.0 Internacional
   social:
     - label: Facebook

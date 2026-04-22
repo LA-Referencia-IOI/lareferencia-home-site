@@ -1,13 +1,13 @@
 sections:
   - type: hero_map
-    title: "LA Referencia é a rede latino-americana e espanhola de Ciência Aberta"
+    title: "LA Referencia é a Rede Latino-Americana e Espanhola de Ciência Aberta"
     subtitle: "A LA Referencia dá suporte às estratégias nacionais de Ciência Aberta na América Latina e na Espanha por meio de sua gama de serviços."
 
   - type: explore_band
     title: "Explore as publicações científicas em Acesso Aberto"
     placeholder: "Pesquisar nas publicações"
     button_label: "Explorar a Rede"
-    subtitle: "Não perca mais com variantes, explore as publicações científicas em Acesso Aberto."
+    subtitle: "Milhares de recursos disponíveis gratuitamente gerados na América Latina e Espanha"
 
   - type: band_message
     text: "Navegue por publicações científicas em Acesso Aberto da América Latina e da Espanha"
@@ -29,7 +29,7 @@ sections:
     advanced_label: "Busca avançada"
     advanced_url: "https://www.lareferencia.info/vufind/Search/Advanced"
     metrics:
-      nodes_label: "Nós Nacionais"
+      nodes_label: "Países Membros"
       nodes_value: "10"
       documents_label: "Documentos"
       documents_value: "5.820.482"
@@ -45,7 +45,7 @@ sections:
 
   - type: faq_cta
     title: "Quais medidas devo tomar se minha pesquisa ou repositório institucional não estiver disponível na LA Referencia?"
-    body: "A LA Referencia é um agregador que coleta metadados dos repositórios dos nossos nós nacionais. Por esse motivo, não é possível depositar diretamente os seus resultados de pesquisa. No entanto, você pode encontrar as informações necessárias clicando no link a seguir."
+    body: "A LA Referencia é um agregador que coleta metadados dos repositórios dos países participantes por esse motivo não é possível depositar diretamente seus resultados de pesquisa. No entanto, você pode encontrar as informações necessárias clicando no link a seguir."
     button_label: "Saiba mais"
     button_url: "/pt/about/como-participar"
     image: "/assets/img/faq.svg"
@@ -70,7 +70,7 @@ sections:
         button_url: "https://recursos.lareferencia.info/download/experiencias-en-la-migracion-de-repositorios-institucionales-dspace/"
 
   - type: logos_grid
-    title: "Nossos Nós"
+    title: "Nossos Membros"
     items:
       - name: "Argentina"
         logo: "/assets/img/arg.png"

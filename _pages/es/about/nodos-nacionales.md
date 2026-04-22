@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Nodos Nacionales"
+title: "Países Miembros"
 description: "Página institucional"
 language: es
 language_reference: about-national-nodes
@@ -8,7 +8,7 @@ permalink: /es/miembros/
 published: true
 menu_parent: members
 menu_order: 10
-menu_label: "Nodos Nacionales"
+menu_label: "Países Miembros"
 menu_icon: "none"
 ---
 

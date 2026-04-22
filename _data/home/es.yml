@@ -1,13 +1,13 @@
 sections:
   - type: hero_map
-    title: "LA Referencia es la red latinoamericana y de España de Ciencia Abierta"
+    title: "LA Referencia es la Red Latinoamericana y de España de Ciencia Abierta"
     subtitle: "LA Referencia, a través de sus servicios, apoya las estrategias nacionales de Ciencia Abierta en América Latina y España."
 
   - type: explore_band
     title: "Explore las publicaciones científicas en Acceso Abierto"
     placeholder: "Buscar en las publicaciones"
     button_label: "Explorar la Red"
-    subtitle: "No pierdas más con variantes, explore las publicaciones científicas en Acceso Abierto."
+    subtitle: "Miles de recursos disponibles gratuitamente generados en América Latina y España"
 
   - type: band_message
     text: "Explore las publicaciones científicas de América Latina y España en Acceso Abierto"
@@ -29,7 +29,7 @@ sections:
     advanced_label: "Búsqueda avanzada"
     advanced_url: "https://www.lareferencia.info/vufind/Search/Advanced"
     metrics:
-      nodes_label: "Nodos Nacionales"
+      nodes_label: "Países Miembros"
       nodes_value: "10"
       documents_label: "Documentos"
       documents_value: "5.820.482"
@@ -45,7 +45,7 @@ sections:
 
   - type: faq_cta
     title: "¿Qué debo hacer si mi investigación o repositorio no se encuentra en LA Referencia?"
-    body: "LA Referencia es un agregador que cosecha metadata de los repositorios de nuestros nodos nacionales, por ese motivo no es posible depositar directamente sus resultados de investigación. No obstante, usted puede encontrar la información necesaria haciendo clic en el siguiente enlace."
+    body: "LA Referencia es un agregador que cosecha metadata de los repositorios de los países participantes por ese motivo no es posible depositar directamente sus resultados de investigación. No obstante, usted puede encontrar la información necesaria haciendo clic en el siguiente enlace."
     button_label: "Obtener información"
     button_url: "/es/about/como-ser-parte"
     image: "/assets/img/faq.svg"
@@ -70,7 +70,7 @@ sections:
         button_url: "https://recursos.lareferencia.info/download/experiencias-en-la-migracion-de-repositorios-institucionales-dspace/"
 
   - type: logos_grid
-    title: "Nuestros Nodos"
+    title: "Nuestros Miembros"
     items:
       - name: "Argentina"
         logo: "https://flagcdn.com/ar.svg"

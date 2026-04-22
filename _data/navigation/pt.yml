@@ -63,13 +63,23 @@ main_nav:
       - /about/como-participar
     page_menu: members
     mega_title: Membros
-    mega_subtitle: Nós nacionais e como participar da rede.
+    mega_subtitle: Países membros e como participar da rede.
     cta:
       label: Ler mais...
       href: /pt/membros/beneficios/
     cta_title: Benefícios
     cta_text: Entenda a proposta de valor de fazer parte da LA Referencia.
     cta_image: /assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg
+
+  - label: Documentos Institucionais
+    href: /pt/resources/recomendacao-unesco
+    mega_title: Documentos Institucionais
+    mega_subtitle: Documentação formal e auditorias da rede.
+    children:
+      - label: Auditorias
+        href: /pt/resources/recomendacao-unesco
+        summary: Documentos de auditoria institucional da LA Referencia.
+        menu_icon: none
 
   - label: Sobre
     href: /pt/about/quem-somos

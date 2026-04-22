@@ -64,7 +64,7 @@ main_nav:
       - /about/how-to-join
     page_menu: members
     mega_title: Members
-    mega_subtitle: National nodes and how to join the network.
+    mega_subtitle: Member countries and how to join the network.
     cta:
       label: Read more...
       href: /en/members/benefits/
@@ -72,13 +72,22 @@ main_nav:
     cta_text: Understand the value proposition of joining LA Referencia.
     cta_image: /assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg
 
+  - label: Institutional Documents
+    href: /en/resources/unesco-recommendation
+    mega_title: Institutional Documents
+    mega_subtitle: Formal documentation and audits of the network.
+    children:
+      - label: Audits
+        href: /en/resources/unesco-recommendation
+        summary: Institutional audit documents of LA Referencia.
+        menu_icon: none
+
   - label: About
     href: /en/about/who-we-are
     matches:
       - /about/who-we-are
       - /about/mission-vision
       - /about/history
-      - /about/strategic-plan
     page_menu: about
     mega_title: Organization
     mega_subtitle: Institutional information and how to participate.
