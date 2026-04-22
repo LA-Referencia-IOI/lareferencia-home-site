@@ -2,17 +2,34 @@
   <div class="wrapper">
     <div class="lr-explore-inner">
       <h2>{{ include.section.title }}</h2>
-      <form class="lr-explore-form" onsubmit="event.preventDefault();">
-        <div class="lr-explore-input-wrap">
-          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <input type="text" placeholder="{{ include.section.placeholder }}" />
+      <form class="lr-explore-form" action="https://www.lareferencia.info/vufind/Search/Results" method="GET" target="_blank">
+        <div class="lr-explore-input-group">
+          <div class="lr-explore-input-wrap">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" name="lookfor" placeholder="Comience a buscar..." required />
+          </div>
+          
+          <div class="lr-explore-select-wrap">
+            <select name="type">
+              <option value="AllFields">Todos los campos</option>
+              <option value="Author">Título</option>
+              <option value="Title">Autor</option>
+              <option value="Subject">Materia</option>
+              <option value="network_name_str">País</option>
+            </select>
+          </div>
         </div>
-        <button class="btn btn-primary">{{ include.section.button_label }}</button>
+
+        <button type="submit" class="btn btn-primary">Buscar</button>
+        <a href="https://www.lareferencia.info/vufind/Search/Advanced" target="_blank" class="btn btn-secondary">Avanzado</a>
       </form>
       <p>{{ include.section.subtitle }}</p>
     </div>
   </div>
+</section>
+</div>
 </section>
