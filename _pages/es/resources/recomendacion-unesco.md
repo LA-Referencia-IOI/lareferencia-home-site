@@ -1,13 +1,13 @@
 ---
 layout: page
-title: "Recomendación UNESCO"
-description: "Mapa de iniciativas nacionales en Ciencia Abierta"
+title: "Mapa de Iniciativas Nacionales"
+description: "Iniciativas nacionales de Ciencia Abierta basadas en la Recomendación de UNESCO sobre Ciencia Abierta."
 language: es
 language_reference: resources-unesco-recommendation
 published: true
 menu_parent: resources
 menu_order: 20
-menu_label: "Recomendación UNESCO"
+menu_label: "Mapa de Iniciativas Nacionales"
 menu_icon: "file-signature"
 ---
 
