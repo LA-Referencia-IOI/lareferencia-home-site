@@ -94,28 +94,6 @@ sections:
   - type: logos_grid
     title: "Nossos Parceiros"
     items:
-      - name: "Redalyc"
-        logo: "/assets/img/logo_redalyc-1.png"
-        url: "https://www.redalyc.org/"
-      - name: "OpenAIRE"
-        logo: "/assets/img/OpenAire_Logo_1200x600px.jpg"
-        url: "https://www.openaire.eu/"
-      - name: "COAR"
-        logo: "/assets/img/COAR-logo_L-1.jpg"
-        url: "https://www.coar-repositories.org/"
-      - name: "RDA"
-        logo: "/assets/img/RDA-Logo_5.png"
-        url: "https://www.rd-alliance.org/"
-      - name: "Latindex"
-        logo: "/assets/img/logo_latindex-1.png"
-        url: "https://www.latindex.org/"
-      - name: "SCOSS"
-        logo: "/assets/img/SCOSS_logo-1b.png"
-        url: "https://scoss.org/how-it-works/current-funding-calls/"
-
-  - type: logos_grid
-    title: "Nossas Alianças"
-    items:
       - name: "Alicia"
         logo: "/assets/img/logoalicia.png"
         url: "https://alicia.concytec.gob.pe/"
@@ -134,6 +112,28 @@ sections:
       - name: "RRAAE"
         logo: "/assets/img/logoRRAAE.png"
         url: "https://rraae.cedia.edu.ec/"
+
+  - type: logos_grid
+    title: "Nossas Alianças"
+    items:
+      - name: "Redalyc"
+        logo: "/assets/img/logo_redalyc-1.png"
+        url: "https://www.redalyc.org/"
+      - name: "OpenAIRE"
+        logo: "/assets/img/OpenAire_Logo_1200x600px.jpg"
+        url: "https://www.openaire.eu/"
+      - name: "COAR"
+        logo: "/assets/img/COAR-logo_L-1.jpg"
+        url: "https://www.coar-repositories.org/"
+      - name: "RDA"
+        logo: "/assets/img/RDA-Logo_5.png"
+        url: "https://www.rd-alliance.org/"
+      - name: "Latindex"
+        logo: "/assets/img/logo_latindex-1.png"
+        url: "https://www.latindex.org/"
+      - name: "SCOSS"
+        logo: "/assets/img/SCOSS_logo-1b.png"
+        url: "https://scoss.org/how-it-works/current-funding-calls/"
 
   - type: newsletter_cta
     title: "Assine nosso Newsletter"
