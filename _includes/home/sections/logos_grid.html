@@ -1,15 +1,27 @@
-<section class="lr-logo-group wrapper">
+<section class="lr-logo-group" data-section-type="{{ section_type }}">
   <h2>{{ include.section.title }}</h2>
   <div class="lr-logo-grid">
     {% for item in include.section.items %}
       {% assign item_url = item.url | default: '' %}
+      {% assign section_type = 'alianzas' %}
+      {% if include.section.title contains 'Miembros' %}
+        {% assign section_type = 'members' %}
+      {% elsif include.section.title contains 'Socios' %}
+        {% assign section_type = 'socios' %}
+      {% endif %}
       {% if item_url != blank %}
-        <a class="lr-logo-item" href="{% if item_url contains '://' %}{{ item_url }}{% else %}{{ item_url | relative_url }}{% endif %}" aria-label="{{ item.name }}">
-          <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}">
+        <a class="lr-logo-card lr-logo-card--{{ section_type }}" href="{% if item_url contains '://' %}{{ item_url }}{% else %}{{ item_url | relative_url }}{% endif %}" aria-label="{{ item.name }}" data-index="{{ forloop.index0 }}">
+          <div class="lr-logo-card__inner">
+            <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" loading="lazy">
+          </div>
+          <!-- <span class="lr-logo-card__name">{{ item.name }}</span> -->
         </a>
       {% else %}
-        <div class="lr-logo-item" aria-label="{{ item.name }}">
-          <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}">
+        <div class="lr-logo-card lr-logo-card--{{ section_type }}" aria-label="{{ item.name }}" data-index="{{ forloop.index0 }}">
+          <div class="lr-logo-card__inner">
+            <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" loading="lazy">
+          </div>
+          <span class="lr-logo-card__name">{{ item.name }}</span>
         </div>
       {% endif %}
     {% endfor %}
