@@ -24,7 +24,8 @@ menu_icon: "file-signature"
 
 <section class="content-section">
   <h2>¿Qué es este relevamiento?</h2>
-  <p>Este proyecto busca identificar y sistematizar iniciativas públicas nacionales permanentes que contribuyan a la implementación de la Recomendación de Ciencia Abierta de la UNESCO. La información recopilada servirá como una fuente de consulta en la web de LA Referencia, estableciendo mecanismos de actualización periódica. Con ello, se busca dimensionar y visibilizar los esfuerzos de los distintos gobiernos de América Latina y el Caribe, así como de España, en el avance hacia los objetivos de la Ciencia Abierta.</p>
+  <p>Este proyecto busca identificar y sistematizar iniciativas públicas nacionales permanentes que contribuyan a la implementación de la Recomendación de Ciencia Abierta de la UNESCO. La información recopilada servirá como una fuente de consulta en la web de LA Referencia, estableciendo mecanismos de actualización periódica.</p>
+  <p>Con ello, se busca dimensionar y visibilizar los esfuerzos de los distintos gobiernos de América Latina y el Caribe, así como de España, en el avance hacia los objetivos de la Ciencia Abierta.</p>
 </section>
 
 <section class="content-section">

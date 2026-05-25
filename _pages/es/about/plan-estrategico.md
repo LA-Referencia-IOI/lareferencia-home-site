@@ -11,16 +11,12 @@ menu_label: "Plan Estratégico"
 menu_icon: "org"
 ---
 
-<h1>Plan Estratégico</h1>
-
-<div class="content-split">
-  <div>
-    <h2>Los caminos hacia el futuro del Acceso Abierto en Latinoamérica y España</h2>
-  </div>
-  <div>
-    <h2>Misión</h2>
-    <p>Ofrecer en Acceso Abierto la producción científica de América Latina financiada con fondos públicos, mediante la cooperación y articulación de una red federada de repositorios institucionales, basada en acuerdos regionales y estrategias nacionales de acceso abierto.</p>
-  </div>
+<div class="contact-page">
+  <header class="contact-page-header">
+    <p class="contact-page-eyebrow">Plan Estratégico</p>
+    <h1 class="contact-page-title">Los caminos hacia el futuro del Acceso Abierto en Latinoamérica y España</h1>
+    <p class="contact-page-lead">Nuestros objetivos estratégicos están orientados a consolidar la infraestructura, los servicios y la cooperación regional.</p>
+  </header>
 </div>
 
 <section class="content-section">

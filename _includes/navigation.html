@@ -100,18 +100,24 @@
               </article>
             </li>
             {% endfor %}
+
+            {% if item.cta %}
+            <li class="lr-mega-cta-grid-item">
+              <article class="lr-mega-item no-icon lr-mega-item-cta-highlight">
+                <div class="lr-mega-item-body">
+                  <a class="lr-mega-link-title" href="{{ item.cta.href | relative_url }}">
+                    {{ item.cta_title | default: item.label }}
+                  </a>
+                  <p class="lr-mega-summary">
+                    {{ item.cta_text | default: item.cta.label }}
+                  </p>
+                </div>
+              </article>
+            </li>
+            {% endif %}
           </ul>
         </div>
       </div>
-      {% if item.cta %}
-      <footer class="lr-mega-footer">
-        <div class="lr-mega-footer-inner">
-          <span class="lr-mega-footer-text">{{ item.cta_title | default: item.label }}{% if item.cta_text %} — {{
-            item.cta_text }}{% endif %}</span>
-          <a class="lr-mega-cta" href="{{ item.cta.href }}">{{ item.cta.label }}</a>
-        </div>
-      </footer>
-      {% endif %}
     </div>
     {% endif %}
   </li>

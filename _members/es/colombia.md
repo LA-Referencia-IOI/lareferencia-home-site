@@ -13,7 +13,7 @@ node_name: Red Colombiana de Información Científica (REDCOL)
 country_code: CO
 flag_image: /assets/img/members/colombia-flag.png
 legacy_url: https://dev.lareferencia.info/nodos/colombia/
-published: true
+published: false
 hero_image: /assets/img/members/colombia-1.png
 member_tabs:
 - title: Consejo Directivo

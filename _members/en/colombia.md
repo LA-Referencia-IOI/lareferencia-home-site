@@ -13,7 +13,7 @@ node_name: Red Colombiana de Información Científica
 country_code: CO
 flag_image: /assets/img/members/colombia-flag.png
 legacy_url: https://dev.lareferencia.info/en/nodes/colombia/
-published: true
+published: false
 member_tabs:
 - title: Board of Directors
   content_html: '<div aria-labelledby="elementor-tab-title-7681" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" tabindex="0"><ul>

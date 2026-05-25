@@ -11,15 +11,22 @@ menu_label: "How to Join"
 menu_icon: "none"
 ---
 
-<h1>How to Join</h1>
+<div class="contact-page">
+  <header class="contact-page-header">
+    <p class="contact-page-eyebrow">How to Join</p>
+    <h1 class="contact-page-title">What steps should I take if my research or institutional repository is not available in LA Referencia?</h1>
+    <p class="contact-page-lead">LA Referencia is an aggregator, not a repository, which is why it is not possible to deposit your research outputs directly.</p>
+  </header>
+</div>
 
-<h2>What steps should I take if my research or institutional repository is not available in LA Referencia?</h2>
+<section class="content-section">
+  <p>We are a federated network, so each of our national nodes decides which institutional repositories to harvest, and in turn, each repository defines its own mechanisms for depositing content.</p>
+</section>
 
-<p>LA Referencia is an aggregator, not a repository, which is why it is not possible to deposit your research outputs directly. We are a federated network, so each of our national nodes decides which institutional repositories to harvest, and in turn, each repository defines its own mechanisms for depositing content.</p>
-
-<h2>Get information here:</h2>
-
-<p>In which country are you located?</p>
+<section class="content-section">
+  <h2>Get information here:</h2>
+  <p class="content-lead">In which country are you located?</p>
+</section>
 
 {% assign member_nodes = site.members | where: "language", page.language | where: "published", true | sort: "menu_order" %}
 
@@ -48,8 +55,8 @@ menu_icon: "none"
   {% endfor %}
 </div>
 
-<div class="contact-card">
+<div class="content-note" style="margin-top: 2.5rem;">
   <h2>Is your country not part of LA Referencia?</h2>
   <p>The countries that are part of LA Referencia have signed technical and organizational agreements through their public science and technology bodies (Ministries and Oncyts), together with RedCLARA. Therefore, we invite you to contact these bodies and encourage them to join, demonstrating the importance of the initiative.</p>
-  <p><a href="mailto:federico.cetrangolo@lareferencia.redclara.net">federico.cetrangolo@lareferencia.redclara.net</a></p>
+  <p style="margin-top: 1rem;"><a class="lr-btn lr-btn-solid" href="mailto:federico.cetrangolo@lareferencia.redclara.net">federico.cetrangolo@lareferencia.redclara.net</a></p>
 </div>

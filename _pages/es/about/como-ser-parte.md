@@ -11,15 +11,22 @@ menu_label: "Cómo ser parte"
 menu_icon: "none"
 ---
 
-<h1>Cómo ser parte</h1>
+<div class="contact-page">
+  <header class="contact-page-header">
+    <p class="contact-page-eyebrow">Cómo ser parte</p>
+    <h1 class="contact-page-title">¿Cómo hago para que mi resultado de investigación o repositorio aparezca en LA Referencia?</h1>
+    <p class="contact-page-lead">LA Referencia es un agregador, no un repositorio, por ese motivo no es posible depositar directamente sus resultados de investigación.</p>
+  </header>
+</div>
 
-<h2>¿Cómo hago para que mi resultado de investigación o repositorio aparezca en LA Referencia?</h2>
+<section class="content-section">
+  <p>Somos una red federada, entonces, cada uno de nuestros nodos nacionales decide qué repositorios institucionales cosechar, y a su vez, cada repositorio define sus propios mecanismos para realizar el depósito.</p>
+</section>
 
-<p>LA Referencia es un agregador, no un repositorio, por ese motivo no es posible depositar directamente sus resultados de investigación. Somos una red federada, entonces, cada uno de nuestros nodos nacionales decide qué repositorios institucionales cosechar, y a su vez, cada repositorio define sus propios mecanismos para realizar el depósito.</p>
-
-<h2>Obtenga información acá:</h2>
-
-<p>¿En qué país se encuentra usted?</p>
+<section class="content-section">
+  <h2>Obtenga información acá:</h2>
+  <p class="content-lead">¿En qué país se encuentra usted?</p>
+</section>
 
 {% assign member_nodes = site.members | where: "language", page.language | where: "published", true | sort: "menu_order" %}
 
@@ -48,9 +55,9 @@ menu_icon: "none"
   {% endfor %}
 </div>
 
-<div class="contact-card">
+<div class="content-note" style="margin-top: 2.5rem;">
   <h2>¿Su país no forma parte de LA Referencia?</h2>
   <p>Los países que forman parte de LA Referencia han suscrito acuerdos técnicos y organizativos por medio de sus organismos públicos de ciencia y tecnología, conjuntamente con RedCLARA. Por eso, lo invitamos a ponerse en contacto con dichos organismos y a promover su incorporación, demostrando la importancia de la iniciativa.</p>
   <p>Póngase en contacto con nosotros para que podamos apoyarle en este proceso.</p>
-  <p><a href="mailto:federico.cetrangolo@lareferencia.redclara.net">federico.cetrangolo@lareferencia.redclara.net</a></p>
+  <p style="margin-top: 1rem;"><a class="lr-btn lr-btn-solid" href="mailto:federico.cetrangolo@lareferencia.redclara.net">federico.cetrangolo@lareferencia.redclara.net</a></p>
 </div>

@@ -11,10 +11,15 @@ menu_label: "Historia"
 menu_icon: "none"
 ---
 
-<h1>Historia</h1>
+<div class="contact-page">
+  <header class="contact-page-header">
+    <p class="contact-page-eyebrow">Historia</p>
+    <h1 class="contact-page-title">Historia</h1>
+    <p class="contact-page-lead">Conozca las distintas fases del desarrollo de LA Referencia.</p>
+  </header>
+</div>
 
-<p>Conozca las distintas fases del desarrollo de LA Referencia.</p>
-
+<section class="content-section">
 <p>LA Referencia nació como un proyecto coordinado por la Cooperación Latinoamericana de Redes Avanzadas, RedCLARA, y financiado por el Fondo de Bienes Públicos del Banco Interamericano de Desarrollo, BID, entre 2010 y 2013. Contó con la participación de los organismos de ciencia y tecnología y parte de los NRENs de la región.</p>
 
 <p>En su inicio se orientó a lograr acuerdos y establecer políticas relacionadas con el acceso federado, políticas comunes, estándares para la interoperabilidad y un piloto tecnológico.</p>
@@ -24,3 +29,4 @@ menu_icon: "none"
 <p>Terminado el proyecto, a fines del 2013, la red se articula como un servicio entre los organismos de ciencia y tecnología de la región con el apoyo de RedCLARA, con el objetivo de consolidar una estrategia de acceso abierto para el acceso a las publicaciones científicas, basado en políticas nacionales de repositorios y la generación de bienes públicos.</p>
 
 <p>Para tener acceso a la historia completa sobre la creación de LA Referencia, visite <a href="https://www.lareferencia.info/legacy/" target="_blank" rel="noopener">nuestro antiguo sitio</a>.</p>
+</section>
