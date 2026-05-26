@@ -11,12 +11,15 @@ menu_label: "Assinatura"
 menu_icon: "docs"
 ---
 
-<h1>Assine nosso Newsletter</h1>
-
-<p class="page-lead">Assine nosso Newsletter e mantenha-se atualizado sobre nossos esforços pela Ciência Aberta.</p>
-
-<p>No site anterior, essa assinatura era gerida por meio de um formulário on-line. Nesta versão do site, o canal disponível é o contato institucional.</p>
-
-<div class="content-note">
-  <p>Se desejar receber o newsletter, escreva para <a href="mailto:{{ site.email }}">{{ site.email }}</a> informando seu nome completo, organização e país.</p>
-</div>
+{% include mailchimp-form.html
+  form_title="Assine nosso Boletim"
+  form_subtitle="Assine nosso boletim e mantenha-se atualizado sobre nossos esforços pela Ciência Aberta."
+  required_text="indica campo obrigatório"
+  email_label="E-mail"
+  name_label="Nome Completo"
+  country_label="País"
+  org_label="Organização"
+  button_text="Assinar"
+  msg_required="Este campo é obrigatório."
+  msg_email="Por favor, insira um endereço de e-mail válido"
+%}

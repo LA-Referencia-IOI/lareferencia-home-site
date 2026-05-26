@@ -11,6 +11,7 @@ menu_label: "Plano Estratégico"
 menu_icon: "org"
 ---
 
+<!--
 <h1>Plano Estratégico</h1>
 
 <div class="content-split">
@@ -44,3 +45,4 @@ menu_icon: "org"
     </article>
   </div>
 </section>
+-->

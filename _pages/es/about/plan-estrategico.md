@@ -11,6 +11,7 @@ menu_label: "Plan Estratégico"
 menu_icon: "org"
 ---
 
+<!--
 <div class="contact-page">
   <header class="contact-page-header">
     <p class="contact-page-eyebrow">Plan Estratégico</p>
@@ -40,3 +41,4 @@ menu_icon: "org"
     </article>
   </div>
 </section>
+-->

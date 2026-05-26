@@ -32,8 +32,3 @@ menu_icon: "none"
     </article>
   </section>
 </div>
-
-<section class="content-section">
-  <h2>Visión</h2>
-  <p>Ser el referente principal en los países asociados en la consolidación de un ecosistema de Ciencia Abierta inclusivo, colaborativo y sostenible. Aspiramos a una comunidad científica interconectada, en la que el conocimiento fluya sin barreras y en beneficio de la sociedad, apoyando políticas e infraestructuras que garanticen la accesibilidad, equidad e impacto global de la producción académica y científica de sus miembros.</p>
-</section>

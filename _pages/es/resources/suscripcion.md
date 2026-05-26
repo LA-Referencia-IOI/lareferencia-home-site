@@ -11,12 +11,15 @@ menu_label: "Suscripción"
 menu_icon: "docs"
 ---
 
-<h1>Suscríbase a nuestro Newsletter</h1>
-
-<p class="page-lead">Suscríbase a nuestro Newsletter y manténgase al tanto de nuestros esfuerzos por la Ciencia Abierta.</p>
-
-<p>En el sitio anterior, esta suscripción se gestionaba mediante un formulario en línea. En esta versión del sitio, el canal disponible es el contacto institucional.</p>
-
-<div class="content-note">
-  <p>Si desea recibir el newsletter, escriba a <a href="mailto:{{ site.email }}">{{ site.email }}</a> indicando su nombre completo, organización y país.</p>
-</div>
+{% include mailchimp-form.html
+  form_title="Suscríbase a nuestro Boletín de Correo"
+  form_subtitle="Suscríbase a nuestro boletín y manténgase al tanto de nuestros esfuerzos por la Ciencia Abierta."
+  required_text="indica campo obligatorio"
+  email_label="Correo Electrónico"
+  name_label="Nombre Completo"
+  country_label="País"
+  org_label="Organización en la que labora"
+  button_text="Suscribirse"
+  msg_required="Este campo es obligatorio."
+  msg_email="Por favor, escribe una dirección de correo válida"
+%}
