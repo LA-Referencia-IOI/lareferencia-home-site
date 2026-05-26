@@ -1,0 +1,34 @@
+{% assign home_label = "Home" %}
+{% assign parent_label = "" %}
+{% assign parent_url = "" %}
+
+{% case page.language %}
+  {% when "es" %}
+    {% assign home_label = "Inicio" %}
+    {% if page.menu_parent == "members" %}
+      {% assign parent_label = "Países" %}
+      {% assign parent_url = "/es/miembros/" %}
+    {% endif %}
+  {% when "pt" %}
+    {% assign home_label = "Início" %}
+    {% if page.menu_parent == "members" %}
+      {% assign parent_label = "Países" %}
+      {% assign parent_url = "/pt/membros/" %}
+    {% endif %}
+  {% when "en" %}
+    {% assign home_label = "Home" %}
+    {% if page.menu_parent == "members" %}
+      {% assign parent_label = "Countries" %}
+      {% assign parent_url = "/en/members/" %}
+    {% endif %}
+{% endcase %}
+
+{% if parent_label != "" and parent_label != nil %}
+  <nav class="page-breadcrumbs" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}">{{ home_label }}</a>
+    <span>»</span>
+    <a href="{{ parent_url | relative_url }}">{{ parent_label }}</a>
+    <span>»</span>
+    <span aria-current="page">{{ page.title | escape }}</span>
+  </nav>
+{% endif %}
