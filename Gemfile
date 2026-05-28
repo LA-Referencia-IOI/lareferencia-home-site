@@ -14,7 +14,7 @@ gem 'stringex'
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15.1"
   gem "jekyll-seo-tag", "~> 2.8.0"
-end
+  end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

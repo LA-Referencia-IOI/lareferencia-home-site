@@ -1,6 +1,22 @@
 <section class="lr-logo-group wrapper">
   <h2>{{ include.section.title }}</h2>
   <div class="lr-logo-grid">
+    {% if include.section.dynamic_members == true %}
+      {% assign members = site.members | where: 'language', page.language | where: 'published', true | sort: 'menu_order' %}
+      {% for member in members %}
+        {% assign member_url = member.url | relative_url %}
+        {% assign logo_src = member.flag_image | default: '' %}
+        {% if logo_src == blank %}
+          {% assign cc = member.country_code | default: '' | downcase %}
+          {% if cc != blank %}
+            {% assign logo_src = 'https://flagcdn.com/' | append: cc | append: '.svg' %}
+          {% endif %}
+        {% endif %}
+        <a class="lr-logo-item" href="{{ member_url }}" aria-label="{{ member.title }}">
+          <img src="{{ logo_src | relative_url }}" alt="{{ member.title }}">
+        </a>
+      {% endfor %}
+    {% endif %}
     {% for item in include.section.items %}
       {% assign item_url = item.url | default: '' %}
       {% if item_url != blank %}

@@ -50,12 +50,14 @@ main_nav:
     page_menu: resources
     mega_title: Resources
     mega_subtitle: News, surveys and newsletter subscription.
-    cta:
-      label: Latest news
-      href: /en/news
-    cta_title: Open Science News
-    cta_text: Follow updates, launches and network announcements.
-    cta_image: /assets/img/cloud-storage-banner-background-remixed-from-public-domain-by-nasa.jpg
+    children:
+      - label: Training Platform
+        href: https://recursos.lareferencia.info/
+        summary: Expand your knowledge of Open Science with LA Referencia's Training Platform.
+        menu_icon: graduation-cap
+        external: true
+        menu_order: 1
+        primary_link: true
 
   - label: Members
     href: /en/members/

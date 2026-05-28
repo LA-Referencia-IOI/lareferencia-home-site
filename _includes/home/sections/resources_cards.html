@@ -30,6 +30,16 @@
       {% endfor %}
       {% endif %}
     </div>
+    <!-- /.lr-resource-bullets -->
+    {% if include.section.section_all_url %}
+    <div class="lr-resources-actions">
+      <a class="lr-btn lr-btn-solid lr-btn-accent"
+         href="{{ include.section.section_all_url }}"
+         {% if include.section.section_all_url contains '://' %}target="_blank" rel="noopener"{% endif %}>
+        {{ include.section.section_all_label | default: "Ver todos los recursos" }}
+      </a>
+    </div>
+    {% endif %}
   </div>
 </section>
 

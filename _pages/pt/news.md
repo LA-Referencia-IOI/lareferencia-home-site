@@ -16,10 +16,11 @@ menu_icon: "docs"
 {% assign news_items = site.news | where: "language", page.language | where: "published", true | sort: "date" | reverse %}
 
 {% if news_items.size > 0 %}
-  <ul class="post-item-list">
+<div id="news-pagination" data-per-page="5" data-total="{{ news_items.size }}">
+  <ul class="post-item-list" id="news-list">
     {% for item in news_items %}
       {% assign item_image = item.image %}
-      <li class="post-item{% unless item_image %} post-item--text-only{% endunless %}">
+      <li class="post-item{% unless item_image %} post-item--text-only{% endunless %}" data-index="{{ forloop.index0 }}">
         {% if item_image %}
           <a class="post-item-media" href="{{ item.url | relative_url }}">
             <img src="{{ item_image | relative_url }}" alt="{{ item.title | escape }}" loading="lazy">
@@ -33,6 +34,8 @@ menu_icon: "docs"
       </li>
     {% endfor %}
   </ul>
+  {% include pagination.html %}
+</div>
 {% else %}
   <p>Ainda não há notícias publicadas neste idioma.</p>
 {% endif %}

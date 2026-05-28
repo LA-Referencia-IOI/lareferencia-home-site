@@ -49,12 +49,14 @@ main_nav:
     page_menu: resources
     mega_title: Recursos
     mega_subtitle: Noticias, relevamientos y suscripción institucional.
-    cta:
-      label: Últimas noticias
-      href: /es/news
-    cta_title: Noticias de Ciencia Abierta
-    cta_text: Sigue novedades, lanzamientos y anuncios de la red.
-    cta_image: /assets/img/cloud-storage-banner-background-remixed-from-public-domain-by-nasa.jpg
+    children:
+      - label: Plataforma de Capacitación
+        href: https://recursos.lareferencia.info/
+        summary: Expanda sus conocimientos sobre Ciencia Abierta de la mano de la Plataforma de Capacitación de LA Referencia.
+        menu_icon: graduation-cap
+        external: true
+        menu_order: 1
+        primary_link: true
 
   - label: Miembros
     href: /es/miembros/

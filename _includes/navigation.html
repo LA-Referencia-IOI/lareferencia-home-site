@@ -14,8 +14,17 @@
   {% endif %}
 
   {% assign children = item.children %}
-  {% if page_children and page_children.size > 0 or collection_children and collection_children.size > 0 %}
-  {% assign children = page_children | concat: collection_children | sort: 'menu_order' %}
+  {% unless children %}
+    {% assign children = '' | split: '' %}
+  {% endunless %}
+  {% if page_children and page_children.size > 0 %}
+    {% assign children = children | concat: page_children %}
+  {% endif %}
+  {% if collection_children and collection_children.size > 0 %}
+    {% assign children = children | concat: collection_children %}
+  {% endif %}
+  {% if children.size > 0 %}
+    {% assign children = children | sort: 'menu_order' %}
   {% endif %}
 
   {% assign item_href = item.href %}
@@ -78,7 +87,11 @@
             {% endif %}
             {% assign icon_key = child.menu_icon | default: 'generic' %}
             <li>
-              <article class="lr-mega-item no-icon">
+            {% assign item_classes = "lr-mega-item no-icon" %}
+            {% if child.primary_link %}
+            {% assign item_classes = "lr-mega-item no-icon lr-mega-item-cta-highlight" %}
+            {% endif %}
+            <article class="{{ item_classes }}">
                 {% comment %}
                 ICONS TEMPORARILY DISABLED — uncomment below to re-enable
                 {% unless icon_key == 'none' %}

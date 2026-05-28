@@ -52,6 +52,8 @@ sections:
 
   - type: resources_cards
     title: "Browse our most recent training materials"
+    section_all_url: "https://recursos.lareferencia.info/"
+    section_all_label: "View all resources"
     cards:
       - title: "Instalación y configuración básica de DSpace 7.5"
         summary: "Guillermo Esteban Murillo Goussen, técnico de LA Referencia explica el detalle sobre la instalación y configuración básica de DSpace 7.5."
@@ -71,28 +73,33 @@ sections:
 
   - type: logos_grid
     title: "Our Members"
+    dynamic_members: true
     items:
-      - name: "Argentina"
-        logo: "/assets/img/arg.png"
-        url: "/en/members/argentina"
-      - name: "Brazil"
-        logo: "/assets/img/br.png"
-        url: "/en/members/brazil"
-      - name: "Chile"
-        logo: "/assets/img/cl.png"
-        url: "/en/members/chile"
-      - name: "Colombia"
-        logo: "/assets/img/co.png"
-        url: "/en/members/colombia"
-      - name: "Peru"
-        logo: "/assets/img/pe.png"
-        url: "/en/members/peru"
-      - name: "Uruguay"
-        logo: "/assets/img/uy.png"
-        url: "/en/members/uruguay"
+      - name: "RedCLARA"
+        logo: "/assets/img/Logo_Rede_Claro_Horizontal_C_Ass_Azul.jpg"
+        url: "https://www.redclara.net/"
 
   - type: logos_grid
-    title: "Our Partners"
+    title: "National Aggregators"
+    items:
+      - name: "Alicia"
+        logo: "/assets/img/logoalicia.png"
+        url: "https://alicia.concytec.gob.pe/"
+      - name: "Recolecta"
+        logo: "/assets/img/recolecta-1.png"
+        url: "https://www.recolecta.fecyt.es/"
+      - name: "Kímuk"
+        logo: "/assets/img/logo-kimuk-500x200-transparente@2x.png"
+        url: "https://kimuk.conare.ac.cr/"
+      - name: "CONARE"
+        logo: "/assets/img/logotipo_conare_color.png"
+        url: "https://www.conare.ac.cr/"
+      - name: "RRAAE"
+        logo: "/assets/img/logoRRAAE.png"
+        url: "https://rraae.cedia.edu.ec/"
+
+  - type: logos_grid
+    title: "Our Alliances"
     items:
       - name: "Redalyc"
         logo: "/assets/img/logo_redalyc-1.png"
@@ -112,28 +119,6 @@ sections:
       - name: "SCOSS"
         logo: "/assets/img/SCOSS_logo-1b.png"
         url: "https://scoss.org/how-it-works/current-funding-calls/"
-
-  - type: logos_grid
-    title: "Our Partnerships"
-    items:
-      - name: "Alicia"
-        logo: "/assets/img/logoalicia.png"
-        url: "https://alicia.concytec.gob.pe/"
-      - name: "Recolecta"
-        logo: "/assets/img/recolecta-1.png"
-        url: "https://www.recolecta.fecyt.es/"
-      - name: "Kímuk"
-        logo: "/assets/img/logo-kimuk-500x200-transparente@2x.png"
-        url: "https://kimuk.conare.ac.cr/"
-      - name: "CONARE"
-        logo: "/assets/img/logotipo_conare_color.png"
-        url: "https://www.conare.ac.cr/"
-      - name: "RedCLARA"
-        logo: "/assets/img/Logo_Rede_Claro_Horizontal_C_Ass_Azul.jpg"
-        url: "https://www.redclara.net/"
-      - name: "RRAAE"
-        logo: "/assets/img/logoRRAAE.png"
-        url: "https://rraae.cedia.edu.ec/"
 
   - type: newsletter_cta
     title: "Sign up for our Newsletter"

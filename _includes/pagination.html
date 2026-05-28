@@ -1,0 +1,66 @@
+<nav class="lr-pagination" id="news-nav" aria-label="Pagination">
+  <button type="button" class="lr-pagination-btn lr-pagination-prev" aria-label="Previous page" disabled>
+    &larr; Anterior
+  </button>
+  <div class="lr-pages" id="lr-pages"></div>
+  <button type="button" class="lr-pagination-btn lr-pagination-next" aria-label="Next page">
+    Siguiente &rarr;
+  </button>
+</nav>
+
+<script>
+(function() {
+  var container = document.getElementById('news-pagination');
+  if (!container) return;
+
+  var perPage = parseInt(container.getAttribute('data-per-page'), 10) || 5;
+  var total = parseInt(container.getAttribute('data-total'), 10) || 0;
+  var items = container.querySelectorAll('#news-list .post-item');
+  var pagesContainer = document.getElementById('lr-pages');
+  var prevBtn = container.querySelector('.lr-pagination-prev');
+  var nextBtn = container.querySelector('.lr-pagination-next');
+  var totalPages = Math.ceil(total / perPage);
+  var currentPage = 1;
+
+  function showPage(page) {
+    currentPage = page;
+    var start = (page - 1) * perPage;
+    var end = start + perPage;
+
+    items.forEach(function(item, i) {
+      item.style.display = (i >= start && i < end) ? '' : 'none';
+    });
+
+    prevBtn.disabled = page === 1;
+    nextBtn.disabled = page === totalPages;
+
+    pagesContainer.innerHTML = '';
+    for (var i = 1; i <= totalPages; i++) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'lr-page-btn' + (i === page ? ' lr-page-current' : '');
+      btn.setAttribute('aria-label', 'Page ' + i);
+      if (i === page) btn.setAttribute('aria-current', 'page');
+      btn.textContent = i;
+      btn.addEventListener('click', (function(p) {
+        return function() { showPage(p); };
+      })(i));
+      pagesContainer.appendChild(btn);
+    }
+
+    window.scrollTo({ top: container.offsetTop - 100, behavior: 'smooth' });
+  }
+
+  prevBtn.addEventListener('click', function() {
+    if (currentPage > 1) showPage(currentPage - 1);
+  });
+
+  nextBtn.addEventListener('click', function() {
+    if (currentPage < totalPages) showPage(currentPage + 1);
+  });
+
+  if (totalPages > 1) {
+    showPage(1);
+  }
+})();
+</script>
