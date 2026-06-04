@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Programas de treinamento em dados de pesquisa
 date: '2022-02-02 23:34:38'
 language: pt

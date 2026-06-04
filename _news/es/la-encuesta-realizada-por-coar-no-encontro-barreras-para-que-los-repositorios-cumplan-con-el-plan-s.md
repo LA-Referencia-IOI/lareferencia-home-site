@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: La encuesta realizada por COAR no encontró barreras para que los repositorios
   cumplan con el Plan S
 date: '2020-06-18 14:51:02'

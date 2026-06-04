@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: ReSA, RDA e LA Referencia anunciam nova colaboração que promove a ciência aberta na América Latina
 date: '2025-02-24 21:46:22'
 language: pt

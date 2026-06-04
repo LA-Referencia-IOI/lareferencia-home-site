@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia elege novo presidente e vice-presidente
 date: '2024-08-13 19:27:44'
 language: pt

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Declaration 10 years of LA Reference: Towards a Non-Commercial Open Science ecosystem'
 date: '2023-05-26 02:03:33'
 language: en

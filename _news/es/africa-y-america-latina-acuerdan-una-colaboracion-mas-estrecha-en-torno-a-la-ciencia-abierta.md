@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: África y América Latina acuerdan una colaboración más estrecha en torno a la
   ciencia abierta
 date: '2021-04-12 16:46:32'

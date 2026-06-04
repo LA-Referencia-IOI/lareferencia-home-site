@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia/RedCLARA e Latindex assinam acordo de cooperação para um ecossistema regional de ciência aberta
 date: '2023-06-26 14:43:12'
 language: pt

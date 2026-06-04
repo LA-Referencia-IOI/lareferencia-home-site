@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Nodo da Argentina apresenta seu Portal de Estudos da Sociedade Civil (PESoC)
 date: '2022-10-09 15:57:26'
 language: pt

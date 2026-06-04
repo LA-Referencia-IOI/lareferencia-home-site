@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: With immense and deep pain we announce the death of Alberto Cabezas
 date: '2020-09-19 18:24:30'
 language: en

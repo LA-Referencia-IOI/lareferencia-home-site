@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Reference receives the IOI Fund for Network Adoption
 date: '2025-11-18 03:08:51'
 language: en

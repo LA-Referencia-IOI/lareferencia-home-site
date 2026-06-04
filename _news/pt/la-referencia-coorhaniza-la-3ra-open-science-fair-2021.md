@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia co-organiza o 3º. FEIRA DE CIÊNCIAS ABERTAS 2021
 date: '2021-07-19 16:30:49'
 language: pt

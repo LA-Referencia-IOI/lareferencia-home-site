@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Reference co-organizes the 3rd. OPEN SCIENCE FAIR 2021
 date: '2021-07-19 16:30:49'
 language: en

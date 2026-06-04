@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Node of Argentina presents its Civil Society Studies Portal (PESoC)
 date: '2022-10-09 15:57:26'
 language: en

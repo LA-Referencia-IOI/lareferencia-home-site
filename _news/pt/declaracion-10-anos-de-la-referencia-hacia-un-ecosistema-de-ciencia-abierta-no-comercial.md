@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Declaração 10 anos de Referência de LA: Rumo a um ecossistema de Ciência Aberta Não-Comercial'
 date: '2023-05-26 02:03:33'
 language: pt

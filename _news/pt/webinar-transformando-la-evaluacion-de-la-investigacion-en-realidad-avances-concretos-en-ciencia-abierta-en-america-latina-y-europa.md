@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Webinar: Transformando a avaliação da pesquisa em realidade: avanços concretos na ciência aberta na América Latina e na Europa'
 date: '2024-04-19 13:53:07'
 language: pt

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Chamada global para atualizações do OpenDOAR
 date: '2021-10-25 14:31:16'
 language: pt

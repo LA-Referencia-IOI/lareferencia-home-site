@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Andrea Mora from the Costa Rica node is elected president of LA Reference
 date: '2022-11-24 19:26:19'
 language: en

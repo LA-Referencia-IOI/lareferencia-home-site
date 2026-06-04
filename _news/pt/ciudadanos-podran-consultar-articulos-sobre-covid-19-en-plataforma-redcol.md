@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Cidadãos poderão consultar artigos sobre COVID-19 na plataforma RedCol
 date: '2021-05-14 13:51:50'
 language: pt

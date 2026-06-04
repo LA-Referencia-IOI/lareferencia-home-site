@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Global call for OpenDOAR updates
 date: '2021-10-25 14:31:16'
 language: en

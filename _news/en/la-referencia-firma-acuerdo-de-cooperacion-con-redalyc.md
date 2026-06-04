@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Reference signs cooperation agreement with REDALYC
 date: '2022-05-30 15:03:29'
 language: en

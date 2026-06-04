@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'We are hiring. LA Reference-Lyrasis project coordinator: Strengthening DSpace repositories in Latin America and Spain'
 date: '2024-12-11 14:02:50'
 language: en

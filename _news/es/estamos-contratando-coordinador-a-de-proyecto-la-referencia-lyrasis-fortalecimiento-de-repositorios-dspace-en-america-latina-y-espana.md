@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Estamos contratando. Coordinador/a de proyecto LA Referencia-Lyrasis: Fortalecimiento
   de repositorios DSpace en América Latina y España'
 date: '2024-12-11 14:02:50'

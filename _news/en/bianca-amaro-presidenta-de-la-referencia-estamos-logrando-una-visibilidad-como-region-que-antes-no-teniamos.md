@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Bianca Amaro, president of LA Reference: “We are achieving visibility as a region that we did not have before”'
 date: '2020-08-24 16:17:13'
 language: en

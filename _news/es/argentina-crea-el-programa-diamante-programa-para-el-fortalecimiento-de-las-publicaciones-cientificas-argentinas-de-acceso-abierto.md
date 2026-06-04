@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Argentina crea el Programa Diamante: programa para el fortalecimiento de las
   publicaciones científicas argentinas de acceso abierto'
 date: '2023-11-01 17:20:55'

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Patricia Muñoz: “what is financed with public resources must be available for the generation of new knowledge”'
 date: '2020-07-24 14:21:08'
 language: en

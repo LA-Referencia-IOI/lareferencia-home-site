@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: La Red Mexicana de Repositorios Institucionales (REMERI) se reincorpora a LA
   Referencia
 date: '2021-10-21 16:19:26'

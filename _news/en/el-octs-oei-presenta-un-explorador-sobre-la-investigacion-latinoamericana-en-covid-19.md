@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: The OCTS-OEI presents an explorer on Latin American research on COVID-19
 date: '2020-07-16 00:48:46'
 language: en

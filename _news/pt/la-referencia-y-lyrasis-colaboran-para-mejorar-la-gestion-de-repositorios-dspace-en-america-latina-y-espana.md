@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia e Lyrasis colaboram para melhorar a gestão dos repositórios DSpace na América Latina e Espanha
 date: '2025-01-07 22:20:21'
 language: pt

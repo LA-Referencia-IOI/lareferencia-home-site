@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Reference/RedCLARA and ASREN expand LIBSENSE collaboration through a service provision agreement
 date: '2022-06-16 13:57:08'
 language: en

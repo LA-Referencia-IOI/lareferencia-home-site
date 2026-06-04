@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Encuesta para repositorios: Modernización de la red regional repositorios'
 date: '2022-01-14 16:25:25'
 language: es

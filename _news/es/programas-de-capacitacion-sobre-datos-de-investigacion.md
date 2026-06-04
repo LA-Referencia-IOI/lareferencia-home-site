@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Programas de Capacitación sobre Datos de Investigación
 date: '2022-02-02 23:34:38'
 language: es

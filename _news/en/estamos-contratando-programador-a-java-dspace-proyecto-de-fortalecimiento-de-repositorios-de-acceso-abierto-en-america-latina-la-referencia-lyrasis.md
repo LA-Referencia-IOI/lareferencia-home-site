@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'We are hiring: JAVA Programmer - DSpace - Project to Strengthen Open Access Repositories in Latin America (LA Reference / Lyrasis)'
 date: '2025-02-14 00:45:36'
 language: en

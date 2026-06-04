@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia realizará Open Science Week de 19 a 23 de junho
 date: '2023-06-13 20:08:31'
 language: pt

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Nodo de Panamá realizó lanzamiento de la plataforma “CONECTO"
 date: '2022-10-09 16:21:12'
 language: es

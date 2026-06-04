@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia es uno de los ganadores del fondo JROST para el desarrollo de
   proyectos y tecnologías abiertas
 date: '2020-12-17 13:52:48'

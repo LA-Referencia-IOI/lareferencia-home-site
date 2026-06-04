@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Reference is one of the winners of the JROST fund for the development of open projects and technologies
 date: '2020-12-17 13:52:48'
 language: en

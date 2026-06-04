@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Survey for repositories: Modernization of the regional repository network'
 date: '2022-01-14 16:25:25'
 language: en

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: El Ministerio de Ciencia de Chile presenta la nueva Agencia Nacional de Investigación
   y Desarrollo
 date: 2020-01-17 23:08:06

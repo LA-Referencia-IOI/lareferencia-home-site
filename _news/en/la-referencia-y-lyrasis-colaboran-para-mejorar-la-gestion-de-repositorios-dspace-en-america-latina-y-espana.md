@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia and Lyrasis collaborate to improve the management of DSpace repositories in Latin America and Spain
 date: '2025-01-07 22:20:21'
 language: en

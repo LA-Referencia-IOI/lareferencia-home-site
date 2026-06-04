@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Con inmenso y profundo dolor anunciamos el fallecimiento de Alberto Cabezas
 date: '2020-09-19 18:24:30'
 language: es

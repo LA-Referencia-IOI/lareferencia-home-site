@@ -74,6 +74,7 @@ sections:
   - type: logos_grid
     title: "Nossos Membros"
     dynamic_members: true
+    carousel: true
     items:
       - name: "RedCLARA"
         logo: "/assets/img/Logo_Rede_Claro_Horizontal_C_Ass_Azul.jpg"
@@ -81,6 +82,8 @@ sections:
 
   - type: logos_grid
     title: "Agregadores Nacionais"
+    carousel: true
+    carousel_reverse: true
     items:
       - name: "Alicia"
         logo: "/assets/img/logoalicia.png"
@@ -100,6 +103,7 @@ sections:
 
   - type: logos_grid
     title: "Nossas Alianças"
+    carousel: true
     items:
       - name: "Redalyc"
         logo: "/assets/img/logo_redalyc-1.png"
@@ -119,6 +123,9 @@ sections:
       - name: "SCOSS"
         logo: "/assets/img/SCOSS_logo-1b.png"
         url: "https://scoss.org/how-it-works/current-funding-calls/"
+      - name: "Invest in Open Infrastructure"
+        logo: "/assets/img/ioi-logo.svg"
+        url: "https://investinopen.org/"
 
   - type: newsletter_cta
     title: "Assine nosso Newsletter"

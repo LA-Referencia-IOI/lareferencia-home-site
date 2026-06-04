@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia integra a su buscador el servicio CORE Recommender
 date: 2019-11-22 23:11:32
 language: es

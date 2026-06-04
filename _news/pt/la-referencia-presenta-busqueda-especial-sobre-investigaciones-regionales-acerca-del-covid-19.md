@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia apresenta pesquisa especial sobre investigações regionais sobre COVID-19
 date: '2020-06-08 16:04:44'
 language: pt

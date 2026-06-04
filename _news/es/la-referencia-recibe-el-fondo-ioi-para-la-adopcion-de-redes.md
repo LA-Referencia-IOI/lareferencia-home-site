@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia recibe el Fondo IOI para la Adopción de Redes
 date: '2025-11-18 03:08:51'
 language: es

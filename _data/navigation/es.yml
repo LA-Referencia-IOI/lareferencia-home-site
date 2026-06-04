@@ -76,12 +76,12 @@ main_nav:
   - label: Documentos institucionales
     href: /es/resources/recomendacion-unesco
     mega_title: Documentos institucionales
-    mega_subtitle: Documentación formal y auditorías de la red.
+    mega_subtitle: Documentación formal de la red.
     children:
-      - label: Auditorias
-        href: /es/resources/recomendacion-unesco
-        summary: Documentos de auditoría institucional de LA Referencia.
-        menu_icon: none
+      - label: Documentos
+        href: https://dev.lareferencia.info/documentos/
+        summary: Repositorio de documentos públicos de LA Referencia.
+        menu_icon: docs
 
   - label: Acerca de
     href: /es/about/quienes-somos

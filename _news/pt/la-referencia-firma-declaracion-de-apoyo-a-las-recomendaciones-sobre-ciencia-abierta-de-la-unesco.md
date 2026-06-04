@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: A Referência assina Declaração de apoio às Recomendações de Ciência Aberta da UNESCO
 date: '2022-02-04 15:49:44'
 language: pt

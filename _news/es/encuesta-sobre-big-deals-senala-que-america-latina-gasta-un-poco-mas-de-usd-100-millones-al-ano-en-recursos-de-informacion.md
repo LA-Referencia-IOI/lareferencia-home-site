@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Encuesta sobre Big Deals señala que América Latina gasta un poco más de USD
   100 millones al año en recursos de información
 date: '2020-08-21 13:57:16'

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia e RedCLARA assinam memorando de entendimento com RDA Estados Unidos
 date: '2021-09-10 20:00:25'
 language: pt

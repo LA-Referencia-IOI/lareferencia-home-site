@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: "Open Science Monitoring in Europe: A LIBER, UNESCO and LA Referencia Webinar"
 date: 2023-08-25 01:11:09
 language: en

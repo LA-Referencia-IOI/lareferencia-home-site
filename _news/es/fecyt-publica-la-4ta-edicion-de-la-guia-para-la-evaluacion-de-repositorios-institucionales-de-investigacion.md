@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: FECYT publica la 4ª edición de la Guía para la evaluación de repositorios institucionales
   de Investigación
 date: '2021-05-07 13:52:32'

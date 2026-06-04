@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Research Data Training Programs 2023
 date: '2023-07-01 17:37:48'
 language: en

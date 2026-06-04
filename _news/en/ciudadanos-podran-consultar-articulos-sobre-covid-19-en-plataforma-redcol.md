@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Citizens will be able to consult articles about COVID-19 on the RedCol platform
 date: '2021-05-14 13:51:50'
 language: en

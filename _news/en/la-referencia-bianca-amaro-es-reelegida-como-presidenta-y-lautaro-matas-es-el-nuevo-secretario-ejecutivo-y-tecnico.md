@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'LA Reference: Bianca Amaro is re-elected as president and Lautaro Matas is the new executive and technical secretary'
 date: '2020-11-27 14:31:31'
 language: en

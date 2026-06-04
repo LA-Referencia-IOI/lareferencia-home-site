@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Programas de Capacitación sobre Datos de Investigación 2023
 date: '2023-07-01 17:37:48'
 language: es

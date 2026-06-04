@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Estamos contratando: Programador/a JAVA - DSpace - Proyecto de Fortalecimiento
   de Repositorios de Acceso Abierto en América Latina (LA Referencia / Lyrasis)'
 date: '2025-02-14 00:45:36'

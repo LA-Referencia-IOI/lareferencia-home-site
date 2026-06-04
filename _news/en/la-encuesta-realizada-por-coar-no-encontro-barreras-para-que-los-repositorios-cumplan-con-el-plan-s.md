@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: The survey conducted by COAR found no barriers for repositories to comply with Plan S
 date: '2020-06-18 14:51:02'
 language: en

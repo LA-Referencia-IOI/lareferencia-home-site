@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia/RedCLARA and OpenAIRE sign a new Memorandum of Understanding
 date: '2025-02-16 16:11:51'
 language: en

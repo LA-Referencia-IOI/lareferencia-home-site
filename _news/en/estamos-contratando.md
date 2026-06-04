@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: We are hiring
 date: '2023-02-15 14:24:09'
 language: en

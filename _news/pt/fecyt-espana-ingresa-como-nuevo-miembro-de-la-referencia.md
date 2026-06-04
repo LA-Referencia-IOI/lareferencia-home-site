@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: FECYT-Espanha junta-se como novo membro da LA Referencia
 date: '2020-10-21 20:07:02'
 language: pt

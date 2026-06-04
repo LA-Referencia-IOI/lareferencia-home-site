@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: FECYT publica a 4ª edição do Guia para avaliação de repositórios institucionais de pesquisa
 date: '2021-05-07 13:52:32'
 language: pt

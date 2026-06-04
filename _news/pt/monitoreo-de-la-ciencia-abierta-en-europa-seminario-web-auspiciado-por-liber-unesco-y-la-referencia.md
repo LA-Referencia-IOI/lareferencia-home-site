@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Monitorização da ciência aberta na Europa: Webinar patrocinado pela LIBER, UNESCO e LA Referencia'
 date: '2023-08-25 13:41:18'
 language: pt

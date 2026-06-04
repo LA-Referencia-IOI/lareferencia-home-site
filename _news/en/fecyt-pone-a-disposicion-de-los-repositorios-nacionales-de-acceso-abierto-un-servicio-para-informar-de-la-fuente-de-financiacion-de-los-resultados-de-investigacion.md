@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: FECYT makes a service available to national open access repositories to report the source of funding for research results.
 date: '2021-04-29 14:35:01'
 language: en

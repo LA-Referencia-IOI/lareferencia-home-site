@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Declaración 10 años de LA Referencia: Hacia un ecosistema de Ciencia Abierta
   No Comercial'
 date: '2023-05-26 02:03:33'

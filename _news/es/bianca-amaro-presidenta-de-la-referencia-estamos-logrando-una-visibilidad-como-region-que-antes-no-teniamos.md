@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Bianca Amaro, presidenta de LA Referencia: “Estamos logrando una visibilidad
   como región que antes no teníamos”'
 date: '2020-08-24 16:17:13'

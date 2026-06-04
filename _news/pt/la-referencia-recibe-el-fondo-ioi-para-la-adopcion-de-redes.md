@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia recebe o Fundo IOI para Adoção de Rede
 date: '2025-11-18 03:08:51'
 language: pt

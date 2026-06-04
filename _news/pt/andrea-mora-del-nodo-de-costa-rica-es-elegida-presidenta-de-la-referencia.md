@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Andrea Mora, do nó Costa Rica, é eleita presidente da LA Referencia
 date: '2022-11-24 19:26:19'
 language: pt

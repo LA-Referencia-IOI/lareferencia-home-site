@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Capacitación en Indexación en Google Académico para OJS
 date: 2019-11-29 23:10:25
 language: es

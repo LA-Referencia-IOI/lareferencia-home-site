@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Research Data Training Programs
 date: '2022-02-02 23:34:38'
 language: en

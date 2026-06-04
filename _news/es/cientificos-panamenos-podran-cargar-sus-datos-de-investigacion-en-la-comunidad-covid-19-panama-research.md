@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Científicos panameños podrán cargar sus datos de investigación en la Comunidad
   COVID-19 Panama Research
 date: 2020-04-24 22:10:39

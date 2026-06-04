@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: FECYT publishes the 4th edition of the Guide for the evaluation of institutional research repositories
 date: '2021-05-07 13:52:32'
 language: en

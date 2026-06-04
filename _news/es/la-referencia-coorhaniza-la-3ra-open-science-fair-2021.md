@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia coorganiza la 3ra. OPEN SCIENCE FAIR 2021
 date: '2021-07-19 16:30:49'
 language: es

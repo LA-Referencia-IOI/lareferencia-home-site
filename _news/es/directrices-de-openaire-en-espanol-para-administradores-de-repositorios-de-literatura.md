@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Directrices de OpenAIRE en español para administradores de Repositorios de
   Literatura
 date: 2020-01-20 23:05:25

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'LA Reference signs joint position on "Selection of data repositories: criteria that matter"'
 date: '2021-04-05 19:42:17'
 language: en

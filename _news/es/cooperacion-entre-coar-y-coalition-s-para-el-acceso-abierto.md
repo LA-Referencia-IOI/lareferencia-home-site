@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Cooperación entre COAR y cOAlition S para el Acceso Abierto
 date: 2019-10-08 00:27:51
 language: es

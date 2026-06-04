@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Estamos contratando
 date: '2023-02-15 14:24:09'
 language: pt

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Patricia Muñoz: “o que é financiado com recursos públicos deve estar disponível para a geração de novos conhecimentos”'
 date: '2020-07-24 14:21:08'
 language: pt

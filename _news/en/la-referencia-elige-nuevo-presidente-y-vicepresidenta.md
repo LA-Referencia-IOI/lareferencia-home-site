@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia elects new president and vice president
 date: '2024-08-13 19:27:44'
 language: en

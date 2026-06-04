@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Survey on Big Deals indicates that Latin America spends a little more than USD 100 million a year on information resources
 date: '2020-08-21 13:57:16'
 language: en

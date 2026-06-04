@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Estamos contratando. Coordenador do projeto LA Referencia-Lyrasis: Fortalecendo os repositórios DSpace na América Latina e Espanha'
 date: '2024-12-11 14:02:50'
 language: pt

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia firma acuerdo de cooperación con REDALYC
 date: '2022-05-30 15:03:29'
 language: es

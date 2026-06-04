@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: COAR recebe apoio de 4 (USD) milhões para o projeto Notify
 date: '2022-05-20 14:26:51'
 language: pt

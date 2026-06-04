@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia firma Declaración de apoyo a las Recomendaciones sobre Ciencia
   Abierta de la UNESCO
 date: '2022-02-04 15:49:44'

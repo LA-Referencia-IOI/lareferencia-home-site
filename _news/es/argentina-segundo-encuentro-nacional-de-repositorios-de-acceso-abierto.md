@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Argentina: Segundo Encuentro Nacional de Repositorios de Acceso Abierto'
 date: 2019-10-15 00:26:44
 language: es

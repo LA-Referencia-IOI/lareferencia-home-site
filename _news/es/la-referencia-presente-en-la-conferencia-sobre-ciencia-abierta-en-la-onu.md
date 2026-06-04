@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia presente en la Conferencia sobre Ciencia Abierta en la ONU
 date: 2019-11-20 23:12:54
 language: es

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Nuevo nodo de LA Referencia en Colombia
 date: 2020-01-24 23:07:03
 language: es

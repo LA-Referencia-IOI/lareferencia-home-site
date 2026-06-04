@@ -77,12 +77,12 @@ main_nav:
   - label: Institutional Documents
     href: /en/resources/unesco-recommendation
     mega_title: Institutional Documents
-    mega_subtitle: Formal documentation and audits of the network.
+    mega_subtitle: Formal documentation of the network.
     children:
-      - label: Audits
-        href: /en/resources/unesco-recommendation
-        summary: Institutional audit documents of LA Referencia.
-        menu_icon: none
+      - label: Documents
+        href: https://dev.lareferencia.info/documentos/
+        summary: LA Referencia public documents repository.
+        menu_icon: docs
 
   - label: About
     href: /en/about/who-we-are

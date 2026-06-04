@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: FECYT-Spain joins as a new member of LA Reference
 date: '2020-10-21 20:07:02'
 language: en

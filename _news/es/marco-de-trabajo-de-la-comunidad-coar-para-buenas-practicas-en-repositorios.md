@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Marco de trabajo de la Comunidad COAR para buenas prácticas en repositorios
 date: '2020-10-12 22:03:06'
 language: es

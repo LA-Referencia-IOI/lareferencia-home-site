@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Ya está disponible la extensión de Dspace 5 y 6 que permite la inclusión de
   ORCID e implementación de las nuevas Directrices OpenAIRE 4.0
 date: 2020-05-22 22:09:25

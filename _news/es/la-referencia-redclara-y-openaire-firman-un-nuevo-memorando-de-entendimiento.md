@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia/RedCLARA y OpenAIRE firman un nuevo Memorando de Entendimiento
 date: '2025-02-16 16:11:51'
 language: es

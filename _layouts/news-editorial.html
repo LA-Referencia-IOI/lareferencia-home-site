@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<article class="editorial-post">
+  {% if page.image %}
+  <section class="editorial-hero">
+    <div class="editorial-hero-image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+    </div>
+  </section>
+  {% endif %}
+
+  <header class="editorial-header">
+    <div class="editorial-header-inner">
+      <time class="editorial-date" datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%d de %B de %Y" }}
+      </time>
+      <h1 class="editorial-title">{{ page.title | escape }}</h1>
+      <div class="editorial-separator"></div>
+    </div>
+  </header>
+
+  <div class="editorial-content">
+    {{ content }}
+  </div>
+
+  <footer class="editorial-footer">
+    <div class="editorial-separator"></div>
+  </footer>
+</article>

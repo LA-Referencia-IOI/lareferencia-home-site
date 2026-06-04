@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Recomendaciones de COAR para recursos sobre COVID-19 en repositorios
 date: 2020-06-15 21:40:52
 language: es

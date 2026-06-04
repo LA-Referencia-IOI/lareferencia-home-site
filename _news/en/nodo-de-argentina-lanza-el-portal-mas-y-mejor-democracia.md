@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Nodo de Argentina launches the portal “More and better democracy”
 date: '2023-03-24 14:46:46'
 language: en

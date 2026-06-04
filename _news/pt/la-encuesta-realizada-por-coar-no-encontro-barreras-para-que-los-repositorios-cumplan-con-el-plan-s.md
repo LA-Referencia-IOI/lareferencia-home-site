@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: A pesquisa realizada pelo COAR não encontrou barreiras para que os repositórios cumpram o Plano S
 date: '2020-06-18 14:51:02'
 language: pt

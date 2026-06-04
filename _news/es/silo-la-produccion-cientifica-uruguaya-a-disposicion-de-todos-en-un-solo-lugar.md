@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'SILO: La producción científica uruguaya a disposición de todos en un solo
   lugar'
 date: 2019-11-11 00:22:38

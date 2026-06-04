@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: DSpace lança sua versão 7.0
 date: '2021-08-03 20:25:01'
 language: pt

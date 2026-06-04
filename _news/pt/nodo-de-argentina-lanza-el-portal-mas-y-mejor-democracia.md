@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Nodo de Argentina lança o portal “Mais e melhor democracia”
 date: '2023-03-24 14:46:46'
 language: pt

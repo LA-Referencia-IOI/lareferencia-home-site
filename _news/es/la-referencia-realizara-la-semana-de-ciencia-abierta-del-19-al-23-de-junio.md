@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia realizará la Semana de Ciencia Abierta del 19 al 23 de junio
 date: '2023-06-13 20:08:31'
 language: es

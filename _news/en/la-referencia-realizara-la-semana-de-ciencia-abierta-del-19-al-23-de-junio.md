@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Reference will hold Open Science Week from June 19 to 23
 date: '2023-06-13 20:08:31'
 language: en

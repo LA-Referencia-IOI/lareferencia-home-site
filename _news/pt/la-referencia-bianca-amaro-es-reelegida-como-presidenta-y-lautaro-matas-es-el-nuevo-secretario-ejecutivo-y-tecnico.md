@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'LA Referencia: Bianca Amaro é reeleita presidente e Lautaro Matas é o novo secretário executivo e técnico'
 date: '2020-11-27 14:31:31'
 language: pt

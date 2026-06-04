@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Monitoreo de la ciencia abierta en Europa: Seminario web auspiciado por LIBER,
   UNESCO y LA Referencia'
 date: '2023-08-25 13:41:18'

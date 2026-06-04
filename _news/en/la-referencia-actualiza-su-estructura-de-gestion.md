@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Reference updates its management structure
 date: '2026-01-11 03:28:53'
 language: en

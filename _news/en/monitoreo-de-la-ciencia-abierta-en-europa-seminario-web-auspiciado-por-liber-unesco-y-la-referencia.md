@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Monitoring open science in Europe: Webinar sponsored by LIBER, UNESCO and LA Referencia'
 date: '2023-08-25 13:41:18'
 language: en

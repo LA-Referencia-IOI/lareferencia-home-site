@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: COAR Community Framework for Good Practices in Repositories
 date: '2020-10-12 22:03:06'
 language: en

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Pesquisa para repositórios: Modernização da rede regional de repositórios'
 date: '2022-01-14 16:25:25'
 language: pt

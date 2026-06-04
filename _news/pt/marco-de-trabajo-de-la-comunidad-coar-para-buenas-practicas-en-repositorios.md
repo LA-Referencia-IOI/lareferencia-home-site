@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Estrutura Comunitária COAR para Boas Práticas em Repositórios
 date: '2020-10-12 22:03:06'
 language: pt

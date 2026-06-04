@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: A Rede Mexicana de Repositórios Institucionais (REMERI) volta a se juntar à LA Referencia
 date: '2021-10-21 16:19:26'
 language: pt

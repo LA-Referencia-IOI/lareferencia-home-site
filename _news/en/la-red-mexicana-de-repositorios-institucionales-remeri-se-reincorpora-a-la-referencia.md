@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: The Mexican Network of Institutional Repositories (REMERI) rejoins LA Reference
 date: '2021-10-21 16:19:26'
 language: en

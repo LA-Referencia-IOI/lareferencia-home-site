@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Webinar: Transforming Research Evaluation into Reality: Concrete Advances in Open Science in Latin America and Europe'
 date: '2024-04-19 13:53:07'
 language: en

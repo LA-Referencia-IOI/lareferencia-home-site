@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia/RedCLARA y ASREN amplían colaboración LIBSENSE a través de un
   convenio de prestación de servicios
 date: '2022-06-16 13:57:08'

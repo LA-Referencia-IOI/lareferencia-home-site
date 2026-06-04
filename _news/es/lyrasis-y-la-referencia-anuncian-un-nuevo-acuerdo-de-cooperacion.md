@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Lyrasis y LA Referencia anuncian un nuevo acuerdo de cooperación
 date: 2019-11-01 00:24:33
 language: es

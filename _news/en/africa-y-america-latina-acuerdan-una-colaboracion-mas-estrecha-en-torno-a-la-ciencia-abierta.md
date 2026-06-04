@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Africa and Latin America agree to closer collaboration around open science
 date: '2021-04-12 16:46:32'
 language: en

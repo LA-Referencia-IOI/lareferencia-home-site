@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: FECYT pone a disposición de los repositorios nacionales de acceso abierto un
   servicio para informar de la fuente de financiación de los resultados de investigación
 date: '2021-04-29 14:35:01'

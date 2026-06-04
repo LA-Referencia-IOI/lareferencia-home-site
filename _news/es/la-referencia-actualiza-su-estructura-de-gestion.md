@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia actualiza su estructura de gestión
 date: '2026-01-11 03:28:53'
 language: es

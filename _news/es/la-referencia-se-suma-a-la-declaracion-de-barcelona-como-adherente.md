@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia se suma a la Declaración de Barcelona como adherente
 date: '2026-02-04 02:21:04'
 language: es

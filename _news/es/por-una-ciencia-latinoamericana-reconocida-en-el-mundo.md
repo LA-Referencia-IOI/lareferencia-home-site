@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Por una ciencia latinoamericana reconocida en el mundo
 date: 2019-11-01 00:25:41
 language: es

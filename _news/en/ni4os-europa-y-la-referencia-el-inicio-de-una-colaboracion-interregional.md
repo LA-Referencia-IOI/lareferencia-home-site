@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: NI4OS-Europe & LA Referencia - The beginning of an interregional collaboration
 date: '2021-06-27 20:15:43'
 language: en

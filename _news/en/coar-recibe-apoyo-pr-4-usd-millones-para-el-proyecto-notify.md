@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: COAR receives support of 4 (USD) million for the Notify project
 date: '2022-05-20 14:26:51'
 language: en

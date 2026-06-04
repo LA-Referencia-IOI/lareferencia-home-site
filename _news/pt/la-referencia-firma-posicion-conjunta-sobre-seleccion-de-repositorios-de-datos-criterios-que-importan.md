@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'LA Referencia assina posição conjunta sobre “Seleção de repositórios de dados: critérios que importam”'
 date: '2021-04-05 19:42:17'
 language: pt

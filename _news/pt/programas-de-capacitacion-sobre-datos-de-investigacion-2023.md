@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Programas de treinamento em dados de pesquisa 2023
 date: '2023-07-01 17:37:48'
 language: pt

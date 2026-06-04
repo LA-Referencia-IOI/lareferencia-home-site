@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: "Webinar recording Monitoring Open Science in Europe"
 date: 2023-10-06 00:59:13
 language: en

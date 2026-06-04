@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Gravação de Webinar Monitoramento da Ciência Aberta na Europa
 date: '2023-10-03 17:08:30'
 language: pt

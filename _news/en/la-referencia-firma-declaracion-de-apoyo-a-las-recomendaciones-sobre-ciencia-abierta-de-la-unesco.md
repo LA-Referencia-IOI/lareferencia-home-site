@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: THE Reference signs Declaration of support for the UNESCO Open Science Recommendations
 date: '2022-02-04 15:49:44'
 language: en

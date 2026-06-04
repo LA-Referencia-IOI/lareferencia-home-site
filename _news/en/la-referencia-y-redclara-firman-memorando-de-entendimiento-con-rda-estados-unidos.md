@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Referencia and RedCLARA sign memorandum of understanding with RDA United States
 date: '2021-09-10 20:00:25'
 language: en

@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: LA Reference presents special search on regional investigations about COVID-19
 date: '2020-06-08 16:04:44'
 language: en

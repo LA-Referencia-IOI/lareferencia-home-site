@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Resultados del Workshop OpenAIRE y LA Referencia
 date: 2019-11-17 23:16:21
 language: es

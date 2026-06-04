@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Webinar: Transformando la Evaluación de la Investigación en Realidad: Avances
   concretos en Ciencia Abierta en América Latina y Europa'
 date: '2024-04-19 13:53:07'

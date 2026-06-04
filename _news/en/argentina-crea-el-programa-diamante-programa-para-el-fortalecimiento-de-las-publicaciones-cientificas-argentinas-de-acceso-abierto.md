@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: 'Argentina creates the Diamond Program: program to strengthen Argentine open access scientific publications'
 date: '2023-11-01 17:20:55'
 language: en

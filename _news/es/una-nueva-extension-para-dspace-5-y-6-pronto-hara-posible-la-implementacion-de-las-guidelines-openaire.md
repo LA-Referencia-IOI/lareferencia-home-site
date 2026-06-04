@@ -1,4 +1,5 @@
 ---
+layout: news-editorial
 title: Una nueva extensión para DSpace 5 y 6 pronto hará posible la implementación
   de las Guidelines OpenAIRE
 date: 2019-12-02 23:09:04
