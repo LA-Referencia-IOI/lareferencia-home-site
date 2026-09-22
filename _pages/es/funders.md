@@ -6,6 +6,8 @@ language: es
 language_reference: funders
 permalink: /es/alianzas-y-proyectos/
 published: true
+menu_parent: about
+menu_order: 60
 order: 2
 ---
 

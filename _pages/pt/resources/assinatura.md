@@ -5,10 +5,6 @@ description: "Newsletter da LA Referencia"
 language: pt
 language_reference: subscription
 published: true
-menu_parent: resources
-menu_order: 30
-menu_label: "Assinatura"
-menu_icon: "docs"
 ---
 
 {% include mailchimp-form.html

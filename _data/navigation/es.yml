@@ -12,34 +12,32 @@ top_lang_strip:
 read_more_label: Leer más...
 
 main_nav:
-  - label: Servicios
+  - label: Tecnología y proyectos
     href: /es/services/plataforma-la-referencia
     match: /services/
-    children:
-      - label: Plataforma LA Referencia
-        href: /es/services/plataforma-la-referencia
-        summary: Conozca más sobre el software utilizado para recopilar datos de los nodos nacionales.
-        menu_icon: search
-      - label: Estadísticas de Uso
-        href: https://ustats.lareferencia.info/es/home
-        summary: Descubra cómo nuestra plataforma brinda acceso a los datos de uso de los repositorios en toda la red.
-        menu_icon: stats
-        external: true
-      - label: dARK
-        href: https://www.dark-pid.net/es/home
-        summary: Explore cómo se desarrolló esta herramienta para asignar identificadores persistentes.
-        menu_icon: dark
-        external: true
-      - label: Proyecto LA Referencia/Lyrasis DSpace
-        href: https://dspace.lareferencia.info/pt/
-        menu_icon: db
-        external: true
-    mega_title: Tecnología
-    cta:
-      label: Leer más...
-      href: /es/alianzas-y-proyectos/
-    cta_title: Alianzas y Proyectos
-    cta_image: /assets/img/business-people-shaking-hands-together.jpg
+    groups:
+      - title: Tecnología
+        children:
+          - label: Plataforma LA Referencia
+            href: /es/services/plataforma-la-referencia
+            summary: Conozca más sobre el software utilizado para recopilar datos de los nodos nacionales.
+            menu_icon: search
+          - label: Estadísticas de Uso
+            href: https://ustats.lareferencia.info/es/home
+            summary: Descubra cómo nuestra plataforma brinda acceso a los datos de uso de los repositorios en toda la red.
+            menu_icon: stats
+            external: true
+      - title: Proyectos
+        children:
+          - label: dARK
+            href: https://www.dark-pid.net/es/home
+            summary: Explore cómo se desarrolló esta herramienta para asignar identificadores persistentes.
+            menu_icon: dark
+            external: true
+          - label: Proyecto LA Referencia/Lyrasis DSpace
+            href: https://dspace.lareferencia.info/pt/
+            menu_icon: db
+            external: true
 
   - label: Recursos
     href: /es/news
@@ -51,12 +49,16 @@ main_nav:
     mega_subtitle: Noticias, relevamientos y suscripción institucional.
     children:
       - label: Plataforma de Capacitación
-        href: https://recursos.lareferencia.info/
+        href: https://cursos.lareferencia.info/
         summary: Expanda sus conocimientos sobre Ciencia Abierta de la mano de la Plataforma de Capacitación de LA Referencia.
         menu_icon: graduation-cap
         external: true
-        menu_order: 1
-        primary_link: true
+      - label: Documentos institucionales
+        href: https://recursos.lareferencia.info/
+        summary: Repositorio de documentos institucionales de LA Referencia.
+        menu_icon: docs
+        external: true
+        menu_order: 5
 
   - label: Miembros
     href: /es/miembros/
@@ -73,15 +75,9 @@ main_nav:
     cta_text: Conozca la propuesta de valor de ser parte de LA Referencia.
     cta_image: /assets/img/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept.jpg
 
-  - label: Documentos institucionales
-    href: /es/resources/recomendacion-unesco
-    mega_title: Documentos institucionales
-    mega_subtitle: Documentación formal de la red.
-    children:
-      - label: Documentos
-        href: https://dev.lareferencia.info/documentos/
-        summary: Repositorio de documentos públicos de LA Referencia.
-        menu_icon: docs
+  - label: Noticias
+    href: /es/news
+    match: /news
 
   - label: Acerca de
     href: /es/about/quienes-somos
@@ -93,12 +89,6 @@ main_nav:
     page_menu: about
     mega_title: Organización
     mega_subtitle: Información institucional y cómo participar.
-    cta:
-      label: Ver trayectoria
-      href: /es/about/mision-vision
-    cta_title: Trayectoria Institucional
-    cta_text: Revise nuestra historia, misión y modelo de gobernanza regional.
-    cta_image: /assets/img/globe-internet-icon-line-connection-circuit-board.jpg
 
   - label: Contacto
     href: /es/contact

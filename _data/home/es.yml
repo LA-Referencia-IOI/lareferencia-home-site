@@ -4,10 +4,9 @@ sections:
     subtitle: "LA Referencia, a través de sus servicios, apoya las estrategias nacionales de Ciencia Abierta en América Latina y España."
 
   - type: explore_band
-    title: "Explore las publicaciones científicas en Acceso Abierto"
+    title: "Explore los resultados de investigación científica en acceso abierto"
     placeholder: "Buscar en las publicaciones"
     button_label: "Explorar la Red"
-    subtitle: "Miles de recursos disponibles gratuitamente generados en América Latina y España"
 
   - type: band_message
     text: "Explore las publicaciones científicas de América Latina y España en Acceso Abierto"
@@ -43,6 +42,33 @@ sections:
         - label: "Capítulo"
           value: "112.471"
 
+  - type: resources_cards
+    cards:
+      - title: "Instalación y configuración básica de DSpace 7.5"
+        summary: "Guillermo Esteban Murillo Goussen, técnico de LA Referencia, explica el detalle sobre la instalación y configuración básica de DSpace 7.5."
+        button_label: "Ir al recurso"
+        button_url: "https://recursos.lareferencia.info/download/instalacion-y-configuracion-basica-de-dspace-7-5/"
+      - title: "Acceso a los datos de producción científica financiados con fondos públicos: DATACIENCIA"
+        summary: "Panelista: Carolina González."
+        button_label: "Ir al recurso"
+        button_url: "https://recursos.lareferencia.info/download/acceso-a-los-datos-de-produccion-cientifica-financiados-con-fondos-publicos-dataciencia/"
+      - title: "Experiencias en la migración de repositorios institucionales DSpace"
+        summary: "Ponente: Ariel Lira, PREBI-SEDICI, Universidad Nacional de La Plata, Argentina."
+        button_label: "Ir al recurso"
+        button_url: "https://recursos.lareferencia.info/download/experiencias-en-la-migracion-de-repositorios-institucionales-dspace/"
+      - title: "Próximamente"
+        summary: "Nuevo recurso en preparación, disponible próximamente en la plataforma de recursos."
+        button_label: "Ir al recurso"
+        button_url: "#"
+      - title: "Próximamente"
+        summary: "Nuevo recurso en preparación, disponible próximamente en la plataforma de recursos."
+        button_label: "Ir al recurso"
+        button_url: "#"
+      - title: "Próximamente"
+        summary: "Nuevo recurso en preparación, disponible próximamente en la plataforma de recursos."
+        button_label: "Ir al recurso"
+        button_url: "#"
+
   - type: faq_cta
     title: "¿Qué debo hacer si mi investigación o repositorio no se encuentra en LA Referencia?"
     body: "LA Referencia es un agregador que cosecha metadata de los repositorios de los países participantes por ese motivo no es posible depositar directamente sus resultados de investigación. No obstante, usted puede encontrar la información necesaria haciendo clic en el siguiente enlace."
@@ -50,31 +76,9 @@ sections:
     button_url: "/es/about/como-ser-parte"
     image: "/assets/img/faq.svg"
 
-  - type: resources_cards
-    title: "Explore nuestros últimos recursos de capacitación"
-    section_all_url: "https://recursos.lareferencia.info/"
-    section_all_label: "Ver todos los recursos"
-    cards:
-      - title: "Instalación y configuración básica de DSpace 7.5"
-        summary: "Guillermo Esteban Murillo Goussen, técnico de LA Referencia, explica el detalle sobre la instalación y configuración básica de DSpace 7.5."
-        image: "/assets/img/resource1.svg"
-        button_label: "Ir al Recurso"
-        button_url: "https://recursos.lareferencia.info/download/instalacion-y-configuracion-basica-de-dspace-7-5/"
-      - title: "Acceso a los datos de producción científica financiados con fondos públicos: DATACIENCIA"
-        summary: "Panelista: Carolina González."
-        image: "/assets/img/resource2.svg"
-        button_label: "Ir al Recurso"
-        button_url: "https://recursos.lareferencia.info/download/acceso-a-los-datos-de-produccion-cientifica-financiados-con-fondos-publicos-dataciencia/"
-      - title: "Experiencias en la migración de repositorios institucionales DSpace"
-        summary: "Ponente: Ariel Lira, PREBI-SEDICI, Universidad Nacional de La Plata, Argentina."
-        image: "/assets/img/resource3.svg"
-        button_label: "Ir al Recurso"
-        button_url: "https://recursos.lareferencia.info/download/experiencias-en-la-migracion-de-repositorios-institucionales-dspace/"
-
   - type: logos_grid
     title: "Nuestros Miembros"
     dynamic_members: true
-    carousel: true
     items:
       - name: "RedCLARA"
         logo: "/assets/img/Logo_Rede_Claro_Horizontal_C_Ass_Azul.jpg"
@@ -82,8 +86,6 @@ sections:
 
   - type: logos_grid
     title: "Agregadores Nacionales"
-    carousel: true
-    carousel_reverse: true
     items:
       - name: "Alicia"
         logo: "/assets/img/logoalicia.png"
@@ -103,7 +105,6 @@ sections:
 
   - type: logos_grid
     title: "Nuestras Alianzas"
-    carousel: true
     items:
       - name: "Redalyc"
         logo: "/assets/img/logo_redalyc-1.png"

@@ -5,10 +5,6 @@ description: "Últimas novedades"
 language: es
 language_reference: news-index
 published: true
-menu_parent: resources
-menu_order: 40
-menu_label: "Noticias"
-menu_icon: "docs"
 ---
 
 <h1>Noticias</h1>

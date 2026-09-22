@@ -49,16 +49,75 @@
   {% endif %}
 
   <li
-    class="lr-main-item {% if children and children.size > 0 %}has-mega{% endif %} {% if is_active %}active{% endif %}">
-    <a class="lr-main-link {% if children and children.size > 0 %}lr-main-link-mega{% endif %}"
-      href="{{ item_href | relative_url | default: '#' }}" {% if children and children.size> 0 %}aria-haspopup="true"
+    class="lr-main-item {% if children.size > 0 or item.groups %}has-mega{% endif %} {% if is_active %}active{% endif %}">
+    <a class="lr-main-link {% if children.size > 0 or item.groups %}lr-main-link-mega{% endif %}"
+      href="{{ item_href | relative_url | default: '#' }}" {% if children.size > 0 or item.groups %}aria-haspopup="true"
       aria-expanded="false"{% endif %}>
       {{ item.label }}
     </a>
 
-    {% if children and children.size > 0 %}
+    {% if children.size > 0 or item.groups %}
     <div class="lr-mega-panel">
-      <div class="lr-mega-grid">
+      <div class="lr-mega-grid{% if item.groups %} is-groups{% endif %}">
+        {% if item.groups %}
+          {% for group in item.groups %}
+          <div class="lr-mega-list-wrap">
+            {% if group.title %}
+            <header class="lr-mega-header">
+              <h3>{{ group.title }}</h3>
+              <div class="lr-mega-header-divider"></div>
+            </header>
+            {% endif %}
+            <ul class="lr-mega-links lr-mega-links-1col">
+              {% for child in group.children %}
+              {% assign child_href = child.href %}
+              {% if child.url %}
+              {% assign child_href = child.url %}
+              {% endif %}
+              {% assign child_is_external = false %}
+              {% if child.external or child_href contains '://' or child_href contains 'mailto:' %}
+              {% assign child_is_external = true %}
+              {% endif %}
+              {% assign child_label = child.label | default: child.menu_label | default: child.title %}
+              {% assign child_summary_source = child.menu_summary | default: child.summary | default: child.excerpt |
+              default: child.content | default: child.description %}
+              {% assign child_summary = child_summary_source | strip_html | strip_newlines | replace: ' ', ' ' | strip %}
+              {% assign child_summary = child_summary | remove_first: child_label | strip %}
+              {% if child_summary == blank and child.description %}
+              {% assign child_summary = child.description | strip_html | strip_newlines | strip %}
+              {% endif %}
+              {% assign icon_key = child.menu_icon | default: 'generic' %}
+              <li>
+              {% assign item_classes = "lr-mega-item no-icon" %}
+              {% if child.primary_link %}
+              {% assign item_classes = "lr-mega-item no-icon lr-mega-item-cta-highlight" %}
+              {% endif %}
+              <article class="{{ item_classes }}">
+                  {% comment %}
+                  ICONS TEMPORARILY DISABLED — uncomment below to re-enable
+                  {% unless icon_key == 'none' %}
+                  <span class="lr-mega-icon lr-mega-icon-{{ icon_key }}" aria-hidden="true">
+                    <!-- icon SVG here -->
+                  </span>
+                  {% endunless %}
+                  {% endcomment %}
+                  <div class="lr-mega-item-body">
+                    <a class="lr-mega-link-title"
+                      href="{% if child_is_external %}{{ child_href }}{% else %}{{ child_href | relative_url }}{% endif %}"
+                      {% if child_is_external %}target="_blank" rel="noopener" {% endif %}>
+                      {{ child_label }}
+                    </a>
+                    {% if child_summary != blank %}
+                    <p class="lr-mega-summary">{{ child_summary | truncate: 120 }}</p>
+                    {% endif %}
+                  </div>
+                </article>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endfor %}
+        {% else %}
         <div class="lr-mega-list-wrap">
           {% if item.mega_title or item.mega_subtitle %}
           <header class="lr-mega-header">
@@ -116,7 +175,7 @@
 
             {% if item.cta %}
             <li class="lr-mega-cta-grid-item">
-              <article class="lr-mega-item no-icon lr-mega-item-cta-highlight">
+              <article class="lr-mega-item no-icon">
                 <div class="lr-mega-item-body">
                   <a class="lr-mega-link-title" href="{{ item.cta.href | relative_url }}">
                     {{ item.cta_title | default: item.label }}
@@ -130,6 +189,7 @@
             {% endif %}
           </ul>
         </div>
+        {% endif %}
       </div>
     </div>
     {% endif %}

@@ -5,10 +5,6 @@ description: "Newsletter de LA Referencia"
 language: es
 language_reference: subscription
 published: true
-menu_parent: resources
-menu_order: 30
-menu_label: "Suscripción"
-menu_icon: "docs"
 ---
 
 {% include mailchimp-form.html

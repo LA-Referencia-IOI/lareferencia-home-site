@@ -1,17 +1,17 @@
 ---
 layout: page
-title: "Representantes"
+title: "Gobernanza"
 description: "Autoridades y equipos de representación de LA Referencia"
 language: es
 language_reference: representatives
 published: true
 menu_parent: about
 menu_order: 50
-menu_label: "Representantes"
+menu_label: "Gobernanza"
 menu_icon: "org"
 ---
 
-<h1>Representantes</h1>
+<h1>Gobernanza</h1>
 
 <p class="page-lead">Contamos con una red de apoyo esparcida por toda Latinoamérica y España.</p>
 

@@ -5,10 +5,6 @@ description: "Latest news updates"
 language: en
 language_reference: news-index
 published: true
-menu_parent: resources
-menu_order: 40
-menu_label: "News"
-menu_icon: "docs"
 ---
 
 <h1>News</h1>

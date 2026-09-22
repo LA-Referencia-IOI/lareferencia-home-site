@@ -1,17 +1,17 @@
 ---
 layout: page
-title: "Representatives"
+title: "Governance"
 description: "Authorities and representative bodies of LA Referencia"
 language: en
 language_reference: representatives
 published: true
 menu_parent: about
 menu_order: 50
-menu_label: "Representatives"
+menu_label: "Governance"
 menu_icon: "org"
 ---
 
-<h1>Representatives</h1>
+<h1>Governance</h1>
 
 <p class="page-lead">We are supported by a network that extends across Latin America and Spain.</p>
 

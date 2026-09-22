@@ -12,17 +12,36 @@
 {% endfor %}
 </div>
 
+{% comment %}
+Wrap consecutive logos_grid sections in a single .lr-logos-row so they lay out
+as 3 (or N) columns at page level, with each section's logos in 2 columns.
+{% endcomment %}
+{% assign in_logos_row = false %}
 {% for section in schema.sections %}
 {% if section.type != 'hero_map' and section.type != 'explore_band' %}
+{% if section.type == 'logos_grid' %}
+{% unless in_logos_row %}
+<div class="lr-logos-row">
+  {% assign in_logos_row = true %}
+{% endunless %}
+{% include home/sections/logos_grid.html section=section %}
+{% else %}
+{% if in_logos_row %}
+</div>
+  {% assign in_logos_row = false %}
+{% endif %}
 {% case section.type %}
 {% when 'band_message' %}{% include home/sections/band_message.html section=section %}
 {% when 'search_stats' %}{% include home/sections/search_stats.html section=section %}
 {% when 'faq_cta' %}{% include home/sections/faq_cta.html section=section %}
 {% when 'resources_cards' %}{% include home/sections/resources_cards.html section=section %}
-{% when 'logos_grid' %}{% include home/sections/logos_grid.html section=section %}
 {% when 'newsletter_cta' %}{% include home/sections/newsletter_cta.html section=section %}
 {% endcase %}
 {% endif %}
+{% endif %}
 {% endfor %}
+{% if in_logos_row %}
+</div>
+{% endif %}
 
 {% endif %}
