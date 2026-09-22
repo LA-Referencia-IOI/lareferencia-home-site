@@ -79,10 +79,6 @@ sections:
   - type: logos_grid
     title: "Nossos Membros"
     dynamic_members: true
-    items:
-      - name: "RedCLARA"
-        logo: "/assets/img/Logo_Rede_Claro_Horizontal_C_Ass_Azul.jpg"
-        url: "https://www.redclara.net/"
 
   - type: logos_grid
     title: "Agregadores Nacionais"
@@ -106,6 +102,9 @@ sections:
   - type: logos_grid
     title: "Nossas Alianças"
     items:
+      - name: "RedCLARA"
+        logo: "/assets/img/Logo_Rede_Claro_Horizontal_C_Ass_Azul.jpg"
+        url: "https://www.redclara.net/"
       - name: "Redalyc"
         logo: "/assets/img/logo_redalyc-1.png"
         url: "https://www.redalyc.org/"

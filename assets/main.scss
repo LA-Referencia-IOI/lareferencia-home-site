@@ -96,7 +96,7 @@ body {
 }
 
 body {
-  font-family: "Titillium Web", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Titillium Web", "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
   font-size: 15px;
   line-height: 1.55;
   color: var(--text-color);
@@ -627,7 +627,7 @@ img {
 .lr-home-top-group {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 83px);
   /* Adjusted to ensure it completely pushes the next section down */
   margin-inline: calc(50% - 50vw);
   margin-top: 0;
@@ -701,7 +701,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
-  max-width: 900px;
+  max-width: 1050px;
   margin: 0 auto 1.5rem;
 }
 
@@ -789,7 +789,7 @@ img {
 }
 
 .lr-explore-form .btn-primary:hover {
-  background-color: var(--primary-strong);
+  background-color: #31549a;
 }
 
 .lr-explore-form .btn-secondary {
@@ -919,7 +919,9 @@ img {
   display: grid;
   grid-template-columns: 1fr 420px;
   align-items: center;
-  gap: 5rem;
+  // gap: 5rem;
+  max-width: var(--wrapper-width);
+  margin: 0 auto;
 }
 
 .lr-faq-content {
@@ -933,7 +935,7 @@ img {
 }
 
 .lr-faq-content h2 {
-  font-size: clamp(2.2rem, 3.5vw, 2.9rem);
+  font-size: clamp(2.2rem, 3.5vw, 2.4rem);
   font-weight: 800;
   color: #fff;
   margin-bottom: 1.2rem;
@@ -1017,15 +1019,14 @@ img {
 
 .lr-resource-card {
   background:
-    radial-gradient(120% 90% at 22% 0%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 60%),
-    linear-gradient(135deg, #6b8bb8 0%, #3a5180 100%);
+    linear-gradient(135deg, var(--color-blue) 0%, var(--primary-strong) 100%);
   border-radius: 18px;
   padding: 1.6rem 1.5rem;
   display: flex;
   flex-direction: column;
   min-height: 230px;
   color: #fff;
-  box-shadow: 0 10px 28px rgba(58, 81, 128, 0.16);
+  // box-shadow: 0 10px 28px rgba(58, 81, 128, 0.16);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1069,7 +1070,7 @@ img {
   background: transparent;
   color: #fff;
   border: 1.5px solid #fff;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: var(--transition);
   cursor: pointer;
   line-height: 1;
@@ -1327,7 +1328,7 @@ img {
   align-items: center;
   justify-content: center;
   transition: var(--transition);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
 .lr-logo-item:hover {
@@ -3026,4 +3027,14 @@ p {
       font-size: 1.08rem;
     }
   }
+}
+
+.site-header.lr-site-header,
+.lr-site-nav,
+.lr-main-link,
+.lr-mega-link-title {
+  text-rendering: auto;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-feature-settings: normal;   /* ← esta línea es la que faltaba */
 }
