@@ -1,19 +1,20 @@
 ---
 layout: page
-title: "Alianzas y Proyectos"
+title: "Alianzas"
 description: "Iniciativas y convenios de LA Referencia"
 language: es
 language_reference: funders
 permalink: /es/alianzas-y-proyectos/
 published: true
 menu_parent: about
-menu_order: 60
+menu_order: 50
+menu_label: "Alianzas"
 order: 2
 ---
 
 <div class="alliances-page">
   <header class="alliances-hero">
-    <h1>Alianzas y Proyectos</h1>
+    <h1>Alianzas</h1>
   </header>
 
   <section class="alliances-grid">

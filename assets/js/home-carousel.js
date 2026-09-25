@@ -1,19 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const track = document.getElementById('lrr-track');
-  const bullets = document.querySelectorAll('.lr-resource-bullet');
-  
-  if (!track || bullets.length === 0) return;
+(function () {
+  const btn = document.querySelector('.lr-toggle-resources');
+  if (!btn) return;
 
-  bullets.forEach((bullet, index) => {
-    bullet.addEventListener('click', () => {
-      // Remove active class from all bullets
-      bullets.forEach(b => b.classList.remove('active'));
-      
-      // Add active class to clicked bullet
-      bullet.classList.add('active');
-      
-      // Move track
-      track.style.transform = `translateX(-${index * 100}%)`;
+  const collapsedText = btn.getAttribute('data-text-collapsed') || btn.textContent.trim();
+  const expandedText = btn.getAttribute('data-text-expanded') || collapsedText;
+
+  btn.addEventListener('click', function () {
+    const hidden = document.querySelectorAll('.lr-resource-card-hidden');
+    const expanding = btn.getAttribute('data-state') !== 'expanded';
+
+    hidden.forEach(function (card) {
+      card.classList.toggle('lr-resource-card-hidden');
     });
+
+    btn.setAttribute('data-state', expanding ? 'expanded' : 'collapsed');
+    btn.textContent = expanding ? expandedText : collapsedText;
   });
-});
+})();

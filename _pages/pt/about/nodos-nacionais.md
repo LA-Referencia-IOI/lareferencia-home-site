@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Nós Nacionais"
+title: "Países membros"
 description: "Página institucional"
 language: pt
 language_reference: about-national-nodes
@@ -8,14 +8,14 @@ permalink: /pt/membros/
 published: true
 menu_parent: members
 menu_order: 10
-menu_label: "Nós Nacionais"
+menu_label: "Países membros"
 menu_icon: "none"
 ---
 
 <div class="contact-page">
   <header class="contact-page-header">
-    <p class="contact-page-eyebrow">Nós Nacionais</p>
-    <h1 class="contact-page-title">Nós Nacionais</h1>
+    <p class="contact-page-eyebrow">Países membros</p>
+    <h1 class="contact-page-title">Países membros</h1>
     <p class="contact-page-lead">A LA Referencia é atualmente formada por oito países latino-americanos (Argentina, Brasil, Chile, Costa Rica, Equador, Panamá, Peru e Uruguai) e um país europeu (Espanha). Esses países contam com nós nacionais que, por sua vez, reúnem diversos repositórios locais, principalmente universitários.</p>
   </header>
 </div>

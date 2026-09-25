@@ -21,9 +21,9 @@ member_tabs:
 
     <li><strong>Institución Política:</strong> Consejo Nacional de Ciencia, Tecnología e Innovación Tecnológica (<a href="https://www.gob.pe/concytec" rel="noopener" target="_blank">CONCYTEC</a>)</li>
 
-    <li><strong>Consejo Directivo:</strong>  Claudia Córdova (Concytec – Perú).</li>
+    <li><strong>Consejo Directivo:</strong> Isabel Recavarren Martínez (Concytec – Perú) y José Luis Segovia Juárez (Concytec – Perú)</li>
 
-    <li><strong>Comité Técnico:</strong> Isabel Recavarren Martínez (Concytec – Perú)</li>
+    <li><strong>Comité Técnico:</strong></li>
 
     </ul>'
 - title: Legislación y Políticas

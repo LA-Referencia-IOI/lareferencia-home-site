@@ -27,12 +27,17 @@ main_nav:
             summary: Discover how our platform provides access to usage data from the repositories across the network
             menu_icon: stats
             external: true
-      - title: Projects
-        children:
           - label: dARK
             href: https://www.dark-pid.net/en/home
             summary: Explore how this tool was developed to assign Persistent Identifiers
             menu_icon: dark
+            external: true
+      - title: Projects
+        children:
+          - label: LA Referencia IOI Project
+            href: https://la-referencia-ioi.github.io/reports/en/index.html
+            summary: Learn about the LA Referencia - IOI project reports on open infrastructure in the region.
+            menu_icon: generic
             external: true
           - label: Project LA Referencia/Lyrasis DSpace
             href: https://dspace.lareferencia.info/
@@ -61,13 +66,13 @@ main_nav:
         external: true
         menu_order: 5
 
-  - label: Members
+  - label: Member countries
     href: /en/members/
     matches:
       - /members/
       - /about/how-to-join
     page_menu: members
-    mega_title: Members
+    mega_title: Member countries
     mega_subtitle: Member countries and how to join the network.
     cta:
       label: Read more...

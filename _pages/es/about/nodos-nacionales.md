@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Países Miembros"
+title: "Países miembro"
 description: "Página institucional"
 language: es
 language_reference: about-national-nodes
@@ -8,14 +8,14 @@ permalink: /es/miembros/
 published: true
 menu_parent: members
 menu_order: 10
-menu_label: "Países Miembros"
+menu_label: "Países miembro"
 menu_icon: "none"
 ---
 
 <div class="contact-page">
   <header class="contact-page-header">
-    <p class="contact-page-eyebrow">Países Miembros</p>
-    <h1 class="contact-page-title">Países Miembros</h1>
+    <p class="contact-page-eyebrow">Países miembro</p>
+    <h1 class="contact-page-title">Países miembro</h1>
     <p class="contact-page-lead">LA Referencia está conformada actualmente por ocho países latinoamericanos (Argentina, Brasil, Chile, Costa Rica, Ecuador, Panamá, Perú y Uruguay) y uno europeo (España). Estos países cuentan con nodos nacionales que agrupan a su vez diversos repositorios locales, principalmente de universidades.</p>
   </header>
 </div>

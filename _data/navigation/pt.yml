@@ -27,12 +27,17 @@ main_nav:
             summary: Conheça como funciona nosso desenvolvimento para exibir estatísticas de uso dos repositórios da rede
             menu_icon: stats
             external: true
-      - title: Projetos
-        children:
           - label: dARK
             href: https://www.dark-pid.net/pt/home
             summary: Conheça o desenvolvimento desta ferramenta para atribuição de Identificadores Persistentes
             menu_icon: dark
+            external: true
+      - title: Projetos
+        children:
+          - label: LA Referencia projeto IOI
+            href: https://la-referencia-ioi.github.io/reports/en/index.html
+            summary: Conheça os relatórios do projeto LA Referencia - IOI sobre infraestrutura aberta na região.
+            menu_icon: generic
             external: true
           - label: Projeto LA Referencia/Lyrasis DSpace
             href: https://dspace.lareferencia.info/
@@ -60,13 +65,13 @@ main_nav:
         external: true
         menu_order: 5
 
-  - label: Membros
+  - label: Países membros
     href: /pt/membros/
     matches:
       - /membros/
       - /about/como-participar
     page_menu: members
-    mega_title: Membros
+    mega_title: Países membros
     mega_subtitle: Países membros e como participar da rede.
     cta:
       label: Ler mais...

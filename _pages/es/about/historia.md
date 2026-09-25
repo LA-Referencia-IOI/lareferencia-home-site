@@ -6,7 +6,7 @@ language: es
 language_reference: about-history
 published: true
 menu_parent: about
-menu_order: 30
+menu_order: 60
 menu_label: "Historia"
 menu_icon: "none"
 ---

@@ -21,9 +21,9 @@ member_tabs:
 
     <li><strong>Institución Política:</strong> Instituto Brasilero de Información en Ciencia y Tecnología (<a href="http://www.ibict.br/" rel="noopener" target="_blank">IBICT</a>)</li>
 
-    <li><strong>Consejo Directivo:</strong> Bianca Amaro (Ibict- Brasil).</li>
+    <li><strong>Consejo Directivo:</strong> Washington Ribeiro (Ibict – Brasil).</li>
 
-    <li><strong>Comité Técnico:</strong> Washington Ribeiro (Ibict – Brasil).</li>
+    <li><strong>Comité Técnico:</strong> André Apple (Ibict – Brasil).</li>
 
     </ul>'
 - title: Legislación y Políticas

@@ -19,11 +19,11 @@ member_tabs:
 - title: Consejo Directivo
   content_html: '<ul>
 
-    <li><strong>Political Institution:</strong> <a href="https://www.argentina.gob.ar/ciencia" rel="noopener" target="_blank">Subsecretaría de Ciencia y Tecnología. Secretaría de Innovación, Ciencia y Tecnología. Jefatura de Gabinete de Ministros</a></li>
+    <li><strong>Institución Política:</strong> <a href="https://www.argentina.gob.ar/ciencia" rel="noopener" target="_blank">Subsecretaría de Ciencia y Tecnología. Secretaría de Innovación, Ciencia y Tecnología. Jefatura de Gabinete de Ministros</a></li>
 
-    <li><strong>Consejo Directivo:</strong> Paula Nahirñak y Alberto Apollaro.</li>
+    <li><strong>Consejo Directivo:</strong></li>
 
-    <li><strong>Comité Técnico:</strong> Alberto Apollaro </li>
+    <li><strong>Comité Técnico:</strong></li>
 
     </ul>'
 - title: Legislación y Políticas

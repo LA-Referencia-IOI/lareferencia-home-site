@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "National Nodes"
+title: "Member countries"
 description: "About page"
 language: en
 language_reference: about-national-nodes
@@ -8,14 +8,14 @@ permalink: /en/members/
 published: true
 menu_parent: members
 menu_order: 10
-menu_label: "National Nodes"
+menu_label: "Member countries"
 menu_icon: "none"
 ---
 
 <div class="contact-page">
   <header class="contact-page-header">
-    <p class="contact-page-eyebrow">National Nodes</p>
-    <h1 class="contact-page-title">National Nodes</h1>
+    <p class="contact-page-eyebrow">Member countries</p>
+    <h1 class="contact-page-title">Member countries</h1>
     <p class="contact-page-lead">LA Referencia currently brings together eight Latin American countries (Argentina, Brazil, Chile, Costa Rica, Ecuador, Panama, Peru and Uruguay) and one European country (Spain). These countries have national nodes that in turn group a range of local repositories, mainly from universities.</p>
   </header>
 </div>

@@ -1,7 +1,7 @@
 sections:
   - type: hero_map
-    title: "LA Referencia es la Red Latinoamericana y de España de Ciencia Abierta"
-    subtitle: "LA Referencia, a través de sus servicios, apoya las estrategias nacionales de Ciencia Abierta en América Latina y España."
+    title: "LA Referencia.<br>Red Latinoamericana y de España de<br>Ciencia abierta"
+    subtitle: "LA Referencia reúne a los organismos de ciencia y tecnología de América Latina y España en una gobernanza compartida que define las prioridades estratégicas de la Ciencia Abierta en la región. A través de sus servicios —agregación de repositorios, estándares de interoperabilidad, estadísticas y capacitación— apoya las estrategias nacionales y construye un bien público regional."
 
   - type: explore_band
     title: "Explore los resultados de investigación científica en acceso abierto"
@@ -28,7 +28,7 @@ sections:
     advanced_label: "Búsqueda avanzada"
     advanced_url: "https://www.lareferencia.info/vufind/Search/Advanced"
     metrics:
-      nodes_label: "Países Miembros"
+      nodes_label: "Países miembro"
       nodes_value: "10"
       documents_label: "Documentos"
       documents_value: "5.820.482"
@@ -41,6 +41,13 @@ sections:
           value: "621.180"
         - label: "Capítulo"
           value: "112.471"
+
+  - type: faq_cta
+    title: "¿Qué debo hacer si mi investigación o repositorio no se encuentra en LA Referencia?"
+    body: "LA Referencia es un agregador que cosecha metadata de los repositorios de los países participantes por ese motivo no es posible depositar directamente sus resultados de investigación. No obstante, usted puede encontrar la información necesaria haciendo clic en el siguiente enlace."
+    button_label: "Obtener información"
+    button_url: "/es/about/como-ser-parte"
+    image: "/assets/img/faq.svg"
 
   - type: resources_cards
     cards:
@@ -56,28 +63,41 @@ sections:
         summary: "Ponente: Ariel Lira, PREBI-SEDICI, Universidad Nacional de La Plata, Argentina."
         button_label: "Ir al recurso"
         button_url: "https://recursos.lareferencia.info/download/experiencias-en-la-migracion-de-repositorios-institucionales-dspace/"
-      - title: "Próximamente"
-        summary: "Nuevo recurso en preparación, disponible próximamente en la plataforma de recursos."
-        button_label: "Ir al recurso"
-        button_url: "#"
-      - title: "Próximamente"
-        summary: "Nuevo recurso en preparación, disponible próximamente en la plataforma de recursos."
-        button_label: "Ir al recurso"
-        button_url: "#"
-      - title: "Próximamente"
-        summary: "Nuevo recurso en preparación, disponible próximamente en la plataforma de recursos."
-        button_label: "Ir al recurso"
-        button_url: "#"
-
-  - type: faq_cta
-    title: "¿Qué debo hacer si mi investigación o repositorio no se encuentra en LA Referencia?"
-    body: "LA Referencia es un agregador que cosecha metadata de los repositorios de los países participantes por ese motivo no es posible depositar directamente sus resultados de investigación. No obstante, usted puede encontrar la información necesaria haciendo clic en el siguiente enlace."
-    button_label: "Obtener información"
-    button_url: "/es/about/como-ser-parte"
-    image: "/assets/img/faq.svg"
+      - title: "Expansión regional y cobertura"
+        summary: "Explica cómo COAR IRD, ROR, los sistemas nacionales y el trabajo directo con organizaciones permiten ampliar la cobertura hacia países miembro y no miembro."
+        button_label: "Ver página"
+        button_url: "https://la-referencia-ioi.github.io/reports/productos/a1-expansion-regional/es/index.html"
+      - title: "Búsqueda semántica multilingüe"
+        summary: "Explica cómo la búsqueda por significado complementa la recuperación por palabras y permite probar consultas en siete idiomas sobre la colección de LA Referencia."
+        button_label: "Ver página"
+        button_url: "https://la-referencia-ioi.github.io/lareferencia-semantic-demo/?lang=es"
+      - title: "Protección selectiva frente a bots y scraping"
+        summary: "Explica la solución con Anubis y Nginx Proxy Manager para distinguir servicios académicos autorizados, scrapers identificados y navegadores convencionales."
+        button_label: "Ver página"
+        button_url: "https://la-referencia-ioi.github.io/lareferencia-anubis-demo/?lang=es"
+      - title: "Selección de un modelo para búsqueda semántica multilingüe"
+        summary: "Explica qué es un modelo de embeddings, cómo se evaluaron las alternativas y por qué se seleccionó BGE-M3 para la primera implementación."
+        button_label: "Ver página"
+        button_url: "https://la-referencia-ioi.github.io/reports/productos/a4-seleccion-modelos/es/index.html"
+      - title: "dARK: identificadores persistentes como bien público regional"
+        summary: "Explica el problema, el esquema ARK y el modelo conceptual descentralizado que el proyecto busca consolidar en la región."
+        button_label: "Ver página"
+        button_url: "https://la-referencia-ioi.github.io/reports/productos/b1-dark-2/es/index.html"
+      - title: "dARK 2.0: arquitectura técnica y operación multisitio"
+        summary: "Explica el ciclo de atribución y resolución, las APIs, blockchain, IPFS y el modelo de infraestructura distribuida entre sedes."
+        button_label: "Ver página"
+        button_url: "https://la-referencia-ioi.github.io/reports/productos/b2-infraestructura-multisitio/es/index.html"
+      - title: "Dataverse Alpha regional"
+        summary: "El entorno Alpha de LA Referencia está operativo. La página documenta la línea base, los ejemplos autorizados, la capacitación y los próximos pilotos para construir capacidades regionales."
+        button_label: "Ver página"
+        button_url: "https://la-referencia-ioi.github.io/reports/productos/c1-dataverse-alpha/es/index.html"
+      - title: "Introducción a la gestión y curaduría de datos en Dataverse"
+        summary: "La primera cohorte inició el 24 de agosto de 2026. El MOOC asincrónico de 16 horas libera cuatro módulos progresivamente y conecta la formación con prácticas en Dataverse Alpha."
+        button_label: "Ver curso y avance"
+        button_url: "https://la-referencia-ioi.github.io/reports/productos/c2-curso-curaduria-datos/es/index.html"
 
   - type: logos_grid
-    title: "Nuestros Miembros"
+    title: "Países miembro"
     dynamic_members: true
 
   - type: logos_grid

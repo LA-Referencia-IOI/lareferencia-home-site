@@ -1,18 +1,27 @@
 <section class="lr-resources">
   <div class="wrapper">
+    {% assign items_per_page = 6 %}
     <div class="lr-resources-grid">
       {% for card in include.section.cards %}
       {% assign card_url = card.button_url | default: '#' %}
-      <article class="lr-resource-card">
+      {% assign hidden_class = '' %}
+      {% if forloop.index > items_per_page %}{% assign hidden_class = ' lr-resource-card-hidden' %}{% endif %}
+      <article class="lr-resource-card{{ hidden_class }}">
         <div class="lr-resource-content">
           <h3>{{ card.title }}</h3>
           <p>{{ card.summary }}</p>
-          <a class="lr-btn lr-btn-outline-light"
+          <a class="lr-btn lr-btn-outline-dark"
             href="{% if card_url contains '://' %}{{ card_url }}{% else %}{{ card_url | relative_url }}{% endif %}">{{
             card.button_label | default: "Ir al recurso" }}</a>
         </div>
       </article>
       {% endfor %}
     </div>
+    {% if include.section.cards.size > items_per_page %}
+    <div class="lr-resources-actions">
+      <button type="button" class="lr-btn lr-btn-outline lr-toggle-resources"
+        data-text-collapsed="Cargar más" data-text-expanded="Mostrar menos">Cargar más</button>
+    </div>
+    {% endif %}
   </div>
 </section>

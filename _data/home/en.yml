@@ -1,6 +1,6 @@
 sections:
   - type: hero_map
-    title: "LA Referencia is the Latin American and Spanish Network for Open Science"
+    title: "LA Referencia.<br>Latin American and Spanish Network for<br>Open Science"
     subtitle: "LA Referencia supports national Open Science strategies in Latin America and Spain through its range of services."
 
   - type: explore_band
@@ -28,7 +28,7 @@ sections:
     advanced_label: "Advanced search"
     advanced_url: "https://www.lareferencia.info/vufind/Search/Advanced"
     metrics:
-      nodes_label: "Member Countries"
+      nodes_label: "Member countries"
       nodes_value: "10"
       documents_label: "Documents"
       documents_value: "5,820,482"
@@ -41,6 +41,13 @@ sections:
           value: "621,180"
         - label: "Book chapter"
           value: "112,471"
+
+  - type: faq_cta
+    title: "What steps should I take if my research or institutional repository is not available in LA Referencia?"
+    body: "LA Referencia is an aggregator that harvests metadata from the repositories of the participating countries. For this reason, it is not possible to directly deposit your research outputs. However, you can find the necessary information by clicking the following link."
+    button_label: "Learn more"
+    button_url: "/en/about/how-to-join"
+    image: "/assets/img/faq.svg"
 
   - type: resources_cards
     cards:
@@ -69,15 +76,8 @@ sections:
         button_label: "Go to resource"
         button_url: "#"
 
-  - type: faq_cta
-    title: "What steps should I take if my research or institutional repository is not available in LA Referencia?"
-    body: "LA Referencia is an aggregator that harvests metadata from the repositories of the participating countries. For this reason, it is not possible to directly deposit your research outputs. However, you can find the necessary information by clicking the following link."
-    button_label: "Learn more"
-    button_url: "/en/about/how-to-join"
-    image: "/assets/img/faq.svg"
-
   - type: logos_grid
-    title: "Our Members"
+    title: "Member countries"
     dynamic_members: true
 
   - type: logos_grid

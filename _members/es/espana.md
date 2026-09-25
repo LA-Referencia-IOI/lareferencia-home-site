@@ -21,7 +21,7 @@ member_tabs:
 
     <li><strong>Institución Política:</strong> Fundación Española para la Ciencia y Tecnología (<a href="https://www.fecyt.es/" rel="noopener" target="_blank">FECYT</a>)</li>
 
-    <li><strong>Consejo Directivo:</strong> Cristina González y Pilar Rico-Castro (FECYT – España)</li>
+    <li><strong>Consejo Directivo:</strong> Pilar Rico-Castro (FECYT – España)</li>
 
     <li><strong>Comité Técnico:</strong> Pilar Rico-Castro y Laura Bonora Eve (FECYT – España)</li>
 

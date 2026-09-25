@@ -28,7 +28,7 @@ sections:
     advanced_label: "Busca avançada"
     advanced_url: "https://www.lareferencia.info/vufind/Search/Advanced"
     metrics:
-      nodes_label: "Países Membros"
+      nodes_label: "Países membros"
       nodes_value: "10"
       documents_label: "Documentos"
       documents_value: "5.820.482"
@@ -77,7 +77,7 @@ sections:
     image: "/assets/img/faq.svg"
 
   - type: logos_grid
-    title: "Nossos Membros"
+    title: "Países membros"
     dynamic_members: true
 
   - type: logos_grid

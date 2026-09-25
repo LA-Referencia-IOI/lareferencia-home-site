@@ -21,7 +21,7 @@ member_tabs:
 
     <li><strong>Institución Política:</strong> Consejo Nacional de Rectores (<a href="https://www.conare.ac.cr/" rel="noopener" target="_blank">CONARE</a>)</li>
 
-    <li><strong>Consejo Directivo:</strong> Andrea Mora Campos (CONARE – Costa Rica).</li>
+    <li><strong>Consejo Directivo:</strong> Carolina Seas y Sonia Artavia Cruz (CONARE, Costa Rica)</li>
 
     <li><strong>Comité Técnico:</strong> Guillermo Murillo Goussen (UCR-CONARE, Costa Rica)</li>
 

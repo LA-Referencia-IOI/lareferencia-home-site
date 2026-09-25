@@ -6,7 +6,7 @@ language: es
 language_reference: resources-unesco-recommendation
 published: true
 menu_parent: resources
-menu_order: 20
+menu_order: 2
 menu_label: "Mapa de Iniciativas Nacionales"
 menu_icon: "file-signature"
 ---

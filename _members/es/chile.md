@@ -19,7 +19,11 @@ member_tabs:
 - title: Consejo Directivo
   content_html: '<ul>
 
-    <li><strong>Consejo Directivo:</strong> Agencia Nacional de Investigación y Desarrollo (<a href="https://www.anid.cl/" rel="noopener" target="_blank">ANID</a>)</li>
+    <li><strong>Institución Política:</strong> Agencia Nacional de Investigación y Desarrollo (<a href="https://www.anid.cl/" rel="noopener" target="_blank">ANID</a>)</li>
+
+    <li><strong>Consejo Directivo:</strong> Patricia Muñoz Palma</li>
+
+    <li><strong>Comité Técnico:</strong></li>
 
     </ul>'
 - title: Legislación y Políticas

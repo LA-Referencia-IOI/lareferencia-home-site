@@ -27,12 +27,17 @@ main_nav:
             summary: Descubra cómo nuestra plataforma brinda acceso a los datos de uso de los repositorios en toda la red.
             menu_icon: stats
             external: true
-      - title: Proyectos
-        children:
           - label: dARK
             href: https://www.dark-pid.net/es/home
             summary: Explore cómo se desarrolló esta herramienta para asignar identificadores persistentes.
             menu_icon: dark
+            external: true
+      - title: Proyectos
+        children:
+          - label: LA Referencia proyecto IOI
+            href: https://la-referencia-ioi.github.io/reports/en/index.html
+            summary: Conozca los reportes del proyecto LA Referencia - IOI sobre infraestructura abierta en la región.
+            menu_icon: generic
             external: true
           - label: Proyecto LA Referencia/Lyrasis DSpace
             href: https://dspace.lareferencia.info/pt/
@@ -48,25 +53,26 @@ main_nav:
     mega_title: Recursos
     mega_subtitle: Noticias, relevamientos y suscripción institucional.
     children:
-      - label: Plataforma de Capacitación
-        href: https://cursos.lareferencia.info/
-        summary: Expanda sus conocimientos sobre Ciencia Abierta de la mano de la Plataforma de Capacitación de LA Referencia.
-        menu_icon: graduation-cap
-        external: true
       - label: Documentos institucionales
         href: https://recursos.lareferencia.info/
         summary: Repositorio de documentos institucionales de LA Referencia.
         menu_icon: docs
         external: true
-        menu_order: 5
+        menu_order: 1
+      - label: Plataforma de Capacitación
+        href: https://cursos.lareferencia.info/
+        summary: Expanda sus conocimientos sobre Ciencia Abierta de la mano de la Plataforma de Capacitación de LA Referencia.
+        menu_icon: graduation-cap
+        external: true
+        menu_order: 3
 
-  - label: Miembros
+  - label: Países miembro
     href: /es/miembros/
     matches:
       - /miembros/
       - /about/como-ser-parte
     page_menu: members
-    mega_title: Miembros
+    mega_title: Países miembro
     mega_subtitle: Integración en la red y países miembros.
     cta:
       label: Leer más...
@@ -86,6 +92,8 @@ main_nav:
       - /about/mision-vision
       - /about/historia
       - /about/representantes
+      - /about/declaracion-10-anos
+      - /alianzas-y-proyectos
     page_menu: about
     mega_title: Organización
     mega_subtitle: Información institucional y cómo participar.
