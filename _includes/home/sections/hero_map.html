@@ -1,16 +1,14 @@
+{% assign explore = site.data.home[page.language].sections | where: 'type', 'explore_band' | first %}
 <section class="lr-home-hero">
   <div class="wrapper lr-home-hero-inner">
     <div class="lr-hero-text">
       <h1>{{ include.section.title }}</h1>
       <p>{{ include.section.subtitle }}</p>
     </div>
+    {% if explore %}{% include home/sections/explore_band.html section=explore %}{% endif %}
     <div class="lr-hero-searchbox-wrap">
       <div id="lareferencia-searchbox"></div>
-      <script
-        defer
-        src="https://cdn.jsdelivr.net/gh/lareferencia/lareferencia-search-widget@v0.0.7-lrsite/dist/lrw-searchbox.js"
-      ></script>
+      <script defer src="https://cdn.jsdelivr.net/gh/lareferencia/lareferencia-search-widget@v1.0.0-lrsite/dist/lrw-searchbox.js"></script>
     </div>
   </div>
 </section>
-

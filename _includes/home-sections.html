@@ -2,13 +2,9 @@
 {% if schema and schema.sections %}
 
 <div class="lr-home-top-group">
+{% comment %} The explore_band search form is rendered inside hero_map, below the title. {% endcomment %}
 {% for section in schema.sections %}
-{% if section.type == 'hero_map' or section.type == 'explore_band' %}
-{% case section.type %}
-{% when 'hero_map' %}{% include home/sections/hero_map.html section=section %}
-{% when 'explore_band' %}{% include home/sections/explore_band.html section=section %}
-{% endcase %}
-{% endif %}
+{% if section.type == 'hero_map' %}{% include home/sections/hero_map.html section=section %}{% endif %}
 {% endfor %}
 </div>
 
