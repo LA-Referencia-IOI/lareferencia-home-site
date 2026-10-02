@@ -3198,3 +3198,534 @@ p {
   -moz-osx-font-smoothing: auto;
   font-feature-settings: normal;   /* ← esta línea es la que faltaba */
 }
+
+
+/* ============================================================
+   INTERIOR PAGES — aligned with the home design language
+   Same hero gradient, pill buttons, 18px cards, blue-tinted
+   shadows and accent underlines used on the home page.
+   ============================================================ */
+
+:root {
+  --radius-card: 18px;
+  --radius-pill: 999px;
+  --card-border: rgba(58, 81, 128, 0.12);
+  --card-shadow: 0 10px 28px rgba(58, 81, 128, 0.1);
+  --card-shadow-hover: 0 16px 38px rgba(58, 81, 128, 0.18);
+  --hero-gradient: linear-gradient(135deg, var(--color-blue) 0%, var(--primary-strong) 100%);
+}
+
+/* ---------- Page hero band (full-bleed, like the home hero) ---------- */
+
+.contact-page,
+.alliances-page,
+.benefits-page,
+.member-page {
+  margin-top: 0;
+}
+
+.contact-page-header,
+.alliances-hero,
+.benefits-hero,
+.member-page-hero {
+  position: relative;
+  isolation: isolate;
+  max-width: none;
+  margin: 0 0 2.75rem;
+  padding: 3.4rem 0 3.1rem;
+  background: transparent;
+  border-radius: 0;
+  min-height: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 50vw);
+    right: calc(50% - 50vw);
+    background:
+      radial-gradient(circle at 88% 0%, rgba(255, 255, 255, 0.14), transparent 42%),
+      radial-gradient(circle at 0% 100%, rgba(248, 189, 79, 0.16), transparent 38%),
+      var(--hero-gradient);
+  }
+
+  > * {
+    max-width: 52rem;
+  }
+}
+
+.contact-page-eyebrow,
+.alliances-eyebrow,
+.member-page-country {
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+
+.contact-page-title,
+.alliances-hero h1,
+.benefits-hero h1,
+.member-page-hero .post-title {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.3px;
+  text-transform: none;
+  margin: 0 0 0.7rem;
+}
+
+.contact-page-lead,
+.alliances-lead,
+.benefits-lead,
+.member-page-summary {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.08rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.member-page-hero {
+  .member-card-node {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+  }
+
+  .member-page-flag img {
+    border-radius: 10px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+  }
+}
+
+.member-page .page-breadcrumbs {
+  margin: 0.9rem 0 0.9rem;
+}
+
+/* ---------- Headings ---------- */
+
+.content-section h2,
+.content-split h2,
+.benefits-section-header h2,
+.member-section-title,
+.member-node-title {
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  position: relative;
+  padding-bottom: 0.55rem;
+  margin-bottom: 1.1rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent-color);
+  }
+}
+
+.member-section-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ---------- Cards ---------- */
+
+.content-card,
+.benefit-card,
+.alliance-card,
+.team-member,
+.detail-box,
+.workflow-step,
+.funder-card,
+.contact-card,
+.contact-panel,
+.member-card,
+.member-contact-card,
+.post-item {
+  background: #fff;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.content-card:hover,
+.benefit-card:hover,
+.alliance-card:hover,
+.team-member:hover,
+.contact-panel:hover,
+.member-card:hover,
+.member-contact-card:hover,
+.post-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+  border-color: var(--primary-soft-border);
+}
+
+.content-card,
+.benefit-card,
+.alliance-card,
+.contact-panel {
+  padding: 1.6rem 1.5rem;
+}
+
+/* accent underline on card titles, same as the home resource cards */
+.content-card h3,
+.benefit-card h3,
+.alliance-card h2,
+.contact-panel h2 {
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.25;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    margin-top: 0.55rem;
+    border-radius: 2px;
+    background: var(--color-blue);
+  }
+}
+
+.alliance-meta,
+.contact-panel-label {
+  color: var(--color-blue);
+}
+
+.content-note,
+.benefits-note,
+.alliances-note,
+.member-contact-band {
+  border-radius: var(--radius-card);
+  border: 1px solid var(--primary-soft-border);
+  background: var(--primary-soft-bg);
+}
+
+.member-contact-band {
+  box-shadow: none;
+}
+
+.member-card-link {
+  border-radius: var(--radius-card);
+}
+
+.member-card-link:hover {
+  background: transparent;
+}
+
+.member-card-flag img {
+  border-radius: 10px;
+}
+
+.contact-social-link {
+  border-radius: var(--radius-card);
+  border-color: var(--card-border);
+}
+
+/* ---------- Buttons (pills, like the home CTAs) ---------- */
+
+.lr-btn,
+.cta-button {
+  border-radius: var(--radius-pill);
+  padding: 0.72rem 1.5rem;
+}
+
+.lr-btn-solid:hover,
+.lr-btn-solid:focus-visible,
+.cta-button:hover,
+.cta-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(58, 81, 128, 0.28);
+}
+
+.lr-btn-outline {
+  border-width: 1.5px;
+}
+
+.lr-btn-outline:hover,
+.lr-btn-outline:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(58, 81, 128, 0.2);
+}
+
+/* ---------- News list ---------- */
+
+.post-item {
+  padding: 1.1rem;
+}
+
+.post-item-media {
+  border-radius: 12px;
+}
+
+.post-item-title {
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+.post-item-title:hover {
+  color: var(--primary-color);
+}
+
+/* ---------- Country page: tabs and stats ---------- */
+
+.member-tabs-nav {
+  border-bottom: 0;
+  gap: 0.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.member-tab-button {
+  bottom: 0;
+  border: 1.5px solid var(--primary-soft-border);
+  border-radius: var(--radius-pill);
+  background: #fff;
+  color: var(--primary-color);
+  padding: 0.55rem 1.25rem;
+
+  &:hover {
+    background: var(--primary-soft-bg);
+    color: var(--primary-color);
+  }
+
+  &.is-active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+  }
+}
+
+.member-tabs-panels {
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--card-shadow);
+}
+
+.member-node-visual img {
+  border-radius: var(--radius-card);
+  box-shadow: var(--card-shadow);
+}
+
+.member-node-supporting {
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  background: var(--primary-soft-bg);
+}
+
+.member-stat-card {
+  background: var(--hero-gradient);
+  border-radius: var(--radius-card);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-shadow-hover);
+  }
+}
+
+.member-stat-value {
+  font-weight: 700;
+}
+
+/* ---------- Spacing rhythm ---------- */
+
+.post-content > section,
+.contact-page + section,
+.content-section {
+  margin-bottom: 2.75rem;
+}
+
+.members-grid,
+.alliances-grid,
+.benefits-grid,
+.content-grid,
+.team-grid {
+  gap: 1.4rem;
+}
+
+.page-content > .wrapper {
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 720px) {
+  .contact-page-header,
+  .alliances-hero,
+  .benefits-hero,
+  .member-page-hero {
+    padding: 2.4rem 0 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .content-card,
+  .benefit-card,
+  .alliance-card,
+  .contact-panel {
+    padding: 1.3rem 1.2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content-card,
+  .benefit-card,
+  .alliance-card,
+  .contact-panel,
+  .member-card,
+  .post-item,
+  .member-stat-card,
+  .lr-btn {
+    transition: none;
+  }
+
+  .content-card:hover,
+  .benefit-card:hover,
+  .alliance-card:hover,
+  .contact-panel:hover,
+  .member-card:hover,
+  .post-item:hover,
+  .member-stat-card:hover {
+    transform: none;
+  }
+}
+
+.member-contact-question,
+.member-node-title {
+  font-weight: 700;
+}
+
+.page-content h2,
+.page-content h3 {
+  font-weight: 600;
+}
+
+.content-section h2[style*="text-align: center"]::after,
+.content-split h2[style*="text-align: center"]::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content-card h2 {
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  line-height: 1.25;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    margin-top: 0.55rem;
+    border-radius: 2px;
+    background: var(--color-blue);
+  }
+}
+
+/* ---------- Mobile navigation toggle (was never displayed) ---------- */
+
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    align-items: center;
+    border-radius: 12px;
+  }
+
+  .menu-toggle:hover,
+  .menu-toggle:focus-visible {
+    background: var(--primary-soft-bg);
+  }
+
+  .hamburger {
+    background: var(--primary-color);
+  }
+
+  .menu-toggle.active .hamburger:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-toggle.active .hamburger:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .hamburger:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .lr-lang-item {
+    padding: 0.9rem 0.5rem 0.4rem;
+  }
+}
+
+/* Mobile menu: collapsed accordion, left aligned */
+@media (max-width: 992px) {
+  .site-nav.lr-site-nav {
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  .lr-site-nav .lr-main-item.has-mega .lr-mega-panel {
+    display: none !important;
+  }
+
+  .lr-site-nav .lr-main-item.has-mega.open .lr-mega-panel {
+    display: block !important;
+  }
+
+  .lr-main-link-mega::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin-left: auto;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform 0.2s ease;
+  }
+
+  .lr-main-item.has-mega.open .lr-main-link-mega::after {
+    transform: rotate(-135deg);
+  }
+
+  .lr-mega-panel,
+  .lr-mega-panel * {
+    text-align: left;
+  }
+
+  .lr-mega-links,
+  .lr-mega-links-3col {
+    grid-template-columns: 1fr;
+  }
+
+  .lr-mega-item,
+  .lr-mega-side {
+    margin-left: 0;
+  }
+
+  .lr-mega-header {
+    padding: 0 0.5rem;
+  }
+
+  .lr-mega-grid {
+    padding: 0;
+  }
+}
+
+.lr-main-link,
+.lr-main-link:hover,
+.lr-main-link:focus {
+  text-decoration: none;
+}
