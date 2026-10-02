@@ -11,6 +11,8 @@ menu_label: "Directrices"
 menu_icon: "file-alt"
 ---
 
-<h1>Directrices</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Directrices</h1>
+</header>
 
 <p>Esta página centraliza directrices y recomendaciones de implementación.</p>

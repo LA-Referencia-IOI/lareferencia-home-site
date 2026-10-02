@@ -8,7 +8,9 @@ published: false
 order: 1
 ---
 
-<h1 class="team-title">Conheça a Equipe</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Conheça a Equipe</h1>
+</header>
 
 <p class="team-intro">
   A LA Referencia é possível graças a uma rede de trabalho composta pelo Conselho Diretor, pelo Comitê Técnico, pelo apoio administrativo da RedCLARA e por uma rede de colaboradores na região comprometidos com a Ciência Aberta.

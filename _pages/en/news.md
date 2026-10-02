@@ -7,7 +7,9 @@ language_reference: news-index
 published: true
 ---
 
-<h1>News</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">News</h1>
+</header>
 
 {% assign news_items = site.news | where: "language", page.language | where: "published", true | sort: "date" | reverse %}
 

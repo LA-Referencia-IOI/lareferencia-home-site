@@ -11,6 +11,8 @@ menu_label: "dARK Initiative"
 menu_icon: "dark"
 ---
 
-<h1>dARK Initiative</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">dARK Initiative</h1>
+</header>
 
 <p>This page introduces the dARK initiative and its scope.</p>

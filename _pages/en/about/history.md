@@ -11,7 +11,9 @@ menu_label: "History"
 menu_icon: "none"
 ---
 
-<h1>History</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">History</h1>
+</header>
 
 <p>Learn about the different phases in the development of LA Referencia.</p>
 

@@ -11,6 +11,8 @@ menu_label: "Estatísticas de uso"
 menu_icon: "stats"
 ---
 
-<h1>Estatísticas de uso</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Estatísticas de uso</h1>
+</header>
 
 <p>Esta página apresenta estatísticas de uso e indicadores relacionados.</p>

@@ -83,10 +83,14 @@
       }
 
       trigger.addEventListener('click', function (event) {
+        event.preventDefault();
         if (window.innerWidth <= 992) {
+          const wasOpen = item.classList.contains('open');
+          closeAllMega(item);
+          item.classList.toggle('open', !wasOpen);
+          trigger.setAttribute('aria-expanded', !wasOpen ? 'true' : 'false');
           return;
         }
-        event.preventDefault();
         cancelScheduledClose(item);
         const isOpen = item.classList.contains('open');
         closeAllMega(item);
@@ -124,7 +128,7 @@
       }
     });
 
-    const navLinks = document.querySelectorAll('.lr-main-link, .lr-mega-link-title, .lr-mega-read-more, .lr-mega-cta');
+    const navLinks = document.querySelectorAll('.lr-main-link:not(.lr-main-link-mega), .lr-mega-link-title, .lr-mega-read-more, .lr-mega-cta');
     navLinks.forEach(link => {
       link.addEventListener('click', function () {
         if (window.innerWidth <= 992 && siteNav && menuToggle) {

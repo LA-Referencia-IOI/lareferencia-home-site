@@ -11,6 +11,8 @@ menu_label: "Documentos"
 menu_icon: "tags"
 ---
 
-<h1>Documentos</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Documentos</h1>
+</header>
 
 <p>Esta página reúne documentos institucionais e referências-chave.</p>

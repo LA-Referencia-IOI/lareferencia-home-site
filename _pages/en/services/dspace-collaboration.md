@@ -11,6 +11,8 @@ menu_label: "DSpace Collaboration"
 menu_icon: "db"
 ---
 
-<h1>DSpace Collaboration</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">DSpace Collaboration</h1>
+</header>
 
 <p>This page explains collaboration around DSpace.</p>

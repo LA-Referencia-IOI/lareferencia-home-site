@@ -8,7 +8,9 @@ published: false
 order: 1
 ---
 
-<h1 class="team-title">Meet the Team</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Meet the Team</h1>
+</header>
 
 <p class="team-intro">
   LA Referencia is possible thanks to a work network formed by the Board of Directors, the Technical Committee, the administrative support of RedCLARA, and a network of collaborators in the region committed to Open Science.

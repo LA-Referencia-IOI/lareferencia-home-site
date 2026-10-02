@@ -11,9 +11,10 @@ menu_label: "Governança"
 menu_icon: "org"
 ---
 
-<h1>Governança</h1>
-
-<p class="page-lead">Contamos com uma rede de apoio distribuída por toda a América Latina e Espanha.</p>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Governança</h1>
+  <p class="contact-page-lead">Contamos com uma rede de apoio distribuída por toda a América Latina e Espanha.</p>
+</header>
 
 <div class="content-grid">
   <article class="content-card">
