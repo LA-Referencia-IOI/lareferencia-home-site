@@ -11,6 +11,8 @@ menu_label: "Documents"
 menu_icon: "tags"
 ---
 
-<h1>Documents</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Documents</h1>
+</header>
 
 <p>This page groups key institutional documents and references.</p>

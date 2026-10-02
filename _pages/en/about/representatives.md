@@ -11,9 +11,10 @@ menu_label: "Governance"
 menu_icon: "org"
 ---
 
-<h1>Governance</h1>
-
-<p class="page-lead">We are supported by a network that extends across Latin America and Spain.</p>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Governance</h1>
+  <p class="contact-page-lead">We are supported by a network that extends across Latin America and Spain.</p>
+</header>
 
 <div class="content-grid">
   <article class="content-card">

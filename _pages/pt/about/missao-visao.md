@@ -11,7 +11,9 @@ menu_label: "Missão e visão"
 menu_icon: "none"
 ---
 
-<h1>Missão e visão</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Missão e visão</h1>
+</header>
 
 <h2>Missão</h2>
 

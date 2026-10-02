@@ -11,9 +11,10 @@ menu_label: "El Buscador"
 menu_icon: "search"
 ---
 
-<h1>El Buscador</h1>
-
-<p class="page-lead">La forma más sencilla de encontrar publicaciones científicas.</p>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">El Buscador</h1>
+  <p class="contact-page-lead">La forma más sencilla de encontrar publicaciones científicas.</p>
+</header>
 
 <p>LA Referencia es una herramienta que centraliza y facilita la búsqueda por las publicaciones científicas en la región. Allí, investigadores, docentes y estudiantes encuentran artículos y tesis de magíster y de doctorado provenientes de las universidades e instituciones de investigación que conforman la red.</p>
 

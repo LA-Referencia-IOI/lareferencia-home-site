@@ -11,9 +11,10 @@ menu_label: "Search Engine"
 menu_icon: "search"
 ---
 
-<h1>Search Engine</h1>
-
-<p class="page-lead">The simplest way to find scientific publications.</p>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Search Engine</h1>
+  <p class="contact-page-lead">The simplest way to find scientific publications.</p>
+</header>
 
 <p>LA Referencia is a tool that centralizes and facilitates the search for scientific publications in the region. Researchers, lecturers and students can find articles as well as master’s and doctoral theses from the universities and research institutions that make up the network.</p>
 

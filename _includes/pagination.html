@@ -23,7 +23,7 @@
   var totalPages = Math.ceil(total / perPage);
   var currentPage = 1;
 
-  function showPage(page) {
+  function showPage(page, scroll) {
     currentPage = page;
     var start = (page - 1) * perPage;
     var end = start + perPage;
@@ -44,20 +44,22 @@
       if (i === page) btn.setAttribute('aria-current', 'page');
       btn.textContent = i;
       btn.addEventListener('click', (function(p) {
-        return function() { showPage(p); };
+        return function() { showPage(p, true); };
       })(i));
       pagesContainer.appendChild(btn);
     }
 
-    window.scrollTo({ top: container.offsetTop - 100, behavior: 'smooth' });
+    if (scroll) {
+      window.scrollTo({ top: container.offsetTop - 100, behavior: 'smooth' });
+    }
   }
 
   prevBtn.addEventListener('click', function() {
-    if (currentPage > 1) showPage(currentPage - 1);
+    if (currentPage > 1) showPage(currentPage - 1, true);
   });
 
   nextBtn.addEventListener('click', function() {
-    if (currentPage < totalPages) showPage(currentPage + 1);
+    if (currentPage < totalPages) showPage(currentPage + 1, true);
   });
 
   if (totalPages > 1) {

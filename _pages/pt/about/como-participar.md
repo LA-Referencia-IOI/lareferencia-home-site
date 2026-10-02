@@ -11,7 +11,9 @@ menu_label: "Como participar"
 menu_icon: "none"
 ---
 
-<h1>Como participar</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Como participar</h1>
+</header>
 
 <h2>Como faço para que meu resultado de pesquisa ou repositório apareça na LA Referencia?</h2>
 

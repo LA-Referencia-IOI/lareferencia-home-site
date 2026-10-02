@@ -11,9 +11,10 @@ menu_label: "Recomendação UNESCO"
 menu_icon: "file-signature"
 ---
 
-<h1>Recomendação UNESCO</h1>
-
-<p class="page-lead">Mapa de Iniciativas Nacionais em Ciência Aberta na América Latina e Espanha.</p>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Recomendação UNESCO</h1>
+  <p class="contact-page-lead">Mapa de Iniciativas Nacionais em Ciência Aberta na América Latina e Espanha.</p>
+</header>
 
 <p>Um esforço conjunto da LA Referencia e da UNESCO para documentar e dar visibilidade a políticas públicas alinhadas com a Recomendação de Ciência Aberta na região.</p>
 

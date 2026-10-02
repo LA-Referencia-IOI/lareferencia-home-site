@@ -8,7 +8,9 @@ published: false
 order: 1
 ---
 
-<h1 class="team-title">Conoce al Equipo</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Conoce al Equipo</h1>
+</header>
 
 <p class="team-intro">
   LA Referencia es posible gracias a una red de trabajo conformada por el Consejo Directivo, el Comité Técnico, el apoyo administrativo de RedCLARA y una red de colaboradores en la región comprometidos con la Ciencia Abierta.

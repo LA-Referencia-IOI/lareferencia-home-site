@@ -11,9 +11,10 @@ menu_label: "Mapa de Iniciativas Nacionales"
 menu_icon: "file-signature"
 ---
 
-<h1>Recomendación UNESCO</h1>
-
-<p class="page-lead">Mapa de Iniciativas Nacionales en Ciencia Abierta en América Latina y España.</p>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Recomendación UNESCO</h1>
+  <p class="contact-page-lead">Mapa de Iniciativas Nacionales en Ciencia Abierta en América Latina y España.</p>
+</header>
 
 <p>Un esfuerzo conjunto de LA Referencia y UNESCO para documentar y visibilizar políticas públicas alineadas con la Recomendación de Ciencia Abierta en la región.</p>
 

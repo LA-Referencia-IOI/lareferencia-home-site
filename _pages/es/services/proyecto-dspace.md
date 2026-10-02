@@ -11,6 +11,8 @@ menu_label: "Proyecto DSpace"
 menu_icon: "db"
 ---
 
-<h1>Proyecto DSpace</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Proyecto DSpace</h1>
+</header>
 
 <p>Esta página describe la colaboración alrededor de DSpace.</p>

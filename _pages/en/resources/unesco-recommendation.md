@@ -11,9 +11,10 @@ menu_label: "UNESCO Recommendation"
 menu_icon: "file-signature"
 ---
 
-<h1>UNESCO Recommendation</h1>
-
-<p class="page-lead">Map of National Open Science Initiatives in Latin America and Spain.</p>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">UNESCO Recommendation</h1>
+  <p class="contact-page-lead">Map of National Open Science Initiatives in Latin America and Spain.</p>
+</header>
 
 <p>A joint effort by LA Referencia and UNESCO to document and highlight public policies aligned with the Open Science Recommendation in the region.</p>
 

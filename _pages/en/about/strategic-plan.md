@@ -12,7 +12,9 @@ menu_icon: "org"
 ---
 
 <!--
-<h1>Strategic Plan</h1>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">Strategic Plan</h1>
+</header>
 
 <div class="content-split">
   <div>
