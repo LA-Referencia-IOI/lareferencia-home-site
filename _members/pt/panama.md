@@ -17,7 +17,7 @@ member_tabs:
 - title: Conselho Diretor
   content_html: '<div aria-labelledby="elementor-tab-title-2331" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" tabindex="0"><ul>
 
-    <li><strong>Instituição Política:</strong> Secretaría Nacional de Ciencia,Tecnología e Innovación de la República de Panamá  (<a href="https://www.senacyt.gob.pa/" rel="noopener" target="_blank">SENACYT</a>)</li>
+    <li><strong>Instituição Política:</strong> Secretaria Nacional de Ciência, Tecnologia e Inovação da República do Panamá  (<a href="https://www.senacyt.gob.pa/" rel="noopener" target="_blank">SENACYT</a>)</li>
 
     <li><strong>Conselho Diretor:</strong> Robinson Zapata Pino (SENACYT – Panamá).</li>
 
@@ -25,11 +25,11 @@ member_tabs:
 
     </ul></div>'
 - title: Legislação e Políticas
-  content_html: <div aria-labelledby="elementor-tab-title-2332" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" tabindex="0"><ul><li><a href="https://www.senacyt.gob.pa/pencyt-2019-2024/">Plan Estratégico Nacional de Ciencia, Tecnología e Innovación (PENCYT) 2019 – 2024</a>.</li></ul></div>
+  content_html: <div aria-labelledby="elementor-tab-title-2332" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" tabindex="0"><ul><li><a href="https://www.senacyt.gob.pa/pencyt-2019-2024/">Plano Estratégico Nacional de Ciência, Tecnologia e Inovação (PENCYT) 2019 – 2024</a>.</li></ul></div>
 - title: Diretrizes e Regulamentos
-  content_html: <div aria-labelledby="elementor-tab-title-2333" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><ul><li><p><a href="http://pricila.senacyt.gob.pa/vufind/themes/root/images/Lineamientos%20t%C3%A9cnicos%20para%20el%20repositorio%20nacional%20y%20los%20repositorios%20institucionales%201.pdf"><span lang="EN-US"><span lang="ES">Directrices de metadatos</span></span></a></p></li></ul></div>
+  content_html: <div aria-labelledby="elementor-tab-title-2333" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><ul><li><p><a href="http://pricila.senacyt.gob.pa/vufind/themes/root/images/Lineamientos%20t%C3%A9cnicos%20para%20el%20repositorio%20nacional%20y%20los%20repositorios%20institucionales%201.pdf"><span lang="EN-US"><span lang="ES">Diretrizes de metadados</span></span></a></p></li></ul></div>
 - title: Links de Interesse
-  content_html: <div aria-labelledby="elementor-tab-title-2334" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" tabindex="0"><ul><li><a href="http://pricila.senacyt.gob.pa/vufind/">Nodo Nacional – PRICILA</a></li><li><a href="https://abc.senacyt.gob.pa/">Plataforma ABC</a></li></ul></div>
+  content_html: <div aria-labelledby="elementor-tab-title-2334" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" tabindex="0"><ul><li><a href="http://pricila.senacyt.gob.pa/vufind/">Nó Nacional – PRICILA</a></li><li><a href="https://abc.senacyt.gob.pa/">Plataforma ABC</a></li></ul></div>
 node_heading: Nó Panamá
 node_subheading: Portal de Repositorios Institucionales de Ciencia, Tecnología e Innovación de Literatura Abierta - PRICILA
 stats_heading: Estatísticas do Nó Panamá
@@ -52,7 +52,7 @@ contact_cards:
   description: abc@senacyt.gob.pa
   href: mailto:abc@senacyt.gob.pa?subject=Información%20para%20integrarse%20al%20Nodo
 - title: Endereço
-  description: Edificio 205, Ciudad del Saber, Ciudad de Panamá, República de Panamá
+  description: Edifício 205, Cidade do Saber, Cidade do Panamá, República do Panamá
 flag_image: /assets/img/members/panama-flag.png
 hero_image: /assets/img/members/panama-1.png
 node_image: /assets/img/members/panama-2.png

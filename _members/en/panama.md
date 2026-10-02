@@ -27,9 +27,9 @@ member_tabs:
 - title: Legislation and Policies
   content_html: <div aria-labelledby="elementor-tab-title-2332" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" tabindex="0"><ul><li><a href="https://www.senacyt.gob.pa/pencyt-2019-2024/">Plan Estratégico Nacional de Ciencia, Tecnología e Innovación (PENCYT) 2019 – 2024</a>.</li></ul></div>
 - title: Guidelines and Regulations
-  content_html: <div aria-labelledby="elementor-tab-title-2333" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><ul><li><p><a href="http://pricila.senacyt.gob.pa/vufind/themes/root/images/Lineamientos%20t%C3%A9cnicos%20para%20el%20repositorio%20nacional%20y%20los%20repositorios%20institucionales%201.pdf"><span lang="EN-US"><span lang="ES">Directrices de metadatos</span></span></a></p></li></ul></div>
-- title: seful Links
-  content_html: <div aria-labelledby="elementor-tab-title-2334" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" tabindex="0"><ul><li><a href="http://pricila.senacyt.gob.pa/vufind/">Nodo Nacional – PRICILA</a></li><li><a href="https://abc.senacyt.gob.pa/">Plataforma ABC</a></li></ul></div>
+  content_html: <div aria-labelledby="elementor-tab-title-2333" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><ul><li><p><a href="http://pricila.senacyt.gob.pa/vufind/themes/root/images/Lineamientos%20t%C3%A9cnicos%20para%20el%20repositorio%20nacional%20y%20los%20repositorios%20institucionales%201.pdf"><span lang="EN-US"><span lang="ES">Metadata guidelines</span></span></a></p></li></ul></div>
+- title: Useful Links
+  content_html: <div aria-labelledby="elementor-tab-title-2334" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" tabindex="0"><ul><li><a href="http://pricila.senacyt.gob.pa/vufind/">National Node – PRICILA</a></li><li><a href="https://abc.senacyt.gob.pa/">ABC Platform</a></li></ul></div>
 stats_heading: Statistics of the Panama Node
 stats_cards:
 - value: '41'

@@ -17,7 +17,7 @@ member_tabs:
 - title: Conselho Diretor
   content_html: '<div aria-labelledby="elementor-tab-title-2121" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" tabindex="0"><ul>
 
-    <li><strong>Instituição Política:</strong> Consejo Nacional de Rectores (<a href="https://www.conare.ac.cr/" rel="noopener" target="_blank">CONARE</a>)</li>
+    <li><strong>Instituição Política:</strong> Conselho Nacional de Reitores (<a href="https://www.conare.ac.cr/" rel="noopener" target="_blank">CONARE</a>)</li>
 
     <li><strong>Conselho Diretor:</strong> Andrea Mora Campos (CONARE – Costa Rica).</li>
 
@@ -27,7 +27,7 @@ member_tabs:
 - title: Legislação e Políticas
   content_html: <div aria-labelledby="elementor-tab-title-2122" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" tabindex="0"></div>
 - title: Diretrizes e Regulamentos
-  content_html: <div aria-labelledby="elementor-tab-title-2123" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><p><a href="http://kimuk.conare.ac.cr/Contents/Home?section=who">Políticas de aceptación para nuevos miembros</a></p></div>
+  content_html: <div aria-labelledby="elementor-tab-title-2123" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><p><a href="http://kimuk.conare.ac.cr/Contents/Home?section=who">Políticas de aceitação para novos membros</a></p></div>
 - title: Links de Interesse
   content_html: <div aria-labelledby="elementor-tab-title-2124" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" tabindex="0"><ul><li><a href="http://kimuk.conare.ac.cr/" rel="noopener" target="_blank">Kimuk<br/></a></li></ul></div>
 node_heading: Nó Costa Rica
@@ -52,7 +52,7 @@ contact_cards:
   description: kimuk@conare.ac.cr
   href: mailto:kimuk@conare.ac.cr?subject=Información%20para%20integrarse%20al%20Nodo
 - title: Endereço
-  description: Subcomisión de Conocimiento Abierto de CONARE, San José
+  description: Subcomissão de Conhecimento Aberto do CONARE, San José
 flag_image: /assets/img/members/costa-rica-flag.png
 hero_image: /assets/img/members/costa-rica-1.png
 node_image: /assets/img/members/costa-rica-2.png

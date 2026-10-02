@@ -8,8 +8,8 @@ menu_order: 40
 menu_label: Brasil
 menu_icon: org
 summary: 'País parceiro da LA Referencia, desenvolveu iniciativas nacionais na área de Repositórios e Acesso Aberto, destacando-se: Portal Brasileiro de Acesso Aberto à Informação Científica – OASISBR, Biblioteca Digital Brasileira de Teses e Dissertações – BDTD, Diretório de Políticas de Acesso Aberto de Revistas Científicas Brasileiras – Diadorim, Sistema Eletrônico de Publicação de Revistas – SEER/OJS, entre outros. É signatário dos principais acordos da LA Referencia.'
-menu_summary: Portal Brasilero de Acesso Abierto a la Información Científica
-node_name: Portal Brasilero de Acesso Abierto a la Información Científica
+menu_summary: Portal Brasileiro de Acesso Aberto à Informação Científica
+node_name: Portal Brasileiro de Acesso Aberto à Informação Científica
 country_code: BR
 flag_image: /assets/img/members/brasil-flag.png
 legacy_url: https://dev.lareferencia.info/pt/nos/brasil/
@@ -18,7 +18,7 @@ member_tabs:
 - title: Conselho Diretor
   content_html: '<div aria-labelledby="elementor-tab-title-2061" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" tabindex="0"><ul>
 
-    <li><strong>Instituição Política:</strong> Instituto Brasilero de Información en Ciencia y Tecnología (<a href="http://www.ibict.br/" rel="noopener" target="_blank">IBICT</a>)</li>
+    <li><strong>Instituição Política:</strong> Instituto Brasileiro de Informação em Ciência e Tecnologia (<a href="http://www.ibict.br/" rel="noopener" target="_blank">IBICT</a>)</li>
 
     <li><strong>Conselho Diretor:</strong> Bianca Amaro (Ibict- Brasil).</li>
 
@@ -26,13 +26,13 @@ member_tabs:
 
     </ul></div>'
 - title: Legislação e Políticas
-  content_html: <div aria-labelledby="elementor-tab-title-2062" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" tabindex="0"><p>“<a href="http://www.ibict.br/Sala-de-Imprensa/noticias/2016/ibict-lanca-manifesto-de-acesso-aberto-a-dados-da-pesquisa-brasileira-para-ciencia-cidada" rel="noopener" target="_blank">Manifiesto de Acceso Abierto a Datos de la Investigación Brasileña para la Ciencia Ciudadana</a>” – Ibict, 2016</p></div>
+  content_html: <div aria-labelledby="elementor-tab-title-2062" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" tabindex="0"><p>“<a href="http://www.ibict.br/Sala-de-Imprensa/noticias/2016/ibict-lanca-manifesto-de-acesso-aberto-a-dados-da-pesquisa-brasileira-para-ciencia-cidada" rel="noopener" target="_blank">Manifesto de Acesso Aberto a Dados da Pesquisa Brasileira para a Ciência Cidadã</a>” – Ibict, 2016</p></div>
 - title: Diretrizes e Regulamentos
-  content_html: <div aria-labelledby="elementor-tab-title-2063" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><p><a href="http://oasisbr.ibict.br/vufind/Contents/Home?section=how" rel="noopener" target="_blank">Criterios para la colección</a> (OasisBr)</p></div>
+  content_html: <div aria-labelledby="elementor-tab-title-2063" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><p><a href="http://oasisbr.ibict.br/vufind/Contents/Home?section=how" rel="noopener" target="_blank">Critérios para a coleta</a> (OasisBr)</p></div>
 - title: Links de Interesse
-  content_html: <div aria-labelledby="elementor-tab-title-2064" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" tabindex="0"><ul><li><a href="http://oasisbr.ibict.br/vufind/" rel="noopener" target="_blank">Portal Brasilero de Acceso Abierto a la Información científica</a> – oasisbr</li><li><a href="http://www.finep.gov.br/" rel="noopener" target="_blank">Financiadora de Estudos y Proyectos </a>– FINEP</li></ul></div>
+  content_html: <div aria-labelledby="elementor-tab-title-2064" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" tabindex="0"><ul><li><a href="http://oasisbr.ibict.br/vufind/" rel="noopener" target="_blank">Portal Brasileiro de Acesso Aberto à Informação Científica</a> – oasisbr</li><li><a href="http://www.finep.gov.br/" rel="noopener" target="_blank">Financiadora de Estudos e Projetos </a>– FINEP</li></ul></div>
 node_heading: Nó Brasil
-node_subheading: PortalBbrasileiro de Publicações e Dados Científicos em Acesso Aberto - oasisbr
+node_subheading: Portal Brasileiro de Publicações e Dados Científicos em Acesso Aberto - oasisbr
 stats_heading: Estatísticas do Nó Brasil
 stats_cards:
 - value: '41'
@@ -53,7 +53,7 @@ contact_cards:
   description: oasisbr@ibict.br
   href: mailto:oasisbr@ibict.br?subject=Información%20para%20integrarse%20al%20Nodo
 - title: Endereço
-  description: 'Dirección: Setor de Autarquias Sul (SAUS) - Quadra 05 Lote 06 Bloco H Cep: 70070-912 - Brasília - DF'
+  description: 'Endereço: Setor de Autarquias Sul (SAUS) - Quadra 05 Lote 06 Bloco H Cep: 70070-912 - Brasília - DF'
 hero_image: /assets/img/members/brasil-1.png
 node_image: /assets/img/members/brasil-2.png
 node_copy: O Portal Brasileiro de Acesso Aberto à Informação Científica – OASISBR – é uma ferramenta que permite buscar gratuitamente a produção científica de autores vinculados a universidades e institutos de pesquisa brasileiros. Por meio do OASISBR, é possível realizar buscas em fontes de informação em português. OASISBR é um dos resultados dos esforços do IBICT, com o apoio do Financiador de Estudos e Projetos – FINEP, para inserir a ciência brasileira no contexto do acesso aberto à informação científica.

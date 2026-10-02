@@ -49,7 +49,7 @@ contact_cards:
 - title: Phone
   description: 'Tel: (57 + 1) 6258480 Ext. 4103-4106-5702'
 - title: Email
-  description: redcol@minciencias.gov.co y atencionalciudadano@minciencias.gov.co
+  description: redcol@minciencias.gov.co and atencionalciudadano@minciencias.gov.co
   href: mailto:redcol@minciencias.gov.co?subject=Información%20para%20integrarse%20al%20Nodo
 - title: Address
   description: Avenida Calle 26 N°57 - 83 Torre 8 - Pisos del 2 al 6 Bogotá - Colombia

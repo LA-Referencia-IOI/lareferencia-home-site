@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign ui = site.data.ui[page.language] | default: site.data.ui.es %}
 {% assign has_structured_member = false %}
 {% if page.member_tabs or page.node_heading or page.stats_cards or page.contact_cards %}
   {% assign has_structured_member = true %}
@@ -35,8 +36,8 @@ layout: default
   </header>
 
   {% if page.member_tabs %}
-    <section class="member-tabs" aria-label="Información del nodo">
-      <div class="member-tabs-nav" role="tablist" aria-label="Secciones">
+    <section class="member-tabs" aria-label="{{ ui.member_info_aria }}">
+      <div class="member-tabs-nav" role="tablist" aria-label="{{ ui.member_sections_aria }}">
         {% for tab in page.member_tabs %}
           <button
             id="member-tab-{{ forloop.index }}"

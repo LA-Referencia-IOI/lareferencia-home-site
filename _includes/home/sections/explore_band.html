@@ -1,3 +1,4 @@
+{% assign ui = site.data.ui[page.language] | default: site.data.ui.es %}
 {% comment %}
   Search form rendered inside the hero (below the title). Receives the
   explore_band section from the home data file as `section`.
@@ -12,21 +13,21 @@
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
-        <input type="text" name="lookfor" placeholder="Comience a buscar..." required />
+        <input type="text" name="lookfor" placeholder="{{ ui.search_placeholder }}" required />
       </div>
 
       <div class="lr-explore-select-wrap">
         <select name="type">
-          <option value="AllFields">Todos los campos</option>
-          <option value="Author">Título</option>
-          <option value="Title">Autor</option>
-          <option value="Subject">Materia</option>
-          <option value="network_name_str">País</option>
+          <option value="AllFields">{{ ui.search_all_fields }}</option>
+          <option value="Title">{{ ui.search_title }}</option>
+          <option value="Author">{{ ui.search_author }}</option>
+          <option value="Subject">{{ ui.search_subject }}</option>
+          <option value="network_name_str">{{ ui.search_country }}</option>
         </select>
       </div>
 
-      <button type="submit" class="btn btn-primary">Buscar</button>
-      <a href="https://www.lareferencia.info/vufind/Search/Advanced" target="_blank" class="btn btn-secondary lr-explore-advanced">Búsqueda avanzada</a>
+      <button type="submit" class="btn btn-primary">{{ ui.search_button }}</button>
+      <a href="https://www.lareferencia.info/vufind/Search/Advanced" target="_blank" class="btn btn-secondary lr-explore-advanced">{{ ui.search_advanced }}</a>
     </div>
   </form>
 </div>

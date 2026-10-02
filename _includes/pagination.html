@@ -1,10 +1,11 @@
+{% assign ui = site.data.ui[page.language] | default: site.data.ui.es %}
 <nav class="lr-pagination" id="news-nav" aria-label="Pagination">
-  <button type="button" class="lr-pagination-btn lr-pagination-prev" aria-label="Previous page" disabled>
-    &larr; Anterior
+  <button type="button" class="lr-pagination-btn lr-pagination-prev" aria-label="{{ ui.pagination_prev_aria }}" disabled>
+    &larr; {{ ui.pagination_prev }}
   </button>
   <div class="lr-pages" id="lr-pages"></div>
-  <button type="button" class="lr-pagination-btn lr-pagination-next" aria-label="Next page">
-    Siguiente &rarr;
+  <button type="button" class="lr-pagination-btn lr-pagination-next" aria-label="{{ ui.pagination_next_aria }}">
+    {{ ui.pagination_next }} &rarr;
   </button>
 </nav>
 
@@ -39,7 +40,7 @@
       var btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'lr-page-btn' + (i === page ? ' lr-page-current' : '');
-      btn.setAttribute('aria-label', 'Page ' + i);
+      btn.setAttribute('aria-label', '{{ ui.pagination_page_aria }} ' + i);
       if (i === page) btn.setAttribute('aria-current', 'page');
       btn.textContent = i;
       btn.addEventListener('click', (function(p) {

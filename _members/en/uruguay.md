@@ -22,7 +22,7 @@ member_tabs:
 
     <li><strong>Board of Directors:</strong> Juan Maldini (ANII – Uruguay).</li>
 
-    <li><strong>Technical Committee:</strong> Juan Maldini  y Juan Bautista Possamay (ANII – Uruguay).</li>
+    <li><strong>Technical Committee:</strong> Juan Maldini and Juan Bautista Possamay (ANII – Uruguay).</li>
 
     </ul></div>'
 - title: Legislation and Policies

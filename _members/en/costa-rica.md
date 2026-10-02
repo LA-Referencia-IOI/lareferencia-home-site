@@ -27,7 +27,7 @@ member_tabs:
 - title: Legislation and Policies
   content_html: <div aria-labelledby="elementor-tab-title-2122" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" tabindex="0"></div>
 - title: Guidelines and Regulations
-  content_html: <div aria-labelledby="elementor-tab-title-2123" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><p><a href="http://kimuk.conare.ac.cr/Contents/Home?section=who">Políticas de aceptación para nuevos miembros</a></p></div>
+  content_html: <div aria-labelledby="elementor-tab-title-2123" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><p><a href="http://kimuk.conare.ac.cr/Contents/Home?section=who">Acceptance policies for new members</a></p></div>
 - title: Useful Links
   content_html: <div aria-labelledby="elementor-tab-title-2124" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" tabindex="0"><ul><li><a href="http://kimuk.conare.ac.cr/" rel="noopener" target="_blank">Kimuk<br/></a></li></ul></div>
 stats_heading: Costa Rica Node Statistics
@@ -50,7 +50,7 @@ contact_cards:
   description: kimuk@conare.ac.cr
   href: mailto:kimuk@conare.ac.cr?subject=Información%20para%20integrarse%20al%20Nodo
 - title: Address
-  description: Subcomisión de Conocimiento Abierto de CONARE, San José
+  description: CONARE Open Knowledge Subcommittee, San José
 flag_image: /assets/img/members/costa-rica-flag.png
 hero_image: /assets/img/members/costa-rica-1.png
 node_image: /assets/img/members/costa-rica-2.png

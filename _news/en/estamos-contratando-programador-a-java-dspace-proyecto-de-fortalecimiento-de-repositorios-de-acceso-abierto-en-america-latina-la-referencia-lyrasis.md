@@ -33,7 +33,7 @@ This project, led by LA Reference in collaboration with Lyrasis, aims to strengt
     * Proactively communicate development plans and collaborate with the global DSpace community.
     * Work closely with the project team (coordinators, documentation specialists, trainers, etc.).
     * Interact with the national nodes of LA Reference and participating institutions.
-    *   Compartir conocimientos y mejores prácticas con la comunidad de repositorios de América Latina.
+    * Share knowledge and best practices with the Latin American repository community.
 
 **Requirements:**
 

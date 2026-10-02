@@ -18,7 +18,7 @@ member_tabs:
 - title: Conselho Diretor
   content_html: '<div aria-labelledby="elementor-tab-title-1411" class="elementor-tab-content elementor-clearfix" data-tab="1" role="tabpanel" tabindex="0"><ul>
 
-    <li><strong>Institución Política:</strong> <a href="https://www.argentina.gob.ar/ciencia" rel="noopener" target="_blank">Subsecretaría de Ciencia y Tecnología. Secretaría de Innovación, Ciencia y Tecnología. Jefatura de Gabinete de Ministros</a></li>
+    <li><strong>Instituição Política:</strong> <a href="https://www.argentina.gob.ar/ciencia" rel="noopener" target="_blank">Subsecretaría de Ciencia y Tecnología. Secretaría de Innovación, Ciencia y Tecnología. Jefatura de Gabinete de Ministros</a></li>
 
     <li><strong>Conselho Diretor:</strong> Paula Nahirñak e Alberto Apollaro.</li>
 
@@ -26,11 +26,11 @@ member_tabs:
 
     </ul></div>'
 - title: Legislação e Políticas
-  content_html: '<div aria-labelledby="elementor-tab-title-1412" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" tabindex="0"><p class="p1">A Argentina é o segundo país da América Latina a aprovar uma legislação nacional relacionada ao Acesso Aberto e aos Repositórios Institucionais.</p><p><a href="http://repositoriosdigitales.mincyt.gob.ar/files/Boletin_Oficial_Ley_26899.pdf">Ley 26899: Creación de Repositorios Digitales Institucionales de Acceso Abierto, Propios o Compartidos </a></p><p><a href="http://repositoriosdigitales.mincyt.gob.ar/files/Boletin_Oficial_Resolucion_753.pdf">Reglamento de la Ley 26.899</a></p><p><a href="http://repositoriosdigitales.mincyt.gob.ar/files/Ley26899RepositoriosDigitalesING.pdf">Ley 26899: Creación de Repositorios Digitales Institucionales de Acceso Abierto, Propios o Compartidos (versión en inglésLey 26899: Creación de Repositorios Digitales Institucionales de Acceso Abierto, Propios o Compartidos (versión en inglés)</a> </p></div>'
+  content_html: '<div aria-labelledby="elementor-tab-title-1412" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" tabindex="0"><p class="p1">A Argentina é o segundo país da América Latina a aprovar uma legislação nacional relacionada ao Acesso Aberto e aos Repositórios Institucionais.</p><p><a href="http://repositoriosdigitales.mincyt.gob.ar/files/Boletin_Oficial_Ley_26899.pdf">Lei 26899: Criação de Repositórios Digitais Institucionais de Acesso Aberto, Próprios ou Compartilhados </a></p><p><a href="http://repositoriosdigitales.mincyt.gob.ar/files/Boletin_Oficial_Resolucion_753.pdf">Regulamentação da Lei 26.899</a></p><p><a href="http://repositoriosdigitales.mincyt.gob.ar/files/Ley26899RepositoriosDigitalesING.pdf">Lei 26899: Criação de Repositórios Digitais Institucionais de Acesso Aberto, Próprios ou Compartilhados (versão em inglês)</a> </p></div>'
 - title: Diretrizes e Regulamentos
-  content_html: <div aria-labelledby="elementor-tab-title-1413" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><p>Directrices SNRD: <a href="https://repositoriosdigitales.mincyt.gob.ar/vufind/Content/directrices" rel="noopener" target="_blank">Directrices para proveedores de contenido del Sistema Nacional de Repositorios Digitales, del Ministerio de Ciencia, Tecnología e Innovación Productiva</a></p></div>
+  content_html: '<div aria-labelledby="elementor-tab-title-1413" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" tabindex="0"><p>Diretrizes SNRD: <a href="https://repositoriosdigitales.mincyt.gob.ar/vufind/Content/directrices" rel="noopener" target="_blank">Diretrizes para provedores de conteúdo do Sistema Nacional de Repositorios Digitales, do Ministério da Ciência, Tecnologia e Inovação Produtiva</a></p></div>'
 - title: Links de Interesse
-  content_html: <div aria-labelledby="elementor-tab-title-1414" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" tabindex="0"><ul><li><a href="http://repositoriosdigitales.mincyt.gob.ar/" rel="noopener" target="_blank">SNRD</a></li><li><a href="https://www.argentina.gob.ar/jefatura/innovacion-ciencia-y-tecnologia" rel="noopener" target="_blank">Secretaría de Innovación, Ciencia y Tecnología </a></li><li><a href="http://www.cicyt.mincyt.gob.ar/" rel="noopener" target="_blank">Consejo Interinstitucional de Ciencia y Tecnología</a> (CICyT)</li><li><a href="https://biblioteca.mincyt.gob.ar/" rel="noopener" target="_blank">Biblioteca Electrónica de Ciencia y Tecnología</a></li></ul></div>
+  content_html: <div aria-labelledby="elementor-tab-title-1414" class="elementor-tab-content elementor-clearfix" data-tab="4" role="tabpanel" tabindex="0"><ul><li><a href="http://repositoriosdigitales.mincyt.gob.ar/" rel="noopener" target="_blank">SNRD</a></li><li><a href="https://www.argentina.gob.ar/jefatura/innovacion-ciencia-y-tecnologia" rel="noopener" target="_blank">Secretaria de Inovação, Ciência e Tecnologia </a></li><li><a href="http://www.cicyt.mincyt.gob.ar/" rel="noopener" target="_blank">Conselho Interinstitucional de Ciência e Tecnologia</a> (CICyT)</li><li><a href="https://biblioteca.mincyt.gob.ar/" rel="noopener" target="_blank">Biblioteca Eletrônica de Ciência e Tecnologia</a></li></ul></div>
 node_heading: Nó Argentina
 node_subheading: Sistema Nacional de Repositorios Digitales - SNRD
 stats_heading: Estatísticas do Nó Argentina
@@ -48,7 +48,7 @@ contact_question: Sua instituição está localizada na Argentina e deseja fazer
 contact_prompt: Entre em contato com as autoridades argentinas para se integrar
 contact_cards:
 - title: Telefone
-  description: 'Tel/Fax: (54-11) 4899-5000 Ints. ints. 2190, 2204, 2198 y 2184'
+  description: 'Tel/Fax: (54-11) 4899-5000 Ints. 2190, 2204, 2198 e 2184'
 - title: E-mail
   description: repositorios@jefatura.gob.ar
   href: mailto:repositorios@mincyt.gob.ar?subject=Información%20para%20integrarse%20al%20Nodo
