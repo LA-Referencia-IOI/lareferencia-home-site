@@ -100,6 +100,11 @@ main_nav:
 
 footer:
   brand_subtitle: Rede Latino-americana e da Espanha de Ciência Aberta
+  newsletter:
+    title: "Assine nosso Newsletter"
+    body: "Mantenha-se atualizado sobre nossos esforços pela Ciência Aberta"
+    button_label: "Assinar"
+    button_url: "/pt/resources/assinatura"
   legal_text: Salvo indicação contrária, todos os materiais produzidos pela LA Referencia possuem licença CC 4.0 Internacional
   social:
     - label: Facebook

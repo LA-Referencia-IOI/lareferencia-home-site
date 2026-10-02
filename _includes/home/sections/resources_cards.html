@@ -1,3 +1,4 @@
+{% assign ui = site.data.ui[page.language] | default: site.data.ui.es %}
 <section class="lr-resources">
   <div class="wrapper">
     {% assign items_per_page = 6 %}
@@ -10,9 +11,9 @@
         <div class="lr-resource-content">
           <h3>{{ card.title }}</h3>
           <p>{{ card.summary }}</p>
-          <a class="lr-btn lr-btn-outline-dark"
+          <a class="lr-btn lr-btn-outline-dark" target="_blank" rel="noopener noreferrer"
             href="{% if card_url contains '://' %}{{ card_url }}{% else %}{{ card_url | relative_url }}{% endif %}">{{
-            card.button_label | default: "Ir al recurso" }}</a>
+            card.button_label | default: ui.resource_cta }}</a>
         </div>
       </article>
       {% endfor %}
@@ -20,7 +21,7 @@
     {% if include.section.cards.size > items_per_page %}
     <div class="lr-resources-actions">
       <button type="button" class="lr-btn lr-btn-outline lr-toggle-resources"
-        data-text-collapsed="Cargar más" data-text-expanded="Mostrar menos">Cargar más</button>
+        data-text-collapsed="{{ ui.load_more }}" data-text-expanded="{{ ui.show_less }}">{{ ui.load_more }}</button>
     </div>
     {% endif %}
   </div>

@@ -2,6 +2,17 @@
 
 <footer class="site-footer lr-site-footer">
   <div class="wrapper">
+    {% if nav.footer.newsletter %}
+    {% assign nl = nav.footer.newsletter %}
+    <div class="lr-footer-newsletter">
+      <div class="lr-footer-newsletter-copy">
+        <h2>{{ nl.title }}</h2>
+        <p>{{ nl.body }}</p>
+      </div>
+      <a class="lr-btn lr-btn-solid lr-footer-newsletter-cta" href="{{ nl.button_url | relative_url }}">{{ nl.button_label }}</a>
+    </div>
+    {% endif %}
+
     <div class="lr-footer-top">
       <a class="lr-footer-brand" href="/{% if page.language == 'es' %}es{% elsif page.language == 'pt' %}pt{% else %}en{% endif %}/home" aria-label="LA Referencia">
         <img src="{{ '/assets/img/la-referencia-white.png' | relative_url }}" alt="LA Referencia">

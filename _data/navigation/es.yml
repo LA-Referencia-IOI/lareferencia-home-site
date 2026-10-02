@@ -104,6 +104,11 @@ main_nav:
 
 footer:
   brand_subtitle: RED LATINOAMERICANA y de España de Ciencia Abierta
+  newsletter:
+    title: "Suscríbase a nuestro Newsletter"
+    body: "Manténgase al tanto de nuestros esfuerzos por la Ciencia Abierta"
+    button_label: "Suscribirse"
+    button_url: "/es/resources/suscripcion"
   legal_text: A menos que se indique lo contrario, todos los materiales producidos por LA Referencia tienen una licencia CC 4.0 Internacional
   social:
     - label: Facebook

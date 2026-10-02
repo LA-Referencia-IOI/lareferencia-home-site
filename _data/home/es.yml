@@ -146,9 +146,3 @@ sections:
       - name: "Invest in Open Infrastructure"
         logo: "/assets/img/ioi-logo.svg"
         url: "https://investinopen.org/"
-
-  - type: newsletter_cta
-    title: "Suscríbase a nuestro Newsletter"
-    body: "Manténgase al tanto de nuestros esfuerzos por la Ciencia Abierta"
-    button_url: "/es/resources/suscripcion"
-    button_label: "Suscribirse"

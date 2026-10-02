@@ -101,6 +101,11 @@ main_nav:
 
 footer:
   brand_subtitle: Latin American and Spain Open Science Network
+  newsletter:
+    title: "Sign up for our Newsletter"
+    body: "Keep informed about our Open Science initiatives"
+    button_label: "Subscribe"
+    button_url: "/en/resources/subscription"
   legal_text: Unless stated otherwise, all materials produced by LA Referencia are covered by a Creative Commons 4.0 International license
   social:
     - label: Facebook
