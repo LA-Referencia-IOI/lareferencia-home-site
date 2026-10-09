@@ -3729,3 +3729,48 @@ p {
 .lr-main-link:focus {
   text-decoration: none;
 }
+
+/* Platform overview: readable component descriptions and metadata lifecycle. */
+.platform-page {
+  .platform-flow {
+    background: var(--neutral-soft-bg);
+    padding: clamp(1.25rem, 4vw, 2.5rem);
+    border-radius: 16px;
+  }
+
+  .platform-flow-steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    margin: 2rem 0;
+    list-style: none;
+
+    li { border-top: 2px solid var(--primary-color); padding-top: 1rem; }
+    span { display: block; color: var(--primary-color); font-weight: 700; margin-bottom: .75rem; }
+    strong { display: block; color: var(--secondary-color); line-height: 1.35; }
+    p { margin-top: .5rem; }
+  }
+
+  .platform-components {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .platform-component:first-child { grid-column: 1 / -1; }
+  .platform-component h3 { margin-top: 0; }
+  .platform-component li { margin-bottom: .65rem; }
+  .platform-code { border-top: 1px solid var(--border-color); padding-top: 2rem; }
+  .platform-code a { overflow-wrap: anywhere; }
+
+  @media (max-width: 800px) {
+    .platform-flow-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .platform-components { grid-template-columns: minmax(0, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .platform-flow-steps { grid-template-columns: minmax(0, 1fr); }
+  }
+}

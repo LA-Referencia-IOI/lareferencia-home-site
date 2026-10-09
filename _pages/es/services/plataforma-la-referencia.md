@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Plataforma LA Referencia"
-description: "Software de cosecha y servicios de LA Referencia"
+description: "Cosecha, procesamiento y publicación de metadatos científicos"
 language: es
 language_reference: services-platform
 published: true
@@ -11,131 +11,104 @@ menu_label: "Plataforma LA Referencia"
 menu_icon: "search"
 ---
 
-<div class="contact-page">
-  <header class="contact-page-header">
-    <p class="contact-page-eyebrow">Tecnología</p>
-    <h1 class="contact-page-title">Plataforma LA Referencia</h1>
-    <p class="contact-page-lead">Desarrollamos software libre (GPL 3) y de código abierto para la cosecha, agregación y publicación de metadatos científicos.</p>
-  </header>
+<div class="platform-page">
+<header class="contact-page-header">
+  <p class="contact-page-eyebrow">Tecnología</p>
+  <h1 class="contact-page-title">Plataforma LA Referencia</h1>
+  <p class="contact-page-lead">Cosecha, procesamiento y publicación de metadatos científicos.</p>
+</header>
+
+<section class="content-section" markdown="1">
+La plataforma LA Referencia es una solución modular para recolectar registros de repositorios, mejorar su interoperabilidad y calidad, y publicarlos para búsqueda y reutilización. Integra servicios de cosecha, procesamiento, administración, indexación y exposición de metadatos. Puede desplegarse para operar una red de repositorios o para agregar y publicar colecciones.
+
+Su arquitectura sigue el ciclo de vida del registro: conecta con fuentes que implementan OAI-PMH, conserva los metadatos recolectados, ejecuta validaciones y transformaciones, actualiza índices y ofrece interfaces y protocolos para consultar o volver a cosechar la información.
+</section>
+
+<section class="content-section platform-flow" aria-labelledby="platform-flow-title">
+  <h2 id="platform-flow-title">Del repositorio a la publicación</h2>
+  <ol class="platform-flow-steps">
+    <li><span>01</span><strong>Fuentes OAI-PMH</strong><p>Repositorios y colecciones de origen.</p></li>
+    <li><span>02</span><strong>Cosechador</strong><p>Recuperación y seguimiento de registros.</p></li>
+    <li><span>03</span><strong>Validación y transformación</strong><p>Reglas de calidad y mapeos de formatos.</p></li>
+    <li><span>04</span><strong>Indexación y publicación</strong><p>Búsqueda, entidades y proveedor OAI-PMH.</p></li>
+  </ol>
+  <div markdown="1">
+La API y las interfaces de administración permiten configurar y seguir este flujo. Las acciones pueden programarse y ejecutarse de forma coordinada; las actualizaciones incrementales reducen el reprocesamiento cuando solo cambió una parte de la colección.
+  </div>
+</section>
+
+<section class="content-section" aria-labelledby="platform-components-title">
+<h2 id="platform-components-title">Componentes de la plataforma</h2>
+<div class="platform-components">
+<article class="content-card platform-component" markdown="1">
+### Cosechador
+
+El **Cosechador** es el núcleo de gestión y procesamiento de la plataforma. Se conecta con repositorios OAI-PMH y permite organizar las fuentes en redes, definir formatos y parámetros de cosecha, y ejecutar procesos manuales o programados.
+
+Además de recuperar registros, coordina las etapas posteriores:
+
+- **Validación:** aplica reglas configurables a los metadatos y conserva resultados y diagnósticos para revisar su calidad.
+- **Transformación:** ejecuta mapeos entre formatos y prepara los registros para su publicación e indexación.
+- **Procesamiento incremental:** detecta registros nuevos, modificados y eliminados. Cuando la configuración y los datos lo permiten, reutiliza resultados previos y procesa solo los cambios; también admite ejecuciones completas.
+- **Acciones y tareas:** coordina cosecha, validación, indexación y tareas relacionadas, con seguimiento de estado y resultados.
+- **Gestión de redes:** agrupa fuentes y configura para cada red sus formatos, reglas, transformaciones y opciones de publicación.
+
+El Cosechador dispone de una API de gestión versionada y una interfaz web de administración. Los accesos se controlan mediante usuarios, roles y asignaciones a redes; las integraciones automatizadas pueden utilizar cuentas técnicas y tokens.
+</article>
+
+<article class="content-card platform-component" markdown="1">
+### Almacenamiento y trazabilidad
+
+La plataforma separa los metadatos originales de los resultados de procesamiento. Los registros originales se conservan en almacenamiento de metadatos; catálogos y resultados de validación mantienen información estructurada por ejecución. Esta organización permite identificar cambios, consultar diagnósticos y reutilizar resultados entre cosechas sin perder la posibilidad de reprocesar una colección completa.
+</article>
+
+<article class="content-card platform-component" markdown="1">
+### Indexación, entidades y búsqueda
+
+Los registros transformados pueden publicarse en índices para habilitar su consulta. Solr proporciona índices bibliográficos utilizados por la búsqueda y la publicación OAI-PMH. Elasticsearch u OpenSearch se utiliza para indexar entidades y relaciones extraídas de los metadatos. La plataforma también contempla indexación semántica con vectores cuando se configura un servicio de generación de embeddings.
+
+VuFind puede funcionar como interfaz de descubrimiento sobre el índice bibliográfico. La disponibilidad de cada interfaz e índice depende del despliegue.
+</article>
+
+<article class="content-card platform-component" markdown="1">
+### Proveedor OAI-PMH
+
+Un servicio independiente expone los registros publicados mediante OAI-PMH 2.0. Así, otras plataformas y agregadores pueden cosechar los metadatos de una instalación. El servicio lee el índice de publicación y ofrece un punto de interoperabilidad de salida, complementario a la cosecha que realiza el Cosechador desde las fuentes.
+</article>
+
+<article class="content-card platform-component" markdown="1">
+### Interfaces web
+
+- **Administración:** permite configurar redes y procesos, ejecutar acciones y consultar su progreso, resultados y diagnósticos.
+- **Dashboard de repositorios:** interfaz de consulta de solo lectura para supervisar información y resultados disponibles, con acceso limitado según las redes asignadas.
+- **Búsqueda:** VuFind puede presentar los registros indexados como una interfaz de descubrimiento para usuarios finales.
+</article>
+
+<article class="content-card platform-component" markdown="1">
+### Identificadores persistentes
+
+La integración con dARK permite coordinar operaciones relacionadas con identificadores ARK, incluidas reserva, preparación y conciliación. Requiere que la instalación tenga acceso al servicio minter y configure los parámetros correspondientes.
+</article>
 </div>
-
-<section class="content-section" style="margin-top: 3rem;">
-  <div class="content-split" style="gap: 3rem; align-items: center;">
-    <div>
-      <h2 style="font-size: 2.2rem; line-height: 1.2; color: var(--secondary-color);">Desarrollamos tecnología para cosechadores nacionales</h2>
-    </div>
-    <div>
-      <p class="content-lead" style="font-size: 1.15rem; color: var(--text-color); margin-bottom: 1rem;">LA Referencia, por medio de su Equipo Técnico, ha desarrollado una plataforma de software para la cosecha de información que, además de soportar el nodo central de la red regional, funciona como un servicio agregador y portal nacional para los países miembros.</p>
-      <p style="color: var(--text-light);">La solución tecnológica se originó de la fase piloto del proyecto BID en 2013. A mediados de 2014, con recursos de los organismos de Ciencia y Tecnología, se determinó la necesidad de una solución transferible y con un conjunto de mejoras tecnológicas constantes.</p>
-    </div>
-  </div>
 </section>
 
-<section class="content-section" style="background: var(--neutral-soft-bg); padding: 4rem 2rem; border-radius: 24px; margin: 4rem 0;">
-  <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">Componentes Clave de la Plataforma</h2>
-  <div class="content-grid" style="grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem;">
-    <article class="content-card" style="border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; padding: 2rem;">
-      <div>
-        <div style="background: var(--primary-soft-bg); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-        </div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 1rem; color: var(--secondary-color);">LRHarvester</h3>
-        <p style="font-size: 0.9rem; color: var(--text-light); line-height: 1.6;">Componente de cosecha, transformación y validación de metadatos OAI-PMH. Es responsable de la cosecha de fuentes, validación de registros y su transformación para el cumplimiento de las directrices de calidad de la red.</p>
-      </div>
-      <div style="margin-top: 1.5rem; font-size: 0.8rem; font-weight: bold; color: var(--primary-color);">Java 1.7 / Spring / PostgreSQL</div>
-    </article>
+<section class="content-section platform-code" markdown="1">
+## Código abierto y repositorios
 
-    <article class="content-card" style="border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; padding: 2rem;">
-      <div>
-        <div style="background: var(--primary-soft-bg); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>
-        </div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 1rem; color: var(--secondary-color);">LRProvider</h3>
-        <p style="font-size: 0.9rem; color: var(--text-light); line-height: 1.6;">Componente responsable de la publicación de metadatos mediante el protocolo OAI-PMH. Ofrece una alta flexibilidad y escalabilidad para la interoperabilidad con otros agregadores internacionales de metadatos.</p>
-      </div>
-      <div style="margin-top: 1.5rem; font-size: 0.8rem; font-weight: bold; color: var(--primary-color);">DSpace-XOAI Adaptado</div>
-    </article>
+La plataforma se desarrolla como un conjunto de repositorios Git. El [repositorio principal de la plataforma](https://github.com/lareferencia/lareferencia-platform) reúne la configuración del workspace y el despliegue. Los componentes principales tienen repositorios propios:
 
-    <article class="content-card" style="border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; padding: 2rem;">
-      <div>
-        <div style="background: var(--primary-soft-bg); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        </div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 1rem; color: var(--secondary-color);">Buscador / Portal</h3>
-        <p style="font-size: 0.9rem; color: var(--text-light); line-height: 1.6;">Portal web de publicación de los metadatos agregados que ofrece una interfaz de búsqueda responsiva, amigable y adaptativa. Además brinda estadísticas completas de calidad y cosechas.</p>
-      </div>
-      <div style="margin-top: 1.5rem; font-size: 0.8rem; font-weight: bold; color: var(--primary-color);">VuFind Solr Integration</div>
-    </article>
-  </div>
+- [Cosechador (aplicación)](https://github.com/lareferencia/lareferencia-lrharvester-app) y [biblioteca de procesamiento](https://github.com/lareferencia/lareferencia-core-lib)
+- [Interfaz de administración](https://github.com/lareferencia/lareferencia-lrharvester-admin-web) y [Dashboard de repositorios](https://github.com/lareferencia/lareferencia-repository-dashboard)
+- [Proveedor OAI-PMH](https://github.com/lareferencia/lareferencia-oai-pmh)
+- [Modelo e indexación de entidades](https://github.com/lareferencia/lareferencia-entity-lib) y [API de entidades](https://github.com/lareferencia/lareferencia-entity-rest)
+- [Configuración de índices Solr](https://github.com/lareferencia/lareferencia-solr-cores)
+- [Integración dARK/ARK](https://github.com/lareferencia/lareferencia-dark-lib)
+- [Cliente de cosecha OAI-PMH](https://github.com/lareferencia/lareferencia-oclc-harvester)
+- [Herramientas de administración por línea de comandos](https://github.com/lareferencia/lareferencia-shell)
+
+La distribución principal está bajo GNU AGPL v3; al reutilizar componentes, consulta también la licencia declarada en cada repositorio.
+
+
+**Configuración del despliegue:** las interfaces VuFind y Dashboard, la indexación semántica, el proveedor OAI-PMH y la integración dARK pueden requerir servicios, credenciales o configuración adicionales en cada despliegue.
 </section>
-
-<div class="content-split" style="gap: 4rem; margin: 4rem 0;">
-  <div>
-    <h2 style="color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 1.5rem;">Principios de diseño</h2>
-    <p style="color: var(--text-light); margin-bottom: 2rem;">La arquitectura de software de LA Referencia fue diseñada bajo estrictos lineamientos institucionales y técnicos para garantizar su sustentabilidad y eficiencia:</p>
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
-      <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
-        <span style="color: var(--primary-color); font-weight: bold; font-size: 1.2rem;">✓</span>
-        <div>
-          <strong style="display: block; color: var(--secondary-color); font-size: 0.95rem;">Transferible</strong>
-          <span style="font-size: 0.85rem; color: var(--text-light);">Misma versión para nodo central y nacional.</span>
-        </div>
-      </div>
-      <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
-        <span style="color: var(--primary-color); font-weight: bold; font-size: 1.2rem;">✓</span>
-        <div>
-          <strong style="display: block; color: var(--secondary-color); font-size: 0.95rem;">Escalable</strong>
-          <span style="font-size: 0.85rem; color: var(--text-light);">Millones de registros en menos de 24hs.</span>
-        </div>
-      </div>
-      <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
-        <span style="color: var(--primary-color); font-weight: bold; font-size: 1.2rem;">✓</span>
-        <div>
-          <strong style="display: block; color: var(--secondary-color); font-size: 0.95rem;">Open Source</strong>
-          <span style="font-size: 0.85rem; color: var(--text-light);">Desarrollo sobre bases tecnológicas abiertas.</span>
-        </div>
-      </div>
-      <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
-        <span style="color: var(--primary-color); font-weight: bold; font-size: 1.2rem;">✓</span>
-        <div>
-          <strong style="display: block; color: var(--secondary-color); font-size: 0.95rem;">Multilingüe</strong>
-          <span style="font-size: 0.85rem; color: var(--text-light);">Soporte nativo en español, inglés y portugués.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="content-note" style="margin-top: 0; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <span class="contact-page-eyebrow" style="color: var(--primary-color); margin-bottom: 0.5rem; display: block;">Última versión</span>
-      <h3 style="font-size: 1.6rem; color: var(--secondary-color); margin-bottom: 1.2rem;">Novedades de la Versión 3.0</h3>
-      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.9rem; color: var(--text-color);">
-        <li style="display: flex; gap: 0.5rem;"><span style="color: var(--primary-color);">•</span> Interfaz de administración responsiva y amigable.</li>
-        <li style="display: flex; gap: 0.5rem;"><span style="color: var(--primary-color);">•</span> Rediseño de validaciones orientadas a reglas complejas.</li>
-        <li style="display: flex; gap: 0.5rem;"><span style="color: var(--primary-color);">•</span> Objetos de dominio ampliados y diccionarios mejorados.</li>
-        <li style="display: flex; gap: 0.5rem;"><span style="color: var(--primary-color);">•</span> Rediseño de base relacional para óptima performance.</li>
-        <li style="display: flex; gap: 0.5rem;"><span style="color: var(--primary-color);">•</span> Diagnósticos detallados sobre el motor de búsqueda Solr.</li>
-      </ul>
-    </div>
-    <div style="margin-top: 2rem;">
-      <a class="lr-btn lr-btn-solid" href="https://github.com/lareferencia" style="width: 100%; text-align: center;">Acceder al Repositorio en GitHub</a>
-    </div>
-  </div>
 </div>
-
-<section class="content-section" style="border-top: 1px solid var(--border-color); padding-top: 3rem; margin-top: 4rem;">
-  <h2 style="text-align: center; margin-bottom: 1.5rem; font-size: 1.6rem;">Implementaciones Exitosas</h2>
-  <p style="text-align: center; color: var(--text-light); max-width: 600px; margin: 0 auto 3rem;">Desde 2015, la tecnología de LA Referencia ha sido instalada y validada en organismos gubernamentales y consorcios líderes de la región:</p>
-  <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center;">
-    <span style="background: #fff; border: 1px solid var(--border-color); border-radius: 30px; padding: 0.5rem 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--secondary-color);">Argentina (MINCYT)</span>
-    <span style="background: #fff; border: 1px solid var(--border-color); border-radius: 30px; padding: 0.5rem 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--secondary-color);">Brasil (IBICT)</span>
-    <span style="background: #fff; border: 1px solid var(--border-color); border-radius: 30px; padding: 0.5rem 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--secondary-color);">Costa Rica (CONARE)</span>
-    <span style="background: #fff; border: 1px solid var(--border-color); border-radius: 30px; padding: 0.5rem 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--secondary-color);">Chile (CONICYT)</span>
-    <span style="background: #fff; border: 1px solid var(--border-color); border-radius: 30px; padding: 0.5rem 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--secondary-color);">Ecuador (CEDIA)</span>
-    <span style="background: #fff; border: 1px solid var(--border-color); border-radius: 30px; padding: 0.5rem 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--secondary-color);">El Salvador (CBUES)</span>
-    <span style="background: #fff; border: 1px solid var(--border-color); border-radius: 30px; padding: 0.5rem 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--secondary-color);">Perú (CONCYTEC)</span>
-    <span style="background: #fff; border: 1px solid var(--border-color); border-radius: 30px; padding: 0.5rem 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--secondary-color);">Uruguay (ANII)</span>
-    <span style="background: #fff; border: 1px solid var(--border-color); border-radius: 30px; padding: 0.5rem 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--secondary-color);">Portugal (RCAAP)</span>
-    <span style="background: #fff; border: 1px solid var(--border-color); border-radius: 30px; padding: 0.5rem 1.2rem; font-size: 0.85rem; font-weight: 600; color: var(--secondary-color);">Panamá (PRICILA)</span>
-  </div>
-</section>
