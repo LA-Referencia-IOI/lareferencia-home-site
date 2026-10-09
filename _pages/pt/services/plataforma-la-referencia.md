@@ -52,6 +52,7 @@ Além de recuperar registros, coordena as etapas seguintes:
 - **Processamento incremental:** detecta registros novos, modificados e excluídos. Quando a configuração e os dados permitem, reutiliza resultados anteriores e processa apenas as alterações; também permite execuções completas.
 - **Ações e tarefas:** coordena coleta, validação, indexação e tarefas relacionadas, com acompanhamento de status e resultados.
 - **Gestão de redes:** agrupa fontes e configura os formatos, regras, transformações e opções de publicação de cada rede.
+{: role="list"}
 
 O Coletor oferece uma API de gestão versionada e uma interface web de administração. O acesso é controlado por meio de usuários, perfis de acesso e atribuições a redes; integrações automatizadas podem utilizar contas de serviço e tokens.
 </article>
@@ -82,6 +83,7 @@ Um serviço independente disponibiliza os registros publicados por meio do OAI-P
 - **Administração:** permite configurar redes e processos, executar ações e consultar seu progresso, resultados e diagnósticos.
 - **Dashboard de repositórios:** interface de consulta somente para leitura, destinada ao acompanhamento das informações e dos resultados disponíveis, com acesso limitado às redes atribuídas.
 - **Busca:** o VuFind pode apresentar os registros indexados em uma interface de descoberta para usuários finais.
+{: role="list"}
 </article>
 
 <article class="content-card platform-component" markdown="1">
@@ -105,6 +107,7 @@ A plataforma é desenvolvida em um conjunto de repositórios Git. O [repositóri
 - [Integração dARK/ARK](https://github.com/lareferencia/lareferencia-dark-lib)
 - [Cliente de coleta OAI-PMH](https://github.com/lareferencia/lareferencia-oclc-harvester)
 - [Ferramentas de administração por linha de comando](https://github.com/lareferencia/lareferencia-shell)
+{: role="list"}
 
 A distribuição principal está sob a licença GNU AGPL v3; ao reutilizar componentes, consulte também a licença declarada em cada repositório.
 

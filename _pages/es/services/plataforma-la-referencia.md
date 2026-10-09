@@ -52,6 +52,7 @@ Además de recuperar registros, coordina las etapas posteriores:
 - **Procesamiento incremental:** detecta registros nuevos, modificados y eliminados. Cuando la configuración y los datos lo permiten, reutiliza resultados previos y procesa solo los cambios; también admite ejecuciones completas.
 - **Acciones y tareas:** coordina cosecha, validación, indexación y tareas relacionadas, con seguimiento de estado y resultados.
 - **Gestión de redes:** agrupa fuentes y configura para cada red sus formatos, reglas, transformaciones y opciones de publicación.
+{: role="list"}
 
 El Cosechador dispone de una API de gestión versionada y una interfaz web de administración. Los accesos se controlan mediante usuarios, roles y asignaciones a redes; las integraciones automatizadas pueden utilizar cuentas técnicas y tokens.
 </article>
@@ -82,6 +83,7 @@ Un servicio independiente expone los registros publicados mediante OAI-PMH 2.0. 
 - **Administración:** permite configurar redes y procesos, ejecutar acciones y consultar su progreso, resultados y diagnósticos.
 - **Dashboard de repositorios:** interfaz de consulta de solo lectura para supervisar información y resultados disponibles, con acceso limitado según las redes asignadas.
 - **Búsqueda:** VuFind puede presentar los registros indexados como una interfaz de descubrimiento para usuarios finales.
+{: role="list"}
 </article>
 
 <article class="content-card platform-component" markdown="1">
@@ -105,6 +107,7 @@ La plataforma se desarrolla como un conjunto de repositorios Git. El [repositori
 - [Integración dARK/ARK](https://github.com/lareferencia/lareferencia-dark-lib)
 - [Cliente de cosecha OAI-PMH](https://github.com/lareferencia/lareferencia-oclc-harvester)
 - [Herramientas de administración por línea de comandos](https://github.com/lareferencia/lareferencia-shell)
+{: role="list"}
 
 La distribución principal está bajo GNU AGPL v3; al reutilizar componentes, consulta también la licencia declarada en cada repositorio.
 

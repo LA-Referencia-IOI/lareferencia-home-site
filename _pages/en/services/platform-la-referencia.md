@@ -52,6 +52,7 @@ In addition to retrieving records, it coordinates subsequent stages:
 - **Incremental processing:** detects new, modified and deleted records. When configuration and data allow, it reuses previous results and processes only changes; full runs are also supported.
 - **Actions and tasks:** coordinates harvesting, validation, indexing and related tasks, tracking their status and results.
 - **Network management:** groups sources and configures formats, rules, transformations and publication options for each network.
+{: role="list"}
 
 The Harvester provides a versioned management API and a web administration interface. Access is controlled through users, roles and network assignments; automated integrations can use service accounts and tokens.
 </article>
@@ -82,6 +83,7 @@ An independent service exposes published records through OAI-PMH 2.0. This allow
 - **Administration:** allows networks and processes to be configured, actions to be run, and progress, results and diagnostics to be reviewed.
 - **Repository dashboard:** a read-only interface for monitoring available information and results, with access limited to assigned networks.
 - **Search:** VuFind can present indexed records through a discovery interface for end users.
+{: role="list"}
 </article>
 
 <article class="content-card platform-component" markdown="1">
@@ -105,6 +107,7 @@ The platform is developed across a set of Git repositories. The [main platform r
 - [dARK/ARK integration](https://github.com/lareferencia/lareferencia-dark-lib)
 - [OAI-PMH harvesting client](https://github.com/lareferencia/lareferencia-oclc-harvester)
 - [Command-line administration tools](https://github.com/lareferencia/lareferencia-shell)
+{: role="list"}
 
 The main distribution is licensed under GNU AGPL v3; when reusing components, also check the license declared in each repository.
 

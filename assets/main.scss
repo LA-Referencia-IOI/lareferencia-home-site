@@ -3761,7 +3761,34 @@ p {
 
   .platform-component:first-child { grid-column: 1 / -1; }
   .platform-component h3 { margin-top: 0; }
-  .platform-component li { margin-bottom: .65rem; }
+  .platform-component ul,
+  .platform-code ul {
+    list-style: none;
+    margin: 1.25rem 0 0;
+    padding: 0;
+  }
+
+  .platform-component ul > li,
+  .platform-code ul > li {
+    margin: 0;
+    padding: .9rem 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .platform-component ul > li:first-child,
+  .platform-code ul > li:first-child { padding-top: 0; }
+
+  .platform-component ul > li:last-child,
+  .platform-code ul > li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .platform-component li > strong:first-child {
+    display: block;
+    color: var(--secondary-color);
+    margin-bottom: .25rem;
+  }
   .platform-code { border-top: 1px solid var(--border-color); padding-top: 2rem; }
   .platform-code a { overflow-wrap: anywhere; }
 
