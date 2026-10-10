@@ -10,6 +10,9 @@ menu_icon: org
 summary: 'País parceiro do Projeto LA Referencia, desenvolveu iniciativas nacionais no tema de Repositórios e Acesso Aberto, entre as quais se destacam: o uso de repositórios registrados no OpenDOAR, repositórios no setor público e repositórios de dados. É signatário dos principais acordos da LA Referencia.'
 menu_summary: Acceso Libre a Información Científica para la Innovación
 node_name: Acceso Libre a Información Científica para la Innovación
+directory_node: "ALICIA"
+directory_node_label: "Acesso Livre à Informação Científica para a Inovação"
+directory_summary: "Reúne a produção científica e tecnológica de instituições peruanas para facilitar sua consulta em acesso aberto."
 country_code: PE
 flag_image: /assets/img/members/peru-flag.png
 legacy_url: https://dev.lareferencia.info/pt/nos/peru/

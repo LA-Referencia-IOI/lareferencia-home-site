@@ -10,6 +10,9 @@ menu_icon: org
 summary: Spain is a partner country of LA Referencia through the Spanish Foundation for Science and Technology, F.S.P. (FECYT). FECYT drives the open access movement in Spain by collaborating on the proper design and implementation of open access and Open Science policies at the national and European levels. Through RECOLECTA, or Open Science Harvester, FECYT operates the national aggregator of open access repositories. This platform brings together all the Spanish digital infrastructures where research results are published and/or deposited in open access.
 menu_summary: RECOLECTA
 node_name: RECOLECTA
+directory_node: "RECOLECTA"
+directory_node_label: "Open Science Harvester"
+directory_summary: "Aggregates research repositories and promotes open access to Spain’s scientific output."
 country_code: ES
 legacy_url: https://dev.lareferencia.info/en/nodes/espana/
 published: true

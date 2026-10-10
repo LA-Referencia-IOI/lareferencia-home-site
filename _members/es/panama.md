@@ -10,6 +10,9 @@ menu_icon: org
 summary: 'País socio del proyecto LA Referencia, ha generado iniciativas y proyectos nacionales en temas de Acceso Abierto, entre los que se pueden resumir: la creación del[Repositorio Nacional de Publicaciones (PRICILA)](http://pricila.senacyt.gob.pa/vufind/), implementación de un sistema nacional CRIS, repositorio nacional de datos de investigación, entre otros.'
 menu_summary: Portal de Repositorios Institucionales de Ciencia, Tecnología e Innovación de Literatura Abierta (PRICILA)
 node_name: Portal de Repositorios Institucionales de Ciencia, Tecnología e Innovación de Literatura Abierta (PRICILA)
+directory_node: "PRICILA"
+directory_node_label: "Portal de repositorios de ciencia, tecnología e innovación"
+directory_summary: "Da acceso a publicaciones científicas de Panamá mediante la integración de repositorios institucionales."
 country_code: PA
 legacy_url: https://dev.lareferencia.info/nodos/panama/
 published: true

@@ -10,6 +10,9 @@ menu_icon: org
 summary: Partner country of LA Referencia, it has developed national initiatives on Repositories and Open Access, including the National System of Digital Repositories in Science and Technology and the Open Access Law. It is a signatory to LA Referencia’s main agreements.
 menu_summary: Sistema Nacional de Repositorios Digitales
 node_name: Sistema Nacional de Repositorios Digitales
+directory_node: "SNRD"
+directory_node_label: "National System of Digital Repositories"
+directory_summary: "Connects digital science and technology repositories to provide open access to Argentina’s scientific output."
 country_code: AR
 flag_image: /assets/img/members/argentina-flag.png
 legacy_url: https://dev.lareferencia.info/en/nodes/argentina/

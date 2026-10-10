@@ -10,6 +10,9 @@ menu_icon: org
 summary: Partner country of LA Referencia that has developed national initiatives to promote the use of open repositories, as well as to advance open access and open science practices in the territory, through instruments funded by ANID and the implementation of the Open Access Policy for Scientific Information and Research Data. It is also a signatory to LA Referencia’s main agreements.
 menu_summary: Sistema de Información Científica - SIC
 node_name: Sistema de Información Científica - SIC
+directory_node: "Espacio Ciencia"
+directory_node_label: "National open science portal"
+directory_summary: "Provides access to research outputs and supports Chile’s open access and open science policies."
 country_code: CL
 flag_image: /assets/img/members/chile-flag.png
 legacy_url: https://dev.lareferencia.info/en/nodes/chile/

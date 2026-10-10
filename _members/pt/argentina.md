@@ -10,6 +10,9 @@ menu_icon: org
 summary: 'País parceiro da LA Referencia, tem desenvolvido iniciativas nacionais na área de Repositórios e Acesso Aberto, destacando-se: o Sistema Nacional de Repositórios Digitais em Ciência e Tecnologia e a Lei de Acesso Aberto. É signatário dos principais acordos da LA Referencia.'
 menu_summary: Sistema Nacional de Repositorios Digitales
 node_name: Sistema Nacional de Repositorios Digitales
+directory_node: "SNRD"
+directory_node_label: "Sistema Nacional de Repositórios Digitais"
+directory_summary: "Articula repositórios digitais de ciência e tecnologia para oferecer acesso aberto à produção científica argentina."
 country_code: AR
 flag_image: /assets/img/members/argentina-flag.png
 legacy_url: https://dev.lareferencia.info/pt/nos/argentina/

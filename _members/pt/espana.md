@@ -10,6 +10,9 @@ menu_icon: org
 summary: A Espanha é país parceiro da LA Referencia por meio da Fundação Espanhola para a Ciência e a Tecnologia, F.S.P. (FECYT). A FECYT impulsiona o movimento de acesso aberto na Espanha, colaborando no correto desenho e implementação das políticas de acesso aberto e Ciência Aberta em nível nacional e europeu. A FECYT, por meio do RECOLECTA, ou Recolector de Ciência Aberta, é o agregador nacional de repositórios de acesso aberto. Nessa plataforma são reunidas todas as infraestruturas digitais espanholas nas quais são publicados e/ou depositados resultados de pesquisa em acesso aberto.
 menu_summary: RECOLECTA
 node_name: RECOLECTA
+directory_node: "RECOLECTA"
+directory_node_label: "Coletor de Ciência Aberta"
+directory_summary: "Agrega repositórios de pesquisa e promove o acesso aberto à produção científica espanhola."
 country_code: ES
 legacy_url: https://dev.lareferencia.info/pt/nos/espana/
 published: true

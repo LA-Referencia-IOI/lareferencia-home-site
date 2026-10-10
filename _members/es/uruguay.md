@@ -10,6 +10,9 @@ menu_icon: org
 summary: País socio del Proyecto LA-Referencia, ha generado iniciativas nacionales en el tema de Repositorios y Acceso Abierto.
 menu_summary: Repositorios Abiertos de Ciencia y Tecnología (SILO)
 node_name: Repositorios Abiertos de Ciencia y Tecnología (SILO)
+directory_node: "SILO"
+directory_node_label: "Repositorios Abiertos de Ciencia y Tecnología"
+directory_summary: "Integra repositorios nacionales y facilita el acceso a la producción científica y tecnológica de Uruguay."
 country_code: UY
 flag_image: /assets/img/members/uruguay-flag.png
 legacy_url: https://dev.lareferencia.info/nodos/uruguay/

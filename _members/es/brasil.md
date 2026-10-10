@@ -10,6 +10,9 @@ menu_icon: org
 summary: 'País socio de LA Referencia, ha generado iniciativas nacionales en el tema de Repositorios y Acceso Abierto, entre los que se destacan: Portal Brasilero de Acceso Abierto a la Información Científica – oasisbr, Biblioteca Digital Brasilera de Tesis y Disertaciones – BDTD, el Directorio de Políticas de Acceso Abierto de Revistas Científicas Brasileñas – Diadorim, Sistema Electrónico de Publicación de Revistas – SEER/OJS, entre otros. Es signatario de los principales acuerdos de LA Referencia.'
 menu_summary: Portal brasileiro de publicações e dados científicos em acesso aberto (Oasisbr)
 node_name: Portal brasileiro de publicações e dados científicos em acesso aberto (Oasisbr)
+directory_node: "Oasisbr"
+directory_node_label: "Portal de publicaciones y datos científicos"
+directory_summary: "Reúne publicaciones y datos científicos en acceso abierto de instituciones brasileñas."
 country_code: BR
 flag_image: /assets/img/members/brasil-flag.png
 legacy_url: https://dev.lareferencia.info/nodos/brasil/

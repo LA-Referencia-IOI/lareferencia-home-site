@@ -10,6 +10,9 @@ menu_icon: org
 summary: Partner country of the LA Referencia Project, it has developed national initiatives in the field of Repositories and Open Access.
 menu_summary: Sistema Nacional de Repositorios Digitales
 node_name: Sistema Nacional de Repositorios Digitales
+directory_node: "SILO"
+directory_node_label: "Open Science and Technology Repositories"
+directory_summary: "Integrates national repositories and facilitates access to Uruguay’s scientific and technological output."
 country_code: UY
 flag_image: /assets/img/members/uruguay-flag.png
 legacy_url: https://dev.lareferencia.info/en/nodes/uruguay/

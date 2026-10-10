@@ -10,6 +10,9 @@ menu_icon: org
 summary: 'As a partner country of the LA Referencia project, it has developed national initiatives and projects on Open Access , which can be summarized as follows: the creation of the National Publications Repository (PRICILA) , the implementation of a national CRIS system , a national research data repository , among others.'
 menu_summary: Portal de Repositorios Institucionales de Ciencia, Tecnología e Innovación de Literatura Abierta
 node_name: Portal de Repositorios Institucionales de Ciencia, Tecnología e Innovación de Literatura Abierta
+directory_node: "PRICILA"
+directory_node_label: "Science, technology and innovation repository portal"
+directory_summary: "Provides access to Panama’s scientific publications by integrating institutional repositories."
 country_code: PA
 legacy_url: https://dev.lareferencia.info/en/nodes/panama/
 published: true

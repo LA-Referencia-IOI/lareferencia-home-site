@@ -10,6 +10,9 @@ menu_icon: org
 summary: Costa Rica ingresó a LA Referencia en el año 2016.
 menu_summary: Repositorio Nacional de Costa Rica (KIMUK)
 node_name: Repositorio Nacional de Costa Rica (KIMUK)
+directory_node: "KIMUK"
+directory_node_label: "Repositorio Nacional de Costa Rica"
+directory_summary: "Integra la producción académica y científica disponible en los repositorios institucionales del país."
 country_code: CR
 legacy_url: https://dev.lareferencia.info/nodos/costa-rica/
 published: true

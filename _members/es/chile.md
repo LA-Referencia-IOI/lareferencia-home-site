@@ -10,6 +10,9 @@ menu_icon: org
 summary: País socio de LA Referencia que ha generado iniciativas nacionales para fomentar el uso de repositorios abiertos, junto con impulsar prácticas de acceso abierto y ciencia abierta en el territorio, a través de instrumentos financiados por la ANID y por la implementación de la Política de Acceso Abierto a la Información Científica y a Datos de Investigación. También es signatario de los principales acuerdos de LA Referencia.
 menu_summary: Espacio Ciencia
 node_name: Espacio Ciencia
+directory_node: "Espacio Ciencia"
+directory_node_label: "Portal nacional de ciencia abierta"
+directory_summary: "Da acceso a resultados de investigación y apoya las políticas de acceso abierto y ciencia abierta de Chile."
 country_code: CL
 flag_image: /assets/img/members/chile-flag.png
 legacy_url: https://dev.lareferencia.info/nodos/chile/

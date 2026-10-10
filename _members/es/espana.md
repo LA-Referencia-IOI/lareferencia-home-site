@@ -10,6 +10,9 @@ menu_icon: org
 summary: España es país socio de LA Referencia a través de la Fundación Española para la Ciencia y Tecnología, F.S.P. (FECYT). La FECYT impulsa el movimiento de acceso abierto en España colaborando en el correcto diseño e implementación de las políticas de acceso abierto y Ciencia Abierta a nivel nacional y europeo.
 menu_summary: Recolector de Ciencia Abierta (RECOLECTA)
 node_name: Recolector de Ciencia Abierta (RECOLECTA)
+directory_node: "RECOLECTA"
+directory_node_label: "Recolector de Ciencia Abierta"
+directory_summary: "Agrega repositorios de investigación y promueve el acceso abierto a la producción científica española."
 country_code: ES
 legacy_url: https://dev.lareferencia.info/nodos/espana/
 published: true

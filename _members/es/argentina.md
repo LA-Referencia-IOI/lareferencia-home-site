@@ -10,6 +10,9 @@ menu_icon: org
 summary: 'País socio de LA Referencia, ha generado iniciativas nacionales en el tema de Repositorios y Acceso Abierto, entre los que se destacan: el Sistema Nacional de Repositorios Digitales en Ciencia y Tecnología y la Ley para el Acceso Abierto. Es signatario de los principales acuerdos de LA Referencia.'
 menu_summary: Sistema Nacional de Repositorios Digitales (SNRD)
 node_name: Sistema Nacional de Repositorios Digitales (SNRD)
+directory_node: "SNRD"
+directory_node_label: "Sistema Nacional de Repositorios Digitales"
+directory_summary: "Articula repositorios digitales de ciencia y tecnología para dar acceso abierto a la producción científica argentina."
 country_code: AR
 flag_image: /assets/img/members/argentina-flag.png
 legacy_url: https://dev.lareferencia.info/nodos/argentina/

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Member countries"
-description: "About page"
+description: "Directory of LA Referencia member countries and national nodes"
 language: en
 language_reference: about-national-nodes
 permalink: /en/members/
@@ -12,16 +12,18 @@ menu_label: "Member countries"
 menu_icon: "none"
 ---
 
+<div class="members-directory">
 <div class="contact-page">
   <header class="contact-page-header">
     <p class="contact-page-eyebrow">Member countries</p>
     <h1 class="contact-page-title">Member countries</h1>
-    <p class="contact-page-lead">LA Referencia currently brings together eight Latin American countries (Argentina, Brazil, Chile, Costa Rica, Ecuador, Panama, Peru and Uruguay) and one European country (Spain). These countries have national nodes that in turn group a range of local repositories, mainly from universities.</p>
+    <p class="contact-page-lead">Member countries participate in LA Referencia’s governance and support its sustainability by signing the Cooperation Agreement. Their national nodes connect repositories and increase the visibility of scientific output from Latin America and Spain.</p>
   </header>
 </div>
 
 <section class="content-section">
-  <p>Following LA Referencia technical standards, each country's network acts as the effective bridge to integrate contents into the scientific documents Search Engine. In several countries the nodes are operated by the national science and technology agency, while in others the operation is delegated to a university consortium or academic network.</p>
+  <p>Membership is formalized by signing the Cooperation Agreement. Through their representative institutions, member countries contribute to the network’s governance and sustainability, aligning national activities with LA Referencia’s shared objectives.</p>
+  <p>National nodes integrate repositories from universities and research institutions through shared standards. Visit each country’s profile to learn about its node, policies and useful links.</p>
 </section>
 
 {% assign member_nodes = site.members | where: "language", page.language | where: "published", true | sort: "menu_order" %}
@@ -32,22 +34,29 @@ menu_icon: "none"
       <a class="member-card-link" href="{{ member.url | relative_url }}">
         <div class="member-card-flag">
           {% if member.flag_image %}
-            <img src="{{ member.flag_image | relative_url }}" alt="{{ member.title }}">
+            <img src="{{ member.flag_image | relative_url }}" alt="" loading="lazy">
           {% else %}
             <span class="member-card-badge">{{ member.country_code }}</span>
           {% endif %}
         </div>
         <div class="member-card-body">
           <h2>{{ member.title }}</h2>
-          <p class="member-card-node">{{ member.node_name }}</p>
-          <p>{{ member.summary }}</p>
+          <p class="member-card-node">{{ member.directory_node | default: member.node_name | escape }}</p>
+          <p class="member-directory-label">{{ member.directory_node_label | escape }}</p>
+          <p class="member-directory-summary">{{ member.directory_summary | default: member.summary | escape }}</p>
+          <span class="member-directory-action">View country profile <span aria-hidden="true">→</span></span>
         </div>
       </a>
     </article>
   {% endfor %}
 </div>
 
-<div class="content-note" style="margin-top: 2.5rem;">
-  <h2>Is your country not part of LA Referencia?</h2>
-  <p>The countries that are part of LA Referencia have signed technical and organizational agreements through their public science and technology institutions, together with RedCLARA. If your country is not yet part of the network, we invite you to work with those institutions and encourage them to join by demonstrating the value of participation. Contact us and we can support you through that process.</p>
+<section class="content-note" aria-labelledby="members-join-title">
+  <h2 id="members-join-title">How to join the network</h2>
+  <p>Joining as a member country is coordinated through national science and technology institutions, together with RedCLARA, and formalized by signing the Cooperation Agreement. Contact us to learn about the process and receive guidance.</p>
+  <div class="content-actions">
+    <a class="lr-btn lr-btn-solid" href="{{ '/en/contact' | relative_url }}">Contact LA Referencia</a>
+    <a class="lr-btn lr-btn-outline" href="{{ '/en/about/how-to-join' | relative_url }}">How to include a repository</a>
+  </div>
+</section>
 </div>

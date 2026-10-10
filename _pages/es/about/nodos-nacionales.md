@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Países miembro"
-description: "Página institucional"
+description: "Directorio de países miembros y nodos nacionales de LA Referencia"
 language: es
 language_reference: about-national-nodes
 permalink: /es/miembros/
@@ -12,16 +12,18 @@ menu_label: "Países miembro"
 menu_icon: "none"
 ---
 
+<div class="members-directory">
 <div class="contact-page">
   <header class="contact-page-header">
     <p class="contact-page-eyebrow">Países miembro</p>
     <h1 class="contact-page-title">Países miembro</h1>
-    <p class="contact-page-lead">LA Referencia está conformada actualmente por ocho países latinoamericanos (Argentina, Brasil, Chile, Costa Rica, Ecuador, Panamá, Perú y Uruguay) y uno europeo (España). Estos países cuentan con nodos nacionales que agrupan a su vez diversos repositorios locales, principalmente de universidades.</p>
+    <p class="contact-page-lead">Los países miembros conforman la gobernanza y sostienen LA Referencia mediante la suscripción del Acuerdo de Cooperación. Sus nodos nacionales conectan repositorios y dan visibilidad a la producción científica de América Latina y España.</p>
   </header>
 </div>
 
 <section class="content-section">
-  <p>Siguiendo los estándares técnicos de LA Referencia, las redes de cada país son el puente efectivo para integrar contenidos en el Buscador de documentos científicos. En varios países los nodos son operados por el organismo de ciencia y tecnología y en otros se delega en un consorcio de universidades o red académica.</p>
+  <p>La participación de los países miembros se formaliza mediante la suscripción del Acuerdo de Cooperación. A través de sus instituciones representantes, contribuyen a la gobernanza de la red y a su sostenibilidad, y articulan las acciones nacionales con los objetivos compartidos de LA Referencia.</p>
+  <p>Los nodos nacionales integran repositorios de universidades e instituciones de investigación mediante estándares compartidos. Consulte la ficha de cada país para conocer su nodo, sus políticas y sus enlaces de interés.</p>
 </section>
 
 {% assign member_nodes = site.members | where: "language", page.language | where: "published", true | sort: "menu_order" %}
@@ -32,22 +34,29 @@ menu_icon: "none"
       <a class="member-card-link" href="{{ member.url | relative_url }}">
         <div class="member-card-flag">
           {% if member.flag_image %}
-            <img src="{{ member.flag_image | relative_url }}" alt="{{ member.title }}">
+            <img src="{{ member.flag_image | relative_url }}" alt="" loading="lazy">
           {% else %}
             <span class="member-card-badge">{{ member.country_code }}</span>
           {% endif %}
         </div>
         <div class="member-card-body">
           <h2>{{ member.title }}</h2>
-          <p class="member-card-node">{{ member.node_name }}</p>
-          <p>{{ member.summary }}</p>
+          <p class="member-card-node">{{ member.directory_node | default: member.node_name | escape }}</p>
+          <p class="member-directory-label">{{ member.directory_node_label | escape }}</p>
+          <p class="member-directory-summary">{{ member.directory_summary | default: member.summary | escape }}</p>
+          <span class="member-directory-action">Ver ficha del país <span aria-hidden="true">→</span></span>
         </div>
       </a>
     </article>
   {% endfor %}
 </div>
 
-<div class="content-note" style="margin-top: 2.5rem;">
-  <h2>¿Su país no es parte de LA Referencia?</h2>
-  <p>Los países que son parte de LA Referencia han firmado acuerdos técnicos y organizativos a través de sus organismos públicos de ciencia y tecnología (Ministerios y Oncyts), conjuntamente con RedCLARA; por lo que le invitamos a realizar las diligencias con estos organismos e instarles a unirse demostrando su importancia. Póngase en contacto con nosotros para poder apoyarle en este proceso.</p>
+<section class="content-note" aria-labelledby="members-join-title">
+  <h2 id="members-join-title">Cómo sumarse a la red</h2>
+  <p>Para sumarse como país miembro, la incorporación se coordina a través de las instituciones nacionales de ciencia y tecnología, junto con RedCLARA, y se formaliza mediante la suscripción del Acuerdo de Cooperación. Escríbanos para conocer el proceso y recibir orientación.</p>
+  <div class="content-actions">
+    <a class="lr-btn lr-btn-solid" href="{{ '/es/contact' | relative_url }}">Contactar con LA Referencia</a>
+    <a class="lr-btn lr-btn-outline" href="{{ '/es/about/como-ser-parte' | relative_url }}">Cómo incorporar un repositorio</a>
+  </div>
+</section>
 </div>

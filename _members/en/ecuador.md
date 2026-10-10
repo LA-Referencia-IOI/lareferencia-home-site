@@ -10,6 +10,9 @@ menu_icon: org
 summary: A partner country of the LA Referencia Project, it has developed several national initiatives in the area of institutional repositories and open access, including the creation of a network of digital repositories, the Metadata Applications Project, and training to standardize repositories. It is a signatory of the main LA Referencia agreements.
 menu_summary: Red de Repositorios Abiertos del Ecuador - RRAAE
 node_name: Red de Repositorios Abiertos del Ecuador - RRAAE
+directory_node: "RRAAE"
+directory_node_label: "Network of Open Repositories of Ecuador"
+directory_summary: "Connects institutional repositories and facilitates access to Ecuador’s scientific and academic output."
 country_code: EC
 legacy_url: https://dev.lareferencia.info/en/nodes/ecuador/
 published: true

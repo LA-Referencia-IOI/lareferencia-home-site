@@ -10,6 +10,9 @@ menu_icon: org
 summary: 'País socio del Proyecto LA Referencia, ha generado varias iniciativas nacionales en el tema de Repositorios institucionales y Acceso Abierto, entre los que se destacan: la creación de una red de Repositorios Digitales, el Proyecto de Aplicaciones sobre Metadatos, formación en estandarizar los repositorios. Es signatario de los principales acuerdos de LA Referencia.'
 menu_summary: Red de Repositorios Abiertos del Ecuador (RRAAE)
 node_name: Red de Repositorios Abiertos del Ecuador (RRAAE)
+directory_node: "RRAAE"
+directory_node_label: "Red de Repositorios Abiertos del Ecuador"
+directory_summary: "Conecta repositorios institucionales y facilita el acceso a la producción científica y académica ecuatoriana."
 country_code: EC
 legacy_url: https://dev.lareferencia.info/nodos/ecuador/
 published: true

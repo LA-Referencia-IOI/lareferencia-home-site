@@ -3801,3 +3801,21 @@ p {
     .platform-flow-steps { grid-template-columns: minmax(0, 1fr); }
   }
 }
+
+/* National node directory: concise summaries and clear country links. */
+.members-directory {
+  .member-card-link { height: 100%; text-decoration: none; }
+  .member-card-body { display: flex; flex-direction: column; height: 100%; }
+  .member-card-node { margin-bottom: .2rem; }
+  .member-directory-label { color: var(--text-light); font-size: .9rem; margin-bottom: .85rem; }
+  .member-directory-summary { margin-bottom: 1.2rem; }
+  .member-directory-action {
+    margin-top: auto;
+    color: var(--primary-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  .member-card-link:focus-visible { outline: 3px solid var(--primary-color); outline-offset: -3px; }
+}
