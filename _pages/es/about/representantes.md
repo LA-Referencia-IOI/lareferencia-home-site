@@ -5,7 +5,6 @@ description: "Autoridades y equipos de representación de LA Referencia"
 language: es
 language_reference: representatives
 published: true
-menu_parent: about
 menu_order: 30
 menu_label: "Gobernanza"
 menu_icon: "org"

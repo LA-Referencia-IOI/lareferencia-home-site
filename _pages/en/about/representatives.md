@@ -5,7 +5,6 @@ description: "Authorities and representative bodies of LA Referencia"
 language: en
 language_reference: representatives
 published: true
-menu_parent: about
 menu_order: 50
 menu_label: "Governance"
 menu_icon: "org"
