@@ -60,7 +60,7 @@ main_nav:
     mega_subtitle: Noticias, relevamientos y suscripción institucional.
     children:
       - label: Documentos institucionales
-        href: https://recursos.lareferencia.info/
+        href: https://recursos.lareferencia.info/communities/feeddca1-5cb7-411e-90c1-989aae8cf28d/search
         summary: Repositorio de documentos institucionales de LA Referencia.
         menu_icon: docs
         external: true

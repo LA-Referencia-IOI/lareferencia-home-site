@@ -65,7 +65,7 @@ main_nav:
         menu_icon: graduation-cap
         external: true
       - label: Institutional Documents
-        href: https://recursos.lareferencia.info/
+        href: https://recursos.lareferencia.info/communities/feeddca1-5cb7-411e-90c1-989aae8cf28d/search
         summary: Repository of LA Referencia institutional documents.
         menu_icon: docs
         external: true
