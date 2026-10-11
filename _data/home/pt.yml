@@ -1,6 +1,6 @@
 sections:
   - type: hero_map
-    title: "LA Referencia é a Rede Latino-Americana e Espanhola de Ciência Aberta"
+    title: "<span class='lr-hero-brand'>LA Referencia.</span>Rede Latino-Americana e Espanhola<br>de Ciência Aberta"
     subtitle: "A LA Referencia dá suporte às estratégias nacionais de Ciência Aberta na América Latina e na Espanha por meio de sua gama de serviços."
 
   - type: explore_band

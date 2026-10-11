@@ -1,6 +1,6 @@
 sections:
   - type: hero_map
-    title: "LA Referencia.<br>Latin American and Spanish Network<br>for Open Science"
+    title: "<span class='lr-hero-brand'>LA Referencia.</span>Latin American and Spanish Network<br>for Open Science"
     subtitle: "LA Referencia supports national Open Science strategies in Latin America and Spain through its range of services."
 
   - type: explore_band
