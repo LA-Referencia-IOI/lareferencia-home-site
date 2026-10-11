@@ -5,15 +5,57 @@ sitemap:
   excluded: true
 ---
 {% assign target = '/' | append: site.default_language | append: '/' | append: site.fallback_page %}
+{% assign palette = site.data.theme.palette %}
 <!doctype html>
 <html lang="{{ site.default_language }}">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="refresh" content="0;url={{ target | relative_url }}">
   <link rel="canonical" href="{{ target | relative_url }}">
-  <title>Redirecting...</title>
+  <title>LA Referencia</title>
+  <style>
+    @font-face {
+      font-family: 'Titillium Web';
+      src: url('{{ "/assets/fonts/titillium-web-400.woff2" | relative_url }}') format('woff2');
+      font-display: swap;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      background: {{ palette.background_light }};
+      color: {{ palette.text }};
+      font-family: 'Titillium Web', sans-serif;
+      border-top: 5px solid {{ palette.primary }};
+    }
+    main { width: min(100%, 440px); text-align: center; }
+    img { display: block; width: min(100%, 320px); height: auto; margin: 0 auto 2rem; }
+    p { font-size: 1.1rem; line-height: 1.5; margin: 0 0 1.75rem; }
+    .progress { width: 64px; height: 3px; margin: 0 auto 1.25rem; background: {{ palette.accent }}; }
+    a { color: {{ palette.primary }}; text-underline-offset: .25em; padding: .5rem; }
+    a:focus-visible { outline: 2px solid {{ palette.primary }}; outline-offset: 4px; }
+  </style>
 </head>
 <body>
-  <p><a href="{{ target | relative_url }}">Continue to home</a></p>
+  <main aria-label="LA Referencia">
+    <img src="{{ '/assets/img/la-referencia-logo.png' | relative_url }}" alt="LA Referencia">
+    <div class="progress" aria-hidden="true"></div>
+    {% case site.default_language %}
+    {% when 'en' %}
+    <p>Connecting to our Open Science network.</p>
+    <a href="{{ target | relative_url }}">Go to home</a>
+    {% when 'pt' %}
+    <p>Conectando à nossa rede de Ciência Aberta.</p>
+    <a href="{{ target | relative_url }}">Ir para o início</a>
+    {% else %}
+    <p>Conectando con nuestra red de Ciencia Abierta.</p>
+    <a href="{{ target | relative_url }}">Ir al inicio</a>
+    {% endcase %}
+  </main>
 </body>
 </html>
