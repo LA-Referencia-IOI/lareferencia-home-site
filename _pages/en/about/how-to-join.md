@@ -1,62 +1,45 @@
 ---
 layout: page
-title: "How to Join"
-description: "About page"
+title: "How to participate"
+description: "Two ways to participate in LA Referencia: governance and sustainability, and contributing content."
 language: en
 language_reference: about-how-to-join
 published: true
 menu_parent: members
 menu_order: 20
-menu_label: "How to Join"
+menu_label: "How to participate"
 menu_icon: "none"
 ---
 
-<div class="contact-page">
-  <header class="contact-page-header">
-    <p class="contact-page-eyebrow">How to Join</p>
-    <h1 class="contact-page-title">What steps should I take if my research or institutional repository is not available in LA Referencia?</h1>
-    <p class="contact-page-lead">LA Referencia is an aggregator, not a repository, which is why it is not possible to deposit your research outputs directly.</p>
-  </header>
-</div>
+<header class="contact-page-header">
+  <h1 class="contact-page-title">How to participate</h1>
+  <p class="contact-page-lead">LA Referencia offers two ways to participate: taking part in the network’s governance and sustainability, and contributing scientific content to its collection.</p>
+</header>
 
 <section class="content-section">
-  <p>We are a federated network, so each of our national nodes decides which institutional repositories to harvest, and in turn, each repository defines its own mechanisms for depositing content.</p>
+  <h2>Participating in governance and sustainability</h2>
+  <p>Member countries shape LA Referencia’s governance and contribute to its sustainability by signing the Cooperation Agreement. This participation entails institutional commitments to sustain the regional infrastructure and take part in its decisions.</p>
+  <p>If your country is interested in joining, contact LA Referencia to learn about the process and arrange a dialogue with LA Referencia’s Executive Directorate and Board of Directors.</p>
+  <div class="content-actions"><a class="lr-btn lr-btn-outline" href="{{ '/en/members/' | relative_url }}">Member countries</a></div>
 </section>
 
 <section class="content-section">
-  <h2>Get information here:</h2>
-  <p class="content-lead">In which country are you located?</p>
+  <h2>Contributing content to the collection</h2>
+  <p>Repositories and other scientific information sources can participate through metadata harvesting. Inclusion requires reviewing interoperability and information quality, and coordinating with the national node or LA Referencia, as appropriate.</p>
+  <p>If your institution is located in a member country, consult the national node. If there is no national node yet, contact LA Referencia to explore opportunities for inclusion.</p>
+  <div class="content-actions"><a class="lr-btn lr-btn-outline" href="{{ '/en/members/' | relative_url }}">Find the national nodes</a></div>
 </section>
 
-{% assign member_nodes = site.members | where: "language", page.language | where: "published", true | sort: "menu_order" %}
+<section class="content-section">
+  <h2>How we are expanding the collection</h2>
+  <p>Through the IOI project, LA Referencia is expanding its coverage by strengthening existing nodes and identifying repositories in countries that are not yet members of the network. Working with the responsible institutions, it reviews interoperability conditions and metadata quality to prepare their gradual inclusion, including through virtual nodes where a national node does not yet exist.</p>
+  <p>This cooperation helps make more scientific output visible and builds relationships that may support future institutional participation in the network.</p>
+  <p><a href="https://la-referencia-ioi.github.io/reports/productos/a1-expansion-regional/es/index.html">Learn about the expansion of the collection</a></p>
+</section>
 
-<div class="members-grid">
-  {% for member in member_nodes %}
-    <article class="member-card">
-      <a class="member-card-link" href="{{ member.url | relative_url }}">
-        <div class="member-card-flag">
-          {% if member.flag_image %}
-            <img src="{{ member.flag_image | relative_url }}" alt="{{ member.title }}">
-          {% else %}
-            <span class="member-card-badge">{{ member.country_code }}</span>
-          {% endif %}
-        </div>
-        <div class="member-card-body">
-          <h2>{{ member.title }}</h2>
-          {% if member.node_name %}
-            <p class="member-card-node">{{ member.node_name }}</p>
-          {% endif %}
-          {% if member.summary %}
-            <p>{{ member.summary }}</p>
-          {% endif %}
-        </div>
-      </a>
-    </article>
-  {% endfor %}
-</div>
-
-<div class="content-note" style="margin-top: 2.5rem;">
-  <h2>Is your country not part of LA Referencia?</h2>
-  <p>The countries that are part of LA Referencia have signed technical and organizational agreements through their public science and technology bodies (Ministries and Oncyts), together with RedCLARA. Therefore, we invite you to contact these bodies and encourage them to join, demonstrating the importance of the initiative.</p>
-  <p style="margin-top: 1rem;"><a class="lr-btn lr-btn-solid" href="mailto:federico.cetrangolo@lareferencia.redclara.net">federico.cetrangolo@lareferencia.redclara.net</a></p>
+<div class="content-note">
+  <h2>What does each pathway involve?</h2>
+  <p>Having content harvested does not in itself confer member country status or participation in governance. Institutional membership is formalized through the Cooperation Agreement.</p>
+  <p>To make a research output visible, deposit it in your institution’s repository. LA Referencia harvests metadata from participating sources; deposits are made in the source repositories.</p>
+  <div class="content-actions"><a class="lr-btn lr-btn-solid" href="{{ '/en/contact' | relative_url }}">Contact LA Referencia</a></div>
 </div>

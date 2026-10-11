@@ -6,6 +6,11 @@ language: es
 language_reference: about-benefits
 permalink: /es/miembros/beneficios/
 published: true
+menu_parent: about
+menu_order: 40
+menu_label: "Beneficios"
+menu_summary: "Conozca la propuesta de valor y los beneficios de participar en LA Referencia."
+menu_icon: "none"
 ---
 
 <div class="benefits-page">
@@ -65,7 +70,7 @@ published: true
         <h3>Capacitación y Comunicación</h3>
         <ul class="benefit-list">
           <li>Webinars para los nodos nacionales en materias técnicas como plataformas y directrices.</li>
-          <li>Difusión de actividades, avances y resultados de los asociados en la red.</li>
+          <li>Difusión de las actividades de los asociados.</li>
           <li>Desarrollo y difusión de contenidos de formación y documentos.</li>
         </ul>
       </article>
@@ -73,6 +78,6 @@ published: true
   </section>
 
   <section class="benefits-note">
-    <p>Además los países que conforman LA Referencia participan en <a href="https://www.coar-repositories.org/" target="_blank" rel="noopener">COAR</a> y a través de <a href="https://redclara.net/" target="_blank" rel="noopener">RedCLARA</a>, colaboran en el proyecto <a href="https://www.openaire.eu/" target="_blank" rel="noopener">OpenAIRE 2020</a> (Open Access Infrastructure for Research in Europe towards 2020), financiado por la Comisión Europea.</p>
+    <p>Los países que conforman LA Referencia participan en <a href="https://www.coar-repositories.org/" target="_blank" rel="noopener">COAR</a>.</p>
   </section>
 </div>

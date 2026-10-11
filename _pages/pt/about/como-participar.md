@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Como participar"
-description: "Página institucional"
+description: "Duas formas de participar da LA Referencia: governança e sustentabilidade e incorporação de conteúdos."
 language: pt
 language_reference: about-how-to-join
 published: true
@@ -13,45 +13,33 @@ menu_icon: "none"
 
 <header class="contact-page-header">
   <h1 class="contact-page-title">Como participar</h1>
+  <p class="contact-page-lead">A LA Referencia oferece duas formas de participação: integrar a governança e a sustentabilidade da rede e incorporar conteúdos científicos à sua coleção.</p>
 </header>
 
-<h2>Como faço para que meu resultado de pesquisa ou repositório apareça na LA Referencia?</h2>
+<section class="content-section">
+  <h2>Participar da governança e da sustentabilidade</h2>
+  <p>Os países membros compõem a governança da LA Referencia e contribuem para sua sustentabilidade por meio da assinatura do Acordo de Cooperação. Essa participação envolve compromissos institucionais para sustentar a infraestrutura regional e participar de suas decisões.</p>
+  <p>Se o seu país tem interesse em aderir, entre em contato com a LA Referencia para conhecer o processo e articular um diálogo com a Direção Executiva e o Conselho Diretor da LA Referencia.</p>
+  <div class="content-actions"><a class="lr-btn lr-btn-outline" href="{{ '/pt/membros/' | relative_url }}">Países membros</a></div>
+</section>
 
-<p>A LA Referencia é um agregador, não um repositório; por esse motivo, não é possível depositar diretamente seus resultados de pesquisa. Somos uma rede federada, então cada um de nossos nós nacionais decide quais repositórios institucionais serão coletados e, por sua vez, cada repositório define os mecanismos para realizar o depósito.</p>
+<section class="content-section">
+  <h2>Incorporar conteúdos à coleção</h2>
+  <p>Os repositórios e outras fontes de informação científica podem participar por meio da coleta de seus metadados. A incorporação exige uma análise da interoperabilidade e da qualidade das informações, além da articulação com o nó nacional ou com a LA Referencia, conforme o caso.</p>
+  <p>Se sua instituição está em um país membro, consulte o nó nacional. Se ainda não existe um nó nacional, entre em contato com a LA Referencia para explorar as possibilidades de incorporação.</p>
+  <div class="content-actions"><a class="lr-btn lr-btn-outline" href="{{ '/pt/membros/' | relative_url }}">Consultar os nós nacionais</a></div>
+</section>
 
-<h2>Obtenha informações aqui:</h2>
+<section class="content-section">
+  <h2>Como estamos ampliando a coleção</h2>
+  <p>Com o projeto IOI, a LA Referencia está ampliando sua cobertura por meio do fortalecimento dos nós existentes e da identificação de repositórios em países que ainda não são membros da rede. Em colaboração com as instituições responsáveis, são analisadas as condições de interoperabilidade e a qualidade dos metadados para preparar sua incorporação gradual, inclusive por meio de nós virtuais onde ainda não existe um nó nacional.</p>
+  <p>Essa cooperação permite dar visibilidade a mais produção científica e estabelecer vínculos que podem facilitar uma futura participação institucional na rede.</p>
+  <p><a href="https://la-referencia-ioi.github.io/reports/productos/a1-expansion-regional/es/index.html">Conhecer a expansão da coleção</a></p>
+</section>
 
-<p>Em que país você se encontra?</p>
-
-{% assign member_nodes = site.members | where: "language", page.language | where: "published", true | sort: "menu_order" %}
-
-<div class="members-grid">
-  {% for member in member_nodes %}
-    <article class="member-card">
-      <a class="member-card-link" href="{{ member.url | relative_url }}">
-        <div class="member-card-flag">
-          {% if member.flag_image %}
-            <img src="{{ member.flag_image | relative_url }}" alt="{{ member.title }}">
-          {% else %}
-            <span class="member-card-badge">{{ member.country_code }}</span>
-          {% endif %}
-        </div>
-        <div class="member-card-body">
-          <h2>{{ member.title }}</h2>
-          {% if member.node_name %}
-            <p class="member-card-node">{{ member.node_name }}</p>
-          {% endif %}
-          {% if member.summary %}
-            <p>{{ member.summary }}</p>
-          {% endif %}
-        </div>
-      </a>
-    </article>
-  {% endfor %}
-</div>
-
-<div class="contact-card">
-  <h2>Seu país não faz parte da LA Referencia?</h2>
-  <p>Os países que fazem parte da LA Referencia assinaram acordos técnicos e organizacionais por meio de seus órgãos públicos de ciência e tecnologia (Ministérios e Oncyts), juntamente com a RedCLARA; por isso, convidamos você a entrar em contato com esses órgãos e incentivá-los a aderir, demonstrando a importância da iniciativa.</p>
-  <p><a href="mailto:federico.cetrangolo@lareferencia.redclara.net">federico.cetrangolo@lareferencia.redclara.net</a></p>
+<div class="content-note">
+  <h2>O que envolve cada forma de participação?</h2>
+  <p>A coleta de conteúdos, por si só, não confere a condição de país membro nem participação na governança. A adesão institucional é formalizada por meio do Acordo de Cooperação.</p>
+  <p>Para dar visibilidade a um resultado de pesquisa, deposite-o no repositório da sua instituição. A LA Referencia coleta metadados das fontes participantes; o depósito é realizado nos repositórios de origem.</p>
+  <div class="content-actions"><a class="lr-btn lr-btn-solid" href="{{ '/pt/contact' | relative_url }}">Entrar em contato com a LA Referencia</a></div>
 </div>

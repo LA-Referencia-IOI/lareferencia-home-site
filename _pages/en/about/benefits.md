@@ -6,6 +6,11 @@ language: en
 language_reference: about-benefits
 permalink: /en/members/benefits/
 published: true
+menu_parent: about
+menu_order: 40
+menu_label: "Benefits"
+menu_summary: "Learn about the value and benefits of participating in LA Referencia."
+menu_icon: "none"
 ---
 
 <div class="benefits-page">
@@ -73,6 +78,6 @@ published: true
   </section>
 
   <section class="benefits-note">
-    <p>Additionally, the countries that make up LA Referencia participate in <a href="https://www.coar-repositories.org/" target="_blank" rel="noopener">COAR</a> and, through <a href="https://redclara.net/" target="_blank" rel="noopener">RedCLARA</a>, collaborate in the <a href="https://www.openaire.eu/" target="_blank" rel="noopener">OpenAIRE</a> 2020 project (Open Access Infrastructure for Research in Europe towards 2020), funded by the European Commission.</p>
+    <p>LA Referencia’s member countries participate in <a href="https://www.coar-repositories.org/" target="_blank" rel="noopener">COAR</a>.</p>
   </section>
 </div>
