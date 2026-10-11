@@ -20,28 +20,33 @@ main_nav:
         children:
           - label: LA Referencia Platform
             href: /en/services/platform-la-referencia
-            summary: Learn more about the software used to harvest data from the national nodes
+            summary: Harvests information from scientific repositories, checks its quality and enriches it to increase its visibility and share it with other systems.
+            show_full_summary: true
             menu_icon: search
           - label: Usage Statistics
             href: https://ustats.lareferencia.info/en/home
-            summary: Discover how our platform provides access to usage data from the repositories across the network
+            summary: Collects views and downloads to show how repository content is used and provide usage statistics.
+            show_full_summary: true
             menu_icon: stats
             external: true
-          - label: dARK
-            href: https://www.dark-pid.net/en/home
-            summary: Explore how this tool was developed to assign Persistent Identifiers
+          - label: "dARK: persistent identifiers"
+            href: https://la-referencia-ioi.github.io/reports/productos/b1-dark-2/en/index.html
+            summary: Regional infrastructure under development to assign ARK identifiers, maintain stable links to scientific resources and preserve their metadata.
+            show_full_summary: true
             menu_icon: dark
             external: true
       - title: Projects
         children:
           - label: LA Referencia IOI Project
             href: https://la-referencia-ioi.github.io/reports/en/index.html
-            summary: Learn about the LA Referencia - IOI project reports on open infrastructure in the region.
+            summary: Expands the regional collection and makes it easier to search in multiple languages. Develops dARK identifiers and metadata preservation, alongside a Dataverse repository and training to manage research data.
+            show_full_summary: true
             menu_icon: generic
             external: true
           - label: Project LA Referencia/Lyrasis DSpace
-            href: https://dspace.lareferencia.info/
-            summary: Learn about the initiative designed to strengthen the adoption, use, and updating of DSpace in Latin America and Spain.
+            href: https://dspace.lareferencia.info/en/
+            summary: Helps institutions install, use and update DSpace through technical support, Spanish and Portuguese guides and training activities.
+            show_full_summary: true
             menu_icon: db
             external: true
 

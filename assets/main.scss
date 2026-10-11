@@ -3819,3 +3819,38 @@ p {
   }
   .member-card-link:focus-visible { outline: 3px solid var(--primary-color); outline-offset: -3px; }
 }
+
+/* UNESCO initiatives: embedded dashboard and source-based overview. */
+.unesco-page {
+  .unesco-dashboard { scroll-margin-top: 7rem; }
+  .unesco-dashboard-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .unesco-dashboard-heading p { margin-bottom: 0; }
+  .unesco-dashboard-frame {
+    display: block;
+    width: 100%;
+    height: 780px;
+    height: clamp(600px, 85vh, 1000px);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: #fff;
+  }
+  .unesco-dashboard-help { margin-top: .75rem; font-size: .9rem; color: var(--text-light); }
+  .content-card .content-list {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+  .content-card .content-list li { padding: .6rem 0; margin: 0; border-bottom: 1px solid var(--border-color); }
+  .content-card .content-list li:last-child { border-bottom: 0; }
+  @media (max-width: 720px) {
+    .unesco-dashboard-frame { height: 700px; }
+    .unesco-dashboard-heading .lr-btn { width: 100%; text-align: center; }
+  }
+}

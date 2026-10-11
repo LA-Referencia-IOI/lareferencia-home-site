@@ -11,17 +11,31 @@ menu_label: "Mapa de Iniciativas Nacionales"
 menu_icon: "file-signature"
 ---
 
+<div class="unesco-page">
 <header class="contact-page-header">
-  <h1 class="contact-page-title">Recomendación UNESCO</h1>
-  <p class="contact-page-lead">Mapa de Iniciativas Nacionales en Ciencia Abierta en América Latina y España.</p>
+  <p class="contact-page-eyebrow">LA Referencia y UNESCO</p>
+  <h1 class="contact-page-title">Mapa de iniciativas nacionales en Ciencia Abierta</h1>
+  <p class="contact-page-lead">Políticas e iniciativas públicas de América Latina, el Caribe y España alineadas con la Recomendación de UNESCO sobre Ciencia Abierta.</p>
 </header>
 
 <p>Un esfuerzo conjunto de LA Referencia y UNESCO para documentar y visibilizar políticas públicas alineadas con la Recomendación de Ciencia Abierta en la región.</p>
 
 <div class="content-actions">
-  <a class="lr-btn lr-btn-solid" href="https://dashboard-unesco.lareferencia.info/#">Explorar Iniciativas</a>
-  <a class="lr-btn lr-btn-outline" href="https://unesdoc.unesco.org/ark:/48223/pf0000379949_spa">Ver Recomendación</a>
+  <a class="lr-btn lr-btn-solid" href="#mapa-iniciativas">Explorar iniciativas</a>
+  <a class="lr-btn lr-btn-outline" href="https://unesdoc.unesco.org/ark:/48223/pf0000379949_spa" target="_blank" rel="noopener">Ver recomendación</a>
 </div>
+
+<section class="content-section unesco-dashboard" id="mapa-iniciativas" aria-labelledby="unesco-dashboard-title">
+  <div class="unesco-dashboard-heading">
+    <div>
+      <h2 id="unesco-dashboard-title">Explorar el mapa de iniciativas</h2>
+      <p>Consulte las iniciativas y utilice los filtros del dashboard para recorrer el relevamiento.</p>
+    </div>
+    <a class="lr-btn lr-btn-outline" href="https://dashboard-unesco.lareferencia.info/" target="_blank" rel="noopener">Abrir dashboard en otra pestaña</a>
+  </div>
+  <iframe class="unesco-dashboard-frame" src="https://dashboard-unesco.lareferencia.info/" title="Mapa de iniciativas nacionales en Ciencia Abierta de LA Referencia y UNESCO" loading="lazy" allowfullscreen></iframe>
+  <p class="unesco-dashboard-help">Si el dashboard no se muestra, puede <a href="https://dashboard-unesco.lareferencia.info/" target="_blank" rel="noopener">abrirlo directamente</a>.</p>
+</section>
 
 <section class="content-section">
   <h2>¿Qué es este relevamiento?</h2>
@@ -31,10 +45,11 @@ menu_icon: "file-signature"
 
 <section class="content-section">
   <h2>Dimensiones relevadas</h2>
+  <p>Las iniciativas se clasifican según la definición de Ciencia Abierta de UNESCO y los objetivos de política planteados en su Recomendación.</p>
   <div class="content-grid">
     <article class="content-card">
       <h3>Objetivos de Política UNESCO</h3>
-      <ul class="content-list">
+      <ul class="content-list" role="list">
         <li>Promover una definición común de la ciencia abierta y sus beneficios.</li>
         <li>Crear un entorno normativo propicio para la ciencia abierta.</li>
         <li>Invertir en infraestructuras y servicios de ciencia abierta.</li>
@@ -46,7 +61,7 @@ menu_icon: "file-signature"
     </article>
     <article class="content-card">
       <h3>Conocimiento científico abierto</h3>
-      <ul class="content-list">
+      <ul class="content-list" role="list">
         <li>Producción científica.</li>
         <li>Datos abiertos de investigación.</li>
         <li>Recursos Educativos Abiertos.</li>
@@ -56,7 +71,7 @@ menu_icon: "file-signature"
     </article>
     <article class="content-card">
       <h3>Participación abierta de los agentes sociales</h3>
-      <ul class="content-list">
+      <ul class="content-list" role="list">
         <li>Ciencia Ciudadana.</li>
         <li>Financiación Colectiva.</li>
         <li>Producción Colectiva.</li>
@@ -64,15 +79,33 @@ menu_icon: "file-signature"
       </ul>
     </article>
     <article class="content-card">
-      <h3>Diálogos abiertos y otras dimensiones</h3>
-      <ul class="content-list">
-        <li>Pueblos Indígenas.</li>
-        <li>Investigadores Marginados.</li>
-        <li>Comunidades Locales.</li>
-        <li>Infraestructuras virtuales y físicas.</li>
-        <li>Cuerpos Normativos nacionales e institucionales.</li>
-        <li>Evaluación abierta de la Ciencia.</li>
-        <li>Innovación Abierta e investigación abierta y reproducible.</li>
+      <h3>Diálogos abiertos con otros sistemas de conocimiento</h3>
+      <ul class="content-list" role="list">
+        <li>Pueblos indígenas.</li>
+        <li>Investigadores marginados.</li>
+        <li>Comunidades locales.</li>
+      </ul>
+    </article>
+    <article class="content-card">
+      <h3>Infraestructuras de la ciencia abierta</h3>
+      <ul class="content-list" role="list">
+        <li>Infraestructuras virtuales.</li>
+        <li>Infraestructuras físicas.</li>
+      </ul>
+    </article>
+    <article class="content-card">
+      <h3>Cuerpos normativos</h3>
+      <ul class="content-list" role="list">
+        <li>Nacionales.</li>
+        <li>Institucionales.</li>
+      </ul>
+    </article>
+    <article class="content-card">
+      <h3>Dimensiones adicionales</h3>
+      <ul class="content-list" role="list">
+        <li>Evaluación abierta de la ciencia.</li>
+        <li>Innovación abierta.</li>
+        <li>Investigación abierta y reproducible.</li>
       </ul>
     </article>
   </div>
@@ -86,15 +119,20 @@ menu_icon: "file-signature"
 
 <section class="content-section">
   <h2>Metodología del relevamiento</h2>
-  <ul class="content-list">
+  <p>La recolección y sistematización de información se desarrolló con el apoyo de un equipo de becarios de CONARE Costa Rica y se basó en tres fuentes principales:</p>
+  <ul class="content-list" role="list">
     <li>Información brindada por los nodos miembros de LA Referencia.</li>
     <li>El documento “Políticas de Acceso Abierto en América Latina, el Caribe y la Unión Europea: Avances para un diálogo político”, realizado por Pilar Rico y Laura Bonora.</li>
     <li>Un análisis de los sitios web oficiales de los gobiernos para identificar políticas y programas en curso.</li>
   </ul>
-  <p>Ahora, buscamos la colaboración de las instituciones nacionales para validar la información recopilada y completar los datos faltantes.</p>
+  <p>Buscamos la colaboración de las instituciones nacionales para validar la información recopilada y completar los datos faltantes.</p>
+  <div class="content-actions">
+    <a class="lr-btn lr-btn-solid" href="mailto:{{ site.email }}?subject=Mapa%20de%20iniciativas%20nacionales%20en%20Ciencia%20Abierta">Enviar información sobre una iniciativa</a>
+  </div>
 </section>
 
 <div class="content-note">
+  <h2>Actualización y sostenibilidad del relevamiento</h2>
   <p>Este relevamiento fue realizado en 2024 y será actualizado periódicamente. Se busca contemplar la totalidad de las políticas, pero es probable que algunas aún no estén incorporadas. Por ello, invitamos a las instituciones a reportar nuevas iniciativas o cambios en las existentes para mantener la información vigente.</p>
 </div>
 
@@ -103,3 +141,5 @@ menu_icon: "file-signature"
   <p>Este trabajo ha sido posible gracias a la colaboración de UNA Costa Rica, a través de CONARE, cuyo equipo de becarios ha apoyado la sistematización de la información y el desarrollo del software que permite la consulta y actualización del relevamiento.</p>
   <p>Puede realizar sus consultas y sugerencias en <a href="{{ '/es/contact' | relative_url }}">Contacto</a>.</p>
 </section>
+
+</div>

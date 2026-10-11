@@ -1,104 +1,145 @@
 ---
 layout: page
-title: "UNESCO Recommendation"
-description: "Map of national Open Science initiatives"
+title: "Map of National Initiatives"
+description: "Public policies and initiatives in Latin America, the Caribbean and Spain aligned with the UNESCO Recommendation on Open Science."
 language: en
 language_reference: resources-unesco-recommendation
 published: true
 menu_parent: resources
-menu_order: 20
-menu_label: "UNESCO Recommendation"
+menu_order: 2
+menu_label: "Map of National Initiatives"
 menu_icon: "file-signature"
 ---
 
+<div class="unesco-page">
 <header class="contact-page-header">
-  <h1 class="contact-page-title">UNESCO Recommendation</h1>
-  <p class="contact-page-lead">Map of National Open Science Initiatives in Latin America and Spain.</p>
+  <p class="contact-page-eyebrow">LA Referencia and UNESCO</p>
+  <h1 class="contact-page-title">Map of national Open Science initiatives</h1>
+  <p class="contact-page-lead">Public policies and initiatives in Latin America, the Caribbean and Spain aligned with the UNESCO Recommendation on Open Science.</p>
 </header>
 
-<p>A joint effort by LA Referencia and UNESCO to document and highlight public policies aligned with the Open Science Recommendation in the region.</p>
+<p>A joint effort by LA Referencia and UNESCO to document and increase the visibility of public policies aligned with the Recommendation on Open Science in the region.</p>
 
 <div class="content-actions">
-  <a class="lr-btn lr-btn-solid" href="https://dashboard-unesco.lareferencia.info/#">Explore Initiatives</a>
-  <a class="lr-btn lr-btn-outline" href="https://unesdoc.unesco.org/ark:/48223/pf0000379949_spa">View Recommendation</a>
+  <a class="lr-btn lr-btn-solid" href="#mapa-iniciativas">Explore initiatives</a>
+  <a class="lr-btn lr-btn-outline" href="https://unesdoc.unesco.org/ark:/48223/pf0000379949_spa" target="_blank" rel="noopener">View the Recommendation</a>
 </div>
 
-<section class="content-section">
-  <h2>What is this mapping about?</h2>
-  <p>This project aims to identify and systematize permanent national public initiatives that contribute to the implementation of UNESCO’s Open Science Recommendation. The information gathered will serve as a reference source on LA Referencia’s website, with mechanisms in place for regular updates. The goal is to highlight and provide an overview of the efforts made by various governments across Latin America and the Caribbean, as well as Spain, in advancing the objectives of Open Science.</p>
+<section class="content-section unesco-dashboard" id="mapa-iniciativas" aria-labelledby="unesco-dashboard-title">
+  <div class="unesco-dashboard-heading">
+    <div>
+      <h2 id="unesco-dashboard-title">Explore the initiatives map</h2>
+      <p>Browse the initiatives and use the dashboard filters to explore the survey.</p>
+    </div>
+    <a class="lr-btn lr-btn-outline" href="https://dashboard-unesco.lareferencia.info/" target="_blank" rel="noopener">Open dashboard in another tab</a>
+  </div>
+  <iframe class="unesco-dashboard-frame" src="https://dashboard-unesco.lareferencia.info/" title="Map of national Open Science initiatives — LA Referencia and UNESCO" loading="lazy" allowfullscreen></iframe>
+  <p class="unesco-dashboard-help">If the dashboard does not appear, you can <a href="https://dashboard-unesco.lareferencia.info/" target="_blank" rel="noopener">open it directly</a>.</p>
 </section>
 
 <section class="content-section">
-  <h2>Surveyed dimensions</h2>
+  <h2>What is this survey?</h2>
+  <p>This project identifies and organizes permanent national public initiatives that contribute to implementing the UNESCO Recommendation on Open Science. The information collected will serve as a reference on the LA Referencia website, with mechanisms for periodic updates.</p>
+  <p>The aim is to assess and highlight the efforts of governments in Latin America, the Caribbean and Spain towards Open Science objectives.</p>
+</section>
+
+<section class="content-section">
+  <h2>Survey dimensions</h2>
+  <p>Initiatives are classified according to UNESCO’s definition of Open Science and the policy objectives set out in its Recommendation.</p>
   <div class="content-grid">
     <article class="content-card">
-      <h3>UNESCO Policy Objectives</h3>
-      <ul class="content-list">
-        <li>Promote a common definition of open science and its benefits.</li>
-        <li>Create an enabling policy environment for open science.</li>
-        <li>Invest in open science infrastructures and services.</li>
+      <h3>UNESCO policy objectives</h3>
+      <ul class="content-list" role="list">
+        <li>Promote a common understanding of Open Science and its benefits.</li>
+        <li>Develop an enabling policy environment for Open Science.</li>
+        <li>Invest in Open Science infrastructure and services.</li>
         <li>Invest in human resources, training and digital literacy.</li>
-        <li>Foster a culture of open science and align incentives.</li>
-        <li>Promote innovative approaches in the scientific process.</li>
-        <li>Encourage international cooperation and reduce digital and technological gaps.</li>
+        <li>Foster a culture of Open Science and align incentives.</li>
+        <li>Promote innovative approaches to the scientific process.</li>
+        <li>Promote international cooperation and reduce digital and technological divides.</li>
       </ul>
     </article>
     <article class="content-card">
-      <h3>Open Scientific Knowledge</h3>
-      <ul class="content-list">
-        <li>Scientific Production.</li>
-        <li>Open Research Data.</li>
-        <li>Open Educational Resources.</li>
-        <li>Open-Source Software and Source Code.</li>
-        <li>Open-Source Hardware.</li>
+      <h3>Open scientific knowledge</h3>
+      <ul class="content-list" role="list">
+        <li>Scientific output.</li>
+        <li>Open research data.</li>
+        <li>Open educational resources.</li>
+        <li>Open source software and source code.</li>
+        <li>Open hardware.</li>
       </ul>
     </article>
     <article class="content-card">
-      <h3>Open Engagement of Societal Actors</h3>
-      <ul class="content-list">
-        <li>Citizen Science.</li>
+      <h3>Open engagement of societal actors</h3>
+      <ul class="content-list" role="list">
+        <li>Citizen science.</li>
         <li>Crowdfunding.</li>
-        <li>Collective Production.</li>
-        <li>Scientific Volunteering.</li>
+        <li>Crowdsourcing.</li>
+        <li>Scientific volunteering.</li>
       </ul>
     </article>
     <article class="content-card">
-      <h3>Open dialogues and additional dimensions</h3>
-      <ul class="content-list">
-        <li>Indigenous Peoples.</li>
-        <li>Marginalized Researchers.</li>
-        <li>Local Communities.</li>
-        <li>Virtual and Physical Infrastructures.</li>
-        <li>National and Institutional Regulatory Frameworks.</li>
-        <li>Open Evaluation of Science.</li>
-        <li>Open Innovation and Open and Reproducible Research.</li>
+      <h3>Open dialogue with other knowledge systems</h3>
+      <ul class="content-list" role="list">
+        <li>Indigenous peoples.</li>
+        <li>Marginalized researchers.</li>
+        <li>Local communities.</li>
+      </ul>
+    </article>
+    <article class="content-card">
+      <h3>Open Science infrastructure</h3>
+      <ul class="content-list" role="list">
+        <li>Virtual infrastructure.</li>
+        <li>Physical infrastructure.</li>
+      </ul>
+    </article>
+    <article class="content-card">
+      <h3>Regulatory frameworks</h3>
+      <ul class="content-list" role="list">
+        <li>National.</li>
+        <li>Institutional.</li>
+      </ul>
+    </article>
+    <article class="content-card">
+      <h3>Additional dimensions</h3>
+      <ul class="content-list" role="list">
+        <li>Open research assessment.</li>
+        <li>Open innovation.</li>
+        <li>Open and reproducible research.</li>
       </ul>
     </article>
   </div>
 </section>
 
 <section class="content-section">
-  <h2>What is UNESCO’s Recommendation on Open Science?</h2>
-  <p>Adopted in 2021 by UNESCO Member States, the Recommendation on Open Science is the first international framework that defines the principles and actions needed to foster a more accessible, inclusive, and collaborative scientific landscape. The Recommendation promotes open access to scientific data and findings, the development of appropriate infrastructures and regulatory frameworks, and global cooperation to reduce technological and knowledge gaps.</p>
-  <p>Through this initiative, UNESCO aims to encourage countries to adopt policies and practices that ensure equitable access to scientific output, benefiting both the research community and society at large.</p>
+  <h2>What is the UNESCO Recommendation on Open Science?</h2>
+  <p>Adopted in 2021 by UNESCO Member States, the Recommendation on Open Science is the first international framework defining the principles and actions needed to promote more accessible, inclusive and collaborative science. It promotes the availability of open scientific data and results, the development of suitable infrastructure and regulatory frameworks, and global cooperation to reduce technological and knowledge divides.</p>
+  <p>Through this initiative, UNESCO encourages countries to adopt policies and practices that facilitate equitable access to scientific output, benefiting both the research community and society as a whole.</p>
 </section>
 
 <section class="content-section">
-  <h2>Mapping methodology</h2>
-  <ul class="content-list">
-    <li>Information provided by the member nodes of LA Referencia.</li>
-    <li>The document “Open Access Policies in Latin America, the Caribbean, and the European Union: Progress Toward a Political Dialogue,” prepared by Pilar Rico and Laura Bonora.</li>
-    <li>An analysis of official government websites to identify current policies and programs.</li>
+  <h2>Survey methodology</h2>
+  <p>Information was collected and organized with support from a team of scholarship students at CONARE Costa Rica and drew on three main sources:</p>
+  <ul class="content-list" role="list">
+    <li>Information provided by LA Referencia’s member nodes.</li>
+    <li>The document “Políticas de Acceso Abierto en América Latina, el Caribe y la Unión Europea: Avances para un diálogo político” (Open Access Policies in Latin America, the Caribbean and the European Union: Progress towards a Policy Dialogue), by Pilar Rico and Laura Bonora.</li>
+    <li>An analysis of official government websites to identify ongoing policies and programs.</li>
   </ul>
-  <p>We seek the collaboration of national institutions to validate the collected information and fill in any missing data.</p>
+  <p>We welcome the collaboration of national institutions to validate the information collected and fill in missing data.</p>
+  <div class="content-actions">
+    <a class="lr-btn lr-btn-solid" href="mailto:{{ site.email }}?subject=Map%20of%20national%20Open%20Science%20initiatives">Submit information about an initiative</a>
+  </div>
 </section>
 
 <div class="content-note">
-  <p>This mapping was carried out in 2024 and will be updated periodically. While it aims to include all relevant policies, some may not yet be incorporated. Therefore, we invite institutions to report new initiatives or changes to existing ones to help keep the information up to date.</p>
+  <h2>Updating and sustaining the survey</h2>
+  <p>This survey was conducted in 2024 and will be updated periodically. It aims to cover all policies, although some may not yet be included. We therefore invite institutions to report new initiatives or changes to existing ones to keep the information current.</p>
 </div>
 
 <section class="content-section">
   <h2>Acknowledgments</h2>
-  <p>This work has been made possible thanks to the collaboration of UNA Costa Rica, through CONARE, whose team of fellows supported the systematization of information and the development of the software that enables the consultation and updating of the mapping.</p>
-  <p>You may submit your inquiries and suggestions through <a href="{{ '/en/contact' | relative_url }}">Contact</a>.</p>
+  <p>This work was made possible by the collaboration of UNA Costa Rica through CONARE, whose team of scholarship students supported the organization of information and the development of the software used to consult and update the survey.</p>
+  <p>You can send your questions and suggestions through <a href="{{ '/en/contact' | relative_url }}">Contact</a>.</p>
 </section>
+
+</div>

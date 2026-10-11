@@ -108,7 +108,7 @@
                       {{ child_label }}
                     </a>
                     {% if child_summary != blank %}
-                    <p class="lr-mega-summary">{{ child_summary | truncate: 120 }}</p>
+                    <p class="lr-mega-summary">{% if child.show_full_summary %}{{ child_summary }}{% else %}{{ child_summary | truncate: 120 }}{% endif %}</p>
                     {% endif %}
                   </div>
                 </article>
@@ -166,7 +166,7 @@
                     {{ child_label }}
                   </a>
                   {% if child_summary != blank %}
-                  <p class="lr-mega-summary">{{ child_summary | truncate: 120 }}</p>
+                  <p class="lr-mega-summary">{% if child.show_full_summary %}{{ child_summary }}{% else %}{{ child_summary | truncate: 120 }}{% endif %}</p>
                   {% endif %}
                 </div>
               </article>

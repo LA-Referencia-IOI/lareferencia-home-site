@@ -20,27 +20,33 @@ main_nav:
         children:
           - label: Plataforma LA Referencia
             href: /es/services/plataforma-la-referencia
-            summary: Conozca más sobre el software utilizado para recopilar datos de los nodos nacionales.
+            summary: Cosecha información de repositorios científicos, revisa su calidad y la enriquece para visibilizarla y compartirla con otros sistemas.
+            show_full_summary: true
             menu_icon: search
           - label: Estadísticas de Uso
             href: https://ustats.lareferencia.info/es/home
-            summary: Descubra cómo nuestra plataforma brinda acceso a los datos de uso de los repositorios en toda la red.
+            summary: Recopila consultas y descargas para conocer cómo se utilizan los contenidos de los repositorios y mostrar sus estadísticas.
+            show_full_summary: true
             menu_icon: stats
             external: true
-          - label: dARK
-            href: https://www.dark-pid.net/es/home
-            summary: Explore cómo se desarrolló esta herramienta para asignar identificadores persistentes.
+          - label: "dARK: identificadores persistentes"
+            href: https://la-referencia-ioi.github.io/reports/productos/b1-dark-2/es/index.html
+            summary: Infraestructura regional en desarrollo para asignar identificadores ARK, mantener enlaces estables a recursos científicos y preservar sus metadatos.
+            show_full_summary: true
             menu_icon: dark
             external: true
       - title: Proyectos
         children:
           - label: LA Referencia proyecto IOI
-            href: https://la-referencia-ioi.github.io/reports/en/index.html
-            summary: Conozca los reportes del proyecto LA Referencia - IOI sobre infraestructura abierta en la región.
+            href: https://la-referencia-ioi.github.io/reports/index.html
+            summary: Amplía la colección regional y facilita la búsqueda en varios idiomas. Desarrolla identificadores dARK y preservación de metadatos, además de un repositorio Dataverse y formación para gestionar datos de investigación.
+            show_full_summary: true
             menu_icon: generic
             external: true
           - label: Proyecto LA Referencia/Lyrasis DSpace
-            href: https://dspace.lareferencia.info/pt/
+            href: https://dspace.lareferencia.info/
+            summary: Ayuda a las instituciones a instalar, utilizar y actualizar DSpace con soporte técnico, guías en español y portugués y actividades de capacitación.
+            show_full_summary: true
             menu_icon: db
             external: true
 
