@@ -44,8 +44,8 @@ sections:
 
   - type: faq_cta
     title: "What steps should I take if my research or institutional repository is not available in LA Referencia?"
-    body: "LA Referencia is an aggregator that harvests metadata from the repositories of the participating countries. For this reason, it is not possible to directly deposit your research outputs. However, you can find the necessary information by clicking the following link."
-    button_label: "Learn more"
+    body: "LA Referencia harvests metadata from repositories and other scientific information sources. To make your research outputs visible, deposit them in your institution’s repository. If you manage a repository and would like to contribute its content, explore the participation pathways and contact the national node or LA Referencia, as appropriate."
+    button_label: "How to participate"
     button_url: "/en/about/how-to-join"
     image: "/assets/img/faq.svg"
 

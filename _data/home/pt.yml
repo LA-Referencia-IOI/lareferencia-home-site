@@ -44,8 +44,8 @@ sections:
 
   - type: faq_cta
     title: "Quais medidas devo tomar se minha pesquisa ou repositório institucional não estiver disponível na LA Referencia?"
-    body: "A LA Referencia é um agregador que coleta metadados dos repositórios dos países participantes por esse motivo não é possível depositar diretamente seus resultados de pesquisa. No entanto, você pode encontrar as informações necessárias clicando no link a seguir."
-    button_label: "Saiba mais"
+    body: "A LA Referencia coleta metadados de repositórios e outras fontes de informação científica. Para dar visibilidade aos seus resultados de pesquisa, deposite-os no repositório da sua instituição. Se você administra um repositório e deseja incorporar seus conteúdos, consulte as formas de participação e entre em contato com o nó nacional ou com a LA Referencia, conforme o caso."
+    button_label: "Como participar"
     button_url: "/pt/about/como-participar"
     image: "/assets/img/faq.svg"
 

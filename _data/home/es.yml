@@ -44,8 +44,8 @@ sections:
 
   - type: faq_cta
     title: "¿Qué debo hacer si mi investigación o repositorio no se encuentra en LA Referencia?"
-    body: "LA Referencia es un agregador que cosecha metadata de los repositorios de los países participantes por ese motivo no es posible depositar directamente sus resultados de investigación. No obstante, usted puede encontrar la información necesaria haciendo clic en el siguiente enlace."
-    button_label: "Obtener información"
+    body: "LA Referencia cosecha metadatos de repositorios y otras fuentes de información científica. Para visibilizar sus resultados de investigación, deposítelos en el repositorio de su institución. Si gestiona un repositorio y desea incorporar sus contenidos, consulte las vías de participación y contacte al nodo nacional o a LA Referencia, según corresponda."
+    button_label: "Cómo participar"
     button_url: "/es/about/como-ser-parte"
     image: "/assets/img/faq.svg"
 
