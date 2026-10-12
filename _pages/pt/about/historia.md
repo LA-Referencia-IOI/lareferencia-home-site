@@ -25,4 +25,3 @@ menu_icon: "none"
 
 <p>Concluído o projeto, no final de 2013, a rede se articula como um serviço entre os órgãos de ciência e tecnologia da região com o apoio da RedCLARA, com o objetivo de consolidar uma estratégia de acesso aberto para o acesso às publicações científicas, baseada em políticas nacionais de repositórios e na geração de bens públicos.</p>
 
-<p>Para acessar a história completa sobre a criação da LA Referencia, <a href="https://www.lareferencia.info/legacy/" target="_blank" rel="noopener">visite nosso antigo site</a>.</p>

@@ -1,21 +1,21 @@
 ---
 layout: page
 title: "Assinatura"
-description: "Newsletter da LA Referencia"
+description: "Boletim de notícias da LA Referencia"
 language: pt
 language_reference: subscription
 published: true
 ---
 
 {% include mailchimp-form.html
-  form_title="Assine nosso Boletim"
-  form_subtitle="Assine nosso boletim e mantenha-se atualizado sobre nossos esforços pela Ciência Aberta."
-  required_text="indica campo obrigatório"
+  form_title="Inscreva-se no boletim da LA Referencia"
+  form_subtitle="Receba notícias sobre ciência aberta, projetos, atividades e oportunidades de formação da LA Referencia."
+  required_text="indica um campo obrigatório"
   email_label="E-mail"
-  name_label="Nome Completo"
+  name_label="Nome completo"
   country_label="País"
-  org_label="Organização"
-  button_text="Assinar"
+  org_label="Instituição ou organização à qual você pertence"
+  button_text="Inscrever-se"
   msg_required="Este campo é obrigatório."
-  msg_email="Por favor, insira um endereço de e-mail válido"
+  msg_email="Informe um endereço de e-mail válido."
 %}

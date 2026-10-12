@@ -13,18 +13,17 @@ order: 3
 <div class="contact-page">
   <header class="contact-page-header">
     <p class="contact-page-eyebrow">Contact</p>
-    <h1 class="contact-page-title">For questions, new ideas or collaboration requests, write to us</h1>
-    <p class="contact-page-lead">To contact us, send us a message by email and share the context of your inquiry, initiative or collaboration request.</p>
+    <h1 class="contact-page-title">Contact LA Referencia</h1>
+    <p class="contact-page-lead">Get in touch to ask about the network, its services or opportunities to participate and collaborate.</p>
   </header>
 
   <section class="contact-page-grid">
     <article class="contact-panel" id="contact-the-network">
       <p class="contact-panel-label">Institutional information</p>
-      <h2>How to reach us</h2>
-      <p>To contact us, send us a message by email.</p>
-      <p>You may also write to the RedCLARA headquarters in Uruguay, located at Rambla Republica de Mexico 6125, Montevideo.</p>
+      <h2>Postal address</h2>
+      <p>Postal correspondence can be sent to RedCLARA’s headquarters in Uruguay.</p>
       <address class="contact-address">
-        Rambla Republica de Mexico 6125<br>
+        Rambla República de México 6125<br>
         Montevideo, Uruguay
       </address>
     </article>
@@ -33,17 +32,17 @@ order: 3
       <p class="contact-panel-label">Primary channel</p>
       <h2>Contact email</h2>
       <a class="contact-mail-link" href="mailto:{{ site.email }}">{{ site.email }}</a>
-      <p>This channel is intended for general inquiries, partnership discussions, institutional support and new ideas for LA Referencia.</p>
+      <p>Use this email address for general inquiries, institutional requests and collaboration proposals.</p>
       <div class="contact-actions">
         <a class="lr-btn lr-btn-solid" href="mailto:{{ site.email }}">Send email</a>
       </div>
-      <p class="contact-page-note">If you are writing on behalf of an institution, include the node, repository or project name in the subject line.</p>
+      <p class="contact-page-note">Briefly explain the reason for your inquiry. If you are writing on behalf of an institution, include its name and the relevant node, repository or project.</p>
     </article>
 
     <article class="contact-panel contact-panel-social">
       <p class="contact-panel-label">Official channels</p>
-      <h2>Follow and contact us</h2>
-      <p>You can also find us through our official social media channels.</p>
+      <h2>Follow us on social media</h2>
+      <p>Follow our official accounts for LA Referencia news, activities and updates.</p>
       <ul class="contact-social-grid">
         {% for item in nav.footer.social %}
           <li>
@@ -51,7 +50,7 @@ order: 3
               <span class="contact-social-mark" aria-hidden="true">{{ item.glyph | default: item.label | slice: 0, 2 }}</span>
               <span class="contact-social-copy">
                 <strong>{{ item.label }}</strong>
-                <span>Open official channel</span>
+                <span>View official profile</span>
               </span>
             </a>
           </li>

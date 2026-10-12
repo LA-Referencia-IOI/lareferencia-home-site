@@ -1,21 +1,21 @@
 ---
 layout: page
 title: "Suscripción"
-description: "Newsletter de LA Referencia"
+description: "Boletín de noticias de LA Referencia"
 language: es
 language_reference: subscription
 published: true
 ---
 
 {% include mailchimp-form.html
-  form_title="Suscríbase a nuestro Boletín de Correo"
-  form_subtitle="Suscríbase a nuestro boletín y manténgase al tanto de nuestros esfuerzos por la Ciencia Abierta."
-  required_text="indica campo obligatorio"
-  email_label="Correo Electrónico"
-  name_label="Nombre Completo"
+  form_title="Suscríbase al boletín de LA Referencia"
+  form_subtitle="Reciba noticias sobre ciencia abierta, proyectos, actividades y oportunidades de formación de LA Referencia."
+  required_text="indica un campo obligatorio"
+  email_label="Correo electrónico"
+  name_label="Nombre completo"
   country_label="País"
-  org_label="Organización en la que labora"
+  org_label="Institución u organización a la que pertenece"
   button_text="Suscribirse"
   msg_required="Este campo es obligatorio."
-  msg_email="Por favor, escribe una dirección de correo válida"
+  msg_email="Introduzca una dirección de correo electrónico válida."
 %}

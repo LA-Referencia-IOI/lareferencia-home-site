@@ -25,4 +25,3 @@ menu_icon: "none"
 
 <p>Once the project concluded at the end of 2013, the network was structured as a service among the region’s science and technology agencies, with the support of RedCLARA. The objective was to consolidate an open access strategy for accessing scientific publications, based on national repository policies and the development of public goods.</p>
 
-<p>To learn more about the full history behind the creation of LA Referencia, <a href="https://www.lareferencia.info/legacy/" target="_blank" rel="noopener">visit our previous website</a>.</p>

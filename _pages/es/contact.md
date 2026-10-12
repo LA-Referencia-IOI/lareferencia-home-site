@@ -13,16 +13,15 @@ order: 3
 <div class="contact-page">
   <header class="contact-page-header">
     <p class="contact-page-eyebrow">Contacto</p>
-    <h1 class="contact-page-title">Para dudas, consultas o nuevas ideas, escríbanos</h1>
-    <p class="contact-page-lead">Centralizamos aquí consultas institucionales, colaboraciones y seguimiento de iniciativas de ciencia abierta en la red.</p>
+    <h1 class="contact-page-title">Contacte con LA Referencia</h1>
+    <p class="contact-page-lead">Escríbanos para consultar sobre la red, sus servicios o las posibilidades de participación y colaboración.</p>
   </header>
 
   <section class="contact-page-grid">
     <article class="contact-panel" id="contacto-con-la-red">
       <p class="contact-panel-label">Información institucional</p>
-      <h2>Cómo contactarnos</h2>
-      <p>Para contactarnos, escríbanos por correo y comparta el contexto de su consulta, alianza o iniciativa.</p>
-      <p>También puede escribirnos a la sede central de RedCLARA en Uruguay, ubicada en Rambla República de México 6125, Montevideo.</p>
+      <h2>Dirección postal</h2>
+      <p>La correspondencia postal puede dirigirse a la sede de RedCLARA en Uruguay.</p>
       <address class="contact-address">
         Rambla República de México 6125<br>
         Montevideo, Uruguay
@@ -33,17 +32,17 @@ order: 3
       <p class="contact-panel-label">Canal principal</p>
       <h2>Correo de contacto</h2>
       <a class="contact-mail-link" href="mailto:{{ site.email }}">{{ site.email }}</a>
-      <p>Este canal concentra consultas generales, acuerdos de colaboración, soporte institucional y nuevas ideas para LA Referencia.</p>
+      <p>Utilice este correo para consultas generales, solicitudes institucionales y propuestas de colaboración.</p>
       <div class="contact-actions">
         <a class="lr-btn lr-btn-solid" href="mailto:{{ site.email }}">Enviar correo</a>
       </div>
-      <p class="contact-page-note">Si escribe en nombre de una institución, incluya el nombre del nodo, repositorio o proyecto en el asunto del mensaje.</p>
+      <p class="contact-page-note">Indique brevemente el motivo de su consulta. Si escribe en nombre de una institución, incluya su nombre y el del nodo, repositorio o proyecto correspondiente.</p>
     </article>
 
     <article class="contact-panel contact-panel-social">
       <p class="contact-panel-label">Redes oficiales</p>
-      <h2>Síganos y escríbanos</h2>
-      <p>También puede encontrarnos en nuestras redes sociales oficiales.</p>
+      <h2>Síganos en redes sociales</h2>
+      <p>Siga nuestras redes oficiales para conocer noticias, actividades y novedades de LA Referencia.</p>
       <ul class="contact-social-grid">
         {% for item in nav.footer.social %}
           <li>
@@ -51,7 +50,7 @@ order: 3
               <span class="contact-social-mark" aria-hidden="true">{{ item.glyph | default: item.label | slice: 0, 2 }}</span>
               <span class="contact-social-copy">
                 <strong>{{ item.label }}</strong>
-                <span>Abrir canal oficial</span>
+                <span>Ver perfil oficial</span>
               </span>
             </a>
           </li>
