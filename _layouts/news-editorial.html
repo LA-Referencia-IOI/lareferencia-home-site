@@ -5,7 +5,7 @@ layout: default
   {% if page.image %}
   <section class="editorial-hero">
     <div class="editorial-hero-image">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
     </div>
   </section>
   {% endif %}
